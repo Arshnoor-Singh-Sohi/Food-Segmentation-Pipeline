@@ -27,6 +27,8 @@ htmlcov/
 .nox/
 .coverage
 .cache
+nosetests.xml
+coverage.xml
 *.cover
 *.py,cover
 .hypothesis/
@@ -51,7 +53,7 @@ Thumbs.db
 # Logs
 *.log
 
-# Node / JS (if you happen to have front-end stuff)
+# Node / JS dependencies (if any)
 node_modules/
 
 # Ignore compiled files / executables
@@ -59,6 +61,17 @@ node_modules/
 *.dll
 *.out
 *.app
+
+# Ignore model files and large data outputs
+data/models/
+data/output/
+
+# Or specific files if you prefer
+# data/models/sam2.1_hiera_base_plus.pt
+# data/output/image1_analysis.json
+
+# YOLO model file
+yolov8m-seg.pt
 
 # Git ignore itself (optional safety)
 !.gitignore

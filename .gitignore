@@ -1,0 +1,64 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*.egg-info/
+dist/
+build/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.cache
+*.cover
+*.py,cover
+.hypothesis/
+
+# Directory tree files
+directory-tree.md
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# macOS / Windows system files
+.DS_Store
+Thumbs.db
+
+# VS Code config
+.vscode/
+
+# GitHub Actions runtime files
+.github/workflows/*.log
+.github/workflows/*.tmp
+
+# Logs
+*.log
+
+# Node / JS (if you happen to have front-end stuff)
+node_modules/
+
+# Ignore compiled files / executables
+*.exe
+*.dll
+*.out
+*.app
+
+# Git ignore itself (optional safety)
+!.gitignore

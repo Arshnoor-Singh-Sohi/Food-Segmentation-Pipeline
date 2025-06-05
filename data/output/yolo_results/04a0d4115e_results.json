@@ -1,0 +1,87 @@
+{
+  "image_info": {
+    "path": "data\\input\\04a0d4115e.jpg",
+    "filename": "04a0d4115e.jpg",
+    "size": "3963x2080",
+    "processing_time_seconds": 0.45
+  },
+  "analysis_summary": {
+    "total_items_detected": 2,
+    "food_items_count": 0,
+    "non_food_items_count": 2,
+    "avg_confidence": 0.545,
+    "timestamp": "2025-06-05T09:34:21.787825"
+  },
+  "food_items": [
+    {
+      "id": 0,
+      "name": "fork",
+      "confidence": 0.7029890418052673,
+      "is_food": false,
+      "bbox": {
+        "x1": 0,
+        "y1": 325,
+        "x2": 1565,
+        "y2": 1630,
+        "width": 1565,
+        "height": 1305
+      },
+      "mask_info": {
+        "area_pixels": 6195,
+        "area_percentage": 0.08
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 1,
+      "name": "dining table",
+      "confidence": 0.3873499929904938,
+      "is_food": false,
+      "bbox": {
+        "x1": 9,
+        "y1": 3,
+        "x2": 3940,
+        "y2": 2052,
+        "width": 3931,
+        "height": 2048
+      },
+      "mask_info": {
+        "area_pixels": 133391,
+        "area_percentage": 1.62
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    }
+  ],
+  "nutrition_totals": {
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0
+  },
+  "model_info": {
+    "model_type": "YOLOv8n-seg",
+    "confidence_threshold": 0.25,
+    "iou_threshold": 0.45
+  },
+  "visualization_path": "data\\output\\yolo_results\\visualizations\\04a0d4115e_analysis.png"
+}

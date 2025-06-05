@@ -1,0 +1,116 @@
+{
+  "image_info": {
+    "path": "data\\input\\04a0e7920c.jpg",
+    "filename": "04a0e7920c.jpg",
+    "size": "300x221",
+    "processing_time_seconds": 0.22
+  },
+  "analysis_summary": {
+    "total_items_detected": 3,
+    "food_items_count": 2,
+    "non_food_items_count": 1,
+    "avg_confidence": 0.387,
+    "timestamp": "2025-06-05T09:35:00.924450"
+  },
+  "food_items": [
+    {
+      "id": 0,
+      "name": "teddy bear",
+      "confidence": 0.4520909786224365,
+      "is_food": false,
+      "bbox": {
+        "x1": 23,
+        "y1": 9,
+        "x2": 240,
+        "y2": 208,
+        "width": 217,
+        "height": 198
+      },
+      "mask_info": {
+        "area_pixels": 154026,
+        "area_percentage": 232.32
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 1,
+      "name": "donut",
+      "confidence": 0.4507465660572052,
+      "is_food": true,
+      "bbox": {
+        "x1": 116,
+        "y1": 75,
+        "x2": 230,
+        "y2": 171,
+        "width": 114,
+        "height": 95
+      },
+      "mask_info": {
+        "area_pixels": 39768,
+        "area_percentage": 59.98
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 4000.0,
+        "protein_g": 60.0,
+        "carbs_g": 450.0,
+        "fat_g": 200.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 2,
+      "name": "donut",
+      "confidence": 0.25693848729133606,
+      "is_food": true,
+      "bbox": {
+        "x1": 24,
+        "y1": 10,
+        "x2": 237,
+        "y2": 214,
+        "width": 212,
+        "height": 203
+      },
+      "mask_info": {
+        "area_pixels": 154878,
+        "area_percentage": 233.6
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 4000.0,
+        "protein_g": 60.0,
+        "carbs_g": 450.0,
+        "fat_g": 200.0,
+        "portion_grams": 1000
+      }
+    }
+  ],
+  "nutrition_totals": {
+    "calories": 8000.0,
+    "protein_g": 120.0,
+    "carbs_g": 900.0,
+    "fat_g": 400.0
+  },
+  "model_info": {
+    "model_type": "YOLOv8n-seg",
+    "confidence_threshold": 0.25,
+    "iou_threshold": 0.45
+  },
+  "visualization_path": "data\\output\\yolo_results\\visualizations\\04a0e7920c_analysis.png"
+}

@@ -1,0 +1,174 @@
+{
+  "image_info": {
+    "path": "data\\input\\04a0e657ac.jpg",
+    "filename": "04a0e657ac.jpg",
+    "size": "711x1004",
+    "processing_time_seconds": 0.44
+  },
+  "analysis_summary": {
+    "total_items_detected": 5,
+    "food_items_count": 1,
+    "non_food_items_count": 4,
+    "avg_confidence": 0.584,
+    "timestamp": "2025-06-05T09:34:55.661946"
+  },
+  "food_items": [
+    {
+      "id": 0,
+      "name": "cake",
+      "confidence": 0.8070309162139893,
+      "is_food": true,
+      "bbox": {
+        "x1": 0,
+        "y1": 325,
+        "x2": 88,
+        "y2": 494,
+        "width": 87,
+        "height": 168
+      },
+      "mask_info": {
+        "area_pixels": 4796,
+        "area_percentage": 0.67
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 3500.0,
+        "protein_g": 50.0,
+        "carbs_g": 550.0,
+        "fat_g": 120.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 1,
+      "name": "wine glass",
+      "confidence": 0.75325608253479,
+      "is_food": false,
+      "bbox": {
+        "x1": 251,
+        "y1": 269,
+        "x2": 563,
+        "y2": 807,
+        "width": 311,
+        "height": 537
+      },
+      "mask_info": {
+        "area_pixels": 46756,
+        "area_percentage": 6.55
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 2,
+      "name": "dining table",
+      "confidence": 0.5059433579444885,
+      "is_food": false,
+      "bbox": {
+        "x1": 4,
+        "y1": 19,
+        "x2": 711,
+        "y2": 1001,
+        "width": 706,
+        "height": 981
+      },
+      "mask_info": {
+        "area_pixels": 185369,
+        "area_percentage": 25.97
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 3,
+      "name": "cup",
+      "confidence": 0.4640710651874542,
+      "is_food": false,
+      "bbox": {
+        "x1": 412,
+        "y1": 80,
+        "x2": 682,
+        "y2": 566,
+        "width": 270,
+        "height": 485
+      },
+      "mask_info": {
+        "area_pixels": 28190,
+        "area_percentage": 3.95
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 0.0,
+        "protein_g": 0.0,
+        "carbs_g": 0.0,
+        "fat_g": 0.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 4,
+      "name": "wine glass",
+      "confidence": 0.3905635476112366,
+      "is_food": false,
+      "bbox": {
+        "x1": 409,
+        "y1": 79,
+        "x2": 682,
+        "y2": 566,
+        "width": 272,
+        "height": 487
+      },
+      "mask_info": {
+        "area_pixels": 28465,
+        "area_percentage": 3.99
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    }
+  ],
+  "nutrition_totals": {
+    "calories": 3500.0,
+    "protein_g": 50.0,
+    "carbs_g": 550.0,
+    "fat_g": 120.0
+  },
+  "model_info": {
+    "model_type": "YOLOv8n-seg",
+    "confidence_threshold": 0.25,
+    "iou_threshold": 0.45
+  },
+  "visualization_path": "data\\output\\yolo_results\\visualizations\\04a0e657ac_analysis.png"
+}

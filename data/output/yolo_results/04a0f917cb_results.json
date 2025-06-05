@@ -1,0 +1,87 @@
+{
+  "image_info": {
+    "path": "data\\input\\04a0f917cb.jpg",
+    "filename": "04a0f917cb.jpg",
+    "size": "426x639",
+    "processing_time_seconds": 0.28
+  },
+  "analysis_summary": {
+    "total_items_detected": 2,
+    "food_items_count": 0,
+    "non_food_items_count": 2,
+    "avg_confidence": 0.572,
+    "timestamp": "2025-06-05T09:35:26.351760"
+  },
+  "food_items": [
+    {
+      "id": 0,
+      "name": "vase",
+      "confidence": 0.886104166507721,
+      "is_food": false,
+      "bbox": {
+        "x1": 203,
+        "y1": 179,
+        "x2": 426,
+        "y2": 634,
+        "width": 222,
+        "height": 454
+      },
+      "mask_info": {
+        "area_pixels": 91990,
+        "area_percentage": 33.79
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 1,
+      "name": "potted plant",
+      "confidence": 0.25810468196868896,
+      "is_food": false,
+      "bbox": {
+        "x1": 112,
+        "y1": 65,
+        "x2": 426,
+        "y2": 609,
+        "width": 313,
+        "height": 544
+      },
+      "mask_info": {
+        "area_pixels": 17324,
+        "area_percentage": 6.36
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    }
+  ],
+  "nutrition_totals": {
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0
+  },
+  "model_info": {
+    "model_type": "YOLOv8n-seg",
+    "confidence_threshold": 0.25,
+    "iou_threshold": 0.45
+  },
+  "visualization_path": "data\\output\\yolo_results\\visualizations\\04a0f917cb_analysis.png"
+}

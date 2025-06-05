@@ -1,0 +1,58 @@
+{
+  "image_info": {
+    "path": "data\\input\\04a0e7af6d.jpg",
+    "filename": "04a0e7af6d.jpg",
+    "size": "480x360",
+    "processing_time_seconds": 0.32
+  },
+  "analysis_summary": {
+    "total_items_detected": 1,
+    "food_items_count": 0,
+    "non_food_items_count": 1,
+    "avg_confidence": 0.576,
+    "timestamp": "2025-06-05T09:35:02.070142"
+  },
+  "food_items": [
+    {
+      "id": 0,
+      "name": "remote",
+      "confidence": 0.5763314962387085,
+      "is_food": false,
+      "bbox": {
+        "x1": 85,
+        "y1": 47,
+        "x2": 428,
+        "y2": 311,
+        "width": 343,
+        "height": 263
+      },
+      "mask_info": {
+        "area_pixels": 136184,
+        "area_percentage": 78.81
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    }
+  ],
+  "nutrition_totals": {
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0
+  },
+  "model_info": {
+    "model_type": "YOLOv8n-seg",
+    "confidence_threshold": 0.25,
+    "iou_threshold": 0.45
+  },
+  "visualization_path": "data\\output\\yolo_results\\visualizations\\04a0e7af6d_analysis.png"
+}

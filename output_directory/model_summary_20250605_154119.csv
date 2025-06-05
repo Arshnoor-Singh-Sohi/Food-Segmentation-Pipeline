@@ -1,0 +1,8 @@
+Rank,Model_Name,Model_Type,Model_Size,Total_Detections,Unique_Classes,Best_Confidence_Threshold,Processing_Time_Seconds,Avg_Detection_Confidence,Total_Bbox_Area,Avg_Bbox_Area,Detected_Classes,Most_Common_Class,Most_Common_Class_Count
+1,yolov8n-seg.pt,Segmentation,Nano,9,4,0.1,4.3734,0.5291,3260669.13,362296.57,"spoon, orange, cup, dining table",orange,16
+2,yolov8s-seg.pt,Segmentation,Small,8,4,0.1,0.4448,0.5525,3197385.62,399673.2,"spoon, orange, cup, dining table",orange,15
+3,yolov8m-seg.pt,Segmentation,Medium,8,4,0.1,0.7316,0.5462,3265020.58,408127.57,"spoon, orange, cup, dining table",orange,13
+4,yolov8s.pt,Detection,Small,8,4,0.1,0.2887,0.6029,3148375.59,393546.95,"spoon, orange, cup, dining table",orange,14
+5,yolov8n-oiv7.pt,Open Images,Nano,8,6,0.1,0.201,0.1942,1568296.19,196037.02,"Lemon, Egg (Food), Orange, Apple, Juice, Grapefruit",Orange,4
+6,yolov10n.pt,YOLOv10,Nano,8,4,0.1,0.1553,0.5964,3112429.57,389053.7,"spoon, orange, cup, dining table",orange,14
+7,yolov8n.pt,Detection,Nano,7,4,0.1,0.1521,0.5994,3089609.92,441372.85,"spoon, orange, cup, dining table",orange,12

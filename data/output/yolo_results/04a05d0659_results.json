@@ -1,0 +1,203 @@
+{
+  "image_info": {
+    "path": "data\\input\\04a05d0659.jpg",
+    "filename": "04a05d0659.jpg",
+    "size": "445x620",
+    "processing_time_seconds": 0.35
+  },
+  "analysis_summary": {
+    "total_items_detected": 6,
+    "food_items_count": 0,
+    "non_food_items_count": 6,
+    "avg_confidence": 0.597,
+    "timestamp": "2025-06-05T09:31:52.556299"
+  },
+  "food_items": [
+    {
+      "id": 0,
+      "name": "bottle",
+      "confidence": 0.9018380641937256,
+      "is_food": false,
+      "bbox": {
+        "x1": 51,
+        "y1": 69,
+        "x2": 157,
+        "y2": 369,
+        "width": 106,
+        "height": 300
+      },
+      "mask_info": {
+        "area_pixels": 23291,
+        "area_percentage": 8.44
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 1,
+      "name": "bottle",
+      "confidence": 0.8819410800933838,
+      "is_food": false,
+      "bbox": {
+        "x1": 284,
+        "y1": 149,
+        "x2": 393,
+        "y2": 364,
+        "width": 109,
+        "height": 215
+      },
+      "mask_info": {
+        "area_pixels": 18944,
+        "area_percentage": 6.87
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 2,
+      "name": "bottle",
+      "confidence": 0.8542361855506897,
+      "is_food": false,
+      "bbox": {
+        "x1": 143,
+        "y1": 103,
+        "x2": 305,
+        "y2": 403,
+        "width": 161,
+        "height": 299
+      },
+      "mask_info": {
+        "area_pixels": 38753,
+        "area_percentage": 14.05
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 3,
+      "name": "bottle",
+      "confidence": 0.36371085047721863,
+      "is_food": false,
+      "bbox": {
+        "x1": 171,
+        "y1": 448,
+        "x2": 262,
+        "y2": 590,
+        "width": 91,
+        "height": 141
+      },
+      "mask_info": {
+        "area_pixels": 12570,
+        "area_percentage": 4.56
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 4,
+      "name": "bottle",
+      "confidence": 0.3186212480068207,
+      "is_food": false,
+      "bbox": {
+        "x1": 173,
+        "y1": 387,
+        "x2": 282,
+        "y2": 513,
+        "width": 109,
+        "height": 125
+      },
+      "mask_info": {
+        "area_pixels": 12727,
+        "area_percentage": 4.61
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 5,
+      "name": "bottle",
+      "confidence": 0.2622149586677551,
+      "is_food": false,
+      "bbox": {
+        "x1": 280,
+        "y1": 347,
+        "x2": 392,
+        "y2": 507,
+        "width": 112,
+        "height": 160
+      },
+      "mask_info": {
+        "area_pixels": 16021,
+        "area_percentage": 5.81
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    }
+  ],
+  "nutrition_totals": {
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0
+  },
+  "model_info": {
+    "model_type": "YOLOv8n-seg",
+    "confidence_threshold": 0.25,
+    "iou_threshold": 0.45
+  },
+  "visualization_path": "data\\output\\yolo_results\\visualizations\\04a05d0659_analysis.png"
+}

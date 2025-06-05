@@ -1,0 +1,277 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>YOLO Model Comparison Report</title>
+            <style>
+                body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+                .container { max-width: 1200px; margin: 0 auto; background: white; padding: 20px; border-radius: 10px; }
+                .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; border-radius: 10px; text-align: center; }
+                .model-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; margin: 20px 0; }
+                .model-card { border: 1px solid #ddd; border-radius: 8px; padding: 15px; background: white; }
+                .rank-1 { border-left: 4px solid #4caf50; }
+                .rank-2 { border-left: 4px solid #ff9800; }
+                .rank-3 { border-left: 4px solid #f44336; }
+                .metric { display: flex; justify-content: space-between; margin: 5px 0; }
+                .classes { background: #f8f9fa; padding: 8px; border-radius: 4px; margin-top: 10px; }
+                .summary-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 20px 0; }
+                .stat-card { background: #e3f2fd; padding: 15px; border-radius: 8px; text-align: center; }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <div class="header">
+                    <h1>🏆 YOLO Model Comparison Report</h1>
+                    <p>Generated: 2025-06-05 12:49:48</p>
+                </div>
+                
+                <div class="summary-stats">
+                    <div class="stat-card">
+                        <strong>10</strong><br>
+                        Models Tested
+                    </div>
+                    <div class="stat-card">
+                        <strong>8</strong><br>
+                        Successful
+                    </div>
+                    <div class="stat-card">
+                        <strong>2</strong><br>
+                        Failed
+                    </div>
+                </div>
+                
+                <h2>🏅 Model Rankings</h2>
+                <div class="model-grid">
+        
+            <div class="model-card rank-1">
+                <h3>#1 yolov9s</h3>
+                <p><em>YOLOv9 Small (newest)</em></p>
+                
+                <div class="metric">
+                    <span><strong>Type:</strong></span>
+                    <span>detection</span>
+                </div>
+                <div class="metric">
+                    <span><strong>Detections:</strong></span>
+                    <span>17</span>
+                </div>
+                <div class="metric">
+                    <span><strong>Best Confidence:</strong></span>
+                    <span>0.1</span>
+                </div>
+                <div class="metric">
+                    <span><strong>Inference Time:</strong></span>
+                    <span>0.297s</span>
+                </div>
+                
+                <div class="classes">
+                    <strong>Detected Classes:</strong><br>
+                    cup, dining table, bowl, donut, spoon, cake
+                </div>
+            </div>
+            
+            <div class="model-card rank-2">
+                <h3>#2 yolov8m-seg</h3>
+                <p><em>YOLOv8 Medium Segmentation</em></p>
+                
+                <div class="metric">
+                    <span><strong>Type:</strong></span>
+                    <span>segmentation</span>
+                </div>
+                <div class="metric">
+                    <span><strong>Detections:</strong></span>
+                    <span>14</span>
+                </div>
+                <div class="metric">
+                    <span><strong>Best Confidence:</strong></span>
+                    <span>0.1</span>
+                </div>
+                <div class="metric">
+                    <span><strong>Inference Time:</strong></span>
+                    <span>0.647s</span>
+                </div>
+                
+                <div class="classes">
+                    <strong>Detected Classes:</strong><br>
+                    cup, dining table, bowl, donut, sink, cake
+                </div>
+            </div>
+            
+            <div class="model-card rank-3">
+                <h3>#3 yolov8n-seg</h3>
+                <p><em>YOLOv8 Nano Segmentation</em></p>
+                
+                <div class="metric">
+                    <span><strong>Type:</strong></span>
+                    <span>segmentation</span>
+                </div>
+                <div class="metric">
+                    <span><strong>Detections:</strong></span>
+                    <span>13</span>
+                </div>
+                <div class="metric">
+                    <span><strong>Best Confidence:</strong></span>
+                    <span>0.1</span>
+                </div>
+                <div class="metric">
+                    <span><strong>Inference Time:</strong></span>
+                    <span>2.487s</span>
+                </div>
+                
+                <div class="classes">
+                    <strong>Detected Classes:</strong><br>
+                    dining table, cup, bowl, donut, sandwich, cake
+                </div>
+            </div>
+            
+            <div class="model-card rank-3">
+                <h3>#4 yolov8n</h3>
+                <p><em>YOLOv8 Nano Detection</em></p>
+                
+                <div class="metric">
+                    <span><strong>Type:</strong></span>
+                    <span>detection</span>
+                </div>
+                <div class="metric">
+                    <span><strong>Detections:</strong></span>
+                    <span>13</span>
+                </div>
+                <div class="metric">
+                    <span><strong>Best Confidence:</strong></span>
+                    <span>0.1</span>
+                </div>
+                <div class="metric">
+                    <span><strong>Inference Time:</strong></span>
+                    <span>0.110s</span>
+                </div>
+                
+                <div class="classes">
+                    <strong>Detected Classes:</strong><br>
+                    cup, dining table, bowl, donut, sandwich, cake
+                </div>
+            </div>
+            
+            <div class="model-card rank-3">
+                <h3>#5 yolov10n</h3>
+                <p><em>YOLOv10 Nano (cutting edge)</em></p>
+                
+                <div class="metric">
+                    <span><strong>Type:</strong></span>
+                    <span>detection</span>
+                </div>
+                <div class="metric">
+                    <span><strong>Detections:</strong></span>
+                    <span>12</span>
+                </div>
+                <div class="metric">
+                    <span><strong>Best Confidence:</strong></span>
+                    <span>0.1</span>
+                </div>
+                <div class="metric">
+                    <span><strong>Inference Time:</strong></span>
+                    <span>0.142s</span>
+                </div>
+                
+                <div class="classes">
+                    <strong>Detected Classes:</strong><br>
+                    cup, dining table, bowl, bottle, cake
+                </div>
+            </div>
+            
+            <div class="model-card rank-3">
+                <h3>#6 yolov8s</h3>
+                <p><em>YOLOv8 Small Detection</em></p>
+                
+                <div class="metric">
+                    <span><strong>Type:</strong></span>
+                    <span>detection</span>
+                </div>
+                <div class="metric">
+                    <span><strong>Detections:</strong></span>
+                    <span>11</span>
+                </div>
+                <div class="metric">
+                    <span><strong>Best Confidence:</strong></span>
+                    <span>0.1</span>
+                </div>
+                <div class="metric">
+                    <span><strong>Inference Time:</strong></span>
+                    <span>0.305s</span>
+                </div>
+                
+                <div class="classes">
+                    <strong>Detected Classes:</strong><br>
+                    cup, dining table, bowl, donut, cake
+                </div>
+            </div>
+            
+            <div class="model-card rank-3">
+                <h3>#7 yolov8s-seg</h3>
+                <p><em>YOLOv8 Small Segmentation</em></p>
+                
+                <div class="metric">
+                    <span><strong>Type:</strong></span>
+                    <span>segmentation</span>
+                </div>
+                <div class="metric">
+                    <span><strong>Detections:</strong></span>
+                    <span>9</span>
+                </div>
+                <div class="metric">
+                    <span><strong>Best Confidence:</strong></span>
+                    <span>0.1</span>
+                </div>
+                <div class="metric">
+                    <span><strong>Inference Time:</strong></span>
+                    <span>0.339s</span>
+                </div>
+                
+                <div class="classes">
+                    <strong>Detected Classes:</strong><br>
+                    cup, dining table, bowl, donut, sink, cake
+                </div>
+            </div>
+            
+            <div class="model-card rank-3">
+                <h3>#8 yolov8n-oiv7</h3>
+                <p><em>YOLOv8 Open Images V7 (more classes)</em></p>
+                
+                <div class="metric">
+                    <span><strong>Type:</strong></span>
+                    <span>detection</span>
+                </div>
+                <div class="metric">
+                    <span><strong>Detections:</strong></span>
+                    <span>3</span>
+                </div>
+                <div class="metric">
+                    <span><strong>Best Confidence:</strong></span>
+                    <span>0.1</span>
+                </div>
+                <div class="metric">
+                    <span><strong>Inference Time:</strong></span>
+                    <span>0.155s</span>
+                </div>
+                
+                <div class="classes">
+                    <strong>Detected Classes:</strong><br>
+                    Food
+                </div>
+            </div>
+            
+                </div>
+                
+                <div style="margin-top: 30px; padding: 20px; background: #f8f9fa; border-radius: 8px;">
+                    <h3>📝 Recommendations</h3>
+                    <ul>
+        
+                        <li><strong>Best Overall:</strong> yolov9s - 17 detections</li>
+                        <li><strong>Fastest:</strong> Look for models with lowest inference time</li>
+                        <li><strong>Most Accurate:</strong> Consider models with segmentation capability</li>
+            
+                    </ul>
+                </div>
+            </div>
+        </body>
+        </html>
+        

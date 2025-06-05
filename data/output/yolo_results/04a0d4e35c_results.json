@@ -1,0 +1,87 @@
+{
+  "image_info": {
+    "path": "data\\input\\04a0d4e35c.jpg",
+    "filename": "04a0d4e35c.jpg",
+    "size": "736x2368",
+    "processing_time_seconds": 0.33
+  },
+  "analysis_summary": {
+    "total_items_detected": 2,
+    "food_items_count": 2,
+    "non_food_items_count": 0,
+    "avg_confidence": 0.516,
+    "timestamp": "2025-06-05T09:34:24.410831"
+  },
+  "food_items": [
+    {
+      "id": 0,
+      "name": "cake",
+      "confidence": 0.626064121723175,
+      "is_food": true,
+      "bbox": {
+        "x1": 70,
+        "y1": 171,
+        "x2": 732,
+        "y2": 702,
+        "width": 661,
+        "height": 530
+      },
+      "mask_info": {
+        "area_pixels": 23301,
+        "area_percentage": 1.34
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 3500.0,
+        "protein_g": 50.0,
+        "carbs_g": 550.0,
+        "fat_g": 120.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 1,
+      "name": "sandwich",
+      "confidence": 0.40630170702934265,
+      "is_food": true,
+      "bbox": {
+        "x1": 91,
+        "y1": 1551,
+        "x2": 709,
+        "y2": 2043,
+        "width": 618,
+        "height": 491
+      },
+      "mask_info": {
+        "area_pixels": 19018,
+        "area_percentage": 1.09
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 2500.0,
+        "protein_g": 120.0,
+        "carbs_g": 300.0,
+        "fat_g": 80.0,
+        "portion_grams": 1000
+      }
+    }
+  ],
+  "nutrition_totals": {
+    "calories": 6000.0,
+    "protein_g": 170.0,
+    "carbs_g": 850.0,
+    "fat_g": 200.0
+  },
+  "model_info": {
+    "model_type": "YOLOv8n-seg",
+    "confidence_threshold": 0.25,
+    "iou_threshold": 0.45
+  },
+  "visualization_path": "data\\output\\yolo_results\\visualizations\\04a0d4e35c_analysis.png"
+}

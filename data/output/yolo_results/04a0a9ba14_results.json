@@ -1,0 +1,174 @@
+{
+  "image_info": {
+    "path": "data\\input\\04a0a9ba14.jpg",
+    "filename": "04a0a9ba14.jpg",
+    "size": "3008x2000",
+    "processing_time_seconds": 0.38
+  },
+  "analysis_summary": {
+    "total_items_detected": 5,
+    "food_items_count": 4,
+    "non_food_items_count": 1,
+    "avg_confidence": 0.341,
+    "timestamp": "2025-06-05T09:33:33.612979"
+  },
+  "food_items": [
+    {
+      "id": 0,
+      "name": "bowl",
+      "confidence": 0.41568028926849365,
+      "is_food": false,
+      "bbox": {
+        "x1": 295,
+        "y1": 32,
+        "x2": 2999,
+        "y2": 1981,
+        "width": 2703,
+        "height": 1949
+      },
+      "mask_info": {
+        "area_pixels": 138852,
+        "area_percentage": 2.31
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 0.0,
+        "protein_g": 0.0,
+        "carbs_g": 0.0,
+        "fat_g": 0.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 1,
+      "name": "broccoli",
+      "confidence": 0.3708592653274536,
+      "is_food": true,
+      "bbox": {
+        "x1": 1656,
+        "y1": 1515,
+        "x2": 2319,
+        "y2": 1809,
+        "width": 663,
+        "height": 293
+      },
+      "mask_info": {
+        "area_pixels": 6791,
+        "area_percentage": 0.11
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 340.0,
+        "protein_g": 28.0,
+        "carbs_g": 70.0,
+        "fat_g": 4.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 2,
+      "name": "broccoli",
+      "confidence": 0.35696861147880554,
+      "is_food": true,
+      "bbox": {
+        "x1": 1089,
+        "y1": 1063,
+        "x2": 1732,
+        "y2": 1500,
+        "width": 643,
+        "height": 437
+      },
+      "mask_info": {
+        "area_pixels": 10086,
+        "area_percentage": 0.17
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 340.0,
+        "protein_g": 28.0,
+        "carbs_g": 70.0,
+        "fat_g": 4.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 3,
+      "name": "broccoli",
+      "confidence": 0.2813471853733063,
+      "is_food": true,
+      "bbox": {
+        "x1": 476,
+        "y1": 1179,
+        "x2": 1036,
+        "y2": 1548,
+        "width": 559,
+        "height": 368
+      },
+      "mask_info": {
+        "area_pixels": 7018,
+        "area_percentage": 0.12
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 340.0,
+        "protein_g": 28.0,
+        "carbs_g": 70.0,
+        "fat_g": 4.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 4,
+      "name": "broccoli",
+      "confidence": 0.2800859808921814,
+      "is_food": true,
+      "bbox": {
+        "x1": 2242,
+        "y1": 1233,
+        "x2": 2776,
+        "y2": 1698,
+        "width": 533,
+        "height": 465
+      },
+      "mask_info": {
+        "area_pixels": 7861,
+        "area_percentage": 0.13
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 340.0,
+        "protein_g": 28.0,
+        "carbs_g": 70.0,
+        "fat_g": 4.0,
+        "portion_grams": 1000
+      }
+    }
+  ],
+  "nutrition_totals": {
+    "calories": 1360.0,
+    "protein_g": 112.0,
+    "carbs_g": 280.0,
+    "fat_g": 16.0
+  },
+  "model_info": {
+    "model_type": "YOLOv8n-seg",
+    "confidence_threshold": 0.25,
+    "iou_threshold": 0.45
+  },
+  "visualization_path": "data\\output\\yolo_results\\visualizations\\04a0a9ba14_analysis.png"
+}

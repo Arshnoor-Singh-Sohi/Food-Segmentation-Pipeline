@@ -1,0 +1,87 @@
+{
+  "image_info": {
+    "path": "data\\input\\04a07f5670.jpg",
+    "filename": "04a07f5670.jpg",
+    "size": "400x300",
+    "processing_time_seconds": 0.25
+  },
+  "analysis_summary": {
+    "total_items_detected": 2,
+    "food_items_count": 1,
+    "non_food_items_count": 1,
+    "avg_confidence": 0.26,
+    "timestamp": "2025-06-05T09:32:33.360850"
+  },
+  "food_items": [
+    {
+      "id": 0,
+      "name": "bear",
+      "confidence": 0.26637837290763855,
+      "is_food": false,
+      "bbox": {
+        "x1": 9,
+        "y1": 0,
+        "x2": 385,
+        "y2": 298,
+        "width": 376,
+        "height": 298
+      },
+      "mask_info": {
+        "area_pixels": 212611,
+        "area_percentage": 177.18
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 1,
+      "name": "cake",
+      "confidence": 0.2530198395252228,
+      "is_food": true,
+      "bbox": {
+        "x1": 27,
+        "y1": 0,
+        "x2": 384,
+        "y2": 298,
+        "width": 356,
+        "height": 298
+      },
+      "mask_info": {
+        "area_pixels": 216419,
+        "area_percentage": 180.35
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 3500.0,
+        "protein_g": 50.0,
+        "carbs_g": 550.0,
+        "fat_g": 120.0,
+        "portion_grams": 1000
+      }
+    }
+  ],
+  "nutrition_totals": {
+    "calories": 3500.0,
+    "protein_g": 50.0,
+    "carbs_g": 550.0,
+    "fat_g": 120.0
+  },
+  "model_info": {
+    "model_type": "YOLOv8n-seg",
+    "confidence_threshold": 0.25,
+    "iou_threshold": 0.45
+  },
+  "visualization_path": "data\\output\\yolo_results\\visualizations\\04a07f5670_analysis.png"
+}

@@ -1,0 +1,72 @@
+# Model-specific configurations
+sam2_models:
+  tiny:
+    name: "sam2.1_hiera_tiny"
+    checkpoint: "sam2.1_hiera_tiny.pt"
+    config: "configs/sam2.1/sam2.1_hiera_t.yaml"
+    memory_gb: 4
+    fps: 91.2
+  
+  small:
+    name: "sam2.1_hiera_small"
+    checkpoint: "sam2.1_hiera_small.pt"
+    config: "configs/sam2.1/sam2.1_hiera_s.yaml"
+    memory_gb: 6
+    fps: 56.3
+  
+  base_plus:
+    name: "sam2.1_hiera_base_plus"
+    checkpoint: "sam2.1_hiera_base_plus.pt"
+    config: "configs/sam2.1/sam2.1_hiera_b+.yaml"
+    memory_gb: 12
+    fps: 47.2
+  
+  large:
+    name: "sam2.1_hiera_large"
+    checkpoint: "sam2.1_hiera_large.pt"
+    config: "configs/sam2.1/sam2.1_hiera_l.yaml"
+    memory_gb: 16
+    fps: 39.5
+
+yolo_food_classes:
+  # Enhanced food classes for better detection
+  - apple
+  - banana
+  - orange
+  - strawberry
+  - grape
+  - watermelon
+  - pineapple
+  - mango
+  - avocado
+  - lemon
+  - tomato
+  - carrot
+  - broccoli
+  - lettuce
+  - cucumber
+  - onion
+  - potato
+  - bell_pepper
+  - corn
+  - spinach
+  - bread
+  - rice
+  - pasta
+  - pizza
+  - burger
+  - sandwich
+  - salad
+  - soup
+  - chicken
+  - beef
+  - pork
+  - fish
+  - egg
+  - cheese
+  - milk
+  - yogurt
+  - cake
+  - cookie
+  - chocolate
+  - ice_cream

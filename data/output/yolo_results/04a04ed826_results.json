@@ -1,0 +1,116 @@
+{
+  "image_info": {
+    "path": "data\\input\\04a04ed826.jpg",
+    "filename": "04a04ed826.jpg",
+    "size": "736x736",
+    "processing_time_seconds": 0.39
+  },
+  "analysis_summary": {
+    "total_items_detected": 3,
+    "food_items_count": 1,
+    "non_food_items_count": 2,
+    "avg_confidence": 0.508,
+    "timestamp": "2025-06-05T09:31:35.248756"
+  },
+  "food_items": [
+    {
+      "id": 0,
+      "name": "cake",
+      "confidence": 0.9348654747009277,
+      "is_food": true,
+      "bbox": {
+        "x1": 96,
+        "y1": 40,
+        "x2": 674,
+        "y2": 487,
+        "width": 577,
+        "height": 447
+      },
+      "mask_info": {
+        "area_pixels": 165334,
+        "area_percentage": 30.52
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 3500.0,
+        "protein_g": 50.0,
+        "carbs_g": 550.0,
+        "fat_g": 120.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 1,
+      "name": "dining table",
+      "confidence": 0.30817580223083496,
+      "is_food": false,
+      "bbox": {
+        "x1": 0,
+        "y1": 23,
+        "x2": 569,
+        "y2": 732,
+        "width": 569,
+        "height": 708
+      },
+      "mask_info": {
+        "area_pixels": 92433,
+        "area_percentage": 17.06
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 2,
+      "name": "person",
+      "confidence": 0.2820085287094116,
+      "is_food": false,
+      "bbox": {
+        "x1": 191,
+        "y1": 404,
+        "x2": 735,
+        "y2": 735,
+        "width": 543,
+        "height": 331
+      },
+      "mask_info": {
+        "area_pixels": 73133,
+        "area_percentage": 13.5
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    }
+  ],
+  "nutrition_totals": {
+    "calories": 3500.0,
+    "protein_g": 50.0,
+    "carbs_g": 550.0,
+    "fat_g": 120.0
+  },
+  "model_info": {
+    "model_type": "YOLOv8n-seg",
+    "confidence_threshold": 0.25,
+    "iou_threshold": 0.45
+  },
+  "visualization_path": "data\\output\\yolo_results\\visualizations\\04a04ed826_analysis.png"
+}

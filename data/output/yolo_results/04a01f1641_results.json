@@ -1,0 +1,87 @@
+{
+  "image_info": {
+    "path": "data\\input\\04a01f1641.jpg",
+    "filename": "04a01f1641.jpg",
+    "size": "297x350",
+    "processing_time_seconds": 0.39
+  },
+  "analysis_summary": {
+    "total_items_detected": 2,
+    "food_items_count": 0,
+    "non_food_items_count": 2,
+    "avg_confidence": 0.479,
+    "timestamp": "2025-06-05T09:30:36.342842"
+  },
+  "food_items": [
+    {
+      "id": 0,
+      "name": "wine glass",
+      "confidence": 0.6588904857635498,
+      "is_food": false,
+      "bbox": {
+        "x1": 58,
+        "y1": 0,
+        "x2": 161,
+        "y2": 174,
+        "width": 102,
+        "height": 174
+      },
+      "mask_info": {
+        "area_pixels": 40686,
+        "area_percentage": 39.14
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 1,
+      "name": "dining table",
+      "confidence": 0.298795610666275,
+      "is_food": false,
+      "bbox": {
+        "x1": 1,
+        "y1": 4,
+        "x2": 288,
+        "y2": 348,
+        "width": 286,
+        "height": 343
+      },
+      "mask_info": {
+        "area_pixels": 233969,
+        "area_percentage": 225.08
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    }
+  ],
+  "nutrition_totals": {
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0
+  },
+  "model_info": {
+    "model_type": "YOLOv8n-seg",
+    "confidence_threshold": 0.25,
+    "iou_threshold": 0.45
+  },
+  "visualization_path": "data\\output\\yolo_results\\visualizations\\04a01f1641_analysis.png"
+}

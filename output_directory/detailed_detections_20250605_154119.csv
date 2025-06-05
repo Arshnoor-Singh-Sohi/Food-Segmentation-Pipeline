@@ -1,0 +1,57 @@
+Model_Name,Model_Type,Model_Size,Image_Name,Best_Confidence_Threshold,Class_ID,Class_Name,Detection_Confidence,Bbox_X1,Bbox_Y1,Bbox_X2,Bbox_Y2,Bbox_Width,Bbox_Height,Bbox_Area
+yolov8n-seg.pt,Segmentation,Nano,image1.jpg,0.1,41,cup,0.9529,733.36,255.43,1437.17,1053.35,703.82,797.93,561593.44
+yolov8n-seg.pt,Segmentation,Nano,image1.jpg,0.1,49,orange,0.8652,256.06,277.3,654.51,663.18,398.45,385.88,153754.44
+yolov8n-seg.pt,Segmentation,Nano,image1.jpg,0.1,49,orange,0.7787,0.0,132.85,363.95,525.18,363.95,392.33,142789.27
+yolov8n-seg.pt,Segmentation,Nano,image1.jpg,0.1,49,orange,0.7317,288.18,0.0,674.21,325.73,386.03,325.73,125743.09
+yolov8n-seg.pt,Segmentation,Nano,image1.jpg,0.1,60,dining table,0.4695,2.4,3.49,1542.36,1046.6,1539.96,1043.11,1606346.75
+yolov8n-seg.pt,Segmentation,Nano,image1.jpg,0.1,44,spoon,0.4147,1202.54,39.87,1346.32,496.54,143.78,456.67,65660.09
+yolov8n-seg.pt,Segmentation,Nano,image1.jpg,0.1,49,orange,0.2918,0.0,2.45,672.76,651.16,672.76,648.72,436433.56
+yolov8n-seg.pt,Segmentation,Nano,image1.jpg,0.1,49,orange,0.1397,830.29,337.24,1268.3,587.4,438.01,250.15,109569.27
+yolov8n-seg.pt,Segmentation,Nano,image1.jpg,0.1,49,orange,0.1175,830.88,344.7,1115.57,551.17,284.69,206.47,58779.23
+yolov8s-seg.pt,Segmentation,Small,image1.jpg,0.1,41,cup,0.9565,733.61,264.75,1447.24,1055.24,713.63,790.49,564123.88
+yolov8s-seg.pt,Segmentation,Small,image1.jpg,0.1,49,orange,0.7964,256.81,276.12,654.32,664.59,397.51,388.47,154418.02
+yolov8s-seg.pt,Segmentation,Small,image1.jpg,0.1,49,orange,0.6118,285.25,0.0,673.12,324.7,387.88,324.7,125945.95
+yolov8s-seg.pt,Segmentation,Small,image1.jpg,0.1,49,orange,0.5829,2.48,5.59,672.05,606.86,669.57,601.27,402589.72
+yolov8s-seg.pt,Segmentation,Small,image1.jpg,0.1,44,spoon,0.4325,1229.68,39.56,1346.93,362.91,117.24,323.35,37911.19
+yolov8s-seg.pt,Segmentation,Small,image1.jpg,0.1,60,dining table,0.3834,3.23,1.68,1582.68,1053.99,1579.45,1052.31,1662069.88
+yolov8s-seg.pt,Segmentation,Small,image1.jpg,0.1,49,orange,0.3596,1.48,138.94,362.68,523.22,361.2,384.28,138803.58
+yolov8s-seg.pt,Segmentation,Small,image1.jpg,0.1,49,orange,0.2972,829.77,332.62,1221.4,617.39,391.63,284.77,111523.41
+yolov8m-seg.pt,Segmentation,Medium,image1.jpg,0.1,41,cup,0.9876,732.93,262.31,1446.81,1058.78,713.89,796.46,568583.94
+yolov8m-seg.pt,Segmentation,Medium,image1.jpg,0.1,44,spoon,0.75,1210.71,40.11,1347.03,412.72,136.32,372.61,50794.58
+yolov8m-seg.pt,Segmentation,Medium,image1.jpg,0.1,49,orange,0.5535,283.88,1.29,672.87,324.78,388.99,323.49,125833.19
+yolov8m-seg.pt,Segmentation,Medium,image1.jpg,0.1,49,orange,0.5063,0.0,135.24,362.09,526.86,362.09,391.62,141803.12
+yolov8m-seg.pt,Segmentation,Medium,image1.jpg,0.1,49,orange,0.5038,0.92,4.07,669.71,667.13,668.79,663.05,443442.28
+yolov8m-seg.pt,Segmentation,Medium,image1.jpg,0.1,49,orange,0.4863,256.51,279.77,654.5,665.87,397.99,386.1,153661.16
+yolov8m-seg.pt,Segmentation,Medium,image1.jpg,0.1,60,dining table,0.3704,1.76,5.0,1580.15,1060.34,1578.39,1055.34,1665735.5
+yolov8m-seg.pt,Segmentation,Medium,image1.jpg,0.1,49,orange,0.2114,830.18,332.53,1230.37,620.31,400.18,287.78,115166.81
+yolov8s.pt,Detection,Small,image1.jpg,0.1,41,cup,0.9707,734.21,272.63,1445.9,1054.38,711.69,781.75,556365.69
+yolov8s.pt,Detection,Small,image1.jpg,0.1,49,orange,0.895,256.82,277.55,654.01,665.13,397.19,387.58,153942.66
+yolov8s.pt,Detection,Small,image1.jpg,0.1,49,orange,0.8479,285.3,0.31,671.26,324.77,385.96,324.46,125228.94
+yolov8s.pt,Detection,Small,image1.jpg,0.1,49,orange,0.6878,2.14,136.43,365.99,526.83,363.84,390.4,142043.58
+yolov8s.pt,Detection,Small,image1.jpg,0.1,60,dining table,0.5636,7.22,4.32,1594.47,1056.33,1587.25,1052.01,1669800.0
+yolov8s.pt,Detection,Small,image1.jpg,0.1,44,spoon,0.4504,1206.49,43.9,1347.65,413.22,141.17,369.32,52134.97
+yolov8s.pt,Detection,Small,image1.jpg,0.1,49,orange,0.2804,0.0,0.94,668.91,529.45,668.91,528.51,353523.28
+yolov8s.pt,Detection,Small,image1.jpg,0.1,44,spoon,0.1278,1179.41,39.6,1347.07,608.23,167.66,568.64,95336.48
+yolov8n-oiv7.pt,Open Images,Nano,image1.jpg,0.1,356,Orange,0.341,284.94,0.0,672.14,324.56,387.2,324.56,125668.06
+yolov8n-oiv7.pt,Open Images,Nano,image1.jpg,0.1,356,Orange,0.2412,2.27,136.73,362.35,525.69,360.08,388.96,140054.81
+yolov8n-oiv7.pt,Open Images,Nano,image1.jpg,0.1,287,Juice,0.207,735.77,268.46,1442.08,1061.42,706.31,792.96,560076.94
+yolov8n-oiv7.pt,Open Images,Nano,image1.jpg,0.1,306,Lemon,0.1698,254.56,276.2,653.86,663.91,399.3,387.71,154810.97
+yolov8n-oiv7.pt,Open Images,Nano,image1.jpg,0.1,178,Egg (Food),0.1593,255.31,278.75,652.77,663.21,397.46,384.46,152809.44
+yolov8n-oiv7.pt,Open Images,Nano,image1.jpg,0.1,356,Orange,0.1531,258.76,277.62,654.14,668.29,395.38,390.66,154460.06
+yolov8n-oiv7.pt,Open Images,Nano,image1.jpg,0.1,227,Grapefruit,0.1433,1.64,137.77,362.66,525.18,361.02,387.41,139861.59
+yolov8n-oiv7.pt,Open Images,Nano,image1.jpg,0.1,10,Apple,0.1386,1.22,136.3,361.83,526.06,360.61,389.76,140554.31
+yolov10n.pt,YOLOv10,Nano,image1.jpg,0.1,41,cup,0.844,731.31,265.41,1443.33,1051.59,712.02,786.18,559771.44
+yolov10n.pt,YOLOv10,Nano,image1.jpg,0.1,49,orange,0.8315,2.29,134.16,365.72,528.65,363.42,394.49,143365.89
+yolov10n.pt,YOLOv10,Nano,image1.jpg,0.1,49,orange,0.8062,286.2,0.89,673.54,326.05,387.33,325.16,125944.93
+yolov10n.pt,YOLOv10,Nano,image1.jpg,0.1,49,orange,0.8041,257.35,280.02,654.41,664.77,397.06,384.76,152771.75
+yolov10n.pt,YOLOv10,Nano,image1.jpg,0.1,60,dining table,0.5213,0.0,0.0,1595.43,1054.78,1595.43,1054.78,1682839.5
+yolov10n.pt,YOLOv10,Nano,image1.jpg,0.1,44,spoon,0.427,1207.84,49.9,1340.78,454.66,132.93,404.76,53806.64
+yolov10n.pt,YOLOv10,Nano,image1.jpg,0.1,44,spoon,0.2695,1216.92,43.19,1345.07,400.73,128.15,357.53,45818.8
+yolov10n.pt,YOLOv10,Nano,image1.jpg,0.1,49,orange,0.2674,4.92,1.7,669.49,525.51,664.57,523.82,348110.62
+yolov8n.pt,Detection,Nano,image1.jpg,0.1,41,cup,0.9357,734.55,263.84,1442.86,1055.08,708.31,791.24,560442.0
+yolov8n.pt,Detection,Nano,image1.jpg,0.1,49,orange,0.8616,257.31,279.85,654.08,661.73,396.77,381.88,151516.62
+yolov8n.pt,Detection,Nano,image1.jpg,0.1,49,orange,0.7494,285.7,0.0,673.0,327.42,387.3,327.42,126810.53
+yolov8n.pt,Detection,Nano,image1.jpg,0.1,49,orange,0.5771,1.15,133.41,363.95,528.74,362.8,395.34,143427.78
+yolov8n.pt,Detection,Nano,image1.jpg,0.1,60,dining table,0.4807,3.8,0.0,1599.5,1053.04,1595.7,1053.04,1680331.0
+yolov8n.pt,Detection,Nano,image1.jpg,0.1,44,spoon,0.4481,1171.62,39.15,1342.05,475.12,170.43,435.96,74302.89
+yolov8n.pt,Detection,Nano,image1.jpg,0.1,49,orange,0.1432,0.58,1.98,670.37,528.68,669.79,526.7,352779.09

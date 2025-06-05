@@ -1,0 +1,87 @@
+{
+  "image_info": {
+    "path": "data\\input\\04a086f0cf.jpg",
+    "filename": "04a086f0cf.jpg",
+    "size": "564x351",
+    "processing_time_seconds": 0.27
+  },
+  "analysis_summary": {
+    "total_items_detected": 2,
+    "food_items_count": 1,
+    "non_food_items_count": 1,
+    "avg_confidence": 0.57,
+    "timestamp": "2025-06-05T09:32:45.674615"
+  },
+  "food_items": [
+    {
+      "id": 0,
+      "name": "cake",
+      "confidence": 0.7174041271209717,
+      "is_food": true,
+      "bbox": {
+        "x1": 6,
+        "y1": 0,
+        "x2": 453,
+        "y2": 259,
+        "width": 447,
+        "height": 259
+      },
+      "mask_info": {
+        "area_pixels": 94521,
+        "area_percentage": 47.75
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 3500.0,
+        "protein_g": 50.0,
+        "carbs_g": 550.0,
+        "fat_g": 120.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 1,
+      "name": "dining table",
+      "confidence": 0.4230180084705353,
+      "is_food": false,
+      "bbox": {
+        "x1": 5,
+        "y1": 5,
+        "x2": 562,
+        "y2": 348,
+        "width": 557,
+        "height": 342
+      },
+      "mask_info": {
+        "area_pixels": 118522,
+        "area_percentage": 59.87
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    }
+  ],
+  "nutrition_totals": {
+    "calories": 3500.0,
+    "protein_g": 50.0,
+    "carbs_g": 550.0,
+    "fat_g": 120.0
+  },
+  "model_info": {
+    "model_type": "YOLOv8n-seg",
+    "confidence_threshold": 0.25,
+    "iou_threshold": 0.45
+  },
+  "visualization_path": "data\\output\\yolo_results\\visualizations\\04a086f0cf_analysis.png"
+}

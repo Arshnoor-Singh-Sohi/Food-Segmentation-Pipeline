@@ -1,0 +1,261 @@
+{
+  "image_info": {
+    "path": "data\\input\\04a0d8a1cb.jpg",
+    "filename": "04a0d8a1cb.jpg",
+    "size": "740x555",
+    "processing_time_seconds": 0.23
+  },
+  "analysis_summary": {
+    "total_items_detected": 8,
+    "food_items_count": 7,
+    "non_food_items_count": 1,
+    "avg_confidence": 0.431,
+    "timestamp": "2025-06-05T09:34:29.847759"
+  },
+  "food_items": [
+    {
+      "id": 0,
+      "name": "apple",
+      "confidence": 0.635321855545044,
+      "is_food": true,
+      "bbox": {
+        "x1": 249,
+        "y1": 380,
+        "x2": 479,
+        "y2": 554,
+        "width": 229,
+        "height": 173
+      },
+      "mask_info": {
+        "area_pixels": 25576,
+        "area_percentage": 6.23
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 520.0,
+        "protein_g": 3.0,
+        "carbs_g": 140.0,
+        "fat_g": 2.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 1,
+      "name": "apple",
+      "confidence": 0.5567933320999146,
+      "is_food": true,
+      "bbox": {
+        "x1": 280,
+        "y1": 268,
+        "x2": 460,
+        "y2": 408,
+        "width": 179,
+        "height": 139
+      },
+      "mask_info": {
+        "area_pixels": 13786,
+        "area_percentage": 3.36
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 520.0,
+        "protein_g": 3.0,
+        "carbs_g": 140.0,
+        "fat_g": 2.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 2,
+      "name": "apple",
+      "confidence": 0.49281197786331177,
+      "is_food": true,
+      "bbox": {
+        "x1": 405,
+        "y1": 198,
+        "x2": 555,
+        "y2": 348,
+        "width": 150,
+        "height": 149
+      },
+      "mask_info": {
+        "area_pixels": 10720,
+        "area_percentage": 2.61
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 520.0,
+        "protein_g": 3.0,
+        "carbs_g": 140.0,
+        "fat_g": 2.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 3,
+      "name": "dining table",
+      "confidence": 0.4014626145362854,
+      "is_food": false,
+      "bbox": {
+        "x1": 141,
+        "y1": 3,
+        "x2": 738,
+        "y2": 555,
+        "width": 597,
+        "height": 551
+      },
+      "mask_info": {
+        "area_pixels": 58321,
+        "area_percentage": 14.2
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 4,
+      "name": "apple",
+      "confidence": 0.39669927954673767,
+      "is_food": true,
+      "bbox": {
+        "x1": 356,
+        "y1": 16,
+        "x2": 517,
+        "y2": 182,
+        "width": 160,
+        "height": 166
+      },
+      "mask_info": {
+        "area_pixels": 14986,
+        "area_percentage": 3.65
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 520.0,
+        "protein_g": 3.0,
+        "carbs_g": 140.0,
+        "fat_g": 2.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 5,
+      "name": "apple",
+      "confidence": 0.3459376096725464,
+      "is_food": true,
+      "bbox": {
+        "x1": 449,
+        "y1": 296,
+        "x2": 652,
+        "y2": 500,
+        "width": 203,
+        "height": 203
+      },
+      "mask_info": {
+        "area_pixels": 24028,
+        "area_percentage": 5.85
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 520.0,
+        "protein_g": 3.0,
+        "carbs_g": 140.0,
+        "fat_g": 2.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 6,
+      "name": "apple",
+      "confidence": 0.3413764536380768,
+      "is_food": true,
+      "bbox": {
+        "x1": 96,
+        "y1": 280,
+        "x2": 287,
+        "y2": 460,
+        "width": 191,
+        "height": 180
+      },
+      "mask_info": {
+        "area_pixels": 20324,
+        "area_percentage": 4.95
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 520.0,
+        "protein_g": 3.0,
+        "carbs_g": 140.0,
+        "fat_g": 2.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 7,
+      "name": "apple",
+      "confidence": 0.28152355551719666,
+      "is_food": true,
+      "bbox": {
+        "x1": 482,
+        "y1": 90,
+        "x2": 656,
+        "y2": 248,
+        "width": 174,
+        "height": 158
+      },
+      "mask_info": {
+        "area_pixels": 14848,
+        "area_percentage": 3.62
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 520.0,
+        "protein_g": 3.0,
+        "carbs_g": 140.0,
+        "fat_g": 2.0,
+        "portion_grams": 1000
+      }
+    }
+  ],
+  "nutrition_totals": {
+    "calories": 3640.0,
+    "protein_g": 21.0,
+    "carbs_g": 980.0,
+    "fat_g": 14.0
+  },
+  "model_info": {
+    "model_type": "YOLOv8n-seg",
+    "confidence_threshold": 0.25,
+    "iou_threshold": 0.45
+  },
+  "visualization_path": "data\\output\\yolo_results\\visualizations\\04a0d8a1cb_analysis.png"
+}

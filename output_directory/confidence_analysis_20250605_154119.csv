@@ -1,0 +1,29 @@
+Model_Name,Model_Type,Model_Size,Confidence_Threshold,Detection_Count,Unique_Classes,Processing_Time_Seconds,Avg_Detection_Confidence,Min_Detection_Confidence,Max_Detection_Confidence,Is_Best_Threshold
+yolov8n-seg.pt,Segmentation,Nano,0.1,9,4,4.3734,0.5291,0.1175,0.9529,True
+yolov8n-seg.pt,Segmentation,Nano,0.25,7,4,0.1326,0.6435,0.2918,0.9529,False
+yolov8n-seg.pt,Segmentation,Nano,0.4,6,4,0.1105,0.7021,0.4147,0.9529,False
+yolov8n-seg.pt,Segmentation,Nano,0.6,4,2,0.1016,0.8322,0.7317,0.9529,False
+yolov8s-seg.pt,Segmentation,Small,0.1,8,4,0.4448,0.5525,0.2972,0.9565,True
+yolov8s-seg.pt,Segmentation,Small,0.25,8,4,0.205,0.5525,0.2972,0.9565,False
+yolov8s-seg.pt,Segmentation,Small,0.4,5,3,0.1771,0.676,0.4325,0.9565,False
+yolov8s-seg.pt,Segmentation,Small,0.6,3,2,0.1965,0.7882,0.6118,0.9565,False
+yolov8m-seg.pt,Segmentation,Medium,0.1,8,4,0.7316,0.5462,0.2114,0.9876,True
+yolov8m-seg.pt,Segmentation,Medium,0.25,7,4,0.3897,0.594,0.3704,0.9876,False
+yolov8m-seg.pt,Segmentation,Medium,0.4,6,3,0.4145,0.6313,0.4863,0.9876,False
+yolov8m-seg.pt,Segmentation,Medium,0.6,2,2,0.3927,0.8688,0.75,0.9876,False
+yolov8s.pt,Detection,Small,0.1,8,4,0.2887,0.6029,0.1278,0.9707,True
+yolov8s.pt,Detection,Small,0.25,7,4,0.1471,0.6708,0.2804,0.9707,False
+yolov8s.pt,Detection,Small,0.4,6,4,0.1903,0.7359,0.4504,0.9707,False
+yolov8s.pt,Detection,Small,0.6,4,2,0.1561,0.8503,0.6878,0.9707,False
+yolov8n-oiv7.pt,Open Images,Nano,0.1,8,6,0.201,0.1942,0.1386,0.341,True
+yolov8n-oiv7.pt,Open Images,Nano,0.25,1,1,0.095,0.341,0.341,0.341,False
+yolov8n-oiv7.pt,Open Images,Nano,0.4,0,0,0.1271,0.0,0.0,0.0,False
+yolov8n-oiv7.pt,Open Images,Nano,0.6,0,0,0.1235,0.0,0.0,0.0,False
+yolov10n.pt,YOLOv10,Nano,0.1,8,4,0.1553,0.5964,0.2674,0.844,True
+yolov10n.pt,YOLOv10,Nano,0.25,8,4,0.0766,0.5964,0.2674,0.844,False
+yolov10n.pt,YOLOv10,Nano,0.4,6,4,0.0771,0.7057,0.427,0.844,False
+yolov10n.pt,YOLOv10,Nano,0.6,4,2,0.1156,0.8215,0.8041,0.844,False
+yolov8n.pt,Detection,Nano,0.1,7,4,0.1521,0.5994,0.1432,0.9357,True
+yolov8n.pt,Detection,Nano,0.25,6,4,0.0751,0.6754,0.4481,0.9357,False
+yolov8n.pt,Detection,Nano,0.4,6,4,0.0986,0.6754,0.4481,0.9357,False
+yolov8n.pt,Detection,Nano,0.6,3,2,0.0981,0.8489,0.7494,0.9357,False

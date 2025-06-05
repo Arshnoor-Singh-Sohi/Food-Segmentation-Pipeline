@@ -1,0 +1,87 @@
+{
+  "image_info": {
+    "path": "data\\input\\04a03d9286.jpg",
+    "filename": "04a03d9286.jpg",
+    "size": "460x306",
+    "processing_time_seconds": 0.31
+  },
+  "analysis_summary": {
+    "total_items_detected": 2,
+    "food_items_count": 2,
+    "non_food_items_count": 0,
+    "avg_confidence": 0.537,
+    "timestamp": "2025-06-05T09:31:21.988474"
+  },
+  "food_items": [
+    {
+      "id": 0,
+      "name": "cake",
+      "confidence": 0.5418688058853149,
+      "is_food": true,
+      "bbox": {
+        "x1": 237,
+        "y1": 39,
+        "x2": 450,
+        "y2": 180,
+        "width": 212,
+        "height": 141
+      },
+      "mask_info": {
+        "area_pixels": 44723,
+        "area_percentage": 31.77
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 3500.0,
+        "protein_g": 50.0,
+        "carbs_g": 550.0,
+        "fat_g": 120.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 1,
+      "name": "broccoli",
+      "confidence": 0.532324492931366,
+      "is_food": true,
+      "bbox": {
+        "x1": 77,
+        "y1": 16,
+        "x2": 228,
+        "y2": 129,
+        "width": 151,
+        "height": 113
+      },
+      "mask_info": {
+        "area_pixels": 24046,
+        "area_percentage": 17.08
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 340.0,
+        "protein_g": 28.0,
+        "carbs_g": 70.0,
+        "fat_g": 4.0,
+        "portion_grams": 1000
+      }
+    }
+  ],
+  "nutrition_totals": {
+    "calories": 3840.0,
+    "protein_g": 78.0,
+    "carbs_g": 620.0,
+    "fat_g": 124.0
+  },
+  "model_info": {
+    "model_type": "YOLOv8n-seg",
+    "confidence_threshold": 0.25,
+    "iou_threshold": 0.45
+  },
+  "visualization_path": "data\\output\\yolo_results\\visualizations\\04a03d9286_analysis.png"
+}

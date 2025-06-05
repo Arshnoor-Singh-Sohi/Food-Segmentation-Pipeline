@@ -1,0 +1,172 @@
+{
+  "model_config": {
+    "name": "yolov8n",
+    "file": "yolov8n.pt",
+    "type": "detection",
+    "description": "YOLOv8 Nano Detection",
+    "expected_performance": "Fast detection, no segmentation"
+  },
+  "confidence_threshold": 0.1,
+  "detections": [
+    {
+      "class_id": 41,
+      "class_name": "cup",
+      "confidence": 0.7371065616607666,
+      "bbox": [
+        183.22250366210938,
+        0.0,
+        216.48524475097656,
+        29.646020889282227
+      ],
+      "has_mask": false
+    },
+    {
+      "class_id": 60,
+      "class_name": "dining table",
+      "confidence": 0.6281382441520691,
+      "bbox": [
+        4.975883483886719,
+        0.5082870721817017,
+        294.9377746582031,
+        177.1268310546875
+      ],
+      "has_mask": false
+    },
+    {
+      "class_id": 41,
+      "class_name": "cup",
+      "confidence": 0.4470226466655731,
+      "bbox": [
+        24.903343200683594,
+        0.3563034236431122,
+        65.2650146484375,
+        38.437618255615234
+      ],
+      "has_mask": false
+    },
+    {
+      "class_id": 55,
+      "class_name": "cake",
+      "confidence": 0.39552950859069824,
+      "bbox": [
+        14.37433910369873,
+        65.47539520263672,
+        140.01446533203125,
+        169.3485107421875
+      ],
+      "has_mask": false
+    },
+    {
+      "class_id": 54,
+      "class_name": "donut",
+      "confidence": 0.3542981743812561,
+      "bbox": [
+        141.2467803955078,
+        118.91193389892578,
+        220.99461364746094,
+        166.48361206054688
+      ],
+      "has_mask": false
+    },
+    {
+      "class_id": 45,
+      "class_name": "bowl",
+      "confidence": 0.2535152733325958,
+      "bbox": [
+        257.0625915527344,
+        0.0,
+        295.9325256347656,
+        40.55363464355469
+      ],
+      "has_mask": false
+    },
+    {
+      "class_id": 48,
+      "class_name": "sandwich",
+      "confidence": 0.2140365093946457,
+      "bbox": [
+        187.29794311523438,
+        31.37766456604004,
+        249.5904083251953,
+        79.91458129882812
+      ],
+      "has_mask": false
+    },
+    {
+      "class_id": 41,
+      "class_name": "cup",
+      "confidence": 0.21313884854316711,
+      "bbox": [
+        123.19878387451172,
+        0.2869771122932434,
+        182.1533660888672,
+        46.30276107788086
+      ],
+      "has_mask": false
+    },
+    {
+      "class_id": 41,
+      "class_name": "cup",
+      "confidence": 0.1970595121383667,
+      "bbox": [
+        59.97290802001953,
+        0.0,
+        114.76652526855469,
+        50.18296813964844
+      ],
+      "has_mask": false
+    },
+    {
+      "class_id": 41,
+      "class_name": "cup",
+      "confidence": 0.1848025768995285,
+      "bbox": [
+        0.08958573639392853,
+        0.29180777072906494,
+        27.579025268554688,
+        20.3098201751709
+      ],
+      "has_mask": false
+    },
+    {
+      "class_id": 55,
+      "class_name": "cake",
+      "confidence": 0.12461104243993759,
+      "bbox": [
+        52.516151428222656,
+        66.01909637451172,
+        140.50521850585938,
+        116.22488403320312
+      ],
+      "has_mask": false
+    },
+    {
+      "class_id": 55,
+      "class_name": "cake",
+      "confidence": 0.12404248118400574,
+      "bbox": [
+        103.41470336914062,
+        37.95167922973633,
+        275.3943786621094,
+        172.14459228515625
+      ],
+      "has_mask": false
+    },
+    {
+      "class_id": 48,
+      "class_name": "sandwich",
+      "confidence": 0.12250638753175735,
+      "bbox": [
+        103.39483642578125,
+        34.0554313659668,
+        275.24981689453125,
+        170.91383361816406
+      ],
+      "has_mask": false
+    }
+  ],
+  "detection_count": 13,
+  "load_time_seconds": 0.047612667083740234,
+  "inference_time_seconds": 0.1100015640258789,
+  "total_time_seconds": 0.15761423110961914
+}

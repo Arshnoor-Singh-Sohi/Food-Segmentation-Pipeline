@@ -1,0 +1,58 @@
+{
+  "image_info": {
+    "path": "data\\input\\04a048940d.jpg",
+    "filename": "04a048940d.jpg",
+    "size": "450x320",
+    "processing_time_seconds": 0.19
+  },
+  "analysis_summary": {
+    "total_items_detected": 1,
+    "food_items_count": 0,
+    "non_food_items_count": 1,
+    "avg_confidence": 0.293,
+    "timestamp": "2025-06-05T09:31:27.631940"
+  },
+  "food_items": [
+    {
+      "id": 0,
+      "name": "dining table",
+      "confidence": 0.29315564036369324,
+      "is_food": false,
+      "bbox": {
+        "x1": 11,
+        "y1": 2,
+        "x2": 447,
+        "y2": 302,
+        "width": 435,
+        "height": 300
+      },
+      "mask_info": {
+        "area_pixels": 267049,
+        "area_percentage": 185.45
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    }
+  ],
+  "nutrition_totals": {
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0
+  },
+  "model_info": {
+    "model_type": "YOLOv8n-seg",
+    "confidence_threshold": 0.25,
+    "iou_threshold": 0.45
+  },
+  "visualization_path": "data\\output\\yolo_results\\visualizations\\04a048940d_analysis.png"
+}

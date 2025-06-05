@@ -1,0 +1,87 @@
+{
+  "image_info": {
+    "path": "data\\input\\04a0b219a4.jpg",
+    "filename": "04a0b219a4.jpg",
+    "size": "2896x1944",
+    "processing_time_seconds": 0.35
+  },
+  "analysis_summary": {
+    "total_items_detected": 2,
+    "food_items_count": 2,
+    "non_food_items_count": 0,
+    "avg_confidence": 0.45,
+    "timestamp": "2025-06-05T09:33:49.327123"
+  },
+  "food_items": [
+    {
+      "id": 0,
+      "name": "donut",
+      "confidence": 0.47384291887283325,
+      "is_food": true,
+      "bbox": {
+        "x1": 538,
+        "y1": 663,
+        "x2": 1213,
+        "y2": 1316,
+        "width": 674,
+        "height": 653
+      },
+      "mask_info": {
+        "area_pixels": 16077,
+        "area_percentage": 0.29
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 4000.0,
+        "protein_g": 60.0,
+        "carbs_g": 450.0,
+        "fat_g": 200.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 1,
+      "name": "donut",
+      "confidence": 0.426042765378952,
+      "is_food": true,
+      "bbox": {
+        "x1": 1036,
+        "y1": 735,
+        "x2": 1922,
+        "y2": 1577,
+        "width": 885,
+        "height": 842
+      },
+      "mask_info": {
+        "area_pixels": 29831,
+        "area_percentage": 0.53
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 4000.0,
+        "protein_g": 60.0,
+        "carbs_g": 450.0,
+        "fat_g": 200.0,
+        "portion_grams": 1000
+      }
+    }
+  ],
+  "nutrition_totals": {
+    "calories": 8000.0,
+    "protein_g": 120.0,
+    "carbs_g": 900.0,
+    "fat_g": 400.0
+  },
+  "model_info": {
+    "model_type": "YOLOv8n-seg",
+    "confidence_threshold": 0.25,
+    "iou_threshold": 0.45
+  },
+  "visualization_path": "data\\output\\yolo_results\\visualizations\\04a0b219a4_analysis.png"
+}

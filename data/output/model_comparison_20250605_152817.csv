@@ -1,0 +1,9 @@
+Rank,Model_Name,Model_Type,Description,Detections_Found,Unique_Classes,Best_Confidence_Threshold,Inference_Time_Seconds,Total_Time_Seconds,Detected_Classes,Average_Confidence,Min_Confidence,Max_Confidence
+1,yolov9s,detection,YOLOv9 Small (newest),17,6,0.1,0.4599,0.6537,"spoon, cake, cup, dining table, bowl, donut",0.3534036585513283,0.12604784965515137,0.7213167548179626
+2,yolov8m-seg,segmentation,YOLOv8 Medium Segmentation,14,6,0.1,0.7625,0.8714,"cup, cake, sink, dining table, bowl, donut",0.3017921325351511,0.10274297744035721,0.7839983105659485
+3,yolov8n-seg,segmentation,YOLOv8 Nano Segmentation,13,6,0.1,2.8755,3.12,"sandwich, cake, cup, dining table, bowl, donut",0.32732355766571486,0.10947779566049576,0.5835430026054382
+4,yolov8n,detection,YOLOv8 Nano Detection,13,6,0.1,0.1903,0.2462,"sandwich, cake, cup, dining table, bowl, donut",0.30736982822418213,0.12250638753175735,0.7371065616607666
+5,yolov10n,detection,YOLOv10 Nano (cutting edge),12,5,0.1,0.1763,0.2769,"bottle, cake, cup, dining table, bowl",0.31474953703582287,0.10825756937265396,0.7033057808876038
+6,yolov8s,detection,YOLOv8 Small Detection,11,5,0.1,0.3082,0.3893,"cake, cup, dining table, bowl, donut",0.31527468968521466,0.10417997092008591,0.7824828624725342
+7,yolov8s-seg,segmentation,YOLOv8 Small Segmentation,9,6,0.1,0.5104,0.6128,"cake, cup, dining table, sink, bowl, donut",0.3119286141461796,0.10474322736263275,0.694169282913208
+8,yolov8n-oiv7,detection,YOLOv8 Open Images V7 (more classes),3,1,0.1,0.1792,0.2371,Food,0.29374168316523236,0.1924496442079544,0.44064104557037354

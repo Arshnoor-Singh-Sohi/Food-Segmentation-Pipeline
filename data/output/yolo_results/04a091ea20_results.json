@@ -1,0 +1,232 @@
+{
+  "image_info": {
+    "path": "data\\input\\04a091ea20.jpg",
+    "filename": "04a091ea20.jpg",
+    "size": "1224x1632",
+    "processing_time_seconds": 0.32
+  },
+  "analysis_summary": {
+    "total_items_detected": 7,
+    "food_items_count": 0,
+    "non_food_items_count": 7,
+    "avg_confidence": 0.644,
+    "timestamp": "2025-06-05T09:32:54.272530"
+  },
+  "food_items": [
+    {
+      "id": 0,
+      "name": "chair",
+      "confidence": 0.8468796610832214,
+      "is_food": false,
+      "bbox": {
+        "x1": 30,
+        "y1": 0,
+        "x2": 332,
+        "y2": 558,
+        "width": 302,
+        "height": 558
+      },
+      "mask_info": {
+        "area_pixels": 15038,
+        "area_percentage": 0.75
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 1,
+      "name": "chair",
+      "confidence": 0.7852035164833069,
+      "is_food": false,
+      "bbox": {
+        "x1": 333,
+        "y1": 1,
+        "x2": 679,
+        "y2": 462,
+        "width": 346,
+        "height": 460
+      },
+      "mask_info": {
+        "area_pixels": 19815,
+        "area_percentage": 0.99
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 2,
+      "name": "dining table",
+      "confidence": 0.7589364647865295,
+      "is_food": false,
+      "bbox": {
+        "x1": 3,
+        "y1": 429,
+        "x2": 1208,
+        "y2": 1623,
+        "width": 1204,
+        "height": 1194
+      },
+      "mask_info": {
+        "area_pixels": 158698,
+        "area_percentage": 7.94
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 3,
+      "name": "cup",
+      "confidence": 0.7168972492218018,
+      "is_food": false,
+      "bbox": {
+        "x1": 189,
+        "y1": 410,
+        "x2": 559,
+        "y2": 795,
+        "width": 369,
+        "height": 384
+      },
+      "mask_info": {
+        "area_pixels": 14518,
+        "area_percentage": 0.73
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 0.0,
+        "protein_g": 0.0,
+        "carbs_g": 0.0,
+        "fat_g": 0.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 4,
+      "name": "cup",
+      "confidence": 0.675750195980072,
+      "is_food": false,
+      "bbox": {
+        "x1": 695,
+        "y1": 129,
+        "x2": 1060,
+        "y2": 822,
+        "width": 365,
+        "height": 693
+      },
+      "mask_info": {
+        "area_pixels": 31375,
+        "area_percentage": 1.57
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 0.0,
+        "protein_g": 0.0,
+        "carbs_g": 0.0,
+        "fat_g": 0.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 5,
+      "name": "cup",
+      "confidence": 0.4281243681907654,
+      "is_food": false,
+      "bbox": {
+        "x1": 344,
+        "y1": 744,
+        "x2": 912,
+        "y2": 1341,
+        "width": 568,
+        "height": 596
+      },
+      "mask_info": {
+        "area_pixels": 34629,
+        "area_percentage": 1.73
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 0.0,
+        "protein_g": 0.0,
+        "carbs_g": 0.0,
+        "fat_g": 0.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 6,
+      "name": "chair",
+      "confidence": 0.29524704813957214,
+      "is_food": false,
+      "bbox": {
+        "x1": 1019,
+        "y1": 175,
+        "x2": 1224,
+        "y2": 478,
+        "width": 204,
+        "height": 302
+      },
+      "mask_info": {
+        "area_pixels": 8319,
+        "area_percentage": 0.42
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    }
+  ],
+  "nutrition_totals": {
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0
+  },
+  "model_info": {
+    "model_type": "YOLOv8n-seg",
+    "confidence_threshold": 0.25,
+    "iou_threshold": 0.45
+  },
+  "visualization_path": "data\\output\\yolo_results\\visualizations\\04a091ea20_analysis.png"
+}

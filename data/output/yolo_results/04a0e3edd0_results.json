@@ -1,0 +1,58 @@
+{
+  "image_info": {
+    "path": "data\\input\\04a0e3edd0.jpg",
+    "filename": "04a0e3edd0.jpg",
+    "size": "640x966",
+    "processing_time_seconds": 0.24
+  },
+  "analysis_summary": {
+    "total_items_detected": 1,
+    "food_items_count": 0,
+    "non_food_items_count": 1,
+    "avg_confidence": 0.652,
+    "timestamp": "2025-06-05T09:34:53.480645"
+  },
+  "food_items": [
+    {
+      "id": 0,
+      "name": "cup",
+      "confidence": 0.6520514488220215,
+      "is_food": false,
+      "bbox": {
+        "x1": 173,
+        "y1": 342,
+        "x2": 596,
+        "y2": 917,
+        "width": 423,
+        "height": 575
+      },
+      "mask_info": {
+        "area_pixels": 82241,
+        "area_percentage": 13.3
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 0.0,
+        "protein_g": 0.0,
+        "carbs_g": 0.0,
+        "fat_g": 0.0,
+        "portion_grams": 1000
+      }
+    }
+  ],
+  "nutrition_totals": {
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0
+  },
+  "model_info": {
+    "model_type": "YOLOv8n-seg",
+    "confidence_threshold": 0.25,
+    "iou_threshold": 0.45
+  },
+  "visualization_path": "data\\output\\yolo_results\\visualizations\\04a0e3edd0_analysis.png"
+}

@@ -1,0 +1,145 @@
+{
+  "image_info": {
+    "path": "data\\input\\04a08f1839.jpg",
+    "filename": "04a08f1839.jpg",
+    "size": "480x480",
+    "processing_time_seconds": 0.23
+  },
+  "analysis_summary": {
+    "total_items_detected": 4,
+    "food_items_count": 0,
+    "non_food_items_count": 4,
+    "avg_confidence": 0.479,
+    "timestamp": "2025-06-05T09:32:48.735508"
+  },
+  "food_items": [
+    {
+      "id": 0,
+      "name": "vase",
+      "confidence": 0.6130005121231079,
+      "is_food": false,
+      "bbox": {
+        "x1": 174,
+        "y1": 94,
+        "x2": 306,
+        "y2": 413,
+        "width": 131,
+        "height": 318
+      },
+      "mask_info": {
+        "area_pixels": 36044,
+        "area_percentage": 15.64
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 1,
+      "name": "toothbrush",
+      "confidence": 0.5986213684082031,
+      "is_food": false,
+      "bbox": {
+        "x1": 32,
+        "y1": 98,
+        "x2": 164,
+        "y2": 414,
+        "width": 131,
+        "height": 315
+      },
+      "mask_info": {
+        "area_pixels": 36053,
+        "area_percentage": 15.65
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 2,
+      "name": "toothbrush",
+      "confidence": 0.391316294670105,
+      "is_food": false,
+      "bbox": {
+        "x1": 317,
+        "y1": 90,
+        "x2": 444,
+        "y2": 415,
+        "width": 127,
+        "height": 324
+      },
+      "mask_info": {
+        "area_pixels": 35975,
+        "area_percentage": 15.61
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 3,
+      "name": "vase",
+      "confidence": 0.3127647936344147,
+      "is_food": false,
+      "bbox": {
+        "x1": 34,
+        "y1": 93,
+        "x2": 164,
+        "y2": 414,
+        "width": 130,
+        "height": 320
+      },
+      "mask_info": {
+        "area_pixels": 36251,
+        "area_percentage": 15.73
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    }
+  ],
+  "nutrition_totals": {
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0
+  },
+  "model_info": {
+    "model_type": "YOLOv8n-seg",
+    "confidence_threshold": 0.25,
+    "iou_threshold": 0.45
+  },
+  "visualization_path": "data\\output\\yolo_results\\visualizations\\04a08f1839_analysis.png"
+}

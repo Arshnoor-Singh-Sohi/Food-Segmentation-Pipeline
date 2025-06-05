@@ -1,0 +1,87 @@
+{
+  "image_info": {
+    "path": "data\\input\\04a0cb9a2a.jpg",
+    "filename": "04a0cb9a2a.jpg",
+    "size": "265x265",
+    "processing_time_seconds": 0.28
+  },
+  "analysis_summary": {
+    "total_items_detected": 2,
+    "food_items_count": 0,
+    "non_food_items_count": 2,
+    "avg_confidence": 0.279,
+    "timestamp": "2025-06-05T09:34:20.110407"
+  },
+  "food_items": [
+    {
+      "id": 0,
+      "name": "teddy bear",
+      "confidence": 0.30337852239608765,
+      "is_food": false,
+      "bbox": {
+        "x1": 228,
+        "y1": 176,
+        "x2": 264,
+        "y2": 244,
+        "width": 36,
+        "height": 68
+      },
+      "mask_info": {
+        "area_pixels": 9788,
+        "area_percentage": 13.94
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 1,
+      "name": "teddy bear",
+      "confidence": 0.25392410159111023,
+      "is_food": false,
+      "bbox": {
+        "x1": 127,
+        "y1": 152,
+        "x2": 190,
+        "y2": 246,
+        "width": 62,
+        "height": 93
+      },
+      "mask_info": {
+        "area_pixels": 25429,
+        "area_percentage": 36.21
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    }
+  ],
+  "nutrition_totals": {
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0
+  },
+  "model_info": {
+    "model_type": "YOLOv8n-seg",
+    "confidence_threshold": 0.25,
+    "iou_threshold": 0.45
+  },
+  "visualization_path": "data\\output\\yolo_results\\visualizations\\04a0cb9a2a_analysis.png"
+}

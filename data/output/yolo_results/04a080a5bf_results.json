@@ -1,0 +1,87 @@
+{
+  "image_info": {
+    "path": "data\\input\\04a080a5bf.jpg",
+    "filename": "04a080a5bf.jpg",
+    "size": "550x675",
+    "processing_time_seconds": 0.33
+  },
+  "analysis_summary": {
+    "total_items_detected": 2,
+    "food_items_count": 1,
+    "non_food_items_count": 1,
+    "avg_confidence": 0.579,
+    "timestamp": "2025-06-05T09:32:35.265033"
+  },
+  "food_items": [
+    {
+      "id": 0,
+      "name": "donut",
+      "confidence": 0.649187445640564,
+      "is_food": true,
+      "bbox": {
+        "x1": 113,
+        "y1": 340,
+        "x2": 398,
+        "y2": 607,
+        "width": 285,
+        "height": 267
+      },
+      "mask_info": {
+        "area_pixels": 55594,
+        "area_percentage": 14.97
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 4000.0,
+        "protein_g": 60.0,
+        "carbs_g": 450.0,
+        "fat_g": 200.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 1,
+      "name": "person",
+      "confidence": 0.5083207488059998,
+      "is_food": false,
+      "bbox": {
+        "x1": 8,
+        "y1": 118,
+        "x2": 544,
+        "y2": 649,
+        "width": 536,
+        "height": 530
+      },
+      "mask_info": {
+        "area_pixels": 105548,
+        "area_percentage": 28.43
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    }
+  ],
+  "nutrition_totals": {
+    "calories": 4000.0,
+    "protein_g": 60.0,
+    "carbs_g": 450.0,
+    "fat_g": 200.0
+  },
+  "model_info": {
+    "model_type": "YOLOv8n-seg",
+    "confidence_threshold": 0.25,
+    "iou_threshold": 0.45
+  },
+  "visualization_path": "data\\output\\yolo_results\\visualizations\\04a080a5bf_analysis.png"
+}

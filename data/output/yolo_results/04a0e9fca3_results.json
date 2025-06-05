@@ -1,0 +1,58 @@
+{
+  "image_info": {
+    "path": "data\\input\\04a0e9fca3.jpg",
+    "filename": "04a0e9fca3.jpg",
+    "size": "519x425",
+    "processing_time_seconds": 0.36
+  },
+  "analysis_summary": {
+    "total_items_detected": 1,
+    "food_items_count": 1,
+    "non_food_items_count": 0,
+    "avg_confidence": 0.331,
+    "timestamp": "2025-06-05T09:35:05.694957"
+  },
+  "food_items": [
+    {
+      "id": 0,
+      "name": "donut",
+      "confidence": 0.3305927813053131,
+      "is_food": true,
+      "bbox": {
+        "x1": 200,
+        "y1": 106,
+        "x2": 306,
+        "y2": 165,
+        "width": 106,
+        "height": 59
+      },
+      "mask_info": {
+        "area_pixels": 5647,
+        "area_percentage": 2.56
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 4000.0,
+        "protein_g": 60.0,
+        "carbs_g": 450.0,
+        "fat_g": 200.0,
+        "portion_grams": 1000
+      }
+    }
+  ],
+  "nutrition_totals": {
+    "calories": 4000.0,
+    "protein_g": 60.0,
+    "carbs_g": 450.0,
+    "fat_g": 200.0
+  },
+  "model_info": {
+    "model_type": "YOLOv8n-seg",
+    "confidence_threshold": 0.25,
+    "iou_threshold": 0.45
+  },
+  "visualization_path": "data\\output\\yolo_results\\visualizations\\04a0e9fca3_analysis.png"
+}

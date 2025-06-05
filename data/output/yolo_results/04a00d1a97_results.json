@@ -1,0 +1,28 @@
+{
+  "image_info": {
+    "path": "data\\input\\04a00d1a97.jpg",
+    "filename": "04a00d1a97.jpg",
+    "size": "240x320",
+    "processing_time_seconds": 0.24
+  },
+  "analysis_summary": {
+    "total_items_detected": 0,
+    "food_items_count": 0,
+    "non_food_items_count": 0,
+    "avg_confidence": 0,
+    "timestamp": "2025-06-05T09:30:16.513981"
+  },
+  "food_items": [],
+  "nutrition_totals": {
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0
+  },
+  "model_info": {
+    "model_type": "YOLOv8n-seg",
+    "confidence_threshold": 0.25,
+    "iou_threshold": 0.45
+  },
+  "visualization_path": "data\\output\\yolo_results\\visualizations\\04a00d1a97_analysis.png"
+}

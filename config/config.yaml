@@ -1,0 +1,38 @@
+# Main configuration file
+project:
+  name: "Food Segmentation Pipeline"
+  version: "1.0.0"
+  
+models:
+  sam2:
+    model_type: "sam2.1_hiera_base_plus"
+    checkpoint_path: "data/models/sam2.1_hiera_base_plus.pt"
+    config_path: "configs/sam2.1/sam2.1_hiera_b+.yaml"
+    device: "cpu"  # or "cpu"
+  
+  yolo:
+    model_path: "data/models/yolo_food_v8.pt"
+    confidence_threshold: 0.25
+    iou_threshold: 0.45
+    device: "cpu"  # or "cpu"
+
+processing:
+  batch_size: 4
+  max_image_size: 1024
+  quality_threshold: 0.7
+  min_area_ratio: 0.01
+  max_area_ratio: 0.8
+
+paths:
+  input_dir: "data/input"
+  output_dir: "data/output"
+  models_dir: "data/models"
+  datasets_dir: "data/datasets"
+
+nutrition:
+  database_path: "data/nutrition_database.json"
+  default_serving_size: 100  # grams
+
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"

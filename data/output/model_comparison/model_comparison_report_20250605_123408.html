@@ -1,0 +1,1045 @@
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>🏆 YOLO Model Comparison Report</title>
+            <style>
+                * { margin: 0; padding: 0; box-sizing: border-box; }
+                
+                body { 
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                    min-height: 100vh;
+                    padding: 20px;
+                }
+                
+                .container { 
+                    max-width: 1400px; 
+                    margin: 0 auto; 
+                    background: white; 
+                    border-radius: 20px;
+                    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+                    overflow: hidden;
+                }
+                
+                .header { 
+                    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                    color: white; 
+                    padding: 30px; 
+                    text-align: center;
+                }
+                
+                .header h1 { font-size: 2.5em; margin-bottom: 10px; }
+                .header p { font-size: 1.1em; opacity: 0.9; }
+                
+                .test-info {
+                    background: #f8f9fa;
+                    padding: 20px;
+                    border-bottom: 1px solid #eee;
+                }
+                
+                .test-info-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                    gap: 20px;
+                }
+                
+                .info-card {
+                    background: white;
+                    padding: 15px;
+                    border-radius: 10px;
+                    border-left: 4px solid #667eea;
+                }
+                
+                .results-container { padding: 30px; }
+                
+                .ranking-grid {
+                    display: grid;
+                    gap: 20px;
+                }
+                
+                .model-card {
+                    border: 1px solid #ddd;
+                    border-radius: 15px;
+                    padding: 25px;
+                    background: white;
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    position: relative;
+                }
+                
+                .model-card:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+                }
+                
+                .rank-1 { border-left: 6px solid #FFD700; background: linear-gradient(145deg, #fff9e6, #ffffff); }
+                .rank-2 { border-left: 6px solid #C0C0C0; background: linear-gradient(145deg, #f8f8f8, #ffffff); }
+                .rank-3 { border-left: 6px solid #CD7F32; background: linear-gradient(145deg, #fdf6f0, #ffffff); }
+                .rank-other { border-left: 6px solid #4caf50; }
+                
+                .rank-badge {
+                    position: absolute;
+                    top: -10px;
+                    right: 20px;
+                    background: #667eea;
+                    color: white;
+                    padding: 5px 15px;
+                    border-radius: 20px;
+                    font-weight: bold;
+                    font-size: 0.9em;
+                }
+                
+                .rank-1 .rank-badge { background: #FFD700; color: #333; }
+                .rank-2 .rank-badge { background: #C0C0C0; color: #333; }
+                .rank-3 .rank-badge { background: #CD7F32; color: white; }
+                
+                .model-header {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 20px;
+                }
+                
+                .model-emoji { font-size: 2.5em; margin-right: 15px; }
+                .model-title { flex: 1; }
+                .model-title h3 { font-size: 1.5em; color: #333; margin-bottom: 5px; }
+                .model-title p { color: #666; }
+                
+                .metrics-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+                    gap: 15px;
+                    margin: 20px 0;
+                }
+                
+                .metric {
+                    text-align: center;
+                    padding: 15px;
+                    background: #f8f9fa;
+                    border-radius: 10px;
+                }
+                
+                .metric-value {
+                    font-size: 1.8em;
+                    font-weight: bold;
+                    color: #667eea;
+                    display: block;
+                }
+                
+                .metric-label {
+                    font-size: 0.9em;
+                    color: #666;
+                    margin-top: 5px;
+                }
+                
+                .detections-section {
+                    margin-top: 20px;
+                    padding: 20px;
+                    background: #f8f9fa;
+                    border-radius: 10px;
+                }
+                
+                .detections-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                    gap: 10px;
+                    margin-top: 15px;
+                }
+                
+                .detection-item {
+                    background: white;
+                    padding: 10px 15px;
+                    border-radius: 8px;
+                    border-left: 3px solid #4caf50;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                
+                .confidence-tests {
+                    margin-top: 20px;
+                    padding: 20px;
+                    background: #f1f3f4;
+                    border-radius: 10px;
+                }
+                
+                .confidence-grid {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    gap: 10px;
+                    margin-top: 15px;
+                }
+                
+                .confidence-card {
+                    background: white;
+                    padding: 15px;
+                    border-radius: 8px;
+                    text-align: center;
+                    border: 2px solid transparent;
+                }
+                
+                .confidence-card.best { border-color: #4caf50; background: #e8f5e8; }
+                
+                .recommendation {
+                    background: linear-gradient(135deg, #4caf50, #45a049);
+                    color: white;
+                    padding: 25px;
+                    border-radius: 15px;
+                    margin: 30px 0;
+                    text-align: center;
+                }
+                
+                .recommendation h2 { margin-bottom: 15px; }
+                .recommendation p { font-size: 1.1em; opacity: 0.9; }
+                
+                @media (max-width: 768px) {
+                    .metrics-grid { grid-template-columns: repeat(2, 1fr); }
+                    .confidence-grid { grid-template-columns: repeat(2, 1fr); }
+                    .header h1 { font-size: 1.8em; }
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <div class="header">
+                    <h1>🏆 YOLO Model Comparison Report</h1>
+                    <p>Comprehensive analysis of 7 models tested on image1.jpg</p>
+                    <p>Generated on June 05, 2025 at 12:34 PM</p>
+                </div>
+                
+                <div class="test-info">
+                    <h2 style="margin-bottom: 20px;">📊 Test Summary</h2>
+                    <div class="test-info-grid">
+                        <div class="info-card">
+                            <h4>🎯 Test Image</h4>
+                            <p>image1.jpg</p>
+                        </div>
+                        <div class="info-card">
+                            <h4>🔧 Models Tested</h4>
+                            <p>7 successful models</p>
+                        </div>
+                        <div class="info-card">
+                            <h4>🏅 Best Performance</h4>
+                            <p>yolov8n-seg.pt</p>
+                        </div>
+                        <div class="info-card">
+                            <h4>🔍 Max Detections</h4>
+                            <p>9 items</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="recommendation">
+                    <h2>🎯 Recommended Model</h2>
+                    <h3>yolov8n-seg.pt</h3>
+                    <p>Found 9 items with 0.1 confidence threshold</p>
+                    <p>Processing time: 2.378 seconds</p>
+                </div>
+            
+                <div class="results-container">
+                    <h2 style="margin-bottom: 30px;">🏅 Model Rankings</h2>
+                    <div class="ranking-grid">
+        
+                        <div class="model-card rank-1">
+                            <div class="rank-badge">#1</div>
+                            <div class="model-header">
+                                <div class="model-emoji">🥇</div>
+                                <div class="model-title">
+                                    <h3>yolov8n-seg.pt</h3>
+                                    <p>Segmentation - Nano Size</p>
+                                </div>
+                            </div>
+                            
+                            <div class="metrics-grid">
+                                <div class="metric">
+                                    <span class="metric-value">9</span>
+                                    <div class="metric-label">Detections</div>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">0.1</span>
+                                    <div class="metric-label">Best Confidence</div>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">2.378s</span>
+                                    <div class="metric-label">Processing Time</div>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">4</span>
+                                    <div class="metric-label">Unique Classes</div>
+                                </div>
+                            </div>
+            
+                            <div class="detections-section">
+                                <h4>🔍 Detected Items (9 total)</h4>
+                                <div class="detections-grid">
+                
+                                    <div class="detection-item">
+                                        <span>cup</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.95</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>orange</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.87</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>orange</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.78</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>orange</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.73</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>dining table</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.47</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>spoon</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.41</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>orange</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.29</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>orange</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.14</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>orange</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.12</span>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                
+                            <div class="confidence-tests">
+                                <h4>📊 Confidence Threshold Tests</h4>
+                                <div class="confidence-grid">
+                
+                                    <div class="confidence-card best">
+                                        <div style="font-weight: bold; color: #667eea;">0.1</div>
+                                        <div style="font-size: 1.2em; margin: 5px 0;">9</div>
+                                        <div style="font-size: 0.8em; color: #666;">detections</div>
+                                        <div style="font-size: 0.8em; color: #666;">2.378s</div>
+                                    </div>
+                    
+                                    <div class="confidence-card ">
+                                        <div style="font-weight: bold; color: #667eea;">0.25</div>
+                                        <div style="font-size: 1.2em; margin: 5px 0;">7</div>
+                                        <div style="font-size: 0.8em; color: #666;">detections</div>
+                                        <div style="font-size: 0.8em; color: #666;">0.069s</div>
+                                    </div>
+                    
+                                    <div class="confidence-card ">
+                                        <div style="font-weight: bold; color: #667eea;">0.4</div>
+                                        <div style="font-size: 1.2em; margin: 5px 0;">6</div>
+                                        <div style="font-size: 0.8em; color: #666;">detections</div>
+                                        <div style="font-size: 0.8em; color: #666;">0.097s</div>
+                                    </div>
+                    
+                                    <div class="confidence-card ">
+                                        <div style="font-weight: bold; color: #667eea;">0.6</div>
+                                        <div style="font-size: 1.2em; margin: 5px 0;">4</div>
+                                        <div style="font-size: 0.8em; color: #666;">detections</div>
+                                        <div style="font-size: 0.8em; color: #666;">0.083s</div>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                
+                        </div>
+            
+                        <div class="model-card rank-2">
+                            <div class="rank-badge">#2</div>
+                            <div class="model-header">
+                                <div class="model-emoji">🥈</div>
+                                <div class="model-title">
+                                    <h3>yolov8s-seg.pt</h3>
+                                    <p>Segmentation - Small Size</p>
+                                </div>
+                            </div>
+                            
+                            <div class="metrics-grid">
+                                <div class="metric">
+                                    <span class="metric-value">8</span>
+                                    <div class="metric-label">Detections</div>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">0.1</span>
+                                    <div class="metric-label">Best Confidence</div>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">0.329s</span>
+                                    <div class="metric-label">Processing Time</div>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">4</span>
+                                    <div class="metric-label">Unique Classes</div>
+                                </div>
+                            </div>
+            
+                            <div class="detections-section">
+                                <h4>🔍 Detected Items (8 total)</h4>
+                                <div class="detections-grid">
+                
+                                    <div class="detection-item">
+                                        <span>cup</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.96</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>orange</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.80</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>orange</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.61</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>orange</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.58</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>spoon</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.43</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>dining table</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.38</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>orange</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.36</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>orange</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.30</span>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                
+                            <div class="confidence-tests">
+                                <h4>📊 Confidence Threshold Tests</h4>
+                                <div class="confidence-grid">
+                
+                                    <div class="confidence-card best">
+                                        <div style="font-weight: bold; color: #667eea;">0.1</div>
+                                        <div style="font-size: 1.2em; margin: 5px 0;">8</div>
+                                        <div style="font-size: 0.8em; color: #666;">detections</div>
+                                        <div style="font-size: 0.8em; color: #666;">0.329s</div>
+                                    </div>
+                    
+                                    <div class="confidence-card ">
+                                        <div style="font-weight: bold; color: #667eea;">0.25</div>
+                                        <div style="font-size: 1.2em; margin: 5px 0;">8</div>
+                                        <div style="font-size: 0.8em; color: #666;">detections</div>
+                                        <div style="font-size: 0.8em; color: #666;">0.166s</div>
+                                    </div>
+                    
+                                    <div class="confidence-card ">
+                                        <div style="font-weight: bold; color: #667eea;">0.4</div>
+                                        <div style="font-size: 1.2em; margin: 5px 0;">5</div>
+                                        <div style="font-size: 0.8em; color: #666;">detections</div>
+                                        <div style="font-size: 0.8em; color: #666;">0.143s</div>
+                                    </div>
+                    
+                                    <div class="confidence-card ">
+                                        <div style="font-weight: bold; color: #667eea;">0.6</div>
+                                        <div style="font-size: 1.2em; margin: 5px 0;">3</div>
+                                        <div style="font-size: 0.8em; color: #666;">detections</div>
+                                        <div style="font-size: 0.8em; color: #666;">0.167s</div>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                
+                        </div>
+            
+                        <div class="model-card rank-3">
+                            <div class="rank-badge">#3</div>
+                            <div class="model-header">
+                                <div class="model-emoji">🥉</div>
+                                <div class="model-title">
+                                    <h3>yolov8m-seg.pt</h3>
+                                    <p>Segmentation - Medium Size</p>
+                                </div>
+                            </div>
+                            
+                            <div class="metrics-grid">
+                                <div class="metric">
+                                    <span class="metric-value">8</span>
+                                    <div class="metric-label">Detections</div>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">0.1</span>
+                                    <div class="metric-label">Best Confidence</div>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">0.658s</span>
+                                    <div class="metric-label">Processing Time</div>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">4</span>
+                                    <div class="metric-label">Unique Classes</div>
+                                </div>
+                            </div>
+            
+                            <div class="detections-section">
+                                <h4>🔍 Detected Items (8 total)</h4>
+                                <div class="detections-grid">
+                
+                                    <div class="detection-item">
+                                        <span>cup</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.99</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>spoon</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.75</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>orange</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.55</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>orange</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.51</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>orange</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.50</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>orange</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.49</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>dining table</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.37</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>orange</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.21</span>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                
+                            <div class="confidence-tests">
+                                <h4>📊 Confidence Threshold Tests</h4>
+                                <div class="confidence-grid">
+                
+                                    <div class="confidence-card best">
+                                        <div style="font-weight: bold; color: #667eea;">0.1</div>
+                                        <div style="font-size: 1.2em; margin: 5px 0;">8</div>
+                                        <div style="font-size: 0.8em; color: #666;">detections</div>
+                                        <div style="font-size: 0.8em; color: #666;">0.658s</div>
+                                    </div>
+                    
+                                    <div class="confidence-card ">
+                                        <div style="font-weight: bold; color: #667eea;">0.25</div>
+                                        <div style="font-size: 1.2em; margin: 5px 0;">7</div>
+                                        <div style="font-size: 0.8em; color: #666;">detections</div>
+                                        <div style="font-size: 0.8em; color: #666;">0.345s</div>
+                                    </div>
+                    
+                                    <div class="confidence-card ">
+                                        <div style="font-weight: bold; color: #667eea;">0.4</div>
+                                        <div style="font-size: 1.2em; margin: 5px 0;">6</div>
+                                        <div style="font-size: 0.8em; color: #666;">detections</div>
+                                        <div style="font-size: 0.8em; color: #666;">0.352s</div>
+                                    </div>
+                    
+                                    <div class="confidence-card ">
+                                        <div style="font-weight: bold; color: #667eea;">0.6</div>
+                                        <div style="font-size: 1.2em; margin: 5px 0;">2</div>
+                                        <div style="font-size: 0.8em; color: #666;">detections</div>
+                                        <div style="font-size: 0.8em; color: #666;">0.363s</div>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                
+                        </div>
+            
+                        <div class="model-card rank-other">
+                            <div class="rank-badge">#4</div>
+                            <div class="model-header">
+                                <div class="model-emoji">🏅</div>
+                                <div class="model-title">
+                                    <h3>yolov8s.pt</h3>
+                                    <p>Detection - Small Size</p>
+                                </div>
+                            </div>
+                            
+                            <div class="metrics-grid">
+                                <div class="metric">
+                                    <span class="metric-value">8</span>
+                                    <div class="metric-label">Detections</div>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">0.1</span>
+                                    <div class="metric-label">Best Confidence</div>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">0.288s</span>
+                                    <div class="metric-label">Processing Time</div>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">4</span>
+                                    <div class="metric-label">Unique Classes</div>
+                                </div>
+                            </div>
+            
+                            <div class="detections-section">
+                                <h4>🔍 Detected Items (8 total)</h4>
+                                <div class="detections-grid">
+                
+                                    <div class="detection-item">
+                                        <span>cup</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.97</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>orange</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.90</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>orange</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.85</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>orange</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.69</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>dining table</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.56</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>spoon</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.45</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>orange</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.28</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>spoon</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.13</span>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                
+                            <div class="confidence-tests">
+                                <h4>📊 Confidence Threshold Tests</h4>
+                                <div class="confidence-grid">
+                
+                                    <div class="confidence-card best">
+                                        <div style="font-weight: bold; color: #667eea;">0.1</div>
+                                        <div style="font-size: 1.2em; margin: 5px 0;">8</div>
+                                        <div style="font-size: 0.8em; color: #666;">detections</div>
+                                        <div style="font-size: 0.8em; color: #666;">0.288s</div>
+                                    </div>
+                    
+                                    <div class="confidence-card ">
+                                        <div style="font-weight: bold; color: #667eea;">0.25</div>
+                                        <div style="font-size: 1.2em; margin: 5px 0;">7</div>
+                                        <div style="font-size: 0.8em; color: #666;">detections</div>
+                                        <div style="font-size: 0.8em; color: #666;">0.134s</div>
+                                    </div>
+                    
+                                    <div class="confidence-card ">
+                                        <div style="font-weight: bold; color: #667eea;">0.4</div>
+                                        <div style="font-size: 1.2em; margin: 5px 0;">6</div>
+                                        <div style="font-size: 0.8em; color: #666;">detections</div>
+                                        <div style="font-size: 0.8em; color: #666;">0.160s</div>
+                                    </div>
+                    
+                                    <div class="confidence-card ">
+                                        <div style="font-weight: bold; color: #667eea;">0.6</div>
+                                        <div style="font-size: 1.2em; margin: 5px 0;">4</div>
+                                        <div style="font-size: 0.8em; color: #666;">detections</div>
+                                        <div style="font-size: 0.8em; color: #666;">0.148s</div>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                
+                        </div>
+            
+                        <div class="model-card rank-other">
+                            <div class="rank-badge">#5</div>
+                            <div class="model-header">
+                                <div class="model-emoji">🏅</div>
+                                <div class="model-title">
+                                    <h3>yolov8n-oiv7.pt</h3>
+                                    <p>Open Images - Nano Size</p>
+                                </div>
+                            </div>
+                            
+                            <div class="metrics-grid">
+                                <div class="metric">
+                                    <span class="metric-value">8</span>
+                                    <div class="metric-label">Detections</div>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">0.1</span>
+                                    <div class="metric-label">Best Confidence</div>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">0.137s</span>
+                                    <div class="metric-label">Processing Time</div>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">6</span>
+                                    <div class="metric-label">Unique Classes</div>
+                                </div>
+                            </div>
+            
+                            <div class="detections-section">
+                                <h4>🔍 Detected Items (8 total)</h4>
+                                <div class="detections-grid">
+                
+                                    <div class="detection-item">
+                                        <span>Orange</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.34</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>Orange</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.24</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>Juice</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.21</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>Lemon</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.17</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>Egg (Food)</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.16</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>Orange</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.15</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>Grapefruit</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.14</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>Apple</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.14</span>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                
+                            <div class="confidence-tests">
+                                <h4>📊 Confidence Threshold Tests</h4>
+                                <div class="confidence-grid">
+                
+                                    <div class="confidence-card best">
+                                        <div style="font-weight: bold; color: #667eea;">0.1</div>
+                                        <div style="font-size: 1.2em; margin: 5px 0;">8</div>
+                                        <div style="font-size: 0.8em; color: #666;">detections</div>
+                                        <div style="font-size: 0.8em; color: #666;">0.137s</div>
+                                    </div>
+                    
+                                    <div class="confidence-card ">
+                                        <div style="font-weight: bold; color: #667eea;">0.25</div>
+                                        <div style="font-size: 1.2em; margin: 5px 0;">1</div>
+                                        <div style="font-size: 0.8em; color: #666;">detections</div>
+                                        <div style="font-size: 0.8em; color: #666;">0.060s</div>
+                                    </div>
+                    
+                                    <div class="confidence-card ">
+                                        <div style="font-weight: bold; color: #667eea;">0.4</div>
+                                        <div style="font-size: 1.2em; margin: 5px 0;">0</div>
+                                        <div style="font-size: 0.8em; color: #666;">detections</div>
+                                        <div style="font-size: 0.8em; color: #666;">0.127s</div>
+                                    </div>
+                    
+                                    <div class="confidence-card ">
+                                        <div style="font-weight: bold; color: #667eea;">0.6</div>
+                                        <div style="font-size: 1.2em; margin: 5px 0;">0</div>
+                                        <div style="font-size: 0.8em; color: #666;">detections</div>
+                                        <div style="font-size: 0.8em; color: #666;">0.106s</div>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                
+                        </div>
+            
+                        <div class="model-card rank-other">
+                            <div class="rank-badge">#6</div>
+                            <div class="model-header">
+                                <div class="model-emoji">🏅</div>
+                                <div class="model-title">
+                                    <h3>yolov10n.pt</h3>
+                                    <p>YOLOv10 - Nano Size</p>
+                                </div>
+                            </div>
+                            
+                            <div class="metrics-grid">
+                                <div class="metric">
+                                    <span class="metric-value">8</span>
+                                    <div class="metric-label">Detections</div>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">0.1</span>
+                                    <div class="metric-label">Best Confidence</div>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">0.137s</span>
+                                    <div class="metric-label">Processing Time</div>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">4</span>
+                                    <div class="metric-label">Unique Classes</div>
+                                </div>
+                            </div>
+            
+                            <div class="detections-section">
+                                <h4>🔍 Detected Items (8 total)</h4>
+                                <div class="detections-grid">
+                
+                                    <div class="detection-item">
+                                        <span>cup</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.84</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>orange</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.83</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>orange</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.81</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>orange</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.80</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>dining table</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.52</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>spoon</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.43</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>spoon</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.27</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>orange</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.27</span>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                
+                            <div class="confidence-tests">
+                                <h4>📊 Confidence Threshold Tests</h4>
+                                <div class="confidence-grid">
+                
+                                    <div class="confidence-card best">
+                                        <div style="font-weight: bold; color: #667eea;">0.1</div>
+                                        <div style="font-size: 1.2em; margin: 5px 0;">8</div>
+                                        <div style="font-size: 0.8em; color: #666;">detections</div>
+                                        <div style="font-size: 0.8em; color: #666;">0.137s</div>
+                                    </div>
+                    
+                                    <div class="confidence-card ">
+                                        <div style="font-weight: bold; color: #667eea;">0.25</div>
+                                        <div style="font-size: 1.2em; margin: 5px 0;">8</div>
+                                        <div style="font-size: 0.8em; color: #666;">detections</div>
+                                        <div style="font-size: 0.8em; color: #666;">0.081s</div>
+                                    </div>
+                    
+                                    <div class="confidence-card ">
+                                        <div style="font-weight: bold; color: #667eea;">0.4</div>
+                                        <div style="font-size: 1.2em; margin: 5px 0;">6</div>
+                                        <div style="font-size: 0.8em; color: #666;">detections</div>
+                                        <div style="font-size: 0.8em; color: #666;">0.065s</div>
+                                    </div>
+                    
+                                    <div class="confidence-card ">
+                                        <div style="font-weight: bold; color: #667eea;">0.6</div>
+                                        <div style="font-size: 1.2em; margin: 5px 0;">4</div>
+                                        <div style="font-size: 0.8em; color: #666;">detections</div>
+                                        <div style="font-size: 0.8em; color: #666;">0.076s</div>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                
+                        </div>
+            
+                        <div class="model-card rank-other">
+                            <div class="rank-badge">#7</div>
+                            <div class="model-header">
+                                <div class="model-emoji">🏅</div>
+                                <div class="model-title">
+                                    <h3>yolov8n.pt</h3>
+                                    <p>Detection - Nano Size</p>
+                                </div>
+                            </div>
+                            
+                            <div class="metrics-grid">
+                                <div class="metric">
+                                    <span class="metric-value">7</span>
+                                    <div class="metric-label">Detections</div>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">0.1</span>
+                                    <div class="metric-label">Best Confidence</div>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">0.133s</span>
+                                    <div class="metric-label">Processing Time</div>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">4</span>
+                                    <div class="metric-label">Unique Classes</div>
+                                </div>
+                            </div>
+            
+                            <div class="detections-section">
+                                <h4>🔍 Detected Items (7 total)</h4>
+                                <div class="detections-grid">
+                
+                                    <div class="detection-item">
+                                        <span>cup</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.94</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>orange</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.86</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>orange</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.75</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>orange</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.58</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>dining table</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.48</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>spoon</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.45</span>
+                                    </div>
+                    
+                                    <div class="detection-item">
+                                        <span>orange</span>
+                                        <span style="font-weight: bold; color: #667eea;">0.14</span>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                
+                            <div class="confidence-tests">
+                                <h4>📊 Confidence Threshold Tests</h4>
+                                <div class="confidence-grid">
+                
+                                    <div class="confidence-card best">
+                                        <div style="font-weight: bold; color: #667eea;">0.1</div>
+                                        <div style="font-size: 1.2em; margin: 5px 0;">7</div>
+                                        <div style="font-size: 0.8em; color: #666;">detections</div>
+                                        <div style="font-size: 0.8em; color: #666;">0.133s</div>
+                                    </div>
+                    
+                                    <div class="confidence-card ">
+                                        <div style="font-weight: bold; color: #667eea;">0.25</div>
+                                        <div style="font-size: 1.2em; margin: 5px 0;">6</div>
+                                        <div style="font-size: 0.8em; color: #666;">detections</div>
+                                        <div style="font-size: 0.8em; color: #666;">0.068s</div>
+                                    </div>
+                    
+                                    <div class="confidence-card ">
+                                        <div style="font-weight: bold; color: #667eea;">0.4</div>
+                                        <div style="font-size: 1.2em; margin: 5px 0;">6</div>
+                                        <div style="font-size: 0.8em; color: #666;">detections</div>
+                                        <div style="font-size: 0.8em; color: #666;">0.070s</div>
+                                    </div>
+                    
+                                    <div class="confidence-card ">
+                                        <div style="font-weight: bold; color: #667eea;">0.6</div>
+                                        <div style="font-size: 1.2em; margin: 5px 0;">3</div>
+                                        <div style="font-size: 0.8em; color: #666;">detections</div>
+                                        <div style="font-size: 0.8em; color: #666;">0.083s</div>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                
+                        </div>
+            
+                    </div>
+                </div>
+                
+                <div style="text-align: center; padding: 30px; background: #f8f9fa; color: #666;">
+                    <p>Generated by YOLO Model Comparison Tool</p>
+                    <p style="margin-top: 10px;">🚀 Powered by Ultralytics YOLO</p>
+                </div>
+            </div>
+        </body>
+        </html>
+        

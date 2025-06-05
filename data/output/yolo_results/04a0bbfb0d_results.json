@@ -1,0 +1,580 @@
+{
+  "image_info": {
+    "path": "data\\input\\04a0bbfb0d.jpg",
+    "filename": "04a0bbfb0d.jpg",
+    "size": "642x428",
+    "processing_time_seconds": 0.37
+  },
+  "analysis_summary": {
+    "total_items_detected": 19,
+    "food_items_count": 15,
+    "non_food_items_count": 4,
+    "avg_confidence": 0.473,
+    "timestamp": "2025-06-05T09:34:02.942741"
+  },
+  "food_items": [
+    {
+      "id": 0,
+      "name": "donut",
+      "confidence": 0.7468206882476807,
+      "is_food": true,
+      "bbox": {
+        "x1": 0,
+        "y1": 49,
+        "x2": 64,
+        "y2": 139,
+        "width": 64,
+        "height": 90
+      },
+      "mask_info": {
+        "area_pixels": 4467,
+        "area_percentage": 1.63
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 4000.0,
+        "protein_g": 60.0,
+        "carbs_g": 450.0,
+        "fat_g": 200.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 1,
+      "name": "vase",
+      "confidence": 0.7000716328620911,
+      "is_food": false,
+      "bbox": {
+        "x1": 478,
+        "y1": 180,
+        "x2": 617,
+        "y2": 310,
+        "width": 138,
+        "height": 130
+      },
+      "mask_info": {
+        "area_pixels": 13798,
+        "area_percentage": 5.02
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 2,
+      "name": "donut",
+      "confidence": 0.6406795978546143,
+      "is_food": true,
+      "bbox": {
+        "x1": 269,
+        "y1": 145,
+        "x2": 412,
+        "y2": 265,
+        "width": 143,
+        "height": 119
+      },
+      "mask_info": {
+        "area_pixels": 13341,
+        "area_percentage": 4.86
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 4000.0,
+        "protein_g": 60.0,
+        "carbs_g": 450.0,
+        "fat_g": 200.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 3,
+      "name": "cake",
+      "confidence": 0.5862698554992676,
+      "is_food": true,
+      "bbox": {
+        "x1": 102,
+        "y1": 211,
+        "x2": 241,
+        "y2": 329,
+        "width": 138,
+        "height": 118
+      },
+      "mask_info": {
+        "area_pixels": 12986,
+        "area_percentage": 4.73
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 3500.0,
+        "protein_g": 50.0,
+        "carbs_g": 550.0,
+        "fat_g": 120.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 4,
+      "name": "donut",
+      "confidence": 0.5472738146781921,
+      "is_food": true,
+      "bbox": {
+        "x1": 50,
+        "y1": 0,
+        "x2": 173,
+        "y2": 67,
+        "width": 122,
+        "height": 67
+      },
+      "mask_info": {
+        "area_pixels": 7185,
+        "area_percentage": 2.61
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 4000.0,
+        "protein_g": 60.0,
+        "carbs_g": 450.0,
+        "fat_g": 200.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 5,
+      "name": "donut",
+      "confidence": 0.512457013130188,
+      "is_food": true,
+      "bbox": {
+        "x1": 0,
+        "y1": 133,
+        "x2": 55,
+        "y2": 246,
+        "width": 54,
+        "height": 113
+      },
+      "mask_info": {
+        "area_pixels": 4679,
+        "area_percentage": 1.7
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 4000.0,
+        "protein_g": 60.0,
+        "carbs_g": 450.0,
+        "fat_g": 200.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 6,
+      "name": "donut",
+      "confidence": 0.5059236288070679,
+      "is_food": true,
+      "bbox": {
+        "x1": 370,
+        "y1": 63,
+        "x2": 508,
+        "y2": 172,
+        "width": 137,
+        "height": 108
+      },
+      "mask_info": {
+        "area_pixels": 11937,
+        "area_percentage": 4.34
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 4000.0,
+        "protein_g": 60.0,
+        "carbs_g": 450.0,
+        "fat_g": 200.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 7,
+      "name": "donut",
+      "confidence": 0.49193519353866577,
+      "is_food": true,
+      "bbox": {
+        "x1": 193,
+        "y1": 4,
+        "x2": 343,
+        "y2": 124,
+        "width": 150,
+        "height": 119
+      },
+      "mask_info": {
+        "area_pixels": 13678,
+        "area_percentage": 4.98
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 4000.0,
+        "protein_g": 60.0,
+        "carbs_g": 450.0,
+        "fat_g": 200.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 8,
+      "name": "donut",
+      "confidence": 0.48223742842674255,
+      "is_food": true,
+      "bbox": {
+        "x1": 107,
+        "y1": 86,
+        "x2": 238,
+        "y2": 198,
+        "width": 130,
+        "height": 111
+      },
+      "mask_info": {
+        "area_pixels": 11820,
+        "area_percentage": 4.3
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 4000.0,
+        "protein_g": 60.0,
+        "carbs_g": 450.0,
+        "fat_g": 200.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 9,
+      "name": "cake",
+      "confidence": 0.47286951541900635,
+      "is_food": true,
+      "bbox": {
+        "x1": 108,
+        "y1": 86,
+        "x2": 238,
+        "y2": 198,
+        "width": 130,
+        "height": 111
+      },
+      "mask_info": {
+        "area_pixels": 11794,
+        "area_percentage": 4.29
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 3500.0,
+        "protein_g": 50.0,
+        "carbs_g": 550.0,
+        "fat_g": 120.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 10,
+      "name": "donut",
+      "confidence": 0.4525817334651947,
+      "is_food": true,
+      "bbox": {
+        "x1": 102,
+        "y1": 211,
+        "x2": 241,
+        "y2": 330,
+        "width": 139,
+        "height": 119
+      },
+      "mask_info": {
+        "area_pixels": 12929,
+        "area_percentage": 4.71
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 4000.0,
+        "protein_g": 60.0,
+        "carbs_g": 450.0,
+        "fat_g": 200.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 11,
+      "name": "vase",
+      "confidence": 0.42981263995170593,
+      "is_food": false,
+      "bbox": {
+        "x1": 576,
+        "y1": 87,
+        "x2": 641,
+        "y2": 207,
+        "width": 65,
+        "height": 120
+      },
+      "mask_info": {
+        "area_pixels": 6370,
+        "area_percentage": 2.32
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 12,
+      "name": "cake",
+      "confidence": 0.3946731686592102,
+      "is_food": true,
+      "bbox": {
+        "x1": 478,
+        "y1": 181,
+        "x2": 617,
+        "y2": 310,
+        "width": 139,
+        "height": 129
+      },
+      "mask_info": {
+        "area_pixels": 13782,
+        "area_percentage": 5.02
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 3500.0,
+        "protein_g": 50.0,
+        "carbs_g": 550.0,
+        "fat_g": 120.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 13,
+      "name": "dining table",
+      "confidence": 0.3938746750354767,
+      "is_food": false,
+      "bbox": {
+        "x1": 1,
+        "y1": 0,
+        "x2": 637,
+        "y2": 413,
+        "width": 635,
+        "height": 413
+      },
+      "mask_info": {
+        "area_pixels": 150055,
+        "area_percentage": 54.61
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 14,
+      "name": "cake",
+      "confidence": 0.3772895634174347,
+      "is_food": true,
+      "bbox": {
+        "x1": 311,
+        "y1": 256,
+        "x2": 470,
+        "y2": 392,
+        "width": 158,
+        "height": 135
+      },
+      "mask_info": {
+        "area_pixels": 17019,
+        "area_percentage": 6.19
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 3500.0,
+        "protein_g": 50.0,
+        "carbs_g": 550.0,
+        "fat_g": 120.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 15,
+      "name": "cake",
+      "confidence": 0.3210099935531616,
+      "is_food": true,
+      "bbox": {
+        "x1": 269,
+        "y1": 146,
+        "x2": 412,
+        "y2": 265,
+        "width": 142,
+        "height": 119
+      },
+      "mask_info": {
+        "area_pixels": 13235,
+        "area_percentage": 4.82
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 3500.0,
+        "protein_g": 50.0,
+        "carbs_g": 550.0,
+        "fat_g": 120.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 16,
+      "name": "vase",
+      "confidence": 0.3197896480560303,
+      "is_food": false,
+      "bbox": {
+        "x1": 311,
+        "y1": 256,
+        "x2": 469,
+        "y2": 392,
+        "width": 158,
+        "height": 136
+      },
+      "mask_info": {
+        "area_pixels": 16953,
+        "area_percentage": 6.17
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 17,
+      "name": "donut",
+      "confidence": 0.3077094256877899,
+      "is_food": true,
+      "bbox": {
+        "x1": 311,
+        "y1": 256,
+        "x2": 470,
+        "y2": 393,
+        "width": 159,
+        "height": 136
+      },
+      "mask_info": {
+        "area_pixels": 16946,
+        "area_percentage": 6.17
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 4000.0,
+        "protein_g": 60.0,
+        "carbs_g": 450.0,
+        "fat_g": 200.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 18,
+      "name": "cake",
+      "confidence": 0.29947933554649353,
+      "is_food": true,
+      "bbox": {
+        "x1": 371,
+        "y1": 63,
+        "x2": 508,
+        "y2": 171,
+        "width": 136,
+        "height": 108
+      },
+      "mask_info": {
+        "area_pixels": 11956,
+        "area_percentage": 4.35
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 3500.0,
+        "protein_g": 50.0,
+        "carbs_g": 550.0,
+        "fat_g": 120.0,
+        "portion_grams": 1000
+      }
+    }
+  ],
+  "nutrition_totals": {
+    "calories": 57000.0,
+    "protein_g": 840.0,
+    "carbs_g": 7350.0,
+    "fat_g": 2520.0
+  },
+  "model_info": {
+    "model_type": "YOLOv8n-seg",
+    "confidence_threshold": 0.25,
+    "iou_threshold": 0.45
+  },
+  "visualization_path": "data\\output\\yolo_results\\visualizations\\04a0bbfb0d_analysis.png"
+}

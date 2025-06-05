@@ -1,0 +1,87 @@
+{
+  "image_info": {
+    "path": "data\\input\\04a071d5a8.jpg",
+    "filename": "04a071d5a8.jpg",
+    "size": "1000x1338",
+    "processing_time_seconds": 0.25
+  },
+  "analysis_summary": {
+    "total_items_detected": 2,
+    "food_items_count": 1,
+    "non_food_items_count": 1,
+    "avg_confidence": 0.543,
+    "timestamp": "2025-06-05T09:32:15.929778"
+  },
+  "food_items": [
+    {
+      "id": 0,
+      "name": "cake",
+      "confidence": 0.8081823587417603,
+      "is_food": true,
+      "bbox": {
+        "x1": 87,
+        "y1": 259,
+        "x2": 996,
+        "y2": 1198,
+        "width": 908,
+        "height": 938
+      },
+      "mask_info": {
+        "area_pixels": 175352,
+        "area_percentage": 13.11
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 3500.0,
+        "protein_g": 50.0,
+        "carbs_g": 550.0,
+        "fat_g": 120.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 1,
+      "name": "teddy bear",
+      "confidence": 0.2786526083946228,
+      "is_food": false,
+      "bbox": {
+        "x1": 74,
+        "y1": 965,
+        "x2": 225,
+        "y2": 1143,
+        "width": 151,
+        "height": 177
+      },
+      "mask_info": {
+        "area_pixels": 4126,
+        "area_percentage": 0.31
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    }
+  ],
+  "nutrition_totals": {
+    "calories": 3500.0,
+    "protein_g": 50.0,
+    "carbs_g": 550.0,
+    "fat_g": 120.0
+  },
+  "model_info": {
+    "model_type": "YOLOv8n-seg",
+    "confidence_threshold": 0.25,
+    "iou_threshold": 0.45
+  },
+  "visualization_path": "data\\output\\yolo_results\\visualizations\\04a071d5a8_analysis.png"
+}

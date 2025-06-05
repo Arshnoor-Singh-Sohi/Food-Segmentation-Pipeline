@@ -1,0 +1,87 @@
+{
+  "image_info": {
+    "path": "data\\input\\04a0f690e9.jpg",
+    "filename": "04a0f690e9.jpg",
+    "size": "600x600",
+    "processing_time_seconds": 0.31
+  },
+  "analysis_summary": {
+    "total_items_detected": 2,
+    "food_items_count": 0,
+    "non_food_items_count": 2,
+    "avg_confidence": 0.404,
+    "timestamp": "2025-06-05T09:35:18.645609"
+  },
+  "food_items": [
+    {
+      "id": 0,
+      "name": "suitcase",
+      "confidence": 0.45491984486579895,
+      "is_food": false,
+      "bbox": {
+        "x1": 63,
+        "y1": 0,
+        "x2": 393,
+        "y2": 479,
+        "width": 329,
+        "height": 478
+      },
+      "mask_info": {
+        "area_pixels": 162680,
+        "area_percentage": 45.19
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 1,
+      "name": "spoon",
+      "confidence": 0.3522060215473175,
+      "is_food": false,
+      "bbox": {
+        "x1": 137,
+        "y1": 369,
+        "x2": 512,
+        "y2": 595,
+        "width": 374,
+        "height": 225
+      },
+      "mask_info": {
+        "area_pixels": 22296,
+        "area_percentage": 6.19
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    }
+  ],
+  "nutrition_totals": {
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0
+  },
+  "model_info": {
+    "model_type": "YOLOv8n-seg",
+    "confidence_threshold": 0.25,
+    "iou_threshold": 0.45
+  },
+  "visualization_path": "data\\output\\yolo_results\\visualizations\\04a0f690e9_analysis.png"
+}

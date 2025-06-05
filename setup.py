@@ -1,0 +1,36 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="food-segmentation-pipeline",
+    version="1.0.0",
+    description="Advanced food image segmentation using SAM 2 and YOLO",
+    author="Your Name",
+    author_email="your.email@example.com",
+    packages=find_packages(),
+    install_requires=[
+        "torch>=2.5.1",
+        "torchvision>=0.20.1",
+        "ultralytics>=8.0.0",
+        "opencv-python>=4.8.0",
+        "matplotlib>=3.7.0",
+        "pillow>=10.0.0",
+        "numpy>=1.24.0",
+        "pyyaml>=6.0",
+        "fastapi>=0.100.0",
+        "uvicorn>=0.23.0",
+        "supervision>=0.15.0",
+        "pycocotools>=2.0.7",
+        "scikit-image>=0.21.0",
+        "pandas>=2.0.0",
+        "requests>=2.31.0",
+        "tqdm>=4.65.0",
+    ],
+    python_requires=">=3.10",
+    classifiers=[
+        "Development Status :: 4 - Beta",
+        "Intended Audience :: Developers",
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+    ],
+)

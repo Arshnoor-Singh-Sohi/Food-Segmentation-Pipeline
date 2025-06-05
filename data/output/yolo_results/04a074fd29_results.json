@@ -1,0 +1,58 @@
+{
+  "image_info": {
+    "path": "data\\input\\04a074fd29.jpg",
+    "filename": "04a074fd29.jpg",
+    "size": "2816x2112",
+    "processing_time_seconds": 0.35
+  },
+  "analysis_summary": {
+    "total_items_detected": 1,
+    "food_items_count": 1,
+    "non_food_items_count": 0,
+    "avg_confidence": 0.427,
+    "timestamp": "2025-06-05T09:32:19.661129"
+  },
+  "food_items": [
+    {
+      "id": 0,
+      "name": "pizza",
+      "confidence": 0.4265073537826538,
+      "is_food": true,
+      "bbox": {
+        "x1": 6,
+        "y1": 212,
+        "x2": 2810,
+        "y2": 1964,
+        "width": 2803,
+        "height": 1751
+      },
+      "mask_info": {
+        "area_pixels": 188258,
+        "area_percentage": 3.17
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 2660.0,
+        "protein_g": 110.0,
+        "carbs_g": 330.0,
+        "fat_g": 100.0,
+        "portion_grams": 1000
+      }
+    }
+  ],
+  "nutrition_totals": {
+    "calories": 2660.0,
+    "protein_g": 110.0,
+    "carbs_g": 330.0,
+    "fat_g": 100.0
+  },
+  "model_info": {
+    "model_type": "YOLOv8n-seg",
+    "confidence_threshold": 0.25,
+    "iou_threshold": 0.45
+  },
+  "visualization_path": "data\\output\\yolo_results\\visualizations\\04a074fd29_analysis.png"
+}

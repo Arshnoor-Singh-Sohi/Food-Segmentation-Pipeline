@@ -1,0 +1,87 @@
+{
+  "image_info": {
+    "path": "data\\input\\04a0644805.jpg",
+    "filename": "04a0644805.jpg",
+    "size": "600x716",
+    "processing_time_seconds": 0.36
+  },
+  "analysis_summary": {
+    "total_items_detected": 2,
+    "food_items_count": 1,
+    "non_food_items_count": 1,
+    "avg_confidence": 0.636,
+    "timestamp": "2025-06-05T09:32:03.971414"
+  },
+  "food_items": [
+    {
+      "id": 0,
+      "name": "pizza",
+      "confidence": 0.803512692451477,
+      "is_food": true,
+      "bbox": {
+        "x1": 14,
+        "y1": 27,
+        "x2": 576,
+        "y2": 659,
+        "width": 561,
+        "height": 632
+      },
+      "mask_info": {
+        "area_pixels": 200993,
+        "area_percentage": 46.79
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 2660.0,
+        "protein_g": 110.0,
+        "carbs_g": 330.0,
+        "fat_g": 100.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 1,
+      "name": "dining table",
+      "confidence": 0.4675622880458832,
+      "is_food": false,
+      "bbox": {
+        "x1": 1,
+        "y1": 6,
+        "x2": 576,
+        "y2": 704,
+        "width": 575,
+        "height": 697
+      },
+      "mask_info": {
+        "area_pixels": 119598,
+        "area_percentage": 27.84
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    }
+  ],
+  "nutrition_totals": {
+    "calories": 2660.0,
+    "protein_g": 110.0,
+    "carbs_g": 330.0,
+    "fat_g": 100.0
+  },
+  "model_info": {
+    "model_type": "YOLOv8n-seg",
+    "confidence_threshold": 0.25,
+    "iou_threshold": 0.45
+  },
+  "visualization_path": "data\\output\\yolo_results\\visualizations\\04a0644805_analysis.png"
+}

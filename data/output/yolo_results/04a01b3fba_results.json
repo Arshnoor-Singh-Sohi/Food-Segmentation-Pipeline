@@ -1,0 +1,58 @@
+{
+  "image_info": {
+    "path": "data\\input\\04a01b3fba.jpg",
+    "filename": "04a01b3fba.jpg",
+    "size": "512x329",
+    "processing_time_seconds": 0.2
+  },
+  "analysis_summary": {
+    "total_items_detected": 1,
+    "food_items_count": 1,
+    "non_food_items_count": 0,
+    "avg_confidence": 0.449,
+    "timestamp": "2025-06-05T09:30:30.747116"
+  },
+  "food_items": [
+    {
+      "id": 0,
+      "name": "cake",
+      "confidence": 0.44861629605293274,
+      "is_food": true,
+      "bbox": {
+        "x1": 127,
+        "y1": 17,
+        "x2": 507,
+        "y2": 319,
+        "width": 379,
+        "height": 301
+      },
+      "mask_info": {
+        "area_pixels": 142296,
+        "area_percentage": 84.47
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 3500.0,
+        "protein_g": 50.0,
+        "carbs_g": 550.0,
+        "fat_g": 120.0,
+        "portion_grams": 1000
+      }
+    }
+  ],
+  "nutrition_totals": {
+    "calories": 3500.0,
+    "protein_g": 50.0,
+    "carbs_g": 550.0,
+    "fat_g": 120.0
+  },
+  "model_info": {
+    "model_type": "YOLOv8n-seg",
+    "confidence_threshold": 0.25,
+    "iou_threshold": 0.45
+  },
+  "visualization_path": "data\\output\\yolo_results\\visualizations\\04a01b3fba_analysis.png"
+}

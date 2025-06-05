@@ -1,0 +1,58 @@
+{
+  "image_info": {
+    "path": "data\\input\\04a0176097.jpg",
+    "filename": "04a0176097.jpg",
+    "size": "260x366",
+    "processing_time_seconds": 0.34
+  },
+  "analysis_summary": {
+    "total_items_detected": 1,
+    "food_items_count": 0,
+    "non_food_items_count": 1,
+    "avg_confidence": 0.634,
+    "timestamp": "2025-06-05T09:30:27.313754"
+  },
+  "food_items": [
+    {
+      "id": 0,
+      "name": "fire hydrant",
+      "confidence": 0.6341422200202942,
+      "is_food": false,
+      "bbox": {
+        "x1": 69,
+        "y1": 14,
+        "x2": 216,
+        "y2": 251,
+        "width": 147,
+        "height": 237
+      },
+      "mask_info": {
+        "area_pixels": 89211,
+        "area_percentage": 93.75
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    }
+  ],
+  "nutrition_totals": {
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0
+  },
+  "model_info": {
+    "model_type": "YOLOv8n-seg",
+    "confidence_threshold": 0.25,
+    "iou_threshold": 0.45
+  },
+  "visualization_path": "data\\output\\yolo_results\\visualizations\\04a0176097_analysis.png"
+}

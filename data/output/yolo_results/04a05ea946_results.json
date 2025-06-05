@@ -1,0 +1,87 @@
+{
+  "image_info": {
+    "path": "data\\input\\04a05ea946.jpg",
+    "filename": "04a05ea946.jpg",
+    "size": "236x335",
+    "processing_time_seconds": 0.15
+  },
+  "analysis_summary": {
+    "total_items_detected": 2,
+    "food_items_count": 0,
+    "non_food_items_count": 2,
+    "avg_confidence": 0.285,
+    "timestamp": "2025-06-05T09:31:53.616924"
+  },
+  "food_items": [
+    {
+      "id": 0,
+      "name": "wine glass",
+      "confidence": 0.301081120967865,
+      "is_food": false,
+      "bbox": {
+        "x1": 155,
+        "y1": 0,
+        "x2": 214,
+        "y2": 128,
+        "width": 58,
+        "height": 128
+      },
+      "mask_info": {
+        "area_pixels": 16087,
+        "area_percentage": 20.35
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 1,
+      "name": "bed",
+      "confidence": 0.26895761489868164,
+      "is_food": false,
+      "bbox": {
+        "x1": 4,
+        "y1": 2,
+        "x2": 235,
+        "y2": 309,
+        "width": 231,
+        "height": 307
+      },
+      "mask_info": {
+        "area_pixels": 141097,
+        "area_percentage": 178.47
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    }
+  ],
+  "nutrition_totals": {
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0
+  },
+  "model_info": {
+    "model_type": "YOLOv8n-seg",
+    "confidence_threshold": 0.25,
+    "iou_threshold": 0.45
+  },
+  "visualization_path": "data\\output\\yolo_results\\visualizations\\04a05ea946_analysis.png"
+}

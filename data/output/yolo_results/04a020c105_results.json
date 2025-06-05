@@ -1,0 +1,58 @@
+{
+  "image_info": {
+    "path": "data\\input\\04a020c105.jpg",
+    "filename": "04a020c105.jpg",
+    "size": "236x385",
+    "processing_time_seconds": 0.22
+  },
+  "analysis_summary": {
+    "total_items_detected": 1,
+    "food_items_count": 0,
+    "non_food_items_count": 1,
+    "avg_confidence": 0.489,
+    "timestamp": "2025-06-05T09:30:37.638571"
+  },
+  "food_items": [
+    {
+      "id": 0,
+      "name": "teddy bear",
+      "confidence": 0.48865917325019836,
+      "is_food": false,
+      "bbox": {
+        "x1": 3,
+        "y1": 1,
+        "x2": 234,
+        "y2": 228,
+        "width": 230,
+        "height": 227
+      },
+      "mask_info": {
+        "area_pixels": 130006,
+        "area_percentage": 143.08
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    }
+  ],
+  "nutrition_totals": {
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0
+  },
+  "model_info": {
+    "model_type": "YOLOv8n-seg",
+    "confidence_threshold": 0.25,
+    "iou_threshold": 0.45
+  },
+  "visualization_path": "data\\output\\yolo_results\\visualizations\\04a020c105_analysis.png"
+}

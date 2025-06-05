@@ -1,0 +1,116 @@
+{
+  "image_info": {
+    "path": "data\\input\\04a0eaa9e3.jpg",
+    "filename": "04a0eaa9e3.jpg",
+    "size": "400x265",
+    "processing_time_seconds": 0.26
+  },
+  "analysis_summary": {
+    "total_items_detected": 3,
+    "food_items_count": 0,
+    "non_food_items_count": 3,
+    "avg_confidence": 0.277,
+    "timestamp": "2025-06-05T09:35:07.550018"
+  },
+  "food_items": [
+    {
+      "id": 0,
+      "name": "bowl",
+      "confidence": 0.2932358980178833,
+      "is_food": false,
+      "bbox": {
+        "x1": 1,
+        "y1": 30,
+        "x2": 336,
+        "y2": 260,
+        "width": 335,
+        "height": 229
+      },
+      "mask_info": {
+        "area_pixels": 43614,
+        "area_percentage": 41.15
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 0.0,
+        "protein_g": 0.0,
+        "carbs_g": 0.0,
+        "fat_g": 0.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 1,
+      "name": "elephant",
+      "confidence": 0.2775515913963318,
+      "is_food": false,
+      "bbox": {
+        "x1": 6,
+        "y1": 30,
+        "x2": 395,
+        "y2": 240,
+        "width": 389,
+        "height": 210
+      },
+      "mask_info": {
+        "area_pixels": 150782,
+        "area_percentage": 142.25
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    },
+    {
+      "id": 2,
+      "name": "elephant",
+      "confidence": 0.259660542011261,
+      "is_food": false,
+      "bbox": {
+        "x1": 340,
+        "y1": 40,
+        "x2": 399,
+        "y2": 139,
+        "width": 59,
+        "height": 99
+      },
+      "mask_info": {
+        "area_pixels": 10063,
+        "area_percentage": 9.49
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 1500.0,
+        "protein_g": 50.0,
+        "carbs_g": 200.0,
+        "fat_g": 30.0,
+        "portion_grams": 1000
+      }
+    }
+  ],
+  "nutrition_totals": {
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0
+  },
+  "model_info": {
+    "model_type": "YOLOv8n-seg",
+    "confidence_threshold": 0.25,
+    "iou_threshold": 0.45
+  },
+  "visualization_path": "data\\output\\yolo_results\\visualizations\\04a0eaa9e3_analysis.png"
+}

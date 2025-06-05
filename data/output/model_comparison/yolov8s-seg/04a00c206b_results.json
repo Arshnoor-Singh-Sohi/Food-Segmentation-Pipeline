@@ -1,0 +1,133 @@
+{
+  "model_config": {
+    "name": "yolov8s-seg",
+    "file": "yolov8s-seg.pt",
+    "type": "segmentation",
+    "description": "YOLOv8 Small Segmentation",
+    "expected_performance": "Better accuracy, slower"
+  },
+  "confidence_threshold": 0.1,
+  "detections": [
+    {
+      "class_id": 41,
+      "class_name": "cup",
+      "confidence": 0.694169282913208,
+      "bbox": [
+        182.9540252685547,
+        0.01985187642276287,
+        216.1470489501953,
+        29.761417388916016
+      ],
+      "has_mask": true,
+      "mask_area": 4545.0
+    },
+    {
+      "class_id": 45,
+      "class_name": "bowl",
+      "confidence": 0.5832949280738831,
+      "bbox": [
+        256.7552490234375,
+        0.32270413637161255,
+        295.8501892089844,
+        38.86775207519531
+      ],
+      "has_mask": true,
+      "mask_area": 4437.0
+    },
+    {
+      "class_id": 55,
+      "class_name": "cake",
+      "confidence": 0.4390878677368164,
+      "bbox": [
+        14.6732816696167,
+        65.08638763427734,
+        139.24685668945312,
+        168.78590393066406
+      ],
+      "has_mask": true,
+      "mask_area": 39463.0
+    },
+    {
+      "class_id": 41,
+      "class_name": "cup",
+      "confidence": 0.3758730888366699,
+      "bbox": [
+        0.10337548702955246,
+        0.0,
+        27.957609176635742,
+        25.425975799560547
+      ],
+      "has_mask": true,
+      "mask_area": 2617.0
+    },
+    {
+      "class_id": 54,
+      "class_name": "donut",
+      "confidence": 0.20181669294834137,
+      "bbox": [
+        188.02841186523438,
+        32.018428802490234,
+        249.39108276367188,
+        79.31133270263672
+      ],
+      "has_mask": true,
+      "mask_area": 7076.0
+    },
+    {
+      "class_id": 60,
+      "class_name": "dining table",
+      "confidence": 0.18143919110298157,
+      "bbox": [
+        1.0879929065704346,
+        0.5813431143760681,
+        295.62066650390625,
+        178.7461395263672
+      ],
+      "has_mask": true,
+      "mask_area": 104486.0
+    },
+    {
+      "class_id": 71,
+      "class_name": "sink",
+      "confidence": 0.11607243865728378,
+      "bbox": [
+        53.04222869873047,
+        3.3855741024017334,
+        192.3472137451172,
+        65.65801239013672
+      ],
+      "has_mask": true,
+      "mask_area": 25646.0
+    },
+    {
+      "class_id": 41,
+      "class_name": "cup",
+      "confidence": 0.11086080968379974,
+      "bbox": [
+        123.66056060791016,
+        0.8286129236221313,
+        178.7828369140625,
+        45.90010070800781
+      ],
+      "has_mask": true,
+      "mask_area": 10057.0
+    },
+    {
+      "class_id": 54,
+      "class_name": "donut",
+      "confidence": 0.10474322736263275,
+      "bbox": [
+        140.08653259277344,
+        119.49754333496094,
+        223.49783325195312,
+        166.8331298828125
+      ],
+      "has_mask": true,
+      "mask_area": 13644.0
+    }
+  ],
+  "detection_count": 9,
+  "load_time_seconds": 0.07996416091918945,
+  "inference_time_seconds": 0.3394334316253662,
+  "total_time_seconds": 0.41939759254455566
+}

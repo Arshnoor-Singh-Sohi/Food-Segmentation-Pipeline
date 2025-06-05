@@ -1,0 +1,36 @@
+name: Generate Directory Tree
+
+on:
+  workflow_dispatch:  # allows manual run
+  push:               # runs on every push
+
+jobs:
+  generate-tree:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies (if any)
+        run: |
+          pip install --upgrade pip
+
+      - name: Run Directory Tree Script
+        run: |
+          python scripts/generate_tree.py
+
+      - name: Commit and Push Directory Tree
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add directory-tree.md
+          git commit -m "chore: update directory tree"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

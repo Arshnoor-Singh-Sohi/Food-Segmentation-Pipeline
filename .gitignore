@@ -75,3 +75,8 @@ yolov8m-seg.pt
 
 # Git ignore itself (optional safety)
 !.gitignore
+
+# Ignore specific large files causing issues
+yolov8m-seg.pt
+data/models/sam2.1_hiera_base_plus.pt
+data/output/image1_analysis.json

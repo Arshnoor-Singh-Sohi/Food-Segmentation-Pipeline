@@ -37,7 +37,7 @@ Basically, I've created an AI system that can look at photos of food and tell yo
 ```
 
 ### 📁 Complete Project Structure
-
+```
 food_segmentation_pipeline
 ├── .gitattributes
 ├── .gitignore
@@ -202,6 +202,8 @@ food_segmentation_pipeline
 ├── yolov8s-seg.pt
 ├── yolov8s.pt
 └── yolov9s.pt
+```
+
 
 ### 🚀 Key Features That Work Right Now
 

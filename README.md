@@ -204,6 +204,88 @@ food_segmentation_pipeline
 └── yolov9s.pt
 ```
 
+## Project Architecture
+
+```mermaid
+graph TD
+    %% Root Project
+    A[🍕 Food Segmentation Pipeline] 
+    
+    %% Configuration Layer
+    A --> B[⚙️ Configuration]
+    B --> B1[config/config.yaml]
+    B --> B2[config/models.yaml]
+    
+    %% Input Data Flow
+    A --> C[📸 Input Images]
+    C --> C1[data/input/]
+    
+    %% AI Models Layer
+    A --> D[🤖 AI Models]
+    D --> D1[data/models/sam2.1_hiera_base_plus.pt]
+    D --> D2[data/models/yolo_food_v8.pt]
+    D --> D3[weights/yolov5s.pt]
+    D --> D4[yolov8n.pt, yolov9s.pt, etc.]
+    
+    %% Core Processing Engine
+    A --> E[🔧 Core Processing]
+    E --> E1[src/models/yolo_detector.py]
+    E --> E2[src/models/sam2_predictor.py]
+    E --> E3[src/models/combined_pipeline.py]
+    E --> E4[src/models/fast_yolo_segmentation.py]
+    E --> E5[src/preprocessing/food_preprocessor.py]
+    E --> E6[src/utils/nutrition_db.py]
+    E --> E7[src/utils/visualization.py]
+    
+    %% Processing Scripts (Entry Points)
+    A --> F[🚀 Processing Scripts]
+    F --> F1[enhanced_single_image_tester.py]
+    F --> F2[enhanced_batch_tester.py]
+    F --> F3[model_comparison_enhanced.py]
+    F --> F4[scripts/process_single_yolo.py]
+    F --> F5[scripts/batch_process_yolo.py]
+    F --> F6[test_all_models.py]
+    
+    %% Results & Output
+    A --> G[📊 Output Results]
+    G --> G1[data/output/batch_comparison_reports]
+    G --> G2[data/output/model_comparison/]
+    G --> G3[data/output/yolo_results/]
+    G --> G4[output_directory/]
+    G1 --> G1a[HTML Reports]
+    G1 --> G1b[Excel Files]
+    G1 --> G1c[CSV Analysis]
+    G2 --> G2a[yolov8n, yolov9s, etc.]
+    G3 --> G3a[batch_reports/]
+    G3 --> G3b[visualizations/]
+    
+    %% Development & Testing
+    A --> H[🧪 Development]
+    H --> H1[notebooks/demo.ipynb]
+    H --> H2[notebooks/experiments.ipynb]
+    H --> H3[tests/test_pipeline.py]
+    H --> H4[tests/test_yolo.py]
+    H --> H5[tests/test_sam2.py]
+    
+    %% API & Deployment
+    A --> I[🌐 API Layer]
+    I --> I1[src/api/fastapi_server.py]
+    
+    %% Data Flow Connections
+    C1 -.-> F1
+    C1 -.-> F2
+    F1 -.-> E3
+    F2 -.-> E3
+    F3 -.-> E1
+    E1 -.-> D2
+    E2 -.-> D1
+    E3 -.-> G1
+    E3 -.-> G2
+    B1 -.-> E3
+    B2 -.-> E3
+
+```
+
 
 ### 🚀 Key Features That Work Right Now
 

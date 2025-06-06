@@ -63,8 +63,8 @@ node_modules/
 *.app
 
 # Ignore model files and large data outputs
-data/models/
-data/output/
+# data/models/
+# data/output/
 
 # Or specific files if you prefer
 # data/models/sam2.1_hiera_base_plus.pt

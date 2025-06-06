@@ -1,6 +1,6 @@
 # Food Segmentation Pipeline - Project Overview
 
-Hey team! Let me break down what I've built here - it's actually pretty cool stuff! 🍕
+Hey team! Let me break down what I've built here
 
 ## What This Project Does
 

@@ -31,7 +31,7 @@ class FastFoodSegmentation:
         for model_name, description in models_to_try:
             try:
                 self.model = YOLO(model_name)
-                print(f"✅ Loaded: {description}")
+                print(f"[OK] Loaded: {description}")
                 
                 # Test the model quickly
                 import tempfile
@@ -45,7 +45,7 @@ class FastFoodSegmentation:
                 
                 # Quick test
                 results = self.model(test_path, verbose=False)
-                print(f"📊 Model working: {len(results)} results")
+                print(f"[STATS] Model working: {len(results)} results")
                 
                 # Clean up
                 import os
@@ -55,7 +55,7 @@ class FastFoodSegmentation:
                 break  # Success, use this model
                 
             except Exception as e:
-                print(f"❌ {model_name} failed: {e}")
+                print(f"[FAIL] {model_name} failed: {e}")
                 continue
         
                     

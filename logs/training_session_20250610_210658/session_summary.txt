@@ -1,0 +1,20 @@
+TRAINING SESSION SUMMARY
+========================================
+Session ID: 20250610_210658
+Started: 2025-06-10 21:06:58.298415
+Ended: 2025-06-10 21:07:01.713508
+Total Duration: 0:00:03.415093
+
+COMMANDS EXECUTED:
+--------------------
+1. [FAIL] FAILED (Return code: 1)
+   Duration: 0:00:03.412154
+   Errors found: 2
+
+LOG FILES:
+----------
+Complete log: logs\training_session_20250610_210658\complete_log.txt
+Errors only: logs\training_session_20250610_210658\errors_only.txt
+This summary: logs\training_session_20250610_210658\session_summary.txt
+
+========================================

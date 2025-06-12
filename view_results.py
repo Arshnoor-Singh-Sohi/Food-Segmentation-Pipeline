@@ -65,7 +65,7 @@ def create_html_viewer(json_file_path):
                 </div>
             </div>
             
-            <h2>📋 Detected Items</h2>
+            <h2>[INFO] Detected Items</h2>
             <div class="items-grid">
     """
     
@@ -79,7 +79,7 @@ def create_html_viewer(json_file_path):
             nutrition_html = f"""
             <div class="nutrition">
                 <strong>Nutrition (estimated):</strong><br>
-                🔥 {nutrition['calories']:.1f} calories<br>
+                [FIRE] {nutrition['calories']:.1f} calories<br>
                 🥩 {nutrition['protein_g']:.1f}g protein<br>
                 🍞 {nutrition['carbs_g']:.1f}g carbs<br>
                 🧈 {nutrition['fat_g']:.1f}g fat<br>
@@ -105,14 +105,14 @@ def create_html_viewer(json_file_path):
             </div>
             
             <div style="margin-top: 30px; padding: 20px; background: #f8f9fa; border-radius: 8px;">
-                <h3>📊 Summary</h3>
+                <h3>[STATS] Summary</h3>
                 <p><strong>Total Nutrition:</strong></p>
                 <ul>
     """
     
     nutrition = results['nutrition_totals']
     html_content += f"""
-                    <li>🔥 <strong>Calories:</strong> {nutrition['calories']:.1f}</li>
+                    <li>[FIRE] <strong>Calories:</strong> {nutrition['calories']:.1f}</li>
                     <li>🥩 <strong>Protein:</strong> {nutrition['protein_g']:.1f}g</li>
                     <li>🍞 <strong>Carbohydrates:</strong> {nutrition['carbs_g']:.1f}g</li>
                     <li>🧈 <strong>Fat:</strong> {nutrition['fat_g']:.1f}g</li>

@@ -1,0 +1,6 @@
+Model,Type,Size,Total_Detections,Avg_Detections_Per_Image,Std_Detections,Min_Detections,Max_Detections,Avg_Processing_Time_Seconds,Success_Rate_Percent,Images_Processed,Total_Images,Top_Detected_Objects
+yolov8n-seg.pt,Segmentation,Nano,2280,6.55,5.23,0,43,0.181,100.0,348,348,"cake(306), dining table(292), donut(222)"
+yolov8n.pt,Detection,Nano,2242,6.44,6.35,0,63,0.141,100.0,348,348,"dining table(290), cake(278), donut(260)"
+yolov8s.pt,Detection,Small,2242,6.44,4.65,1,24,0.311,100.0,348,348,"cake(364), dining table(274), bowl(212)"
+yolov8s-seg.pt,Segmentation,Small,2198,6.32,4.7,0,25,0.365,100.0,348,348,"cake(328), dining table(278), sandwich(212)"
+yolov8n-oiv7.pt,Open Images,Nano,1188,3.41,4.07,0,37,0.172,100.0,348,348,"Food(280), Baked goods(162), Strawberry(100)"

@@ -113,7 +113,7 @@ class ModelComparison:
         """Get test images."""
         input_path = Path(input_dir)
         if not input_path.exists():
-            print(f"❌ Input directory not found: {input_dir}")
+            print(f"[FAIL] Input directory not found: {input_dir}")
             return False
             
         extensions = {'.jpg', '.jpeg', '.png', '.bmp', '.tiff', '.webp'}
@@ -131,7 +131,7 @@ class ModelComparison:
         model_name = model_config['name']
         model_file = model_config['file']
         
-        print(f"\n🔧 Testing {model_name}...")
+        print(f"\n[TOOL] Testing {model_name}...")
         
         try:
             from ultralytics import YOLO
@@ -154,7 +154,7 @@ class ModelComparison:
             all_confidence_results = []
             
             for conf in confidence_levels:
-                print(f"  🎯 Testing confidence: {conf}")
+                print(f"  [TARGET] Testing confidence: {conf}")
                 
                 inference_start = time.time()
                 results = model(test_image_path, conf=conf, verbose=False)
@@ -207,7 +207,7 @@ class ModelComparison:
                         'all_confidence_results': all_confidence_results
                     }
                 
-                print(f"    📊 Found {len(detections)} detections")
+                print(f"    [STATS] Found {len(detections)} detections")
             
             # Calculate additional metrics
             if best_result:
@@ -238,9 +238,9 @@ class ModelComparison:
                 try:
                     self.create_visualization(test_image_path, best_result, model_output_dir)
                 except Exception as e:
-                    print(f"    ⚠️ Visualization failed: {e}")
+                    print(f"    [WARN] Visualization failed: {e}")
             
-            print(f"✅ {model_name}: {best_detection_count} detections (best conf: {best_result['confidence_threshold'] if best_result else 'N/A'})")
+            print(f"[OK] {model_name}: {best_detection_count} detections (best conf: {best_result['confidence_threshold'] if best_result else 'N/A'})")
             return best_result or {'model_config': model_config, 'error': 'No detections found'}
             
         except Exception as e:
@@ -249,7 +249,7 @@ class ModelComparison:
                 'error': str(e),
                 'failed': True
             }
-            print(f"❌ {model_name} failed: {e}")
+            print(f"[FAIL] {model_name} failed: {e}")
             return error_result
     
     def create_visualization(self, image_path: str, result: Dict, output_dir: Path):
@@ -528,8 +528,8 @@ class ModelComparison:
     
     def run_comprehensive_test(self, input_dir="data/input"):
         """Run comprehensive test on all models."""
-        print("🚀 Starting Comprehensive Model Comparison")
-        print("📊 Export formats: JSON, CSV (3 files), Excel (multi-sheet), HTML")
+        print("[RUN] Starting Comprehensive Model Comparison")
+        print("[STATS] Export formats: JSON, CSV (3 files), Excel (multi-sheet), HTML")
         print("=" * 60)
         
         # Setup test images
@@ -538,7 +538,7 @@ class ModelComparison:
         
         # Test first image with all models (for speed)
         test_image = self.test_images[0]
-        print(f"🎯 Testing with image: {test_image.name}")
+        print(f"[TARGET] Testing with image: {test_image.name}")
         
         all_results = []
         
@@ -553,7 +553,7 @@ class ModelComparison:
                 time.sleep(1)
                 
             except Exception as e:
-                print(f"❌ Failed testing {model_config['name']}: {e}")
+                print(f"[FAIL] Failed testing {model_config['name']}: {e}")
                 continue
         
         # Generate comparison report
@@ -563,13 +563,13 @@ class ModelComparison:
     
     def generate_comparison_report(self, results: List[Dict]):
         """Generate comprehensive comparison report in multiple formats."""
-        print(f"\n📊 Generating Comparison Report in Multiple Formats...")
+        print(f"\n[STATS] Generating Comparison Report in Multiple Formats...")
         
         # Filter successful results
         successful_results = [r for r in results if not r.get('failed', False) and 'error' not in r]
         
         if not successful_results:
-            print("❌ No successful model results to compare")
+            print("[FAIL] No successful model results to compare")
             return
         
         # Sort by detection count (descending)
@@ -629,14 +629,14 @@ class ModelComparison:
         self.print_comparison_summary(summary)
         
         # Display all generated files
-        print(f"\n📄 Results exported in multiple formats:")
-        print(f"  📊 JSON: {json_file}")
+        print(f"\n[FILE] Results exported in multiple formats:")
+        print(f"  [STATS] JSON: {json_file}")
         print(f"  📈 Excel: {excel_file}")
         for csv_file in csv_files:
-            print(f"  📋 CSV: {csv_file}")
+            print(f"  [INFO] CSV: {csv_file}")
         print(f"  🌐 HTML: {html_file}")
         
-        print(f"\n📁 All files saved to: {self.output_dir}")
+        print(f"\n[FOLDER] All files saved to: {self.output_dir}")
     
     def create_html_report(self, summary: Dict, timestamp: str):
         """Create HTML comparison report."""
@@ -669,7 +669,7 @@ class ModelComparison:
                 </div>
                 
                 <div class="export-info">
-                    <h3>📊 Available Export Formats:</h3>
+                    <h3>[STATS] Available Export Formats:</h3>
                     <p><strong>Excel:</strong> Multi-sheet workbook with comprehensive analysis</p>
                     <p><strong>CSV:</strong> Model comparison, detailed detections, and confidence analysis</p>
                     <p><strong>JSON:</strong> Raw structured data for programmatic access</p>
@@ -739,7 +739,7 @@ class ModelComparison:
                 </div>
                 
                 <div style="margin-top: 30px; padding: 20px; background: #f8f9fa; border-radius: 8px;">
-                    <h3>📝 Recommendations</h3>
+                    <h3>[LOG] Recommendations</h3>
                     <ul>
         """
         
@@ -762,7 +762,7 @@ class ModelComparison:
                 
                 <div style="text-align: center; padding: 30px; background: #f8f9fa; color: #666; margin-top: 20px;">
                     <p>Generated by Enhanced YOLO Model Comparison Tool</p>
-                    <p style="margin-top: 10px;">🚀 Powered by Ultralytics YOLO | 📊 Multiple Export Formats Available</p>
+                    <p style="margin-top: 10px;">[RUN] Powered by Ultralytics YOLO | [STATS] Multiple Export Formats Available</p>
                 </div>
             </div>
         </body>
@@ -793,7 +793,7 @@ class ModelComparison:
         
         if summary['model_rankings']:
             best = summary['model_rankings'][0]
-            print(f"\n🎯 RECOMMENDATION: Use {best['model_name']}")
+            print(f"\n[TARGET] RECOMMENDATION: Use {best['model_name']}")
             print(f"   Reason: {best['detections_found']} detections found")
             print(f"   Classes detected: {', '.join(best['detected_classes'])}")
             print(f"   Average confidence: {best['avg_confidence']:.3f}")
@@ -810,8 +810,8 @@ def main():
     
     args = parser.parse_args()
     
-    print("🚀 Enhanced Model Comparison Tool")
-    print("📊 Export formats: JSON, CSV (3 files), Excel (multi-sheet), HTML")
+    print("[RUN] Enhanced Model Comparison Tool")
+    print("[STATS] Export formats: JSON, CSV (3 files), Excel (multi-sheet), HTML")
     print("⚡ Testing models on first image for quick comparison")
     print("="*60)
     
@@ -820,10 +820,10 @@ def main():
     results = comparator.run_comprehensive_test(args.input_dir)
     
     if results:
-        print(f"\n✅ Comparison complete! Check {args.output_dir} for all exported files")
-        print("💡 Open the Excel file for detailed analysis or HTML for visual overview")
+        print(f"\n[OK] Comparison complete! Check {args.output_dir} for all exported files")
+        print("[TIP] Open the Excel file for detailed analysis or HTML for visual overview")
     else:
-        print("❌ Comparison failed - no results generated")
+        print("[FAIL] Comparison failed - no results generated")
 
 if __name__ == "__main__":
     main()

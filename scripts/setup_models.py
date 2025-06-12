@@ -288,10 +288,10 @@ class ModelSetup:
             success &= self.verify_setup()
         
         if success:
-            logger.info("✅ Setup completed successfully!")
+            logger.info("[OK] Setup completed successfully!")
             logger.info("You can now run: python scripts/process_single_image.py <image_path>")
         else:
-            logger.error("❌ Setup failed. Please check the errors above.")
+            logger.error("[FAIL] Setup failed. Please check the errors above.")
         
         return success
 

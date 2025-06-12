@@ -14,7 +14,7 @@ def test_single_image_all_models(image_path, output_dir="data/output/model_compa
     """Test a single image with all available models."""
     
     if not Path(image_path).exists():
-        print(f"❌ Image not found: {image_path}")
+        print(f"[FAIL] Image not found: {image_path}")
         return
     
     output_path = Path(output_dir)
@@ -30,13 +30,13 @@ def test_single_image_all_models(image_path, output_dir="data/output/model_compa
         'yolov8n-world.pt'
     ]
     
-    print(f"🎯 Testing image: {Path(image_path).name}")
+    print(f"[TARGET] Testing image: {Path(image_path).name}")
     print("="*60)
     
     results = []
     
     for model_name in models_to_test:
-        print(f"\n🔧 Testing {model_name}...")
+        print(f"\n[TOOL] Testing {model_name}...")
         
         try:
             from ultralytics import YOLO
@@ -86,17 +86,17 @@ def test_single_image_all_models(image_path, output_dir="data/output/model_compa
             
             if best_result:
                 results.append(best_result)
-                print(f"✅ Best: {best_count} detections at conf {best_result['confidence']}")
+                print(f"[OK] Best: {best_count} detections at conf {best_result['confidence']}")
                 
                 # Show what was detected
                 if best_result['detections']:
                     detected_items = [d['class_name'] for d in best_result['detections']]
                     print(f"   Found: {', '.join(detected_items)}")
             else:
-                print("❌ No detections found")
+                print("[FAIL] No detections found")
                 
         except Exception as e:
-            print(f"❌ {model_name} failed: {e}")
+            print(f"[FAIL] {model_name} failed: {e}")
     
     # Sort results by detection count
     results.sort(key=lambda x: x['count'], reverse=True)
@@ -126,12 +126,12 @@ def test_single_image_all_models(image_path, output_dir="data/output/model_compa
             'results': results
         }, f, indent=2)
     
-    print(f"📄 Results saved: {results_file}")
+    print(f"[FILE] Results saved: {results_file}")
     
     # Recommendation
     if results:
         best = results[0]
-        print(f"\n🎯 RECOMMENDATION: Use {best['model']}")
+        print(f"\n[TARGET] RECOMMENDATION: Use {best['model']}")
         print(f"   Found {best['count']} items with confidence {best['confidence']}")
 
 if __name__ == "__main__":

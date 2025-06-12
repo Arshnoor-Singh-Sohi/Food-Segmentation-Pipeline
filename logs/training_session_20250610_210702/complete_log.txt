@@ -1,0 +1,15 @@
+Training Session Started: 2025-06-10 21:07:02.364625
+Session ID: 20250610_210702
+Working Directory: E:\food_segmentation_pipeline
+Python Version: 3.12.3 | packaged by conda-forge | (main, Apr 15 2024, 18:20:11) [MSC v.1938 64 bit (AMD64)]
+Platform: win32
+==================================================
+GPU: Not available (CPU training)
+==================================================
+
+
+============================================================
+COMMAND: python scripts/train_custom_food_model.py --mode check_setup
+STARTED: 2025-06-10 21:07:05.986242
+============================================================
+EXECUTION ERROR: 'charmap' codec can't decode byte 0x8d in position 218: character maps to <undefined>

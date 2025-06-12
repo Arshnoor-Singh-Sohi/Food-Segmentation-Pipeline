@@ -1,0 +1,7 @@
+names:
+- food
+nc: 1
+path: E:\food_segmentation_pipeline\data\training\food_training
+task: segment
+train: images/train
+val: images/val

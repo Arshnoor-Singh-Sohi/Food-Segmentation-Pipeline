@@ -32,7 +32,7 @@ class EnhancedBatchTester:
         # Get test images
         input_path = Path(input_dir)
         if not input_path.exists():
-            print(f"❌ Input directory not found: {input_dir}")
+            print(f"[FAIL] Input directory not found: {input_dir}")
             return
         
         extensions = {'.jpg', '.jpeg', '.png', '.bmp', '.tiff', '.webp'}
@@ -43,13 +43,13 @@ class EnhancedBatchTester:
             test_images.extend(list(input_path.glob(f'*{ext.upper()}')))
         
         if not test_images:
-            print(f"❌ No images found in {input_dir}")
+            print(f"[FAIL] No images found in {input_dir}")
             return
         
         output_path = Path(output_dir)
         output_path.mkdir(parents=True, exist_ok=True)
         
-        print(f"🚀 Testing {len(self.models_to_test)} models on {len(test_images)} images")
+        print(f"[RUN] Testing {len(self.models_to_test)} models on {len(test_images)} images")
         print("="*80)
         
         # Test each model on all images
@@ -57,7 +57,7 @@ class EnhancedBatchTester:
         
         for model_config in self.models_to_test:
             model_name = model_config['name']
-            print(f"\n🔧 Testing {model_name} on all images...")
+            print(f"\n[TOOL] Testing {model_name} on all images...")
             
             model_results = []
             
@@ -67,12 +67,12 @@ class EnhancedBatchTester:
                     if result:
                         result['image_name'] = image_path.name
                         model_results.append(result)
-                        print(f"  ✅ {image_path.name}: {result['count']} detections")
+                        print(f"  [OK] {image_path.name}: {result['count']} detections")
                     else:
-                        print(f"  ❌ {image_path.name}: No detections")
+                        print(f"  [FAIL] {image_path.name}: No detections")
                         
                 except Exception as e:
-                    print(f"  ❌ {image_path.name}: Failed - {e}")
+                    print(f"  [FAIL] {image_path.name}: Failed - {e}")
                     continue
             
             all_results[model_name] = {
@@ -87,7 +87,7 @@ class EnhancedBatchTester:
                 'max_detections': max([r['count'] for r in model_results]) if model_results else 0
             }
             
-            print(f"  📊 Total: {all_results[model_name]['total_detections']} detections across {len(model_results)} images")
+            print(f"  [STATS] Total: {all_results[model_name]['total_detections']} detections across {len(model_results)} images")
         
         # Generate comprehensive reports
         self.print_batch_summary(all_results, test_images)
@@ -107,19 +107,19 @@ class EnhancedBatchTester:
         # Save Excel results
         excel_file = self.save_excel_results(all_results, test_images, output_path, timestamp)
         
-        print(f"\n📄 Results saved in multiple formats:")
-        print(f"  📊 JSON: {json_file}")
+        print(f"\n[FILE] Results saved in multiple formats:")
+        print(f"  [STATS] JSON: {json_file}")
         print(f"  📈 Excel: {excel_file}")
         for csv_file in csv_files:
-            print(f"  📋 CSV: {csv_file}")
+            print(f"  [INFO] CSV: {csv_file}")
         print(f"  🌐 HTML: {html_file}")
         
         # Auto-open HTML report
         try:
             webbrowser.open(f'file://{html_file.absolute()}')
-            print("\n🚀 HTML report opened in browser!")
+            print("\n[RUN] HTML report opened in browser!")
         except:
-            print("\n💡 Open the HTML file manually in your browser")
+            print("\n[TIP] Open the HTML file manually in your browser")
         
         return all_results
     
@@ -389,7 +389,7 @@ class EnhancedBatchTester:
         
         if sorted_models:
             best_model = sorted_models[0]
-            print(f"\n🎯 OVERALL RECOMMENDATION: {best_model[0]}")
+            print(f"\n[TARGET] OVERALL RECOMMENDATION: {best_model[0]}")
             print(f"   Best overall performance with {best_model[1]['total_detections']} total detections")
             print(f"   Average {best_model[1]['avg_detections']:.1f} items per image")
         
@@ -412,7 +412,7 @@ class EnhancedBatchTester:
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>🚀 Batch Model Comparison Report</title>
+            <title>[RUN] Batch Model Comparison Report</title>
             <style>
                 * {{ margin: 0; padding: 0; box-sizing: border-box; }}
                 
@@ -555,13 +555,13 @@ class EnhancedBatchTester:
         <body>
             <div class="container">
                 <div class="header">
-                    <h1>🚀 Batch Model Comparison Report</h1>
+                    <h1>[RUN] Batch Model Comparison Report</h1>
                     <p>Comprehensive analysis of {len(sorted_models)} models tested on {len(test_images)} images</p>
                     <p>Generated on {datetime.now().strftime('%B %d, %Y at %I:%M %p')}</p>
                 </div>
                 
                 <div class="export-info">
-                    <h3>📊 Data Export Formats Available:</h3>
+                    <h3>[STATS] Data Export Formats Available:</h3>
                     <p><strong>Excel:</strong> Comprehensive workbook with multiple sheets for detailed analysis</p>
                     <p><strong>CSV:</strong> Model summary, detailed results, and per-image comparison files</p>
                     <p><strong>JSON:</strong> Raw data for programmatic access</p>
@@ -591,7 +591,7 @@ class EnhancedBatchTester:
             best_model = sorted_models[0]
             html_content += f"""
                 <div class="recommendation">
-                    <h2>🎯 Recommended Model for Batch Processing</h2>
+                    <h2>[TARGET] Recommended Model for Batch Processing</h2>
                     <h3>{best_model[0]}</h3>
                     <p>Total detections: {best_model[1]['total_detections']} across {len(test_images)} images</p>
                     <p>Average: {best_model[1]['avg_detections']:.1f} detections per image</p>
@@ -640,7 +640,7 @@ class EnhancedBatchTester:
                             </div>
                             
                             <div class="per-image-results">
-                                <h4>📊 Per-Image Results</h4>
+                                <h4>[STATS] Per-Image Results</h4>
                                 <div class="image-grid">
             """
             
@@ -665,7 +665,7 @@ class EnhancedBatchTester:
                 
                 <div style="text-align: center; padding: 30px; background: #f8f9fa; color: #666;">
                     <p>Generated by Enhanced YOLO Batch Comparison Tool</p>
-                    <p style="margin-top: 10px;">🚀 Powered by Ultralytics YOLO | 📊 Multiple Export Formats</p>
+                    <p style="margin-top: 10px;">[RUN] Powered by Ultralytics YOLO | [STATS] Multiple Export Formats</p>
                 </div>
             </div>
         </body>
@@ -688,8 +688,8 @@ def main():
     
     args = parser.parse_args()
     
-    print("🚀 Enhanced Batch Tester with Multiple Export Formats")
-    print("📊 Exports: JSON, CSV (3 files), Excel (multi-sheet), HTML")
+    print("[RUN] Enhanced Batch Tester with Multiple Export Formats")
+    print("[STATS] Exports: JSON, CSV (3 files), Excel (multi-sheet), HTML")
     print("="*60)
     
     tester = EnhancedBatchTester()

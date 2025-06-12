@@ -31,20 +31,20 @@ class EnhancedSingleImageTester:
         """Test all models and generate comprehensive reports."""
         
         if not Path(image_path).exists():
-            print(f"❌ Image not found: {image_path}")
+            print(f"[FAIL] Image not found: {image_path}")
             return
         
         output_path = Path(output_dir)
         output_path.mkdir(parents=True, exist_ok=True)
         
-        print(f"🎯 Testing image: {Path(image_path).name}")
+        print(f"[TARGET] Testing image: {Path(image_path).name}")
         print("="*60)
         
         results = []
         
         for model_config in self.models_to_test:
             model_name = model_config['name']
-            print(f"\n🔧 Testing {model_name}...")
+            print(f"\n[TOOL] Testing {model_name}...")
             
             try:
                 result = self.test_single_model(model_config, image_path)
@@ -52,7 +52,7 @@ class EnhancedSingleImageTester:
                     results.append(result)
                     
             except Exception as e:
-                print(f"❌ {model_name} failed: {e}")
+                print(f"[FAIL] {model_name} failed: {e}")
                 continue
         
         # Sort results by detection count
@@ -73,15 +73,15 @@ class EnhancedSingleImageTester:
                 'results': results
             }, f, indent=2)
         
-        print(f"📄 JSON results: {json_file}")
+        print(f"[FILE] JSON results: {json_file}")
         print(f"🌐 HTML report: {html_file}")
         
         # Auto-open HTML report
         try:
             webbrowser.open(f'file://{html_file.absolute()}')
-            print("🚀 HTML report opened in browser!")
+            print("[RUN] HTML report opened in browser!")
         except:
-            print("💡 Open the HTML file manually in your browser")
+            print("[TIP] Open the HTML file manually in your browser")
         
         return results
     
@@ -151,7 +151,7 @@ class EnhancedSingleImageTester:
                     'detections': best_result['detections']
                 }
                 
-                print(f"✅ Best: {best_count} detections at conf {best_result['confidence']}")
+                print(f"[OK] Best: {best_count} detections at conf {best_result['confidence']}")
                 
                 if best_result['detections']:
                     detected_items = [d['class_name'] for d in best_result['detections']]
@@ -159,11 +159,11 @@ class EnhancedSingleImageTester:
                 
                 return final_result
             else:
-                print("❌ No detections found")
+                print("[FAIL] No detections found")
                 return None
                 
         except Exception as e:
-            print(f"❌ {model_name} failed: {e}")
+            print(f"[FAIL] {model_name} failed: {e}")
             return None
     
     def print_console_summary(self, results):
@@ -187,7 +187,7 @@ class EnhancedSingleImageTester:
         # Recommendation
         if results:
             best = results[0]
-            print(f"🎯 RECOMMENDATION: Use {best['model']}")
+            print(f"[TARGET] RECOMMENDATION: Use {best['model']}")
             print(f"   Found {best['count']} items with confidence {best['confidence']}")
             print("="*60)
     
@@ -411,14 +411,14 @@ class EnhancedSingleImageTester:
                 </div>
                 
                 <div class="test-info">
-                    <h2 style="margin-bottom: 20px;">📊 Test Summary</h2>
+                    <h2 style="margin-bottom: 20px;">[STATS] Test Summary</h2>
                     <div class="test-info-grid">
                         <div class="info-card">
-                            <h4>🎯 Test Image</h4>
+                            <h4>[TARGET] Test Image</h4>
                             <p>{image_name}</p>
                         </div>
                         <div class="info-card">
-                            <h4>🔧 Models Tested</h4>
+                            <h4>[TOOL] Models Tested</h4>
                             <p>{len(results)} successful models</p>
                         </div>
                         <div class="info-card">
@@ -438,7 +438,7 @@ class EnhancedSingleImageTester:
             best_model = results[0]
             html_content += f"""
                 <div class="recommendation">
-                    <h2>🎯 Recommended Model</h2>
+                    <h2>[TARGET] Recommended Model</h2>
                     <h3>{best_model['model']}</h3>
                     <p>Found {best_model['count']} items with {best_model['confidence']} confidence threshold</p>
                     <p>Processing time: {best_model['time']:.3f} seconds</p>
@@ -512,7 +512,7 @@ class EnhancedSingleImageTester:
             if 'confidence_tests' in result:
                 html_content += f"""
                             <div class="confidence-tests">
-                                <h4>📊 Confidence Threshold Tests</h4>
+                                <h4>[STATS] Confidence Threshold Tests</h4>
                                 <div class="confidence-grid">
                 """
                 
@@ -544,7 +544,7 @@ class EnhancedSingleImageTester:
                 
                 <div style="text-align: center; padding: 30px; background: #f8f9fa; color: #666;">
                     <p>Generated by YOLO Model Comparison Tool</p>
-                    <p style="margin-top: 10px;">🚀 Powered by Ultralytics YOLO</p>
+                    <p style="margin-top: 10px;">[RUN] Powered by Ultralytics YOLO</p>
                 </div>
             </div>
         </body>

@@ -26,5 +26,5 @@ def print_directory_tree(root_dir, indent='', is_last=True):
 
 if __name__ == "__main__":
     repo_path = r'E:\food_segmentation_pipeline'
-    print(f'📁 {repo_path}')
+    print(f'[FOLDER] {repo_path}')
     print_directory_tree(repo_path)

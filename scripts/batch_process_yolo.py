@@ -60,7 +60,7 @@ class BatchFoodProcessor:
         image_files = self.get_image_files(input_dir)
         
         if not image_files:
-            print(f"❌ No images found in {input_dir}")
+            print(f"[FAIL] No images found in {input_dir}")
             return
         
         print(f"🔍 Found {len(image_files)} images to process")
@@ -203,7 +203,7 @@ class BatchFoodProcessor:
         with open(report_file, 'w') as f:
             json.dump(summary_report, f, indent=2)
         
-        print(f"📊 JSON report saved: {report_file}")
+        print(f"[STATS] JSON report saved: {report_file}")
     
     def _generate_csv_reports(self, timestamp):
         """Generate CSV reports for easy analysis."""
@@ -384,7 +384,7 @@ class BatchFoodProcessor:
         plt.savefig(analytics_file, dpi=150, bbox_inches='tight')
         plt.close()
         
-        print(f"📊 Analytics chart saved: {analytics_file}")
+        print(f"[STATS] Analytics chart saved: {analytics_file}")
     
     def _print_final_summary(self, total_time, total_images):
         """Print final comprehensive summary."""
@@ -393,13 +393,13 @@ class BatchFoodProcessor:
         success_rate = (successful / total_images * 100) if total_images > 0 else 0
         
         print("\n" + "="*80)
-        print("🎉 BATCH PROCESSING COMPLETE!")
+        print("[SUCCESS] BATCH PROCESSING COMPLETE!")
         print("="*80)
-        print(f"📊 Total Images: {total_images}")
-        print(f"✅ Successful: {successful}")
-        print(f"❌ Failed: {failed}")
+        print(f"[STATS] Total Images: {total_images}")
+        print(f"[OK] Successful: {successful}")
+        print(f"[FAIL] Failed: {failed}")
         print(f"📈 Success Rate: {success_rate:.1f}%")
-        print(f"⏱️  Total Time: {total_time/60:.1f} minutes")
+        print(f"[TIMER]  Total Time: {total_time/60:.1f} minutes")
         print(f"⚡ Average Time per Image: {total_time/total_images:.1f} seconds")
         
         if successful > 0:
@@ -412,7 +412,7 @@ class BatchFoodProcessor:
             print(f"   Average Items per Image: {total_food_items/successful:.1f}")
             print(f"   Average Calories per Image: {total_calories/successful:.1f}")
         
-        print(f"\n📁 All results saved to: {self.output_dir}")
+        print(f"\n[FOLDER] All results saved to: {self.output_dir}")
         print("="*80)
 
 def main():
@@ -432,7 +432,7 @@ def main():
     
     # Check input directory
     if not Path(args.input_dir).exists():
-        print(f"❌ Input directory not found: {args.input_dir}")
+        print(f"[FAIL] Input directory not found: {args.input_dir}")
         return 1
     
     try:
@@ -443,7 +443,7 @@ def main():
         return 0
         
     except Exception as e:
-        print(f"❌ Batch processing failed: {e}")
+        print(f"[FAIL] Batch processing failed: {e}")
         return 1
 
 if __name__ == "__main__":

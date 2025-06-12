@@ -12,4 +12,4 @@ results = model(image_rgb)
 
 # Show results
 results[0].show()
-print("✅ YOLO detection working!")
+print("[OK] YOLO detection working!")

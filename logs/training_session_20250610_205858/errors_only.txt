@@ -1,0 +1,2 @@
+[20:59:01] return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+[20:59:01] UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f527' in position 0: character maps to <undefined>

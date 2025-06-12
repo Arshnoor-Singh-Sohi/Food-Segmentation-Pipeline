@@ -1,0 +1,41 @@
+Training Session Started: 2025-06-10 21:06:58.298415
+Session ID: 20250610_210658
+Working Directory: E:\food_segmentation_pipeline
+Python Version: 3.12.3 | packaged by conda-forge | (main, Apr 15 2024, 18:20:11) [MSC v.1938 64 bit (AMD64)]
+Platform: win32
+==================================================
+GPU: Not available (CPU training)
+==================================================
+
+
+============================================================
+COMMAND: python fix_training_issues.py
+STARTED: 2025-06-10 21:07:01.483995
+============================================================
+[21:07:01] [TOOL] Running training setup troubleshooter...
+[21:07:01] [TOOL] TRAINING SETUP TROUBLESHOOTER
+[21:07:01] ==================================================
+[21:07:01] Automatically fixing common training issues...
+[21:07:01] 
+[21:07:01] [FOLDER] Creating missing directories...
+[21:07:01] [OK] Found 348 images in data\input
+[21:07:01] 
+[21:07:01] ==================================================
+[21:07:01] [DONE] TROUBLESHOOTING COMPLETE
+[21:07:01] [OK] No issues found - everything looks good!
+[21:07:01] 
+[21:07:01] [TIP] NEXT STEPS:
+[21:07:01] Traceback (most recent call last):
+[21:07:01] File "E:\food_segmentation_pipeline\fix_training_issues.py", line 252, in <module>
+[21:07:01] fixes_needed = fix_training_setup()
+[21:07:01] ^^^^^^^^^^^^^^^^^^^^
+[21:07:01] File "E:\food_segmentation_pipeline\fix_training_issues.py", line 195, in fix_training_setup
+[21:07:01] print("1. \U0001f4e6 Install requirements: pip install -r requirements.txt")
+[21:07:01] File "C:\Users\arshn\anaconda3\Lib\encodings\cp1252.py", line 19, in encode
+[21:07:01] return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+[21:07:01] ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[21:07:01] UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4e6' in position 3: character maps to <undefined>
+COMPLETED: 2025-06-10 21:07:01.710569
+DURATION: 0:00:03.412154
+RETURN CODE: 1
+============================================================

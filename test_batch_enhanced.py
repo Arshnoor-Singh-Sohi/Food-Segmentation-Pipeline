@@ -31,7 +31,7 @@ class EnhancedBatchTester:
         # Get test images
         input_path = Path(input_dir)
         if not input_path.exists():
-            print(f"❌ Input directory not found: {input_dir}")
+            print(f"[FAIL] Input directory not found: {input_dir}")
             return
         
         extensions = {'.jpg', '.jpeg', '.png', '.bmp', '.tiff', '.webp'}
@@ -42,13 +42,13 @@ class EnhancedBatchTester:
             test_images.extend(list(input_path.glob(f'*{ext.upper()}')))
         
         if not test_images:
-            print(f"❌ No images found in {input_dir}")
+            print(f"[FAIL] No images found in {input_dir}")
             return
         
         output_path = Path(output_dir)
         output_path.mkdir(parents=True, exist_ok=True)
         
-        print(f"🚀 Testing {len(self.models_to_test)} models on {len(test_images)} images")
+        print(f"[RUN] Testing {len(self.models_to_test)} models on {len(test_images)} images")
         print("="*80)
         
         # Test each model on all images
@@ -56,7 +56,7 @@ class EnhancedBatchTester:
         
         for model_config in self.models_to_test:
             model_name = model_config['name']
-            print(f"\n🔧 Testing {model_name} on all images...")
+            print(f"\n[TOOL] Testing {model_name} on all images...")
             
             model_results = []
             
@@ -66,12 +66,12 @@ class EnhancedBatchTester:
                     if result:
                         result['image_name'] = image_path.name
                         model_results.append(result)
-                        print(f"  ✅ {image_path.name}: {result['count']} detections")
+                        print(f"  [OK] {image_path.name}: {result['count']} detections")
                     else:
-                        print(f"  ❌ {image_path.name}: No detections")
+                        print(f"  [FAIL] {image_path.name}: No detections")
                         
                 except Exception as e:
-                    print(f"  ❌ {image_path.name}: Failed - {e}")
+                    print(f"  [FAIL] {image_path.name}: Failed - {e}")
                     continue
             
             all_results[model_name] = {
@@ -83,7 +83,7 @@ class EnhancedBatchTester:
                 'success_rate': len(model_results) / len(test_images) * 100
             }
             
-            print(f"  📊 Total: {all_results[model_name]['total_detections']} detections across {len(model_results)} images")
+            print(f"  [STATS] Total: {all_results[model_name]['total_detections']} detections across {len(model_results)} images")
         
         # Generate comprehensive reports
         self.print_batch_summary(all_results, test_images)
@@ -94,15 +94,15 @@ class EnhancedBatchTester:
         with open(json_file, 'w') as f:
             json.dump(all_results, f, indent=2, default=str)
         
-        print(f"\n📄 JSON results: {json_file}")
+        print(f"\n[FILE] JSON results: {json_file}")
         print(f"🌐 HTML report: {html_file}")
         
         # Auto-open HTML report
         try:
             webbrowser.open(f'file://{html_file.absolute()}')
-            print("🚀 HTML report opened in browser!")
+            print("[RUN] HTML report opened in browser!")
         except:
-            print("💡 Open the HTML file manually in your browser")
+            print("[TIP] Open the HTML file manually in your browser")
         
         return all_results
     
@@ -173,7 +173,7 @@ class EnhancedBatchTester:
         
         if sorted_models:
             best_model = sorted_models[0]
-            print(f"\n🎯 OVERALL RECOMMENDATION: {best_model[0]}")
+            print(f"\n[TARGET] OVERALL RECOMMENDATION: {best_model[0]}")
             print(f"   Best overall performance with {best_model[1]['total_detections']} total detections")
             print(f"   Average {best_model[1]['avg_detections']:.1f} items per image")
         
@@ -196,7 +196,7 @@ class EnhancedBatchTester:
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>🚀 Batch Model Comparison Report</title>
+            <title>[RUN] Batch Model Comparison Report</title>
             <style>
                 * {{ margin: 0; padding: 0; box-sizing: border-box; }}
                 
@@ -331,7 +331,7 @@ class EnhancedBatchTester:
         <body>
             <div class="container">
                 <div class="header">
-                    <h1>🚀 Batch Model Comparison Report</h1>
+                    <h1>[RUN] Batch Model Comparison Report</h1>
                     <p>Comprehensive analysis of {len(sorted_models)} models tested on {len(test_images)} images</p>
                     <p>Generated on {datetime.now().strftime('%B %d, %Y at %I:%M %p')}</p>
                 </div>
@@ -360,7 +360,7 @@ class EnhancedBatchTester:
             best_model = sorted_models[0]
             html_content += f"""
                 <div class="recommendation">
-                    <h2>🎯 Recommended Model for Batch Processing</h2>
+                    <h2>[TARGET] Recommended Model for Batch Processing</h2>
                     <h3>{best_model[0]}</h3>
                     <p>Total detections: {best_model[1]['total_detections']} across {len(test_images)} images</p>
                     <p>Average: {best_model[1]['avg_detections']:.1f} detections per image</p>
@@ -409,7 +409,7 @@ class EnhancedBatchTester:
                             </div>
                             
                             <div class="per-image-results">
-                                <h4>📊 Per-Image Results</h4>
+                                <h4>[STATS] Per-Image Results</h4>
                                 <div class="image-grid">
             """
             
@@ -434,7 +434,7 @@ class EnhancedBatchTester:
                 
                 <div style="text-align: center; padding: 30px; background: #f8f9fa; color: #666;">
                     <p>Generated by Enhanced YOLO Batch Comparison Tool</p>
-                    <p style="margin-top: 10px;">🚀 Powered by Ultralytics YOLO</p>
+                    <p style="margin-top: 10px;">[RUN] Powered by Ultralytics YOLO</p>
                 </div>
             </div>
         </body>

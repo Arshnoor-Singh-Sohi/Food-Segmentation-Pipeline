@@ -18,4 +18,4 @@ for file_path in init_files:
     Path(file_path).touch()
     print(f"Created: {file_path}")
 
-print("✅ All __init__.py files created!")
+print("[OK] All __init__.py files created!")

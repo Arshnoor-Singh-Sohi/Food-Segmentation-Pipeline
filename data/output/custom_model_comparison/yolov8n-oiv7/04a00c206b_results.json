@@ -1,0 +1,149 @@
+{
+  "model_config": {
+    "name": "yolov8n-oiv7",
+    "file": "yolov8n-oiv7.pt",
+    "type": "detection",
+    "description": "YOLOv8 Open Images V7 (more classes)",
+    "expected_performance": "More object classes, may include more foods"
+  },
+  "confidence_threshold": 0.1,
+  "detections": [
+    {
+      "class_id": 199,
+      "class_name": "Food",
+      "confidence": 0.44064104557037354,
+      "bbox": [
+        105.29723358154297,
+        33.259521484375,
+        275.75213623046875,
+        171.77471923828125
+      ],
+      "has_mask": false
+    },
+    {
+      "class_id": 199,
+      "class_name": "Food",
+      "confidence": 0.24813435971736908,
+      "bbox": [
+        15.112775802612305,
+        65.40409088134766,
+        141.442138671875,
+        171.53265380859375
+      ],
+      "has_mask": false
+    },
+    {
+      "class_id": 199,
+      "class_name": "Food",
+      "confidence": 0.1924496442079544,
+      "bbox": [
+        105.72164916992188,
+        81.15373992919922,
+        265.6455078125,
+        171.49671936035156
+      ],
+      "has_mask": false
+    }
+  ],
+  "detection_count": 3,
+  "load_time_seconds": 0.09984040260314941,
+  "inference_time_seconds": 0.1374373435974121,
+  "total_time_seconds": 0.23727774620056152,
+  "all_confidence_results": [
+    {
+      "confidence_threshold": 0.1,
+      "detections": [
+        {
+          "class_id": 199,
+          "class_name": "Food",
+          "confidence": 0.44064104557037354,
+          "bbox": [
+            105.29723358154297,
+            33.259521484375,
+            275.75213623046875,
+            171.77471923828125
+          ],
+          "has_mask": false
+        },
+        {
+          "class_id": 199,
+          "class_name": "Food",
+          "confidence": 0.24813435971736908,
+          "bbox": [
+            15.112775802612305,
+            65.40409088134766,
+            141.442138671875,
+            171.53265380859375
+          ],
+          "has_mask": false
+        },
+        {
+          "class_id": 199,
+          "class_name": "Food",
+          "confidence": 0.1924496442079544,
+          "bbox": [
+            105.72164916992188,
+            81.15373992919922,
+            265.6455078125,
+            171.49671936035156
+          ],
+          "has_mask": false
+        }
+      ],
+      "detection_count": 3,
+      "inference_time_seconds": 0.1374373435974121
+    },
+    {
+      "confidence_threshold": 0.25,
+      "detections": [
+        {
+          "class_id": 199,
+          "class_name": "Food",
+          "confidence": 0.44064104557037354,
+          "bbox": [
+            105.29723358154297,
+            33.259521484375,
+            275.75213623046875,
+            171.77471923828125
+          ],
+          "has_mask": false
+        }
+      ],
+      "detection_count": 1,
+      "inference_time_seconds": 0.08166313171386719
+    },
+    {
+      "confidence_threshold": 0.4,
+      "detections": [
+        {
+          "class_id": 199,
+          "class_name": "Food",
+          "confidence": 0.44064104557037354,
+          "bbox": [
+            105.29723358154297,
+            33.259521484375,
+            275.75213623046875,
+            171.77471923828125
+          ],
+          "has_mask": false
+        }
+      ],
+      "detection_count": 1,
+      "inference_time_seconds": 0.07455086708068848
+    },
+    {
+      "confidence_threshold": 0.6,
+      "detections": [],
+      "detection_count": 0,
+      "inference_time_seconds": 0.07723093032836914
+    }
+  ],
+  "avg_confidence": 0.29374168316523236,
+  "min_confidence": 0.1924496442079544,
+  "max_confidence": 0.44064104557037354,
+  "std_confidence": 0.1063320707081323,
+  "unique_classes": [
+    "Food"
+  ],
+  "unique_class_count": 1
+}

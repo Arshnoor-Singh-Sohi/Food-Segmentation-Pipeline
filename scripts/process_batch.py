@@ -92,7 +92,7 @@ class BatchProcessor:
                 self.processed_count += 1
                 self.results_summary.append(summary)
             
-            logger.info(f"✅ Processed: {image_path.name} ({self.processed_count} completed)")
+            logger.info(f"[OK] Processed: {image_path.name} ({self.processed_count} completed)")
             return summary
             
         except Exception as e:
@@ -109,7 +109,7 @@ class BatchProcessor:
                 self.failed_count += 1
                 self.results_summary.append(error_summary)
             
-            logger.error(f"❌ Failed: {image_path.name} - {str(e)}")
+            logger.error(f"[FAIL] Failed: {image_path.name} - {str(e)}")
             return error_summary
     
     def process_batch_sequential(self, image_files: list) -> list:
@@ -200,7 +200,7 @@ class BatchProcessor:
                 with open(nutrition_file, 'w') as f:
                     json.dump(nutrition_summary, f, indent=2)
             
-            logger.info(f"📊 Batch summary saved to: {summary_dir}")
+            logger.info(f"[STATS] Batch summary saved to: {summary_dir}")
             
         except Exception as e:
             logger.error(f"Failed to save batch summary: {e}")
@@ -225,9 +225,9 @@ class BatchProcessor:
         print("\n" + "="*70)
         print("🍽️  BATCH PROCESSING COMPLETE!")
         print("="*70)
-        print(f"📊 Total Images: {total}")
-        print(f"✅ Successful: {self.processed_count}")
-        print(f"❌ Failed: {self.failed_count}")
+        print(f"[STATS] Total Images: {total}")
+        print(f"[OK] Successful: {self.processed_count}")
+        print(f"[FAIL] Failed: {self.failed_count}")
         print(f"📈 Success Rate: {success_rate:.1f}%")
         
         if self.processed_count > 0:
@@ -311,7 +311,7 @@ def main():
         
         # Print summary
         processor.print_final_summary()
-        print(f"⏱️  Total Processing Time: {total_time/60:.1f} minutes")
+        print(f"[TIMER]  Total Processing Time: {total_time/60:.1f} minutes")
         print(f"⚡ Average Time per Image: {total_time/len(image_files):.1f} seconds")
         
         return 0

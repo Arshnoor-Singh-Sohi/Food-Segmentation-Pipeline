@@ -34,21 +34,21 @@ class EnhancedSingleImageTester:
         """Test all models and generate comprehensive reports in multiple formats."""
         
         if not Path(image_path).exists():
-            print(f"❌ Image not found: {image_path}")
+            print(f"[FAIL] Image not found: {image_path}")
             return
         
         output_path = Path(output_dir)
         output_path.mkdir(parents=True, exist_ok=True)
         
-        print(f"🎯 Testing image: {Path(image_path).name}")
-        print("📊 Export formats: JSON, CSV (3 files), Excel (multi-sheet), HTML")
+        print(f"[TARGET] Testing image: {Path(image_path).name}")
+        print("[STATS] Export formats: JSON, CSV (3 files), Excel (multi-sheet), HTML")
         print("="*60)
         
         results = []
         
         for model_config in self.models_to_test:
             model_name = model_config['name']
-            print(f"\n🔧 Testing {model_name}...")
+            print(f"\n[TOOL] Testing {model_name}...")
             
             try:
                 result = self.test_single_model(model_config, image_path)
@@ -56,7 +56,7 @@ class EnhancedSingleImageTester:
                     results.append(result)
                     
             except Exception as e:
-                print(f"❌ {model_name} failed: {e}")
+                print(f"[FAIL] {model_name} failed: {e}")
                 continue
         
         # Sort results by detection count
@@ -89,19 +89,19 @@ class EnhancedSingleImageTester:
         excel_file = self.save_excel_results(results, image_path, output_path, timestamp)
         
         # Display all generated files
-        print(f"\n📄 Results exported in multiple formats:")
-        print(f"  📊 JSON: {json_file}")
+        print(f"\n[FILE] Results exported in multiple formats:")
+        print(f"  [STATS] JSON: {json_file}")
         print(f"  📈 Excel: {excel_file}")
         for csv_file in csv_files:
-            print(f"  📋 CSV: {csv_file}")
+            print(f"  [INFO] CSV: {csv_file}")
         print(f"  🌐 HTML: {html_file}")
         
         # Auto-open HTML report
         try:
             webbrowser.open(f'file://{html_file.absolute()}')
-            print("\n🚀 HTML report opened in browser!")
+            print("\n[RUN] HTML report opened in browser!")
         except:
-            print("\n💡 Open the HTML file manually in your browser")
+            print("\n[TIP] Open the HTML file manually in your browser")
         
         return results
     
@@ -192,7 +192,7 @@ class EnhancedSingleImageTester:
                     'avg_bbox_area': np.mean([d['bbox_area'] for d in best_result['detections']]) if best_result['detections'] else 0
                 }
                 
-                print(f"✅ Best: {best_count} detections at conf {best_result['confidence']}")
+                print(f"[OK] Best: {best_count} detections at conf {best_result['confidence']}")
                 
                 if best_result['detections']:
                     detected_items = [d['class_name'] for d in best_result['detections']]
@@ -200,11 +200,11 @@ class EnhancedSingleImageTester:
                 
                 return final_result
             else:
-                print("❌ No detections found")
+                print("[FAIL] No detections found")
                 return None
                 
         except Exception as e:
-            print(f"❌ {model_name} failed: {e}")
+            print(f"[FAIL] {model_name} failed: {e}")
             return None
     
     def create_summary_data(self, results):
@@ -486,7 +486,7 @@ class EnhancedSingleImageTester:
         # Recommendation
         if results:
             best = results[0]
-            print(f"🎯 RECOMMENDATION: Use {best['model']}")
+            print(f"[TARGET] RECOMMENDATION: Use {best['model']}")
             print(f"   Found {best['count']} items with confidence {best['confidence']}")
             print(f"   Average detection confidence: {best['avg_detection_confidence']:.3f}")
             print("="*60)
@@ -717,7 +717,7 @@ class EnhancedSingleImageTester:
                 </div>
                 
                 <div class="export-info">
-                    <h3>📊 Available Export Formats:</h3>
+                    <h3>[STATS] Available Export Formats:</h3>
                     <p><strong>Excel:</strong> Multi-sheet workbook with comprehensive analysis and performance metrics</p>
                     <p><strong>CSV:</strong> Model summary, detailed detections, and confidence threshold analysis (3 files)</p>
                     <p><strong>JSON:</strong> Complete structured data for programmatic access</p>
@@ -725,14 +725,14 @@ class EnhancedSingleImageTester:
                 </div>
                 
                 <div class="test-info">
-                    <h2 style="margin-bottom: 20px;">📊 Test Summary</h2>
+                    <h2 style="margin-bottom: 20px;">[STATS] Test Summary</h2>
                     <div class="test-info-grid">
                         <div class="info-card">
-                            <h4>🎯 Test Image</h4>
+                            <h4>[TARGET] Test Image</h4>
                             <p>{image_name}</p>
                         </div>
                         <div class="info-card">
-                            <h4>🔧 Models Tested</h4>
+                            <h4>[TOOL] Models Tested</h4>
                             <p>{len(results)} successful models</p>
                         </div>
                         <div class="info-card">
@@ -748,7 +748,7 @@ class EnhancedSingleImageTester:
                             <p>{min(results, key=lambda x: x['time'])['model'] if results else 'None'}</p>
                         </div>
                         <div class="info-card">
-                            <h4>🎯 Avg Accuracy</h4>
+                            <h4>[TARGET] Avg Accuracy</h4>
                             <p>{np.mean([r['avg_detection_confidence'] for r in results]):.3f} confidence</p>
                         </div>
                     </div>
@@ -761,7 +761,7 @@ class EnhancedSingleImageTester:
             fastest_model = min(results, key=lambda x: x['time'])
             html_content += f"""
                 <div class="recommendation">
-                    <h2>🎯 Recommended Model</h2>
+                    <h2>[TARGET] Recommended Model</h2>
                     <h3>{best_model['model']}</h3>
                     <p>Found {best_model['count']} items with {best_model['confidence']} confidence threshold</p>
                     <p>Average detection confidence: {best_model['avg_detection_confidence']:.3f}</p>
@@ -845,7 +845,7 @@ class EnhancedSingleImageTester:
             if 'confidence_tests' in result:
                 html_content += f"""
                             <div class="confidence-tests">
-                                <h4>📊 Confidence Threshold Tests</h4>
+                                <h4>[STATS] Confidence Threshold Tests</h4>
                                 <div class="confidence-grid">
                 """
                 
@@ -878,7 +878,7 @@ class EnhancedSingleImageTester:
                 
                 <div style="text-align: center; padding: 30px; background: #f8f9fa; color: #666;">
                     <p>Generated by Enhanced YOLO Model Comparison Tool</p>
-                    <p style="margin-top: 10px;">🚀 Powered by Ultralytics YOLO | 📊 Multiple Export Formats Available</p>
+                    <p style="margin-top: 10px;">[RUN] Powered by Ultralytics YOLO | [STATS] Multiple Export Formats Available</p>
                 </div>
             </div>
         </body>
@@ -899,8 +899,8 @@ def main():
         image_path = sys.argv[1]
         output_dir = sys.argv[2] if len(sys.argv) > 2 else "data/output/model_comparison"
         
-        print("🚀 Enhanced Single Image Tester")
-        print("📊 Export formats: JSON, CSV (3 files), Excel (multi-sheet), HTML")
+        print("[RUN] Enhanced Single Image Tester")
+        print("[STATS] Export formats: JSON, CSV (3 files), Excel (multi-sheet), HTML")
         print("="*60)
         
         tester = EnhancedSingleImageTester()
@@ -908,9 +908,9 @@ def main():
     else:
         print("Usage: python test_single_image_enhanced.py <image_path> [output_dir]")
         print("\nExport formats available:")
-        print("  📊 JSON - Complete structured data")
+        print("  [STATS] JSON - Complete structured data")
         print("  📈 Excel - Multi-sheet workbook with analysis")
-        print("  📋 CSV - 3 files: summary, detections, confidence analysis")
+        print("  [INFO] CSV - 3 files: summary, detections, confidence analysis")
         print("  🌐 HTML - Interactive visual report")
 
 if __name__ == "__main__":

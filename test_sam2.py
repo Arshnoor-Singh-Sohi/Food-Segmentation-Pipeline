@@ -2,6 +2,6 @@
 
 try:
     from sam2.build_sam import build_sam2
-    print('✅ SAM 2 imported successfully')
+    print('[OK] SAM 2 imported successfully')
 except Exception as e:
-    print(f'❌ SAM 2 issue: {e}')
+    print(f'[FAIL] SAM 2 issue: {e}')

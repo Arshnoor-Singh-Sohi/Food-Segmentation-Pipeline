@@ -1,0 +1,32 @@
+datasets:
+  food101_subset:
+    categories:
+    - apple_pie
+    - beef_tartare
+    - caesar_salad
+    - chicken_curry
+    - chocolate_cake
+    - club_sandwich
+    - fish_and_chips
+    - french_fries
+    - fried_rice
+    - hamburger
+    - ice_cream
+    - pizza
+    - ramen
+    - spaghetti_carbonara
+    - steak
+    - sushi
+    - tacos
+    - tiramisu
+    description: Subset of Food-101 for quick training
+    name: Food-101 Subset
+    num_classes: 20
+image_processing:
+  max_size: 1024
+  min_size: 416
+  quality_threshold: 0.7
+splits:
+  test: 0.1
+  train: 0.7
+  val: 0.2

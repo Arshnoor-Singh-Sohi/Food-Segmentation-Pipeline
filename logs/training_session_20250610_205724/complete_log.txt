@@ -1,0 +1,25 @@
+Training Session Started: 2025-06-10 20:57:24.192478
+Session ID: 20250610_205724
+Working Directory: E:\food_segmentation_pipeline
+Python Version: 3.12.3 | packaged by conda-forge | (main, Apr 15 2024, 18:20:11) [MSC v.1938 64 bit (AMD64)]
+Platform: win32
+==================================================
+GPU: Not available (CPU training)
+==================================================
+
+
+============================================================
+COMMAND: python fix_training_issues.py
+STARTED: 2025-06-10 20:57:27.761734
+============================================================
+[20:57:28] Traceback (most recent call last):
+[20:57:28] File "E:\food_segmentation_pipeline\fix_training_issues.py", line 250, in <module>
+[20:57:28] print("\U0001f527 Running training setup troubleshooter...")
+[20:57:28] File "C:\Users\arshn\anaconda3\Lib\encodings\cp1252.py", line 19, in encode
+[20:57:28] return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+[20:57:28] ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[20:57:28] UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f527' in position 0: character maps to <undefined>
+COMPLETED: 2025-06-10 20:57:28.050513
+DURATION: 0:00:03.858035
+RETURN CODE: 1
+============================================================

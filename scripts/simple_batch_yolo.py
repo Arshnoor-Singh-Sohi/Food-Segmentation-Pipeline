@@ -181,7 +181,7 @@ def create_simple_html_report(summary, report_dir, timestamp):
             </div>
             
             <div class="section">
-                <h2>📊 Most Common Foods</h2>
+                <h2>[STATS] Most Common Foods</h2>
                 <div class="food-list">
     """
     

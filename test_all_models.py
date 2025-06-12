@@ -111,7 +111,7 @@ class ModelComparison:
         """Get test images."""
         input_path = Path(input_dir)
         if not input_path.exists():
-            print(f"❌ Input directory not found: {input_dir}")
+            print(f"[FAIL] Input directory not found: {input_dir}")
             return False
             
         extensions = {'.jpg', '.jpeg', '.png', '.bmp', '.tiff', '.webp'}
@@ -129,7 +129,7 @@ class ModelComparison:
         model_name = model_config['name']
         model_file = model_config['file']
         
-        print(f"\n🔧 Testing {model_name}...")
+        print(f"\n[TOOL] Testing {model_name}...")
         
         try:
             from ultralytics import YOLO
@@ -151,7 +151,7 @@ class ModelComparison:
             best_detection_count = 0
             
             for conf in confidence_levels:
-                print(f"  🎯 Testing confidence: {conf}")
+                print(f"  [TARGET] Testing confidence: {conf}")
                 
                 inference_start = time.time()
                 results = model(test_image_path, conf=conf, verbose=False)
@@ -194,7 +194,7 @@ class ModelComparison:
                         'total_time_seconds': load_time + inference_time
                     }
                 
-                print(f"    📊 Found {len(detections)} detections")
+                print(f"    [STATS] Found {len(detections)} detections")
             
             # Save detailed results
             if best_result:
@@ -206,9 +206,9 @@ class ModelComparison:
                 try:
                     self.create_visualization(test_image_path, best_result, model_output_dir)
                 except Exception as e:
-                    print(f"    ⚠️ Visualization failed: {e}")
+                    print(f"    [WARN] Visualization failed: {e}")
             
-            print(f"✅ {model_name}: {best_detection_count} detections (best conf: {best_result['confidence_threshold'] if best_result else 'N/A'})")
+            print(f"[OK] {model_name}: {best_detection_count} detections (best conf: {best_result['confidence_threshold'] if best_result else 'N/A'})")
             return best_result or {'model_config': model_config, 'error': 'No detections found'}
             
         except Exception as e:
@@ -217,7 +217,7 @@ class ModelComparison:
                 'error': str(e),
                 'failed': True
             }
-            print(f"❌ {model_name} failed: {e}")
+            print(f"[FAIL] {model_name} failed: {e}")
             return error_result
     
     def create_visualization(self, image_path: str, result: Dict, output_dir: Path):
@@ -271,7 +271,7 @@ class ModelComparison:
     
     def run_comprehensive_test(self, input_dir="data/input"):
         """Run comprehensive test on all models."""
-        print("🚀 Starting Comprehensive Model Comparison")
+        print("[RUN] Starting Comprehensive Model Comparison")
         print("=" * 60)
         
         # Setup test images
@@ -280,7 +280,7 @@ class ModelComparison:
         
         # Test first image with all models (for speed)
         test_image = self.test_images[0]
-        print(f"🎯 Testing with image: {test_image.name}")
+        print(f"[TARGET] Testing with image: {test_image.name}")
         
         all_results = []
         
@@ -295,7 +295,7 @@ class ModelComparison:
                 time.sleep(1)
                 
             except Exception as e:
-                print(f"❌ Failed testing {model_config['name']}: {e}")
+                print(f"[FAIL] Failed testing {model_config['name']}: {e}")
                 continue
         
         # Generate comparison report
@@ -305,13 +305,13 @@ class ModelComparison:
     
     def generate_comparison_report(self, results: List[Dict]):
         """Generate comprehensive comparison report."""
-        print(f"\n📊 Generating Comparison Report...")
+        print(f"\n[STATS] Generating Comparison Report...")
         
         # Filter successful results
         successful_results = [r for r in results if not r.get('failed', False) and 'error' not in r]
         
         if not successful_results:
-            print("❌ No successful model results to compare")
+            print("[FAIL] No successful model results to compare")
             return
         
         # Sort by detection count (descending)
@@ -356,7 +356,7 @@ class ModelComparison:
         # Print summary to console
         self.print_comparison_summary(summary)
         
-        print(f"\n📄 Full report saved: {report_file}")
+        print(f"\n[FILE] Full report saved: {report_file}")
     
     def create_html_report(self, summary: Dict):
         """Create HTML comparison report."""
@@ -442,7 +442,7 @@ class ModelComparison:
                 </div>
                 
                 <div style="margin-top: 30px; padding: 20px; background: #f8f9fa; border-radius: 8px;">
-                    <h3>📝 Recommendations</h3>
+                    <h3>[LOG] Recommendations</h3>
                     <ul>
         """
         
@@ -485,7 +485,7 @@ class ModelComparison:
         
         if summary['model_rankings']:
             best = summary['model_rankings'][0]
-            print(f"\n🎯 RECOMMENDATION: Use {best['model_name']}")
+            print(f"\n[TARGET] RECOMMENDATION: Use {best['model_name']}")
             print(f"   Reason: {best['detections_found']} detections found")
             print(f"   Classes detected: {', '.join(best['detected_classes'])}")
         
@@ -506,9 +506,9 @@ def main():
     results = comparator.run_comprehensive_test(args.input_dir)
     
     if results:
-        print(f"\n✅ Comparison complete! Check {args.output_dir} for detailed results")
+        print(f"\n[OK] Comparison complete! Check {args.output_dir} for detailed results")
     else:
-        print("❌ Comparison failed - no results generated")
+        print("[FAIL] Comparison failed - no results generated")
 
 if __name__ == "__main__":
     main()

@@ -1,0 +1,42 @@
+============================================================
+MODEL PERFORMANCE COMPARISON REPORT
+============================================================
+
+Generated: 2025-06-15 13:04:34
+Custom Model: pizza_custom_model_20250615_124656.json
+Default Model: pizza_metadata_20250615_121634.json
+
+1. DETECTION & LOCALIZATION
+----------------------------------------
+Custom Model:
+  - Detections: 1
+  - Avg Confidence: 0.751
+  - Has Masks: False
+Default Model:
+  - Detections: 1
+  - Avg Confidence: 0.624
+  - Has Masks: True
+
+2. CLASSIFICATION
+----------------------------------------
+Custom Model: ['pizza']
+Default Model: ['pizza']
+
+3. NUTRITION ESTIMATION
+----------------------------------------
+Custom Model:
+  - Calories: 266
+  - Protein: 11.0g
+  - Carbs: 33.0g
+  - Fat: 10.0g
+Default Model:
+  - Calories: 2660
+  - Protein: 110.0g
+  - Carbs: 330.0g
+  - Fat: 100.0g
+
+4. OVERALL PERFORMANCE
+----------------------------------------
+Custom Model Score: 87.5/100
+Default Model Score: 12.5/100
+

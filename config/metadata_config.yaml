@@ -1,0 +1,18 @@
+databases:
+  cuisine_mapping: data/databases/cuisine_mapping/cuisine_patterns.json
+  nutrition: data/databases/nutrition/nutrition_expanded.db
+models:
+  food_classifier:
+    confidence_threshold: 0.7
+    model_path: data/models/metadata_models/food101
+  portion_estimator:
+    density_factors:
+      default: 1.0
+      meat: 1.2
+      salad: 0.3
+      soup: 0.9
+    reference_size_cm: 23.0
+output:
+  save_crops: true
+  save_metadata_json: true
+  save_visualization: true

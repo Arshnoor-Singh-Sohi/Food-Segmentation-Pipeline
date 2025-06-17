@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Fixed Food Dataset Preparer - Now actually creates training data!
-This version will use your existing images and create proper YOLO annotations
+Fixed Food Dataset Preparer - Complete working version
+Save this as: src/training/food_dataset_preparer.py
 """
 
 import os
@@ -17,7 +17,7 @@ from sklearn.model_selection import train_test_split
 class FoodDatasetPreparer:
     """
     Prepare food datasets for YOLO training
-    FIXED VERSION: Actually creates training data instead of just directories
+    FIXED VERSION: Recursively finds all images and creates proper training data
     """
     
     def __init__(self, base_dir="data/training"):
@@ -39,8 +39,8 @@ class FoodDatasetPreparer:
     
     def create_sample_dataset_with_real_data(self, source_dir="data/input", num_classes=5):
         """
-        FIXED: Create a dataset using your existing images with automatically generated labels
-        This actually creates training data instead of empty directories
+        Create a dataset using your existing images with automatically generated labels
+        Now searches recursively for ALL images in subdirectories
         
         Args:
             source_dir: Directory containing your existing food images
@@ -57,20 +57,41 @@ class FoodDatasetPreparer:
             print("[TIP] Please put some food images in data/input/ first")
             return None, None
         
-        # Find actual images in your input directory
-        image_extensions = {'.jpg', '.jpeg', '.png', '.bmp', '.tiff'}
+        # Find ALL images recursively in your input directory
+        image_extensions = {'.jpg', '.jpeg', '.png', '.bmp', '.tiff', '.webp'}
         image_files = []
         
+        print(f"🔍 Searching for images in {source_dir} (including subdirectories)...")
+        
+        # Search recursively using **/* pattern
         for ext in image_extensions:
-            image_files.extend(list(source_path.glob(f"*{ext}")))
-            image_files.extend(list(source_path.glob(f"*{ext.upper()}")))
+            # Recursive search with **/*
+            image_files.extend(list(source_path.rglob(f"*{ext}")))
+            image_files.extend(list(source_path.rglob(f"*{ext.upper()}")))
+        
+        # Remove duplicates and filter out hidden files
+        image_files = list(set([f for f in image_files if not f.name.startswith('.')]))
         
         if not image_files:
-            print(f"[FAIL] No images found in {source_dir}!")
+            print(f"[FAIL] No images found in {source_dir} (searched recursively)!")
             print("[TIP] Please add some food images to data/input/ directory")
+            print(f"[TIP] Looking for extensions: {', '.join(image_extensions)}")
             return None, None
         
-        print(f"📸 Found {len(image_files)} images to use for training")
+        print(f"📸 Found {len(image_files)} images total!")
+        
+        # Show directory breakdown
+        dir_counts = {}
+        for img in image_files:
+            try:
+                relative_dir = str(img.parent.relative_to(source_path))
+            except ValueError:
+                relative_dir = str(img.parent)
+            dir_counts[relative_dir] = dir_counts.get(relative_dir, 0) + 1
+        
+        print("📂 Images by directory:")
+        for dir_name, count in sorted(dir_counts.items()):
+            print(f"   {dir_name}: {count} images")
         
         # Simple food categories for initial training
         food_categories = ['food']  # Start with just one class: "food"
@@ -89,7 +110,7 @@ class FoodDatasetPreparer:
             image_files, test_size=0.2, random_state=42
         )
         
-        print(f"📂 Splitting: {len(train_files)} train, {len(val_files)} validation")
+        print(f"📊 Splitting: {len(train_files)} train, {len(val_files)} validation")
         
         # Copy images and create simple labels
         self._copy_images_and_create_labels(train_files, train_images, train_labels)
@@ -110,34 +131,9 @@ class FoodDatasetPreparer:
         
         print(f"[LOG] Dataset configuration saved to: {yaml_path}")
         print(f"🏷️  Food categories: {', '.join(food_categories)}")
-        print("[OK] Dataset created successfully with real training data!")
+        print(f"[OK] Dataset created successfully with {len(image_files)} images!")
         
         return yaml_path, food_categories
-    
-    def _copy_images_and_create_labels(self, image_files, images_dir, labels_dir):
-        """
-        Copy images and create simple YOLO labels for them
-        This creates a basic bounding box covering most of the image
-        
-        Args:
-            image_files: List of image file paths
-            images_dir: Destination directory for images
-            labels_dir: Destination directory for labels
-        """
-        for img_file in tqdm(image_files, desc=f"Processing images for {images_dir.name}"):
-            # Copy image
-            dest_img = images_dir / img_file.name
-            shutil.copy2(img_file, dest_img)
-            
-            # Create corresponding label file
-            label_file = labels_dir / f"{img_file.stem}.txt"
-            
-            # Create a simple label covering most of the image
-            # Format: class_id center_x center_y width height (all normalized 0-1)
-            # We'll assume the whole image contains food
-            with open(label_file, 'w') as f:
-                # Class 0 (food), centered, covering 80% of image
-                f.write("0 0.5 0.5 0.8 0.8\n")
     
     def create_from_existing_images_smart(self, source_dir="data/input"):
         """
@@ -146,6 +142,9 @@ class FoodDatasetPreparer:
         
         Args:
             source_dir: Directory containing your existing food images
+            
+        Returns:
+            str: Path to the dataset YAML file
         """
         source_path = Path(source_dir)
         if not source_path.exists():
@@ -154,13 +153,18 @@ class FoodDatasetPreparer:
             
         print(f"📂 Creating smart dataset from existing images in {source_dir}")
         
-        # Find all image files
-        image_extensions = {'.jpg', '.jpeg', '.png', '.bmp', '.tiff'}
+        # Find all image files recursively
+        image_extensions = {'.jpg', '.jpeg', '.png', '.bmp', '.tiff', '.webp'}
         image_files = []
         
+        print(f"🔍 Searching for images recursively...")
+        
         for ext in image_extensions:
-            image_files.extend(list(source_path.glob(f"*{ext}")))
-            image_files.extend(list(source_path.glob(f"*{ext.upper()}")))
+            image_files.extend(list(source_path.rglob(f"*{ext}")))
+            image_files.extend(list(source_path.rglob(f"*{ext.upper()}")))
+        
+        # Remove duplicates and filter out hidden files
+        image_files = list(set([f for f in image_files if not f.name.startswith('.')]))
         
         if not image_files:
             print(f"[FAIL] No images found in {source_dir}")
@@ -203,33 +207,64 @@ class FoodDatasetPreparer:
         
         return yaml_path
     
+    def _copy_images_and_create_labels(self, image_files, images_dir, labels_dir):
+        """
+        Copy images and create simple YOLO labels for them
+        Handles filename conflicts by adding numbers
+        """
+        for img_file in tqdm(image_files, desc=f"Processing images for {images_dir.name}"):
+            # Handle potential filename conflicts
+            dest_img = images_dir / img_file.name
+            counter = 1
+            original_stem = img_file.stem
+            
+            while dest_img.exists():
+                new_name = f"{original_stem}_{counter}{img_file.suffix}"
+                dest_img = images_dir / new_name
+                counter += 1
+            
+            # Copy image
+            shutil.copy2(img_file, dest_img)
+            
+            # Create corresponding label file
+            label_file = labels_dir / f"{dest_img.stem}.txt"
+            
+            # Create a simple label covering most of the image
+            with open(label_file, 'w') as f:
+                # Class 0 (food), centered, covering 80% of image
+                f.write("0 0.5 0.5 0.8 0.8\n")
+    
     def _smart_copy_and_label(self, image_files, images_dir, labels_dir):
         """
         Copy images and create smarter labels using basic image processing
-        
-        Args:
-            image_files: List of image file paths
-            images_dir: Destination directory for images
-            labels_dir: Destination directory for labels
         """
         for img_file in tqdm(image_files, desc=f"Smart processing {images_dir.name}"):
             try:
-                # Copy image
+                # Handle filename conflicts
                 dest_img = images_dir / img_file.name
+                counter = 1
+                original_stem = img_file.stem
+                
+                while dest_img.exists():
+                    new_name = f"{original_stem}_{counter}{img_file.suffix}"
+                    dest_img = images_dir / new_name
+                    counter += 1
+                
+                # Copy image
                 shutil.copy2(img_file, dest_img)
                 
                 # Try to create a smarter bounding box
                 image = cv2.imread(str(img_file))
                 if image is None:
                     # Fallback to simple label
-                    self._create_simple_label(labels_dir / f"{img_file.stem}.txt")
+                    self._create_simple_label(labels_dir / f"{dest_img.stem}.txt")
                     continue
                 
                 # Use simple image processing to find likely food regions
                 bbox = self._find_food_region(image)
                 
                 # Create label file
-                label_file = labels_dir / f"{img_file.stem}.txt"
+                label_file = labels_dir / f"{dest_img.stem}.txt"
                 with open(label_file, 'w') as f:
                     # Format: class_id center_x center_y width height
                     f.write(f"0 {bbox[0]:.6f} {bbox[1]:.6f} {bbox[2]:.6f} {bbox[3]:.6f}\n")
@@ -237,26 +272,19 @@ class FoodDatasetPreparer:
             except Exception as e:
                 print(f"[WARN]  Error processing {img_file.name}: {e}")
                 # Create fallback simple label
-                self._create_simple_label(labels_dir / f"{img_file.stem}.txt")
+                dest_img = images_dir / img_file.name
+                self._create_simple_label(labels_dir / f"{dest_img.stem}.txt")
     
     def _find_food_region(self, image):
         """
         Use basic image processing to estimate where food might be
-        This is a simple heuristic, not perfect but better than random
-        
-        Args:
-            image: OpenCV image
-            
-        Returns:
-            tuple: (center_x, center_y, width, height) normalized coordinates
         """
         height, width = image.shape[:2]
         
         # Convert to different color spaces
         hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
         
-        # Look for regions with food-like colors (browns, reds, yellows, greens)
-        # This is a simple heuristic
+        # Look for regions with food-like colors
         food_mask = np.zeros(hsv.shape[:2], dtype=np.uint8)
         
         # Brown/tan colors (bread, meat)
@@ -310,16 +338,51 @@ class FoodDatasetPreparer:
         with open(label_path, 'w') as f:
             f.write("0 0.5 0.5 0.7 0.7\n")
     
-    def validate_dataset(self, dataset_yaml_path):
-        """
-        ENHANCED: Validate that the dataset has actual training data
-        
-        Args:
-            dataset_yaml_path: Path to the dataset YAML file
+    def debug_image_search(self, source_dir="data/input"):
+        """Debug function to see what images are found"""
+        source_path = Path(source_dir)
+        if not source_path.exists():
+            print(f"Directory {source_dir} doesn't exist")
+            return
             
-        Returns:
-            dict: Validation results
-        """
+        print(f"🔍 Debugging image search in: {source_path.absolute()}")
+        
+        # Check what's in the directory
+        all_files = list(source_path.rglob("*"))
+        print(f"📁 Total files/folders found: {len(all_files)}")
+        
+        # Group by extension
+        extensions = {}
+        for file in all_files:
+            if file.is_file():
+                ext = file.suffix.lower()
+                extensions[ext] = extensions.get(ext, 0) + 1
+        
+        print("📋 Files by extension:")
+        for ext, count in sorted(extensions.items()):
+            print(f"   {ext}: {count} files")
+        
+        # Look specifically for image extensions
+        image_extensions = {'.jpg', '.jpeg', '.png', '.bmp', '.tiff', '.webp'}
+        image_files = []
+        
+        for ext in image_extensions:
+            found = list(source_path.rglob(f"*{ext}"))
+            found.extend(list(source_path.rglob(f"*{ext.upper()}")))
+            image_files.extend(found)
+        
+        image_files = list(set(image_files))
+        print(f"🖼️  Total image files found: {len(image_files)}")
+        
+        if image_files:
+            print("📂 First 10 image paths:")
+            for img in image_files[:10]:
+                print(f"   {img}")
+        
+        return image_files
+    
+    def validate_dataset(self, dataset_yaml_path):
+        """Validate that the dataset has actual training data"""
         print("🔍 Validating dataset...")
         
         if not dataset_yaml_path or not Path(dataset_yaml_path).exists():

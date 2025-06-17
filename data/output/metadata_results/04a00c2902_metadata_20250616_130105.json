@@ -1,0 +1,194 @@
+{
+  "original_results": {
+    "image_info": {
+      "path": "data\\input\\04a00c2902.jpg",
+      "filename": "04a00c2902.jpg",
+      "size": "710x589",
+      "processing_time_seconds": 0.28
+    },
+    "analysis_summary": {
+      "total_items_detected": 3,
+      "food_items_count": 1,
+      "non_food_items_count": 2,
+      "avg_confidence": 0.493,
+      "timestamp": "2025-06-16T13:01:04.464708"
+    },
+    "food_items": [
+      {
+        "id": 0,
+        "name": "dining table",
+        "confidence": 0.6014787554740906,
+        "is_food": false,
+        "bbox": {
+          "x1": 0,
+          "y1": 3,
+          "x2": 659,
+          "y2": 582,
+          "width": 659,
+          "height": 578
+        },
+        "mask_info": {
+          "area_pixels": 98054,
+          "area_percentage": 23.45
+        },
+        "portion_estimate": {
+          "estimated_grams": 1000,
+          "confidence": "rough_estimate"
+        },
+        "nutrition": {
+          "calories": 1500.0,
+          "protein_g": 50.0,
+          "carbs_g": 200.0,
+          "fat_g": 30.0,
+          "portion_grams": 1000
+        }
+      },
+      {
+        "id": 1,
+        "name": "cake",
+        "confidence": 0.5362799763679504,
+        "is_food": true,
+        "bbox": {
+          "x1": 136,
+          "y1": 30,
+          "x2": 548,
+          "y2": 410,
+          "width": 412,
+          "height": 379
+        },
+        "mask_info": {
+          "area_pixels": 96171,
+          "area_percentage": 23.0
+        },
+        "portion_estimate": {
+          "estimated_grams": 1000,
+          "confidence": "rough_estimate"
+        },
+        "nutrition": {
+          "calories": 3500.0,
+          "protein_g": 50.0,
+          "carbs_g": 550.0,
+          "fat_g": 120.0,
+          "portion_grams": 1000
+        }
+      },
+      {
+        "id": 2,
+        "name": "bowl",
+        "confidence": 0.3409181237220764,
+        "is_food": false,
+        "bbox": {
+          "x1": 133,
+          "y1": 25,
+          "x2": 567,
+          "y2": 408,
+          "width": 434,
+          "height": 382
+        },
+        "mask_info": {
+          "area_pixels": 98971,
+          "area_percentage": 23.67
+        },
+        "portion_estimate": {
+          "estimated_grams": 1000,
+          "confidence": "rough_estimate"
+        },
+        "nutrition": {
+          "calories": 0.0,
+          "protein_g": 0.0,
+          "carbs_g": 0.0,
+          "fat_g": 0.0,
+          "portion_grams": 1000
+        }
+      }
+    ],
+    "nutrition_totals": {
+      "calories": 3500.0,
+      "protein_g": 50.0,
+      "carbs_g": 550.0,
+      "fat_g": 120.0
+    },
+    "model_info": {
+      "model_type": "YOLOv8m-seg",
+      "confidence_threshold": 0.25,
+      "iou_threshold": 0.45
+    }
+  },
+  "enriched_items": [
+    {
+      "id": 1,
+      "name": "cake",
+      "confidence": 0.5362799763679504,
+      "is_food": true,
+      "bbox": {
+        "x1": 136,
+        "y1": 30,
+        "x2": 548,
+        "y2": 410,
+        "width": 412,
+        "height": 379
+      },
+      "mask_info": {
+        "area_pixels": 96171,
+        "area_percentage": 23.0
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 200,
+        "protein_g": 10,
+        "carbs_g": 25,
+        "fat_g": 8,
+        "fiber_g": 2,
+        "sugar_g": 5,
+        "sodium_mg": 300,
+        "note": "Estimated values"
+      },
+      "detailed_food_type": "creme brulee",
+      "classification_confidence": 0.9972898960113525,
+      "cuisine": "International",
+      "portion": {
+        "estimated_weight_g": 56.4,
+        "serving_description": "medium (single serving)",
+        "confidence": "medium",
+        "area_cm2": 112.7
+      },
+      "ingredients": [
+        "main ingredient",
+        "seasoning",
+        "garnish"
+      ],
+      "allergens": [],
+      "dietary_tags": [
+        "vegan",
+        "vegetarian"
+      ],
+      "preparation_method": "cooked"
+    }
+  ],
+  "meal_summary": {
+    "meal_type": "snack",
+    "main_cuisine": "International",
+    "total_items": 1,
+    "total_calories": 200,
+    "dietary_friendly": [
+      "vegetarian",
+      "vegan"
+    ],
+    "cuisines_present": [
+      "International"
+    ]
+  },
+  "total_nutrition": {
+    "calories": 200,
+    "protein_g": 10,
+    "carbs_g": 25,
+    "fat_g": 8,
+    "fiber_g": 2,
+    "sugar_g": 5,
+    "sodium_mg": 300
+  },
+  "metadata_version": "1.0"
+}

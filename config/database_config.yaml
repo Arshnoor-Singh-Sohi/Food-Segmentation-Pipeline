@@ -1,0 +1,25 @@
+# Database configuration
+databases:
+  nutrition:
+    type: sqlite
+    path: data/databases/nutrition/nutrition_expanded.db
+    json_backup: data/databases/nutrition/nutrition_expanded.json
+    
+  food_taxonomy:
+    type: json
+    path: data/databases/food_taxonomy/food_hierarchy.json
+    
+  cuisine_mapping:
+    type: json
+    path: data/databases/cuisine_mapping/cuisine_patterns.json
+    
+  allergens:
+    type: sqlite
+    path: data/databases/nutrition/nutrition_expanded.db  # Same DB, different table
+
+# Database options
+options:
+  auto_create: true
+  cache_results: true
+  fuzzy_search: true
+  max_results: 10

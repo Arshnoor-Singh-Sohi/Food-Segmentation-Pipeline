@@ -1,0 +1,7 @@
+base_model: yolov8n.pt
+dataset: data\training\food_training\existing_images_dataset.yaml
+device: cpu
+epochs: 50
+final_model_path: data\trained_models\food_detection_20250612_144148\best.pt
+model_type: detection
+training_date: '20250612_144148'

@@ -1,0 +1,137 @@
+{
+  "original_results": {
+    "image_info": {
+      "path": "data/input/pizza.jpg",
+      "filename": "pizza.jpg",
+      "size": "892x892",
+      "processing_time_seconds": 0.34
+    },
+    "analysis_summary": {
+      "total_items_detected": 1,
+      "food_items_count": 1,
+      "non_food_items_count": 0,
+      "avg_confidence": 0.624,
+      "timestamp": "2025-06-15T12:16:24.688966"
+    },
+    "food_items": [
+      {
+        "id": 0,
+        "name": "pizza",
+        "confidence": 0.6242122650146484,
+        "is_food": true,
+        "bbox": {
+          "x1": 237,
+          "y1": 102,
+          "x2": 846,
+          "y2": 769,
+          "width": 608,
+          "height": 667
+        },
+        "mask_info": {
+          "area_pixels": 93827,
+          "area_percentage": 11.79
+        },
+        "portion_estimate": {
+          "estimated_grams": 1000,
+          "confidence": "rough_estimate"
+        },
+        "nutrition": {
+          "calories": 2660.0,
+          "protein_g": 110.0,
+          "carbs_g": 330.0,
+          "fat_g": 100.0,
+          "portion_grams": 1000
+        }
+      }
+    ],
+    "nutrition_totals": {
+      "calories": 2660.0,
+      "protein_g": 110.0,
+      "carbs_g": 330.0,
+      "fat_g": 100.0
+    },
+    "model_info": {
+      "model_type": "YOLOv8m-seg",
+      "confidence_threshold": 0.25,
+      "iou_threshold": 0.45
+    }
+  },
+  "enriched_items": [
+    {
+      "id": 0,
+      "name": "pizza",
+      "confidence": 0.6242122650146484,
+      "is_food": true,
+      "bbox": {
+        "x1": 237,
+        "y1": 102,
+        "x2": 846,
+        "y2": 769,
+        "width": 608,
+        "height": 667
+      },
+      "mask_info": {
+        "area_pixels": 93827,
+        "area_percentage": 11.79
+      },
+      "portion_estimate": {
+        "estimated_grams": 1000,
+        "confidence": "rough_estimate"
+      },
+      "nutrition": {
+        "calories": 2660.0,
+        "protein_g": 110.0,
+        "carbs_g": 330.0,
+        "fat_g": 100.0,
+        "fiber_g": 23.0,
+        "sugar_g": 36.0,
+        "sodium_mg": 5980.0
+      },
+      "detailed_food_type": "pizza",
+      "classification_confidence": 0.9968051910400391,
+      "cuisine": "Italian",
+      "portion": {
+        "estimated_weight_g": 28.9,
+        "serving_description": "small (snack size)",
+        "confidence": "medium",
+        "area_cm2": 57.8
+      },
+      "ingredients": [
+        "dough",
+        "tomato sauce",
+        "cheese",
+        "herbs"
+      ],
+      "allergens": [
+        "gluten",
+        "dairy"
+      ],
+      "dietary_tags": [
+        "vegetarian"
+      ],
+      "preparation_method": "baked"
+    }
+  ],
+  "meal_summary": {
+    "meal_type": "large meal",
+    "main_cuisine": "Italian",
+    "total_items": 1,
+    "total_calories": 2660.0,
+    "dietary_friendly": [
+      "vegetarian"
+    ],
+    "cuisines_present": [
+      "Italian"
+    ]
+  },
+  "total_nutrition": {
+    "calories": 2660.0,
+    "protein_g": 110.0,
+    "carbs_g": 330.0,
+    "fat_g": 100.0,
+    "fiber_g": 23.0,
+    "sugar_g": 36.0,
+    "sodium_mg": 5980.0
+  },
+  "metadata_version": "1.0"
+}

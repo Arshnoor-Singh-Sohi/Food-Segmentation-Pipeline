@@ -1,0 +1,44 @@
+{
+  "original_results": {
+    "image_info": {
+      "path": "data\\input\\04a00d1a97.jpg",
+      "filename": "04a00d1a97.jpg",
+      "size": "240x320",
+      "processing_time_seconds": 0.22
+    },
+    "analysis_summary": {
+      "total_items_detected": 0,
+      "food_items_count": 0,
+      "non_food_items_count": 0,
+      "avg_confidence": 0,
+      "timestamp": "2025-06-16T13:01:08.396102"
+    },
+    "food_items": [],
+    "nutrition_totals": {
+      "calories": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0
+    },
+    "model_info": {
+      "model_type": "YOLOv8m-seg",
+      "confidence_threshold": 0.25,
+      "iou_threshold": 0.45
+    }
+  },
+  "enriched_items": [],
+  "meal_summary": {
+    "meal_type": "empty",
+    "total_items": 0
+  },
+  "total_nutrition": {
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "sugar_g": 0,
+    "sodium_mg": 0
+  },
+  "metadata_version": "1.0"
+}

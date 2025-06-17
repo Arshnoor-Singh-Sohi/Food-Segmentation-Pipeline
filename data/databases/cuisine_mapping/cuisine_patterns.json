@@ -1,0 +1,81 @@
+{
+  "cuisine_indicators": {
+    "italian": {
+      "dishes": [
+        "pizza",
+        "pasta",
+        "risotto",
+        "lasagna"
+      ],
+      "ingredients": [
+        "basil",
+        "oregano",
+        "mozzarella"
+      ],
+      "keywords": [
+        "italian",
+        "romano"
+      ]
+    },
+    "japanese": {
+      "dishes": [
+        "sushi",
+        "ramen",
+        "tempura"
+      ],
+      "ingredients": [
+        "soy sauce",
+        "wasabi",
+        "nori"
+      ],
+      "keywords": [
+        "japanese"
+      ]
+    },
+    "chinese": {
+      "dishes": [
+        "fried rice",
+        "dim sum",
+        "kung pao"
+      ],
+      "ingredients": [
+        "soy sauce",
+        "ginger"
+      ],
+      "keywords": [
+        "chinese",
+        "szechuan"
+      ]
+    },
+    "mexican": {
+      "dishes": [
+        "taco",
+        "burrito",
+        "quesadilla"
+      ],
+      "ingredients": [
+        "salsa",
+        "cilantro",
+        "lime"
+      ],
+      "keywords": [
+        "mexican",
+        "tex-mex"
+      ]
+    },
+    "american": {
+      "dishes": [
+        "burger",
+        "hot dog",
+        "bbq"
+      ],
+      "ingredients": [
+        "ketchup",
+        "mustard"
+      ],
+      "keywords": [
+        "american"
+      ]
+    }
+  }
+}

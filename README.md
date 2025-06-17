@@ -38,81 +38,245 @@ Basically, I've created an AI system that can look at photos of food and tell yo
 
 ### 📁 Complete Project Structure
 ```
-food_segmentation_pipeline
+[FOLDER] E:\food_segmentation_pipeline
 ├── .gitattributes
 ├── .gitignore
+├── Executive_Demo_20250611_015010
+│   ├── Executive_Demo_Report.html
+│   ├── comparison_results
+│   ├── detection_results
+│   └── original_images
 ├── README.md
+├── Report1.docx
+├── Report1.md
+├── Report1.pdf
+├── Report2.md
+├── Report3.md
+├── complete_training_run.py
 ├── config
 │   ├── __init__.py
 │   ├── config.yaml
-│   └── models.yaml
+│   ├── database_config.yaml
+│   ├── dataset_config.yaml
+│   ├── metadata_config.yaml
+│   ├── models.yaml
+│   ├── pipeline_config.yaml
+│   ├── training_config.yaml
+│   └── training_config.yaml.backup
+├── create_achievement_demo.py
+├── create_visual_demo.py
 ├── data
+│   ├── databases
+│   │   ├── cuisine_mapping
+│   │   ├── food_taxonomy
+│   │   └── nutrition
+│   │       ├── nutrition_expanded.db
 │   ├── datasets
+│   ├── food_training
+│   │   ├── food_dataset.yaml
+│   │   ├── images
+│   │   │   ├── train
+│   │   │   └── val
+│   │   └── labels
+│   │       ├── train
+│   │       └── val
 │   ├── input
+│   │   ├── TRAINING_IMAGES_GUIDE.md
 │   ├── models
+│   │   ├── custom_food_detection.pt
+│   │   ├── custom_food_detection_working.pt
+│   │   ├── metadata_models
+│   │   │   └── food101
+│   │   │       ├── model.safetensors
 │   │   ├── sam2.1_hiera_base_plus.pt
 │   │   └── yolo_food_v8.pt
-│   └── output
-│       ├── batch_comparison_report_20250605_143331.html
-│       ├── batch_comparison_report_20250605_153847.html
-│       ├── batch_model_comparison
-│       │   ├── batch_comparison_report_20250605_124545.html
-│       ├── batch_results_20250605_153847.xlsx
-│       ├── comparison_report_20250605_152817.html
-│       ├── confidence_analysis_20250605_151710.csv
-│       ├── confidence_analysis_20250605_152056.csv
-│       ├── confidence_analysis_20250605_152212.csv
-│       ├── confidence_analysis_20250605_152342.csv
-│       ├── confidence_analysis_20250605_152817.csv
-│       ├── detailed_detections_20250605_151710.csv
-│       ├── detailed_detections_20250605_152056.csv
-│       ├── detailed_detections_20250605_152212.csv
-│       ├── detailed_detections_20250605_152342.csv
-│       ├── detailed_detections_20250605_152817.csv
-│       ├── detailed_results_20250605_143331.csv
-│       ├── detailed_results_20250605_153847.csv
-│       ├── model_comparison
-│       │   ├── comparison_report_20250605_124948.html
-│       │   ├── model_comparison_report_20250605_123408.html
-│       │   ├── yolov10n
-│       │   ├── yolov8m-seg
-│       │   ├── yolov8n
-│       │   ├── yolov8n-oiv7
-│       │   ├── yolov8n-seg
-│       │   ├── yolov8n-world
-│       │   ├── yolov8s
-│       │   ├── yolov8s-seg
-│       │   ├── yolov9n
-│       │   └── yolov9s
-│       ├── model_comparison_20250605_151710.csv
-│       ├── model_comparison_20250605_152056.csv
-│       ├── model_comparison_20250605_152212.csv
-│       ├── model_comparison_20250605_152342.csv
-│       ├── model_comparison_20250605_152817.csv
-│       ├── model_comparison_20250605_152817.xlsx
-│       ├── model_summary_20250605_143331.csv
-│       ├── model_summary_20250605_153847.csv
-│       ├── per_image_comparison_20250605_143331.csv
-│       ├── per_image_comparison_20250605_153847.csv
-│       ├── yolo_results
-│       │   ├── batch_reports
-│       │   │   └── dashboard_20250605_093544.html
-│       │   ├── image1_results_viewer.html
-│       │   └── visualizations
-│       ├── yolov10n
-│       ├── yolov8m-seg
-│       ├── yolov8n
-│       ├── yolov8n-oiv7
-│       ├── yolov8n-seg
-│       ├── yolov8n-world
-│       ├── yolov8s
-│       ├── yolov8s-seg
-│       ├── yolov9n
-│       └── yolov9s
+│   ├── output
+│   │   ├── achievement_demo
+│   │   │   └── batch_testing_20250611_014128
+│   │   ├── batch_comparison_report_20250605_143331.html
+│   │   ├── batch_comparison_report_20250605_153847.html
+│   │   ├── batch_model_comparison
+│   │   │   ├── batch_comparison_report_20250605_124545.html
+│   │   ├── batch_results_20250605_153847.xlsx
+│   │   ├── comparison_report_20250605_152817.html
+│   │   ├── comparisons
+│   │   ├── confidence_analysis_20250605_151710.csv
+│   │   ├── confidence_analysis_20250605_152056.csv
+│   │   ├── confidence_analysis_20250605_152212.csv
+│   │   ├── confidence_analysis_20250605_152342.csv
+│   │   ├── confidence_analysis_20250605_152817.csv
+│   │   ├── custom_model_comparison
+│   │   │   ├── comparison_report_20250611_012842.html
+│   │   │   ├── confidence_analysis_20250611_012842.csv
+│   │   │   ├── detailed_detections_20250611_012842.csv
+│   │   │   ├── model_comparison_20250611_012842.csv
+│   │   │   ├── model_comparison_20250611_012842.xlsx
+│   │   │   ├── yolov10n
+│   │   │   ├── yolov8m-seg
+│   │   │   ├── yolov8n
+│   │   │   ├── yolov8n-oiv7
+│   │   │   ├── yolov8n-seg
+│   │   │   ├── yolov8n-world
+│   │   │   ├── yolov8s
+│   │   │   ├── yolov8s-seg
+│   │   │   ├── yolov9n
+│   │   │   └── yolov9s
+│   │   ├── custom_tests
+│   │   ├── custom_vs_pretrained
+│   │   │   ├── batch_comparison_report_20250611_013912.html
+│   │   │   ├── batch_results_20250611_013912.xlsx
+│   │   │   ├── detailed_results_20250611_013912.csv
+│   │   │   ├── model_summary_20250611_013912.csv
+│   │   │   └── per_image_comparison_20250611_013912.csv
+│   │   ├── detailed_detections_20250605_151710.csv
+│   │   ├── detailed_detections_20250605_152056.csv
+│   │   ├── detailed_detections_20250605_152212.csv
+│   │   ├── detailed_detections_20250605_152342.csv
+│   │   ├── detailed_detections_20250605_152817.csv
+│   │   ├── detailed_results_20250605_143331.csv
+│   │   ├── detailed_results_20250605_153847.csv
+│   │   ├── ingredient_counts
+│   │   ├── metadata_results
+│   │   ├── model_comparison
+│   │   │   ├── comparison_report_20250605_124948.html
+│   │   │   ├── model_comparison_report_20250605_123408.html
+│   │   │   ├── yolov10n
+│   │   │   ├── yolov8m-seg
+│   │   │   ├── yolov8n
+│   │   │   ├── yolov8n-oiv7
+│   │   │   ├── yolov8n-seg
+│   │   │   ├── yolov8n-world
+│   │   │   ├── yolov8s
+│   │   │   ├── yolov8s-seg
+│   │   │   ├── yolov9n
+│   │   │   └── yolov9s
+│   │   ├── model_comparison_20250605_151710.csv
+│   │   ├── model_comparison_20250605_152056.csv
+│   │   ├── model_comparison_20250605_152212.csv
+│   │   ├── model_comparison_20250605_152342.csv
+│   │   ├── model_comparison_20250605_152817.csv
+│   │   ├── model_comparison_20250605_152817.xlsx
+│   │   ├── model_summary_20250605_143331.csv
+│   │   ├── model_summary_20250605_153847.csv
+│   │   ├── per_image_comparison_20250605_143331.csv
+│   │   ├── per_image_comparison_20250605_153847.csv
+│   │   ├── yolo_results
+│   │   │   ├── batch_reports
+│   │   │   │   └── dashboard_20250605_093544.html
+│   │   │   ├── image1_results_viewer.html
+│   │   │   └── visualizations
+│   │   ├── yolov10n
+│   │   ├── yolov8m-seg
+│   │   ├── yolov8n
+│   │   ├── yolov8n-oiv7
+│   │   ├── yolov8n-seg
+│   │   ├── yolov8n-world
+│   │   ├── yolov8s
+│   │   ├── yolov8s-seg
+│   │   ├── yolov9n
+│   │   └── yolov9s
+│   ├── trained_models
+│   │   ├── experiments
+│   │   ├── food_detection_20250610_205434
+│   │   │   ├── best.pt
+│   │   │   └── training_metadata.yaml
+│   │   ├── food_detection_20250611_010817
+│   │   │   ├── best.pt
+│   │   │   └── training_metadata.yaml
+│   │   └── food_detection_20250612_144148
+│   │       ├── best.pt
+│   │       └── training_metadata.yaml
+│   └── training
+│       ├── annotations
+│       ├── food_training
+│       │   ├── existing_images_dataset.yaml
+│       │   ├── food_dataset.yaml
+│       │   ├── food_segmentation_dataset.yaml
+│       │   ├── images
+│       │   │   ├── train
+│       │   │   └── val
+│       │   └── labels
+│       │       ├── train
+│       │       ├── train.cache
+│       │       ├── val
+│       │       └── val.cache
+│       ├── raw_datasets
+│       └── splits
+├── encoding_utils.py
 ├── enhanced_batch_tester.py
 ├── enhanced_single_image_tester.py
 ├── fast_test.py
+├── fix_batch_size_issue.py
+├── fix_device_issue.py
 ├── fix_imports.py
+├── fix_segmentation_dataset.py
+├── fix_training_issues.py
+├── fix_training_issues_windows.py
+├── fix_unicode.py
+├── food_training_runs
+│   ├── food_model_20250607_2019
+│   │   ├── args.yaml
+│   │   ├── results.csv
+│   │   └── weights
+│   │       ├── best.pt
+│   │       └── last.pt
+│   ├── food_model_20250610_2109
+│   │   ├── args.yaml
+│   │   ├── results.csv
+│   │   └── weights
+│   │       ├── best.pt
+│   │       └── last.pt
+│   ├── food_model_20250610_2243
+│   │   ├── args.yaml
+│   │   ├── results.csv
+│   │   └── weights
+│   │       ├── best.pt
+│   │       └── last.pt
+│   ├── food_model_20250610_2346
+│   │   ├── args.yaml
+│   │   ├── results.csv
+│   │   └── weights
+│   │       ├── best.pt
+│   │       └── last.pt
+│   ├── food_model_20250612_1317
+│   │   ├── args.yaml
+│   │   ├── results.csv
+│   │   └── weights
+│   │       ├── best.pt
+│   │       └── last.pt
+│   ├── food_segmentation_20250610_2200_segmentation
+│   │   ├── args.yaml
+│   │   └── weights
+│   ├── food_segmentation_20250610_2204_segmentation
+│   │   ├── args.yaml
+│   │   └── weights
+│   ├── quick_test_0607_2007
+│   │   ├── args.yaml
+│   │   └── weights
+│   ├── quick_test_0610_2029
+│   │   ├── args.yaml
+│   │   └── weights
+│   ├── quick_test_0610_2032
+│   │   ├── args.yaml
+│   │   └── weights
+│   └── quick_test_0610_2046
+│       ├── args.yaml
+│       ├── results.csv
+│       └── weights
+│           ├── best.pt
+│           └── last.pt
+├── get-pip.py
+├── hybrid_food_detection.py
+├── hybrid_results
+├── improved_hybrid_detection.py
+├── improved_results
+├── logs
+│   ├── training_session_20250610_205724
+│   ├── training_session_20250610_205858
+│   ├── training_session_20250610_210150
+│   ├── training_session_20250610_210658
+│   ├── training_session_20250610_210702
+│   └── training_session_20250610_210714
 ├── model_comparison_enhanced.py
 ├── notebooks
 │   ├── demo.ipynb
@@ -124,17 +288,37 @@ food_segmentation_pipeline
 │   ├── model_summary_20250605_154119.csv
 │   └── single_image_test_20250605_154119.xlsx
 ├── print_directory_tree.py
-├── requirements.txt
+├── run_with_logging.py
+├── runpod
+│   ├── Dockerfile
+│   └── start_server.sh
 ├── scripts
 │   ├── batch_process_yolo.py
+│   ├── build_all_databases.py
+│   ├── ceo_demo_counter.py
+│   ├── compare_ingredient_detection.py
+│   ├── compare_model_results.py
+│   ├── detect_and_count_ingredients.py
+│   ├── diagnose_model_detection.py
+│   ├── enhanced_ingredient_counter.py
 │   ├── generate_tree.py
 │   ├── process_batch.py
 │   ├── process_single_image.py
 │   ├── process_single_yolo.py
+│   ├── process_with_custom_model.py
+│   ├── process_with_metadata.py
+│   ├── quick_ingredient_demo.py
+│   ├── quick_start_training.py
+│   ├── runpod_launcher.py
+│   ├── setup_metadata_system.py
 │   ├── setup_models.py
 │   ├── simple_batch_yolo.py
-│   └── train_yolo_food.py
+│   ├── train_custom_food_model.py
+│   ├── train_ingredient_counter.py
+│   ├── train_yolo_food.py
+│   └── training_scripts
 ├── setup.py
+├── setup_training.py
 ├── src
 │   ├── .py
 │   ├── __init__.py
@@ -146,7 +330,35 @@ food_segmentation_pipeline
 │   │   └── quality_controller.py
 │   ├── api
 │   │   ├── __init__.py
-│   │   └── fastapi_server.py
+│   │   ├── fastapi_server.py
+│   │   └── metadata_api.py
+│   ├── databases
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-312.pyc
+│   │   │   ├── allergen_database.cpython-312.pyc
+│   │   │   ├── build_nutrition_db.cpython-312.pyc
+│   │   │   ├── food_taxonomy.cpython-312.pyc
+│   │   │   └── nutrition_database.cpython-312.pyc
+│   │   ├── allergen_database.py
+│   │   ├── build_nutrition_db.py
+│   │   ├── food_taxonomy.py
+│   │   └── nutrition_database.py
+│   ├── evaluation
+│   │   └── __init__.py
+│   ├── metadata
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-312.pyc
+│   │   │   ├── cuisine_identifier.cpython-312.pyc
+│   │   │   ├── food_classifier.cpython-312.pyc
+│   │   │   ├── metadata_aggregator.cpython-312.pyc
+│   │   │   └── portion_estimator.cpython-312.pyc
+│   │   ├── cuisine_identifier.py
+│   │   ├── food_classifier.py
+│   │   ├── ingredient_detector.py
+│   │   ├── metadata_aggregator.py
+│   │   └── portion_estimator.py
 │   ├── models
 │   │   ├── __init__.py
 │   │   ├── __pycache__
@@ -161,6 +373,13 @@ food_segmentation_pipeline
 │   │   ├── fast_yolo_segmentation.py
 │   │   ├── sam2_predictor.py
 │   │   └── yolo_detector.py
+│   ├── pipeline
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-312.pyc
+│   │   │   └── output_formatter.cpython-312.pyc
+│   │   ├── metadata_pipeline.py
+│   │   └── output_formatter.py
 │   ├── preprocessing
 │   │   ├── __init__.py
 │   │   ├── __pycache__
@@ -168,6 +387,14 @@ food_segmentation_pipeline
 │   │   │   └── food_preprocessor.cpython-312.pyc
 │   │   ├── food_preprocessor.py
 │   │   └── image_enhancer.py
+│   ├── training
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-312.pyc
+│   │   │   ├── food_dataset_preparer.cpython-312.pyc
+│   │   │   └── food_yolo_trainer.cpython-312.pyc
+│   │   ├── food_dataset_preparer.py
+│   │   └── food_yolo_trainer.py
 │   └── utils
 │       ├── __init__.py
 │       ├── __pycache__
@@ -190,13 +417,26 @@ food_segmentation_pipeline
 │   ├── test_pipeline.py
 │   ├── test_sam2.py
 │   └── test_yolo.py
+├── train_detection_working.py
+├── train_segmentation_direct.py
+├── train_segmentation_fixed.py
+├── train_segmentation_minimal.py
 ├── view_results.py
 ├── weights
 │   ├── yolov5s.pt
 │   ├── yolov5su.pt
 │   └── yolov8n-oiv7.pt
+├── working_detection
+│   └── food_detection_working
+│       ├── args.yaml
+│       ├── results.csv
+│       └── weights
+│           ├── best.pt
+│           └── last.pt
 ├── yolov10n.pt
 ├── yolov8m-seg.pt
+├── yolov8m.pt
+├── yolov8n-cls.pt
 ├── yolov8n-seg.pt
 ├── yolov8n.pt
 ├── yolov8s-seg.pt

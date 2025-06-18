@@ -34,7 +34,7 @@ coverage.xml
 .hypothesis/
 
 # Directory tree files
-directory-tree.md
+# directory-tree.md
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints

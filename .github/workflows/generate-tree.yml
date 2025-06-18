@@ -4,6 +4,10 @@ on:
   workflow_dispatch:  # allows manual run
   push:               # runs on every push
 
+
+permissions:
+  contents: write 
+
 jobs:
   generate-tree:
     runs-on: ubuntu-latest

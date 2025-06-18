@@ -1,9 +1,15 @@
 import os
 
 # Folders to skip
+<<<<<<< HEAD
 SKIP_FOLDERS = {'.github', '.venv', 'food_segmentation_pipeline_backup.git', '.git'}
 # Extensions to ignore
 IGNORE_EXTENSIONS = ('.jpg', '.png', '.json')
+=======
+SKIP_FOLDERS = {'.github', '.venv', 'food_segmentation_pipeline_backup.git', '.git', '.trunk'}
+# Extensions to ignore
+IGNORE_EXTENSIONS = ('.jpg', '.png', '.json', '.txt')
+>>>>>>> 82a126b (Complete Meal or Portion integration)
 
 def print_directory_tree(root_dir, indent='', is_last=True):
     items = sorted(os.listdir(root_dir))
@@ -15,8 +21,13 @@ def print_directory_tree(root_dir, indent='', is_last=True):
         connector = '└── ' if is_last_item else '├── '
 
         # Skip files with unwanted extensions
+<<<<<<< HEAD
         # if os.path.isfile(path) and item.lower().endswith(IGNORE_EXTENSIONS):
         #     continue
+=======
+        if os.path.isfile(path) and item.lower().endswith(IGNORE_EXTENSIONS):
+            continue
+>>>>>>> 82a126b (Complete Meal or Portion integration)
 
         print(indent + connector + item)
 

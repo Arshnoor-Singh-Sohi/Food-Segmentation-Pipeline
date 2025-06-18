@@ -12,6 +12,12 @@ import json
 import sqlite3
 from transformers import AutoImageProcessor, AutoModelForImageClassification
 import logging
+<<<<<<< HEAD
+=======
+from src.metadata.food_type_classifier import FoodTypeClassifier
+from src.metadata.measurement_units import MeasurementUnitSystem
+from src.models.portion_aware_segmentation import PortionAwareSegmentation
+>>>>>>> 82a126b (Complete Meal or Portion integration)
 
 logger = logging.getLogger(__name__)
 
@@ -31,6 +37,16 @@ class MetadataAggregator:
         
         # Load databases
         self._load_databases()
+<<<<<<< HEAD
+=======
+
+        self.food_type_classifier = FoodTypeClassifier()
+        self.measurement_system = MeasurementUnitSystem()
+        self.portion_segmentation = PortionAwareSegmentation(
+            self.food_type_classifier,
+            self.measurement_system
+        )
+>>>>>>> 82a126b (Complete Meal or Portion integration)
         
     def _load_models(self):
         """Load all metadata extraction models"""
@@ -88,6 +104,7 @@ class MetadataAggregator:
         image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
         
         # Process each detected food item
+<<<<<<< HEAD
         enriched_items = []
         
         for item in detection_results.get('food_items', []):
@@ -114,6 +131,39 @@ class MetadataAggregator:
         
         return enhanced_results
     
+=======
+        segmentation_results = self.portion_segmentation.process_segmentation(
+        detection_results, image_rgb
+        )
+        
+        # Then process metadata for each segment
+        enriched_segments = []
+        
+        for segment in segmentation_results['segments']:
+            # Extract metadata based on segment type
+            if segment['type'] == 'complete_dish':
+                metadata = self._extract_dish_metadata(segment, image_rgb)
+            else:
+                metadata = self._extract_item_metadata(segment, image_rgb)
+            
+            # Merge segment info with metadata
+            enriched_segment = {**segment, **metadata}
+            enriched_segments.append(enriched_segment)
+        
+        # Create final output following CEO's requirements
+        enhanced_results = {
+            'original_results': detection_results,
+            'segmentation_type': segmentation_results['food_type_classification']['type'],
+            'segmentation_confidence': segmentation_results['food_type_classification']['confidence'],
+            'segments': enriched_segments,
+            'measurement_summary': segmentation_results['measurement_summary'],
+            'meal_summary': self._generate_meal_summary(enriched_segments),
+            'total_nutrition': self._calculate_total_nutrition(enriched_segments)
+        }
+        
+        return enhanced_results
+        
+>>>>>>> 82a126b (Complete Meal or Portion integration)
     def _extract_crop(self, image: np.ndarray, bbox: Dict) -> np.ndarray:
         """Extract crop from image using bbox"""
         x1, y1 = int(bbox['x1']), int(bbox['y1'])

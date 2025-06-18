@@ -38,6 +38,7 @@ Basically, I've created an AI system that can look at photos of food and tell yo
 
 ### 📁 Complete Project Structure
 ```
+<<<<<<< HEAD
 [FOLDER] E:\food_segmentation_pipeline
 ├── .gitattributes
 ├── .gitignore
@@ -277,6 +278,83 @@ Basically, I've created an AI system that can look at photos of food and tell yo
 │   ├── training_session_20250610_210658
 │   ├── training_session_20250610_210702
 │   └── training_session_20250610_210714
+=======
+food_segmentation_pipeline
+├── .gitattributes
+├── .gitignore
+├── README.md
+├── config
+│   ├── __init__.py
+│   ├── config.yaml
+│   └── models.yaml
+├── data
+│   ├── datasets
+│   ├── input
+│   ├── models
+│   │   ├── sam2.1_hiera_base_plus.pt
+│   │   └── yolo_food_v8.pt
+│   └── output
+│       ├── batch_comparison_report_20250605_143331.html
+│       ├── batch_comparison_report_20250605_153847.html
+│       ├── batch_model_comparison
+│       │   ├── batch_comparison_report_20250605_124545.html
+│       ├── batch_results_20250605_153847.xlsx
+│       ├── comparison_report_20250605_152817.html
+│       ├── confidence_analysis_20250605_151710.csv
+│       ├── confidence_analysis_20250605_152056.csv
+│       ├── confidence_analysis_20250605_152212.csv
+│       ├── confidence_analysis_20250605_152342.csv
+│       ├── confidence_analysis_20250605_152817.csv
+│       ├── detailed_detections_20250605_151710.csv
+│       ├── detailed_detections_20250605_152056.csv
+│       ├── detailed_detections_20250605_152212.csv
+│       ├── detailed_detections_20250605_152342.csv
+│       ├── detailed_detections_20250605_152817.csv
+│       ├── detailed_results_20250605_143331.csv
+│       ├── detailed_results_20250605_153847.csv
+│       ├── model_comparison
+│       │   ├── comparison_report_20250605_124948.html
+│       │   ├── model_comparison_report_20250605_123408.html
+│       │   ├── yolov10n
+│       │   ├── yolov8m-seg
+│       │   ├── yolov8n
+│       │   ├── yolov8n-oiv7
+│       │   ├── yolov8n-seg
+│       │   ├── yolov8n-world
+│       │   ├── yolov8s
+│       │   ├── yolov8s-seg
+│       │   ├── yolov9n
+│       │   └── yolov9s
+│       ├── model_comparison_20250605_151710.csv
+│       ├── model_comparison_20250605_152056.csv
+│       ├── model_comparison_20250605_152212.csv
+│       ├── model_comparison_20250605_152342.csv
+│       ├── model_comparison_20250605_152817.csv
+│       ├── model_comparison_20250605_152817.xlsx
+│       ├── model_summary_20250605_143331.csv
+│       ├── model_summary_20250605_153847.csv
+│       ├── per_image_comparison_20250605_143331.csv
+│       ├── per_image_comparison_20250605_153847.csv
+│       ├── yolo_results
+│       │   ├── batch_reports
+│       │   │   └── dashboard_20250605_093544.html
+│       │   ├── image1_results_viewer.html
+│       │   └── visualizations
+│       ├── yolov10n
+│       ├── yolov8m-seg
+│       ├── yolov8n
+│       ├── yolov8n-oiv7
+│       ├── yolov8n-seg
+│       ├── yolov8n-world
+│       ├── yolov8s
+│       ├── yolov8s-seg
+│       ├── yolov9n
+│       └── yolov9s
+├── enhanced_batch_tester.py
+├── enhanced_single_image_tester.py
+├── fast_test.py
+├── fix_imports.py
+>>>>>>> 82a126b (Complete Meal or Portion integration)
 ├── model_comparison_enhanced.py
 ├── notebooks
 │   ├── demo.ipynb
@@ -288,6 +366,7 @@ Basically, I've created an AI system that can look at photos of food and tell yo
 │   ├── model_summary_20250605_154119.csv
 │   └── single_image_test_20250605_154119.xlsx
 ├── print_directory_tree.py
+<<<<<<< HEAD
 ├── run_with_logging.py
 ├── runpod
 │   ├── Dockerfile
@@ -301,10 +380,16 @@ Basically, I've created an AI system that can look at photos of food and tell yo
 │   ├── detect_and_count_ingredients.py
 │   ├── diagnose_model_detection.py
 │   ├── enhanced_ingredient_counter.py
+=======
+├── requirements.txt
+├── scripts
+│   ├── batch_process_yolo.py
+>>>>>>> 82a126b (Complete Meal or Portion integration)
 │   ├── generate_tree.py
 │   ├── process_batch.py
 │   ├── process_single_image.py
 │   ├── process_single_yolo.py
+<<<<<<< HEAD
 │   ├── process_with_custom_model.py
 │   ├── process_with_metadata.py
 │   ├── quick_ingredient_demo.py
@@ -319,6 +404,12 @@ Basically, I've created an AI system that can look at photos of food and tell yo
 │   └── training_scripts
 ├── setup.py
 ├── setup_training.py
+=======
+│   ├── setup_models.py
+│   ├── simple_batch_yolo.py
+│   └── train_yolo_food.py
+├── setup.py
+>>>>>>> 82a126b (Complete Meal or Portion integration)
 ├── src
 │   ├── .py
 │   ├── __init__.py
@@ -330,6 +421,7 @@ Basically, I've created an AI system that can look at photos of food and tell yo
 │   │   └── quality_controller.py
 │   ├── api
 │   │   ├── __init__.py
+<<<<<<< HEAD
 │   │   ├── fastapi_server.py
 │   │   └── metadata_api.py
 │   ├── databases
@@ -359,6 +451,9 @@ Basically, I've created an AI system that can look at photos of food and tell yo
 │   │   ├── ingredient_detector.py
 │   │   ├── metadata_aggregator.py
 │   │   └── portion_estimator.py
+=======
+│   │   └── fastapi_server.py
+>>>>>>> 82a126b (Complete Meal or Portion integration)
 │   ├── models
 │   │   ├── __init__.py
 │   │   ├── __pycache__
@@ -373,6 +468,7 @@ Basically, I've created an AI system that can look at photos of food and tell yo
 │   │   ├── fast_yolo_segmentation.py
 │   │   ├── sam2_predictor.py
 │   │   └── yolo_detector.py
+<<<<<<< HEAD
 │   ├── pipeline
 │   │   ├── __init__.py
 │   │   ├── __pycache__
@@ -380,6 +476,8 @@ Basically, I've created an AI system that can look at photos of food and tell yo
 │   │   │   └── output_formatter.cpython-312.pyc
 │   │   ├── metadata_pipeline.py
 │   │   └── output_formatter.py
+=======
+>>>>>>> 82a126b (Complete Meal or Portion integration)
 │   ├── preprocessing
 │   │   ├── __init__.py
 │   │   ├── __pycache__
@@ -387,6 +485,7 @@ Basically, I've created an AI system that can look at photos of food and tell yo
 │   │   │   └── food_preprocessor.cpython-312.pyc
 │   │   ├── food_preprocessor.py
 │   │   └── image_enhancer.py
+<<<<<<< HEAD
 │   ├── training
 │   │   ├── __init__.py
 │   │   ├── __pycache__
@@ -395,6 +494,8 @@ Basically, I've created an AI system that can look at photos of food and tell yo
 │   │   │   └── food_yolo_trainer.cpython-312.pyc
 │   │   ├── food_dataset_preparer.py
 │   │   └── food_yolo_trainer.py
+=======
+>>>>>>> 82a126b (Complete Meal or Portion integration)
 │   └── utils
 │       ├── __init__.py
 │       ├── __pycache__
@@ -417,15 +518,19 @@ Basically, I've created an AI system that can look at photos of food and tell yo
 │   ├── test_pipeline.py
 │   ├── test_sam2.py
 │   └── test_yolo.py
+<<<<<<< HEAD
 ├── train_detection_working.py
 ├── train_segmentation_direct.py
 ├── train_segmentation_fixed.py
 ├── train_segmentation_minimal.py
+=======
+>>>>>>> 82a126b (Complete Meal or Portion integration)
 ├── view_results.py
 ├── weights
 │   ├── yolov5s.pt
 │   ├── yolov5su.pt
 │   └── yolov8n-oiv7.pt
+<<<<<<< HEAD
 ├── working_detection
 │   └── food_detection_working
 │       ├── args.yaml
@@ -437,6 +542,10 @@ Basically, I've created an AI system that can look at photos of food and tell yo
 ├── yolov8m-seg.pt
 ├── yolov8m.pt
 ├── yolov8n-cls.pt
+=======
+├── yolov10n.pt
+├── yolov8m-seg.pt
+>>>>>>> 82a126b (Complete Meal or Portion integration)
 ├── yolov8n-seg.pt
 ├── yolov8n.pt
 ├── yolov8s-seg.pt

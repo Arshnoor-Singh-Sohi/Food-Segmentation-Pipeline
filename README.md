@@ -635,6 +635,124 @@ graph TD
 
 ```
 
+``` mermaid
+flowchart TB
+    %% External Interfaces
+    CLI["CLI / Notebook"]:::external
+
+    %% Orchestration Layer
+    subgraph "Orchestration Layer"
+        direction TB
+        SingleImage["Process Single Image"]:::orchestration
+        Batch["Process Batch"]:::orchestration
+        TrainYOLO["Train YOLO"]:::orchestration
+        EnhancedSingle["Enhanced Single Tester"]:::orchestration
+        EnhancedBatch["Enhanced Batch Tester"]:::orchestration
+        ModelComp["Model Comparison"]:::orchestration
+        FastTest["Fast Test Entry"]:::orchestration
+        ViewResults["View Results"]:::orchestration
+        FastAPI["FastAPI Server"]:::orchestration
+        ConfigMain["config/config.yaml"]:::orchestration
+        ConfigModels["config/models.yaml"]:::orchestration
+    end
+
+    %% Core Pipeline
+    subgraph "Core Pipeline"
+        direction TB
+        FoodPreproc["Food Preprocessor"]:::processing
+        ImageEnhancer["Image Enhancer"]:::processing
+        YOLODet["YOLO Detector\n(v8/v9/v10)"]:::processing
+        SAM2Pred["SAM2 Predictor"]:::processing
+        CombinedPipe["Combined Pipeline"]:::processing
+        FastYolo["Fast YOLO Segmentation"]:::processing
+        FastSeg["Fast Segmentation"]:::processing
+        NutritionCalc["Nutrition Calculator"]:::processing
+        Visualization["Visualization Utilities"]:::processing
+        FileUtils["File Utilities"]:::processing
+    end
+
+    %% Data Stores
+    subgraph "Data Stores"
+        direction TB
+        InputImages(("Input Images")):::datastore
+        DataModels(("Model Weights")):::datastore
+        NutritionDB(("Nutrition DB")):::datastore
+        OutputDefault(("Default Output")):::datastore
+        OutputCustom(("Custom Output Directory")):::datastore
+    end
+
+    %% External to Orchestration
+    CLI --> SingleImage
+    CLI --> Batch
+    CLI --> TrainYOLO
+    CLI --> EnhancedSingle
+    CLI --> EnhancedBatch
+    CLI --> ModelComp
+    CLI --> FastTest
+    CLI --> ViewResults
+    CLI --> FastAPI
+
+    %% Configuration connections
+    ConfigMain --> SingleImage
+    ConfigMain --> Batch
+    ConfigMain --> FastAPI
+    ConfigModels --> YOLODet
+
+    %% Orchestration to Core Pipeline
+    SingleImage --> FoodPreproc
+    Batch --> FoodPreproc
+    FastAPI --> FoodPreproc
+    ModelComp --> YOLODet
+
+    %% Data flow in Core Pipeline
+    InputImages --> FoodPreproc --> ImageEnhancer --> YOLODet
+    DataModels --> YOLODet
+    YOLODet --> SAM2Pred
+    DataModels --> SAM2Pred
+    SAM2Pred --> CombinedPipe
+    CombinedPipe --> NutritionCalc
+    NutritionDB --> NutritionCalc
+    NutritionCalc --> Visualization --> FileUtils --> OutputDefault
+    FileUtils --> OutputCustom
+
+    %% Fast shortcuts branch
+    YOLODet --> FastYolo --> CombinedPipe
+    YOLODet --> FastSeg --> CombinedPipe
+
+    %% Click Events
+    click InputImages "https://github.com/arshnoor-singh-sohi/food-segmentation-pipeline/tree/main/data/input/"
+    click DataModels "https://github.com/arshnoor-singh-sohi/food-segmentation-pipeline/tree/main/data/models/"
+    click NutritionDB "https://github.com/arshnoor-singh-sohi/food-segmentation-pipeline/blob/main/data/nutrition_database.json"
+    click FoodPreproc "https://github.com/arshnoor-singh-sohi/food-segmentation-pipeline/blob/main/src/preprocessing/food_preprocessor.py"
+    click ImageEnhancer "https://github.com/arshnoor-singh-sohi/food-segmentation-pipeline/blob/main/src/preprocessing/image_enhancer.py"
+    click YOLODet "https://github.com/arshnoor-singh-sohi/food-segmentation-pipeline/blob/main/src/models/yolo_detector.py"
+    click SAM2Pred "https://github.com/arshnoor-singh-sohi/food-segmentation-pipeline/blob/main/src/models/sam2_predictor.py"
+    click CombinedPipe "https://github.com/arshnoor-singh-sohi/food-segmentation-pipeline/blob/main/src/models/combined_pipeline.py"
+    click FastYolo "https://github.com/arshnoor-singh-sohi/food-segmentation-pipeline/blob/main/src/models/fast_yolo_segmentation.py"
+    click FastSeg "https://github.com/arshnoor-singh-sohi/food-segmentation-pipeline/blob/main/src/models/fast_segmentation.py"
+    click NutritionCalc "https://github.com/arshnoor-singh-sohi/food-segmentation-pipeline/blob/main/src/utils/nutrition_db.py"
+    click Visualization "https://github.com/arshnoor-singh-sohi/food-segmentation-pipeline/blob/main/src/utils/visualization.py"
+    click FileUtils "https://github.com/arshnoor-singh-sohi/food-segmentation-pipeline/blob/main/src/utils/file_utils.py"
+    click SingleImage "https://github.com/arshnoor-singh-sohi/food-segmentation-pipeline/blob/main/scripts/process_single_image.py"
+    click Batch "https://github.com/arshnoor-singh-sohi/food-segmentation-pipeline/blob/main/scripts/process_batch.py"
+    click TrainYOLO "https://github.com/arshnoor-singh-sohi/food-segmentation-pipeline/blob/main/scripts/train_yolo_food.py"
+    click EnhancedSingle "https://github.com/arshnoor-singh-sohi/food-segmentation-pipeline/blob/main/enhanced_single_image_tester.py"
+    click EnhancedBatch "https://github.com/arshnoor-singh-sohi/food-segmentation-pipeline/blob/main/enhanced_batch_tester.py"
+    click ModelComp "https://github.com/arshnoor-singh-sohi/food-segmentation-pipeline/blob/main/model_comparison_enhanced.py"
+    click FastTest "https://github.com/arshnoor-singh-sohi/food-segmentation-pipeline/blob/main/fast_test.py"
+    click ViewResults "https://github.com/arshnoor-singh-sohi/food-segmentation-pipeline/blob/main/view_results.py"
+    click ConfigMain "https://github.com/arshnoor-singh-sohi/food-segmentation-pipeline/blob/main/config/config.yaml"
+    click ConfigModels "https://github.com/arshnoor-singh-sohi/food-segmentation-pipeline/blob/main/config/models.yaml"
+    click FastAPI "https://github.com/arshnoor-singh-sohi/food-segmentation-pipeline/blob/main/src/api/fastapi_server.py"
+
+    %% Styles
+    classDef datastore fill:#ADD8E6,stroke:#333,stroke-width:1px
+    classDef processing fill:#90EE90,stroke:#333,stroke-width:1px
+    classDef orchestration fill:#FFA500,stroke:#333,stroke-width:1px
+    classDef external fill:#DDA0DD,stroke:#333,stroke-width:1px
+
+```
+
 
 ### 🚀 Key Features That Work Right Now
 

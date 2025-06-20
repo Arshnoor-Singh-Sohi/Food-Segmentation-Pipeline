@@ -1,4 +1,5 @@
 - ./
+    - test_imports.py
     - fix_batch_size_issue.py
     - fix_segmentation_dataset.py
     - hybrid_food_detection.py
@@ -20,7 +21,9 @@
     - Report1.pdf
     - test_simple.py
     - Report1.docx
+    - Report5.md
     - create_achievement_demo.py
+    - run_stage.py
     - yolov8n-cls.pt
     - create_visual_demo.py
     - yolov8n-seg.pt
@@ -38,9 +41,11 @@
     - yolov9s.pt
     - setup_training.py
     - Report2.md
+    - setup_stages.py
     - train_segmentation_fixed.py
     - model_comparison_enhanced.py
     - test_single_image_all_models.py
+    - run_genai.py
     - yolov8s.pt
     - test_batch_enhanced.py
     - test_all_models.py
@@ -55,6 +60,31 @@
     - improved_hybrid_detection.py
     - test_sam2.py
     - enhanced_count_result.png
+    - stages/
+        - progress.json
+        - stage1a_quick_fix/
+            - enhanced_generic_detector.py
+        - runpod_training/
+            - Dockerfile
+            - ingredient_config.yaml
+            - upload_to_runpod.sh
+            - individual_item_config.yaml
+            - DATA_PREPARATION_GUIDE.md
+            - training_script.py
+            - train_individual_items.py
+            - upload_data.sh
+            - setup_individual_training.py
+        - stage1a_detection_fixes/
+            - 1a_runner.py
+            - README.md
+            - detection_fixer.py
+            - config.yaml
+        - stage1a_fixed/
+            - 1a_fixed_runner.py
+            - enhanced_detector.py
+            - prepare_runpod_training.py
+            - create_ingredient_dataset.py
+            - analyze_custom_model.py
     - improved_results/
         - 04a00c206b_improved_result.jpg
         - 04a00f3a25_improved_result.jpg
@@ -1140,6 +1170,9 @@
             - food_detection_20250611_010817/
                 - best.pt
                 - training_metadata.yaml
+        - genai_results/
+            - refrigerator_genai_20250620_090736.json
+            - refrigerator_genai_20250620_090840.json
         - output/
             - confidence_analysis_20250605_151710.csv
             - per_image_comparison_20250605_153847.csv
@@ -1935,6 +1968,13 @@
             - session_summary.txt
             - complete_log.txt
             - errors_only.txt
+    - genai_system/
+        - ceo_demo.py
+        - genai_analyzer.py
+        - dataset_builder.py
+        - accuracy_calculator.py
+        - yolo_integration.py
+        - config.yaml
     - config/
         - metadata_config.yaml
         - models.yaml

@@ -16,6 +16,7 @@ venv.bak/
 *.egg-info/
 dist/
 build/
+.env
 
 # Installer logs
 pip-log.txt

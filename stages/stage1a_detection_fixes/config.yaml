@@ -1,0 +1,33 @@
+# Stage 1A Configuration
+# Detection Accuracy Fixes
+
+# Enhanced confidence thresholds to reduce false positives
+confidence_thresholds:
+  bottle: 0.65      # Higher threshold - 
+  banana: 0.35      # Lower threshold - better individual banana detection  
+  apple: 0.4
+  food: 0.3
+  pizza: 0.5
+  default: 0.25
+
+# Bottle validation parameters (main Stage 1A issue)
+bottle_validation:
+  min_area_pixels: 800
+  max_area_pixels: 40000
+  min_aspect_ratio: 0.15
+  max_aspect_ratio: 1.0
+  min_confidence: 0.65
+
+# Stage 1A objectives
+objectives:
+  - Fix false positive bottle detection
+  - Fix banana quantity counting (no more "whole on 3")
+  - Improve item classification accuracy  
+  - Fix portion vs complete dish display
+
+# Success criteria
+success_criteria:
+  bottle_false_positives_reduced: true
+  banana_counting_improved: true
+  food_classification_working: true
+  display_formatting_clear: true

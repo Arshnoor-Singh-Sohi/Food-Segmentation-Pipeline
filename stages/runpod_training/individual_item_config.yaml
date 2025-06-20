@@ -1,0 +1,33 @@
+names:
+  0: banana_single
+  1: apple_red
+  2: apple_green
+  3: orange_single
+  4: strawberry_single
+  5: grape_cluster
+  6: tomato_single
+  7: carrot_single
+  8: lettuce_head
+  9: broccoli_head
+  10: bell_pepper
+  11: cucumber_single
+  12: bottle_milk
+  13: bottle_juice
+  14: bottle_water
+  15: bottle_soda
+  16: container_plastic
+  17: jar_glass
+  18: can_food
+  19: package_food
+  20: box_cereal
+  21: bag_frozen
+  22: carton_milk
+  23: carton_juice
+  24: egg_single
+  25: bread_loaf
+  26: cheese_block
+  27: yogurt_container
+path: stages\runpod_training\individual_item_dataset
+test: images/test
+train: images/train
+val: images/val

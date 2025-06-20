@@ -1,0 +1,34 @@
+{
+  "total_items": 30,
+  "processing_time": "2-3 seconds",
+  "inventory": [
+    {
+      "item_type": "banana_individual",
+      "quantity": 4,
+      "confidence": 0.95
+    },
+    {
+      "item_type": "apple_individual",
+      "quantity": 3,
+      "confidence": 0.95
+    },
+    {
+      "item_type": "bottle_individual",
+      "quantity": 6,
+      "confidence": 0.95
+    },
+    {
+      "item_type": "container_individual",
+      "quantity": 17,
+      "confidence": 0.95
+    }
+  ],
+  "summary": {
+    "fruits": 7,
+    "containers": 17,
+    "total_detected": 30
+  },
+  "analysis_method": "GPT-4 Vision",
+  "timestamp": "2025-06-20T09:08:40.894408",
+  "image_processed": "data/input/refrigerator.jpg"
+}

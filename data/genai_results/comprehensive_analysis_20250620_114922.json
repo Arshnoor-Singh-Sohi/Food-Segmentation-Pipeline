@@ -1,0 +1,221 @@
+{
+  "total_items": 34,
+  "processing_time": "2-3 seconds",
+  "inventory": [
+    {
+      "item_type": "banana",
+      "quantity": 5,
+      "confidence": 0.95,
+      "description": "bunch of bananas",
+      "database_match": true,
+      "category": "fruits",
+      "subcategory": "common",
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    {
+      "item_type": "pear",
+      "quantity": 3,
+      "confidence": 0.9,
+      "description": "green pears",
+      "database_match": true,
+      "category": "fruits",
+      "subcategory": "common",
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    {
+      "item_type": "apple",
+      "quantity": 3,
+      "confidence": 0.9,
+      "description": "red apples",
+      "database_match": true,
+      "category": "fruits",
+      "subcategory": "common",
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    {
+      "item_type": "orange",
+      "quantity": 2,
+      "confidence": 0.9,
+      "description": "oranges in bag",
+      "database_match": true,
+      "category": "fruits",
+      "subcategory": "citrus",
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    {
+      "item_type": "lemon",
+      "quantity": 2,
+      "confidence": 0.9,
+      "description": "lemons in bag",
+      "database_match": true,
+      "category": "fruits",
+      "subcategory": "citrus",
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    {
+      "item_type": "lime",
+      "quantity": 1,
+      "confidence": 0.9,
+      "description": "lime in bag",
+      "database_match": true,
+      "category": "fruits",
+      "subcategory": "citrus",
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    {
+      "item_type": "bell_pepper",
+      "quantity": 3,
+      "confidence": 0.9,
+      "description": "yellow, red, and green bell peppers",
+      "database_match": true,
+      "category": "vegetables",
+      "subcategory": "peppers",
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    {
+      "item_type": "carrot",
+      "quantity": 2,
+      "confidence": 0.9,
+      "description": "whole carrots",
+      "database_match": true,
+      "category": "vegetables",
+      "subcategory": "root_vegetables",
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    {
+      "item_type": "red_cabbage",
+      "quantity": 1,
+      "confidence": 0.9,
+      "description": "half red cabbage",
+      "database_match": true,
+      "category": "vegetables",
+      "subcategory": "leafy_greens",
+      "unit_type": "head",
+      "count_method": "individual_count"
+    },
+    {
+      "item_type": "arugula",
+      "quantity": 1,
+      "confidence": 0.9,
+      "description": "box of arugula",
+      "database_match": true,
+      "category": "vegetables",
+      "subcategory": "leafy_greens",
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    {
+      "item_type": "herbs",
+      "quantity": 2,
+      "confidence": 0.85,
+      "description": "bunches of leafy herbs",
+      "database_match": false,
+      "category": "unknown",
+      "subcategory": "unclassified",
+      "unit_type": "individual",
+      "count_method": "individual_count",
+      "needs_classification": true
+    },
+    {
+      "item_type": "egg_carton",
+      "quantity": 2,
+      "confidence": 0.9,
+      "description": "cartons of eggs",
+      "database_match": false,
+      "category": "unknown",
+      "subcategory": "unclassified",
+      "unit_type": "individual",
+      "count_method": "individual_count",
+      "needs_classification": true
+    },
+    {
+      "item_type": "jar",
+      "quantity": 4,
+      "confidence": 0.85,
+      "description": "jars with various contents",
+      "database_match": false,
+      "category": "unknown",
+      "subcategory": "unclassified",
+      "unit_type": "individual",
+      "count_method": "individual_count",
+      "needs_classification": true
+    },
+    {
+      "item_type": "mayonnaise",
+      "quantity": 1,
+      "confidence": 0.9,
+      "description": "jar of mayonnaise",
+      "database_match": true,
+      "category": "condiments_sauces",
+      "subcategory": "basic_condiments",
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    {
+      "item_type": "ketchup",
+      "quantity": 1,
+      "confidence": 0.9,
+      "description": "bottle of ketchup",
+      "database_match": true,
+      "category": "condiments_sauces",
+      "subcategory": "basic_condiments",
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    {
+      "item_type": "maple_syrup",
+      "quantity": 1,
+      "confidence": 0.9,
+      "description": "bottle of maple syrup",
+      "database_match": false,
+      "category": "unknown",
+      "subcategory": "unclassified",
+      "unit_type": "individual",
+      "count_method": "individual_count",
+      "needs_classification": true
+    },
+    {
+      "item_type": "mustard",
+      "quantity": 1,
+      "confidence": 0.9,
+      "description": "bottle of mustard",
+      "database_match": true,
+      "category": "condiments_sauces",
+      "subcategory": "basic_condiments",
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    {
+      "item_type": "tortilla",
+      "quantity": 1,
+      "confidence": 0.9,
+      "description": "pack of tortillas",
+      "database_match": true,
+      "category": "snacks_sweets",
+      "subcategory": "chips",
+      "unit_type": "individual",
+      "count_method": "package_count"
+    }
+  ],
+  "analysis_method": "GPT-4 Vision Comprehensive",
+  "timestamp": "2025-06-20T11:49:22.509003",
+  "database_info": {
+    "total_foods_in_db": 179,
+    "matched_foods": 14,
+    "unknown_foods": [
+      "herbs",
+      "egg_carton",
+      "jar",
+      "maple_syrup"
+    ],
+    "database_coverage": 77.77777777777779
+  }
+}

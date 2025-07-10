@@ -1,0 +1,12 @@
+path: E:\food_segmentation_pipeline\data\training_dataset_phase2
+train: images
+val: images
+nc: 6
+
+names:
+  0: banana_individual
+  1: apple_individual
+  2: bottle_individual
+  3: container_individual
+  4: orange_individual
+  5: carrot_individual

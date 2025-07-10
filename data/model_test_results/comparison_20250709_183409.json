@@ -1,0 +1,269 @@
+{
+  "test_type": "genai_comparison",
+  "timestamp": "2025-07-09T18:34:09.155434",
+  "local_results": {
+    "test_type": "basic_detection",
+    "timestamp": "2025-07-09T18:33:56.270121",
+    "image_path": "data/input/refrigerator.jpg",
+    "model_path": "data/models/genai_trained_local_model2/weights/best.pt",
+    "processing_time": 6.261693000793457,
+    "total_detections": 19,
+    "detections": [
+      {
+        "class_name": "bottle_individual",
+        "confidence": 0.7638638615608215,
+        "bbox": [
+          360.3244323730469,
+          170.26231384277344,
+          459.8730163574219,
+          297.9126892089844
+        ]
+      },
+      {
+        "class_name": "bottle_individual",
+        "confidence": 0.7351440191268921,
+        "bbox": [
+          553.4775390625,
+          167.72238159179688,
+          650.3692016601562,
+          301.5792236328125
+        ]
+      },
+      {
+        "class_name": "bottle_individual",
+        "confidence": 0.6861096024513245,
+        "bbox": [
+          191.94735717773438,
+          173.5885009765625,
+          285.7868957519531,
+          295.182373046875
+        ]
+      },
+      {
+        "class_name": "banana_individual",
+        "confidence": 0.6760620474815369,
+        "bbox": [
+          527.7911987304688,
+          199.66299438476562,
+          668.6796264648438,
+          269.3998718261719
+        ]
+      },
+      {
+        "class_name": "apple_individual",
+        "confidence": 0.6149080395698547,
+        "bbox": [
+          540.4983520507812,
+          191.52987670898438,
+          656.8662109375,
+          277.4127502441406
+        ]
+      },
+      {
+        "class_name": "banana_individual",
+        "confidence": 0.6067054271697998,
+        "bbox": [
+          341.1340026855469,
+          198.97634887695312,
+          485.41851806640625,
+          268.5218200683594
+        ]
+      },
+      {
+        "class_name": "apple_individual",
+        "confidence": 0.5494009256362915,
+        "bbox": [
+          352.0892639160156,
+          189.6808624267578,
+          479.5285949707031,
+          278.18780517578125
+        ]
+      },
+      {
+        "class_name": "apple_individual",
+        "confidence": 0.49224135279655457,
+        "bbox": [
+          179.2054443359375,
+          188.67320251464844,
+          305.1575012207031,
+          272.2919921875
+        ]
+      },
+      {
+        "class_name": "banana_individual",
+        "confidence": 0.40558353066444397,
+        "bbox": [
+          157.8799285888672,
+          198.4624786376953,
+          305.65423583984375,
+          265.6893615722656
+        ]
+      },
+      {
+        "class_name": "bottle_individual",
+        "confidence": 0.37388545274734497,
+        "bbox": [
+          706.3372192382812,
+          169.5680389404297,
+          806.4071044921875,
+          290.21759033203125
+        ]
+      },
+      {
+        "class_name": "banana_individual",
+        "confidence": 0.3448864817619324,
+        "bbox": [
+          39.86131286621094,
+          198.29782104492188,
+          186.3972930908203,
+          265.54400634765625
+        ]
+      },
+      {
+        "class_name": "apple_individual",
+        "confidence": 0.2959684133529663,
+        "bbox": [
+          692.365966796875,
+          188.28831481933594,
+          814.5213623046875,
+          275.8915710449219
+        ]
+      },
+      {
+        "class_name": "bottle_individual",
+        "confidence": 0.2819351851940155,
+        "bbox": [
+          688.057373046875,
+          169.1544189453125,
+          785.5767211914062,
+          296.91998291015625
+        ]
+      },
+      {
+        "class_name": "apple_individual",
+        "confidence": 0.2806324362754822,
+        "bbox": [
+          56.89681625366211,
+          186.1837615966797,
+          185.64976501464844,
+          272.3339538574219
+        ]
+      },
+      {
+        "class_name": "bottle_individual",
+        "confidence": 0.2762114703655243,
+        "bbox": [
+          53.3995475769043,
+          173.09591674804688,
+          158.03219604492188,
+          293.3036193847656
+        ]
+      },
+      {
+        "class_name": "bottle_individual",
+        "confidence": 0.27495741844177246,
+        "bbox": [
+          723.656494140625,
+          170.05946350097656,
+          824.3681030273438,
+          298.5049743652344
+        ]
+      },
+      {
+        "class_name": "banana_individual",
+        "confidence": 0.27033424377441406,
+        "bbox": [
+          677.9618530273438,
+          198.4465789794922,
+          821.8933715820312,
+          267.65283203125
+        ]
+      },
+      {
+        "class_name": "container_individual",
+        "confidence": 0.2676139771938324,
+        "bbox": [
+          346.1166076660156,
+          342.175537109375,
+          467.85296630859375,
+          429.93658447265625
+        ]
+      },
+      {
+        "class_name": "container_individual",
+        "confidence": 0.2641848623752594,
+        "bbox": [
+          744.0430908203125,
+          342.3857421875,
+          849.2362670898438,
+          422.6222229003906
+        ]
+      }
+    ],
+    "class_summary": {
+      "bottle_individual": [
+        0.7638638615608215,
+        0.7351440191268921,
+        0.6861096024513245,
+        0.37388545274734497,
+        0.2819351851940155,
+        0.2762114703655243,
+        0.27495741844177246
+      ],
+      "banana_individual": [
+        0.6760620474815369,
+        0.6067054271697998,
+        0.40558353066444397,
+        0.3448864817619324,
+        0.27033424377441406
+      ],
+      "apple_individual": [
+        0.6149080395698547,
+        0.5494009256362915,
+        0.49224135279655457,
+        0.2959684133529663,
+        0.2806324362754822
+      ],
+      "container_individual": [
+        0.2676139771938324,
+        0.2641848623752594
+      ]
+    }
+  },
+  "genai_results": {
+    "total_items": 28,
+    "processing_time": "2-3 seconds",
+    "inventory": [
+      {
+        "item_type": "banana_individual",
+        "quantity": 4,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "apple_individual",
+        "quantity": 3,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "bottle_individual",
+        "quantity": 6,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "container_individual",
+        "quantity": 15,
+        "confidence": 0.95
+      }
+    ],
+    "summary": {
+      "fruits": 7,
+      "containers": 15,
+      "total_detected": 28
+    },
+    "analysis_method": "GPT-4 Vision",
+    "timestamp": "2025-07-09T18:34:09.153663",
+    "image_processed": "data/input/refrigerator.jpg"
+  },
+  "accuracy_vs_genai": 50.0,
+  "recommendation": "major_improvements"
+}

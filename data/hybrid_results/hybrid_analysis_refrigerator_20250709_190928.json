@@ -1,0 +1,652 @@
+{
+  "genai_results": {
+    "total_items": 27,
+    "processing_time": "2-3 seconds",
+    "inventory": [
+      {
+        "item_type": "banana_individual",
+        "quantity": 4,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "apple_individual",
+        "quantity": 3,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "bottle_individual",
+        "quantity": 8,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "container_individual",
+        "quantity": 12,
+        "confidence": 0.95
+      }
+    ],
+    "summary": {
+      "fruits": 7,
+      "containers": 12,
+      "total_detected": 27
+    },
+    "analysis_method": "GPT-4 Vision",
+    "timestamp": "2025-07-09T19:09:21.995506",
+    "image_processed": "data/input/refrigerator.jpg"
+  },
+  "yolo_detections": [
+    {
+      "class_name": "banana",
+      "confidence": 0.869551420211792,
+      "bbox": [
+        857.2110595703125,
+        243.65264892578125,
+        1069.849853515625,
+        383.2461242675781
+      ]
+    },
+    {
+      "class_name": "bowl",
+      "confidence": 0.7496000528335571,
+      "bbox": [
+        665.5317993164062,
+        324.2412109375,
+        863.7586059570312,
+        382.56268310546875
+      ]
+    },
+    {
+      "class_name": "orange",
+      "confidence": 0.6044906377792358,
+      "bbox": [
+        537.19970703125,
+        645.7172241210938,
+        641.4615478515625,
+        745.5462036132812
+      ]
+    },
+    {
+      "class_name": "bottle",
+      "confidence": 0.5703442692756653,
+      "bbox": [
+        159.7729034423828,
+        691.6259155273438,
+        238.5343780517578,
+        797.0164184570312
+      ]
+    },
+    {
+      "class_name": "bottle",
+      "confidence": 0.5551252961158752,
+      "bbox": [
+        54.527488708496094,
+        333.9214172363281,
+        173.7203826904297,
+        572.427978515625
+      ]
+    },
+    {
+      "class_name": "bottle",
+      "confidence": 0.5217857360839844,
+      "bbox": [
+        234.78878784179688,
+        678.6929321289062,
+        305.9378662109375,
+        797.4708251953125
+      ]
+    },
+    {
+      "class_name": "bottle",
+      "confidence": 0.4982798993587494,
+      "bbox": [
+        109.14785766601562,
+        713.2488403320312,
+        152.2033233642578,
+        798.9369506835938
+      ]
+    },
+    {
+      "class_name": "orange",
+      "confidence": 0.48823082447052,
+      "bbox": [
+        681.9585571289062,
+        409.1704406738281,
+        755.0043334960938,
+        471.5394592285156
+      ]
+    },
+    {
+      "class_name": "bottle",
+      "confidence": 0.4620014429092407,
+      "bbox": [
+        164.23489379882812,
+        400.76605224609375,
+        248.18603515625,
+        557.7258911132812
+      ]
+    },
+    {
+      "class_name": "bottle",
+      "confidence": 0.4575982093811035,
+      "bbox": [
+        40.19413375854492,
+        0.8564900755882263,
+        121.73483276367188,
+        189.74502563476562
+      ]
+    },
+    {
+      "class_name": "bottle",
+      "confidence": 0.4136762320995331,
+      "bbox": [
+        201.55401611328125,
+        0.0,
+        290.60992431640625,
+        188.41224670410156
+      ]
+    },
+    {
+      "class_name": "orange",
+      "confidence": 0.38110530376434326,
+      "bbox": [
+        785.069580078125,
+        500.82318115234375,
+        866.5560913085938,
+        578.1672973632812
+      ]
+    },
+    {
+      "class_name": "bottle",
+      "confidence": 0.3418140113353729,
+      "bbox": [
+        1170.537109375,
+        277.2711181640625,
+        1199.6234130859375,
+        406.8247375488281
+      ]
+    },
+    {
+      "class_name": "orange",
+      "confidence": 0.3317619562149048,
+      "bbox": [
+        787.2514038085938,
+        454.03363037109375,
+        846.5006713867188,
+        503.96807861328125
+      ]
+    },
+    {
+      "class_name": "apple",
+      "confidence": 0.31671667098999023,
+      "bbox": [
+        451.0570068359375,
+        673.8067016601562,
+        543.8038330078125,
+        751.158203125
+      ]
+    },
+    {
+      "class_name": "bottle",
+      "confidence": 0.3051375448703766,
+      "bbox": [
+        317.7554626464844,
+        226.0519256591797,
+        417.66986083984375,
+        384.71514892578125
+      ]
+    },
+    {
+      "class_name": "bottle",
+      "confidence": 0.29853296279907227,
+      "bbox": [
+        709.9656982421875,
+        66.97464752197266,
+        785.2208862304688,
+        196.45361328125
+      ]
+    },
+    {
+      "class_name": "bottle",
+      "confidence": 0.2715825140476227,
+      "bbox": [
+        224.67356872558594,
+        317.95220947265625,
+        331.4222106933594,
+        512.4215087890625
+      ]
+    },
+    {
+      "class_name": "bottle",
+      "confidence": 0.2554219961166382,
+      "bbox": [
+        315.29949951171875,
+        15.768555641174316,
+        415.8533020019531,
+        194.5787353515625
+      ]
+    },
+    {
+      "class_name": "cup",
+      "confidence": 0.25330546498298645,
+      "bbox": [
+        782.36328125,
+        99.42237091064453,
+        857.4994506835938,
+        191.88116455078125
+      ]
+    },
+    {
+      "class_name": "orange",
+      "confidence": 0.2515306770801544,
+      "bbox": [
+        531.4151000976562,
+        631.391845703125,
+        646.5755615234375,
+        674.2337036132812
+      ]
+    }
+  ],
+  "local_detections": [
+    {
+      "class_name": "bottle_individual",
+      "confidence": 0.7638638615608215,
+      "bbox": [
+        360.3244323730469,
+        170.26231384277344,
+        459.8730163574219,
+        297.9126892089844
+      ]
+    },
+    {
+      "class_name": "bottle_individual",
+      "confidence": 0.7351440191268921,
+      "bbox": [
+        553.4775390625,
+        167.72238159179688,
+        650.3692016601562,
+        301.5792236328125
+      ]
+    },
+    {
+      "class_name": "bottle_individual",
+      "confidence": 0.6861096024513245,
+      "bbox": [
+        191.94735717773438,
+        173.5885009765625,
+        285.7868957519531,
+        295.182373046875
+      ]
+    },
+    {
+      "class_name": "banana_individual",
+      "confidence": 0.6760620474815369,
+      "bbox": [
+        527.7911987304688,
+        199.66299438476562,
+        668.6796264648438,
+        269.3998718261719
+      ]
+    },
+    {
+      "class_name": "apple_individual",
+      "confidence": 0.6149080395698547,
+      "bbox": [
+        540.4983520507812,
+        191.52987670898438,
+        656.8662109375,
+        277.4127502441406
+      ]
+    },
+    {
+      "class_name": "banana_individual",
+      "confidence": 0.6067054271697998,
+      "bbox": [
+        341.1340026855469,
+        198.97634887695312,
+        485.41851806640625,
+        268.5218200683594
+      ]
+    },
+    {
+      "class_name": "apple_individual",
+      "confidence": 0.5494009256362915,
+      "bbox": [
+        352.0892639160156,
+        189.6808624267578,
+        479.5285949707031,
+        278.18780517578125
+      ]
+    },
+    {
+      "class_name": "apple_individual",
+      "confidence": 0.49224135279655457,
+      "bbox": [
+        179.2054443359375,
+        188.67320251464844,
+        305.1575012207031,
+        272.2919921875
+      ]
+    },
+    {
+      "class_name": "banana_individual",
+      "confidence": 0.40558353066444397,
+      "bbox": [
+        157.8799285888672,
+        198.4624786376953,
+        305.65423583984375,
+        265.6893615722656
+      ]
+    },
+    {
+      "class_name": "bottle_individual",
+      "confidence": 0.37388545274734497,
+      "bbox": [
+        706.3372192382812,
+        169.5680389404297,
+        806.4071044921875,
+        290.21759033203125
+      ]
+    },
+    {
+      "class_name": "banana_individual",
+      "confidence": 0.3448864817619324,
+      "bbox": [
+        39.86131286621094,
+        198.29782104492188,
+        186.3972930908203,
+        265.54400634765625
+      ]
+    },
+    {
+      "class_name": "apple_individual",
+      "confidence": 0.2959684133529663,
+      "bbox": [
+        692.365966796875,
+        188.28831481933594,
+        814.5213623046875,
+        275.8915710449219
+      ]
+    },
+    {
+      "class_name": "bottle_individual",
+      "confidence": 0.2819351851940155,
+      "bbox": [
+        688.057373046875,
+        169.1544189453125,
+        785.5767211914062,
+        296.91998291015625
+      ]
+    },
+    {
+      "class_name": "apple_individual",
+      "confidence": 0.2806324362754822,
+      "bbox": [
+        56.89681625366211,
+        186.1837615966797,
+        185.64976501464844,
+        272.3339538574219
+      ]
+    },
+    {
+      "class_name": "bottle_individual",
+      "confidence": 0.2762114703655243,
+      "bbox": [
+        53.3995475769043,
+        173.09591674804688,
+        158.03219604492188,
+        293.3036193847656
+      ]
+    },
+    {
+      "class_name": "bottle_individual",
+      "confidence": 0.27495741844177246,
+      "bbox": [
+        723.656494140625,
+        170.05946350097656,
+        824.3681030273438,
+        298.5049743652344
+      ]
+    },
+    {
+      "class_name": "banana_individual",
+      "confidence": 0.27033424377441406,
+      "bbox": [
+        677.9618530273438,
+        198.4465789794922,
+        821.8933715820312,
+        267.65283203125
+      ]
+    },
+    {
+      "class_name": "container_individual",
+      "confidence": 0.2676139771938324,
+      "bbox": [
+        346.1166076660156,
+        342.175537109375,
+        467.85296630859375,
+        429.93658447265625
+      ]
+    },
+    {
+      "class_name": "container_individual",
+      "confidence": 0.2641848623752594,
+      "bbox": [
+        744.0430908203125,
+        342.3857421875,
+        849.2362670898438,
+        422.6222229003906
+      ]
+    }
+  ],
+  "hybrid_fusion": [
+    {
+      "food_type": "banana_individual",
+      "genai_confidence": 0.95,
+      "yolo_confidence": 0.869551420211792,
+      "combined_confidence": 0.909775710105896,
+      "bbox": [
+        857.2110595703125,
+        243.65264892578125,
+        1069.849853515625,
+        383.2461242675781
+      ],
+      "method": "genai_classification_yolo_position"
+    },
+    {
+      "food_type": "apple_individual",
+      "genai_confidence": 0.95,
+      "yolo_confidence": 0.31671667098999023,
+      "combined_confidence": 0.6333583354949951,
+      "bbox": [
+        451.0570068359375,
+        673.8067016601562,
+        543.8038330078125,
+        751.158203125
+      ],
+      "method": "genai_classification_yolo_position"
+    },
+    {
+      "food_type": "bottle_individual",
+      "genai_confidence": 0.95,
+      "yolo_confidence": 0.5703442692756653,
+      "combined_confidence": 0.7601721346378326,
+      "bbox": [
+        159.7729034423828,
+        691.6259155273438,
+        238.5343780517578,
+        797.0164184570312
+      ],
+      "method": "genai_classification_yolo_position"
+    },
+    {
+      "food_type": "bottle_individual",
+      "genai_confidence": 0.95,
+      "yolo_confidence": 0.5551252961158752,
+      "combined_confidence": 0.7525626480579376,
+      "bbox": [
+        54.527488708496094,
+        333.9214172363281,
+        173.7203826904297,
+        572.427978515625
+      ],
+      "method": "genai_classification_yolo_position"
+    },
+    {
+      "food_type": "bottle_individual",
+      "genai_confidence": 0.95,
+      "yolo_confidence": 0.5217857360839844,
+      "combined_confidence": 0.7358928680419922,
+      "bbox": [
+        234.78878784179688,
+        678.6929321289062,
+        305.9378662109375,
+        797.4708251953125
+      ],
+      "method": "genai_classification_yolo_position"
+    },
+    {
+      "food_type": "bottle_individual",
+      "genai_confidence": 0.95,
+      "yolo_confidence": 0.4982798993587494,
+      "combined_confidence": 0.7241399496793747,
+      "bbox": [
+        109.14785766601562,
+        713.2488403320312,
+        152.2033233642578,
+        798.9369506835938
+      ],
+      "method": "genai_classification_yolo_position"
+    },
+    {
+      "food_type": "bottle_individual",
+      "genai_confidence": 0.95,
+      "yolo_confidence": 0.4620014429092407,
+      "combined_confidence": 0.7060007214546203,
+      "bbox": [
+        164.23489379882812,
+        400.76605224609375,
+        248.18603515625,
+        557.7258911132812
+      ],
+      "method": "genai_classification_yolo_position"
+    },
+    {
+      "food_type": "bottle_individual",
+      "genai_confidence": 0.95,
+      "yolo_confidence": 0.4575982093811035,
+      "combined_confidence": 0.7037991046905517,
+      "bbox": [
+        40.19413375854492,
+        0.8564900755882263,
+        121.73483276367188,
+        189.74502563476562
+      ],
+      "method": "genai_classification_yolo_position"
+    },
+    {
+      "food_type": "bottle_individual",
+      "genai_confidence": 0.95,
+      "yolo_confidence": 0.4136762320995331,
+      "combined_confidence": 0.6818381160497665,
+      "bbox": [
+        201.55401611328125,
+        0.0,
+        290.60992431640625,
+        188.41224670410156
+      ],
+      "method": "genai_classification_yolo_position"
+    },
+    {
+      "food_type": "bottle_individual",
+      "genai_confidence": 0.95,
+      "yolo_confidence": 0.3418140113353729,
+      "combined_confidence": 0.6459070056676864,
+      "bbox": [
+        1170.537109375,
+        277.2711181640625,
+        1199.6234130859375,
+        406.8247375488281
+      ],
+      "method": "genai_classification_yolo_position"
+    },
+    {
+      "food_type": "container_individual",
+      "genai_confidence": 0.95,
+      "yolo_confidence": 0.7496000528335571,
+      "combined_confidence": 0.8498000264167785,
+      "bbox": [
+        665.5317993164062,
+        324.2412109375,
+        863.7586059570312,
+        382.56268310546875
+      ],
+      "method": "genai_classification_yolo_position"
+    },
+    {
+      "food_type": "container_individual",
+      "genai_confidence": 0.95,
+      "yolo_confidence": 0.3051375448703766,
+      "combined_confidence": 0.6275687724351883,
+      "bbox": [
+        317.7554626464844,
+        226.0519256591797,
+        417.66986083984375,
+        384.71514892578125
+      ],
+      "method": "genai_classification_yolo_position"
+    },
+    {
+      "food_type": "container_individual",
+      "genai_confidence": 0.95,
+      "yolo_confidence": 0.29853296279907227,
+      "combined_confidence": 0.6242664813995361,
+      "bbox": [
+        709.9656982421875,
+        66.97464752197266,
+        785.2208862304688,
+        196.45361328125
+      ],
+      "method": "genai_classification_yolo_position"
+    },
+    {
+      "food_type": "container_individual",
+      "genai_confidence": 0.95,
+      "yolo_confidence": 0.2715825140476227,
+      "combined_confidence": 0.6107912570238113,
+      "bbox": [
+        224.67356872558594,
+        317.95220947265625,
+        331.4222106933594,
+        512.4215087890625
+      ],
+      "method": "genai_classification_yolo_position"
+    },
+    {
+      "food_type": "container_individual",
+      "genai_confidence": 0.95,
+      "yolo_confidence": 0.2554219961166382,
+      "combined_confidence": 0.6027109980583191,
+      "bbox": [
+        315.29949951171875,
+        15.768555641174316,
+        415.8533020019531,
+        194.5787353515625
+      ],
+      "method": "genai_classification_yolo_position"
+    },
+    {
+      "food_type": "container_individual",
+      "genai_confidence": 0.95,
+      "yolo_confidence": 0.25330546498298645,
+      "combined_confidence": 0.6016527324914932,
+      "bbox": [
+        782.36328125,
+        99.42237091064453,
+        857.4994506835938,
+        191.88116455078125
+      ],
+      "method": "genai_classification_yolo_position"
+    }
+  ],
+  "analysis_method": "hybrid_genai_yolo",
+  "timestamp": "2025-07-09T19:09:28.927096"
+}

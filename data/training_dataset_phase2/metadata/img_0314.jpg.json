@@ -1,0 +1,40 @@
+{
+  "original_image": "data\\collected_images\\own_photos\\19.jpg",
+  "training_image": "data\\training_dataset_phase2\\images\\img_0314.jpg",
+  "label_file": "data\\training_dataset_phase2\\labels\\img_0314.txt",
+  "genai_results": {
+    "total_items": 20,
+    "processing_time": "2-3 seconds",
+    "inventory": [
+      {
+        "item_type": "banana_individual",
+        "quantity": 0,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "apple_individual",
+        "quantity": 2,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "bottle_individual",
+        "quantity": 4,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "container_individual",
+        "quantity": 14,
+        "confidence": 0.95
+      }
+    ],
+    "summary": {
+      "fruits": 2,
+      "containers": 14,
+      "total_detected": 20
+    },
+    "analysis_method": "GPT-4 Vision",
+    "timestamp": "2025-07-09T11:51:03.864362",
+    "image_processed": "data\\collected_images\\own_photos\\19.jpg"
+  },
+  "conversion_date": "2025-07-09T11:51:03.868364"
+}

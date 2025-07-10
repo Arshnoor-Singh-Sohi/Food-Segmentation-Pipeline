@@ -1,0 +1,30 @@
+{
+  "original_image": "data\\collected_images\\own_photos\\coco_cup_cup_cup_000000202888.jpg",
+  "training_image": "data\\training_dataset_phase2\\images\\img_0242.jpg",
+  "label_file": "data\\training_dataset_phase2\\labels\\img_0242.txt",
+  "genai_results": {
+    "total_items": 56,
+    "processing_time": "2-3 seconds",
+    "inventory": [
+      {
+        "item_type": "banana_individual",
+        "quantity": 50,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "container_individual",
+        "quantity": 6,
+        "confidence": 0.95
+      }
+    ],
+    "summary": {
+      "fruits": 50,
+      "containers": 6,
+      "total_detected": 56
+    },
+    "analysis_method": "GPT-4 Vision",
+    "timestamp": "2025-07-07T23:12:48.966579",
+    "image_processed": "data\\collected_images\\own_photos\\coco_cup_cup_cup_000000202888.jpg"
+  },
+  "conversion_date": "2025-07-07T23:12:48.981467"
+}

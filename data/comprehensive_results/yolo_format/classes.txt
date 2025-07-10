@@ -1,0 +1,16 @@
+banana
+jar
+bottle
+pear
+apple
+bell_pepper
+egg_carton
+orange
+carrot
+cheese
+lettuce
+cilantro
+mint
+lemon
+lime
+cabbage

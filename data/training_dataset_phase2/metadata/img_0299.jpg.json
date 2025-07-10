@@ -1,0 +1,40 @@
+{
+  "original_image": "data\\collected_images\\own_photos\\refrigerator_storage_with_food_items_021.jpg",
+  "training_image": "data\\training_dataset_phase2\\images\\img_0299.jpg",
+  "label_file": "data\\training_dataset_phase2\\labels\\img_0299.txt",
+  "genai_results": {
+    "total_items": 11,
+    "processing_time": "2-3 seconds",
+    "inventory": [
+      {
+        "item_type": "banana_individual",
+        "quantity": 0,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "apple_individual",
+        "quantity": 0,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "bottle_individual",
+        "quantity": 0,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "container_individual",
+        "quantity": 11,
+        "confidence": 0.95
+      }
+    ],
+    "summary": {
+      "fruits": 0,
+      "containers": 11,
+      "total_detected": 11
+    },
+    "analysis_method": "GPT-4 Vision",
+    "timestamp": "2025-07-07T23:26:49.509660",
+    "image_processed": "data\\collected_images\\own_photos\\refrigerator_storage_with_food_items_021.jpg"
+  },
+  "conversion_date": "2025-07-07T23:26:49.728670"
+}

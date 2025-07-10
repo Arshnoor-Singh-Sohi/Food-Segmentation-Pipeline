@@ -1,0 +1,2404 @@
+{
+  "version": "1.0",
+  "created_date": "2025-06-20T11:48:21.678304",
+  "total_foods": 183,
+  "categories": [
+    "fruits",
+    "vegetables",
+    "proteins",
+    "grains_starches",
+    "beverages",
+    "condiments_sauces",
+    "snacks_sweets",
+    "international_foods"
+  ],
+  "foods": {
+    "orange": {
+      "id": 0,
+      "name": "orange",
+      "category": "fruits",
+      "subcategory": "citrus",
+      "searchable_names": [
+        "orange",
+        "orange",
+        "orange"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "lemon": {
+      "id": 1,
+      "name": "lemon",
+      "category": "fruits",
+      "subcategory": "citrus",
+      "searchable_names": [
+        "lemon",
+        "lemon",
+        "lemon"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "lime": {
+      "id": 2,
+      "name": "lime",
+      "category": "fruits",
+      "subcategory": "citrus",
+      "searchable_names": [
+        "lime",
+        "lime",
+        "lime"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "grapefruit": {
+      "id": 3,
+      "name": "grapefruit",
+      "category": "fruits",
+      "subcategory": "citrus",
+      "searchable_names": [
+        "grapefruit",
+        "grapefruit",
+        "grapefruit"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "tangerine": {
+      "id": 4,
+      "name": "tangerine",
+      "category": "fruits",
+      "subcategory": "citrus",
+      "searchable_names": [
+        "tangerine",
+        "tangerine",
+        "tangerine"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "mandarin": {
+      "id": 5,
+      "name": "mandarin",
+      "category": "fruits",
+      "subcategory": "citrus",
+      "searchable_names": [
+        "mandarin",
+        "mandarin",
+        "mandarin"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "strawberry": {
+      "id": 157,
+      "name": "strawberry",
+      "category": "snacks_sweets",
+      "subcategory": "ice_cream",
+      "searchable_names": [
+        "strawberry",
+        "strawberry",
+        "strawberry"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "blueberry": {
+      "id": 7,
+      "name": "blueberry",
+      "category": "fruits",
+      "subcategory": "berries",
+      "searchable_names": [
+        "blueberry",
+        "blueberry",
+        "blueberry"
+      ],
+      "unit_type": "pieces",
+      "count_method": "individual_count"
+    },
+    "raspberry": {
+      "id": 8,
+      "name": "raspberry",
+      "category": "fruits",
+      "subcategory": "berries",
+      "searchable_names": [
+        "raspberry",
+        "raspberry",
+        "raspberry"
+      ],
+      "unit_type": "pieces",
+      "count_method": "individual_count"
+    },
+    "blackberry": {
+      "id": 9,
+      "name": "blackberry",
+      "category": "fruits",
+      "subcategory": "berries",
+      "searchable_names": [
+        "blackberry",
+        "blackberry",
+        "blackberry"
+      ],
+      "unit_type": "pieces",
+      "count_method": "individual_count"
+    },
+    "cranberry": {
+      "id": 10,
+      "name": "cranberry",
+      "category": "fruits",
+      "subcategory": "berries",
+      "searchable_names": [
+        "cranberry",
+        "cranberry",
+        "cranberry"
+      ],
+      "unit_type": "pieces",
+      "count_method": "individual_count"
+    },
+    "gooseberry": {
+      "id": 11,
+      "name": "gooseberry",
+      "category": "fruits",
+      "subcategory": "berries",
+      "searchable_names": [
+        "gooseberry",
+        "gooseberry",
+        "gooseberry"
+      ],
+      "unit_type": "pieces",
+      "count_method": "individual_count"
+    },
+    "peach": {
+      "id": 12,
+      "name": "peach",
+      "category": "fruits",
+      "subcategory": "stone_fruits",
+      "searchable_names": [
+        "peach",
+        "peach",
+        "peach"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "plum": {
+      "id": 13,
+      "name": "plum",
+      "category": "fruits",
+      "subcategory": "stone_fruits",
+      "searchable_names": [
+        "plum",
+        "plum",
+        "plum"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "apricot": {
+      "id": 14,
+      "name": "apricot",
+      "category": "fruits",
+      "subcategory": "stone_fruits",
+      "searchable_names": [
+        "apricot",
+        "apricot",
+        "apricot"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "cherry": {
+      "id": 15,
+      "name": "cherry",
+      "category": "fruits",
+      "subcategory": "stone_fruits",
+      "searchable_names": [
+        "cherry",
+        "cherry",
+        "cherry"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "nectarine": {
+      "id": 16,
+      "name": "nectarine",
+      "category": "fruits",
+      "subcategory": "stone_fruits",
+      "searchable_names": [
+        "nectarine",
+        "nectarine",
+        "nectarine"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "mango": {
+      "id": 17,
+      "name": "mango",
+      "category": "fruits",
+      "subcategory": "tropical",
+      "searchable_names": [
+        "mango",
+        "mango",
+        "mango"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "pineapple": {
+      "id": 18,
+      "name": "pineapple",
+      "category": "fruits",
+      "subcategory": "tropical",
+      "searchable_names": [
+        "pineapple",
+        "pineapple",
+        "pineapple"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "papaya": {
+      "id": 19,
+      "name": "papaya",
+      "category": "fruits",
+      "subcategory": "tropical",
+      "searchable_names": [
+        "papaya",
+        "papaya",
+        "papaya"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "kiwi": {
+      "id": 20,
+      "name": "kiwi",
+      "category": "fruits",
+      "subcategory": "tropical",
+      "searchable_names": [
+        "kiwi",
+        "kiwi",
+        "kiwi"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "passion_fruit": {
+      "id": 21,
+      "name": "passion_fruit",
+      "category": "fruits",
+      "subcategory": "tropical",
+      "searchable_names": [
+        "passion_fruit",
+        "passion fruit",
+        "passionfruit"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "dragon_fruit": {
+      "id": 22,
+      "name": "dragon_fruit",
+      "category": "fruits",
+      "subcategory": "tropical",
+      "searchable_names": [
+        "dragon_fruit",
+        "dragon fruit",
+        "dragonfruit"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "apple": {
+      "id": 23,
+      "name": "apple",
+      "category": "fruits",
+      "subcategory": "common",
+      "searchable_names": [
+        "apple",
+        "apple",
+        "apple"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "banana": {
+      "id": 24,
+      "name": "banana",
+      "category": "fruits",
+      "subcategory": "common",
+      "searchable_names": [
+        "banana",
+        "banana",
+        "banana"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "grape": {
+      "id": 25,
+      "name": "grape",
+      "category": "fruits",
+      "subcategory": "common",
+      "searchable_names": [
+        "grape",
+        "grape",
+        "grape"
+      ],
+      "unit_type": "pieces",
+      "count_method": "cluster_count"
+    },
+    "pear": {
+      "id": 26,
+      "name": "pear",
+      "category": "fruits",
+      "subcategory": "common",
+      "searchable_names": [
+        "pear",
+        "pear",
+        "pear"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "watermelon": {
+      "id": 27,
+      "name": "watermelon",
+      "category": "fruits",
+      "subcategory": "common",
+      "searchable_names": [
+        "watermelon",
+        "watermelon",
+        "watermelon"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "cantaloupe": {
+      "id": 28,
+      "name": "cantaloupe",
+      "category": "fruits",
+      "subcategory": "common",
+      "searchable_names": [
+        "cantaloupe",
+        "cantaloupe",
+        "cantaloupe"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "durian": {
+      "id": 29,
+      "name": "durian",
+      "category": "fruits",
+      "subcategory": "exotic",
+      "searchable_names": [
+        "durian",
+        "durian",
+        "durian"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "rambutan": {
+      "id": 30,
+      "name": "rambutan",
+      "category": "fruits",
+      "subcategory": "exotic",
+      "searchable_names": [
+        "rambutan",
+        "rambutan",
+        "rambutan"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "lychee": {
+      "id": 31,
+      "name": "lychee",
+      "category": "fruits",
+      "subcategory": "exotic",
+      "searchable_names": [
+        "lychee",
+        "lychee",
+        "lychee"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "jackfruit": {
+      "id": 32,
+      "name": "jackfruit",
+      "category": "fruits",
+      "subcategory": "exotic",
+      "searchable_names": [
+        "jackfruit",
+        "jackfruit",
+        "jackfruit"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "starfruit": {
+      "id": 33,
+      "name": "starfruit",
+      "category": "fruits",
+      "subcategory": "exotic",
+      "searchable_names": [
+        "starfruit",
+        "starfruit",
+        "starfruit"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "persimmon": {
+      "id": 34,
+      "name": "persimmon",
+      "category": "fruits",
+      "subcategory": "exotic",
+      "searchable_names": [
+        "persimmon",
+        "persimmon",
+        "persimmon"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "lettuce": {
+      "id": 35,
+      "name": "lettuce",
+      "category": "vegetables",
+      "subcategory": "leafy_greens",
+      "searchable_names": [
+        "lettuce",
+        "lettuce",
+        "lettuce"
+      ],
+      "unit_type": "head",
+      "count_method": "individual_count"
+    },
+    "spinach": {
+      "id": 36,
+      "name": "spinach",
+      "category": "vegetables",
+      "subcategory": "leafy_greens",
+      "searchable_names": [
+        "spinach",
+        "spinach",
+        "spinach"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "kale": {
+      "id": 37,
+      "name": "kale",
+      "category": "vegetables",
+      "subcategory": "leafy_greens",
+      "searchable_names": [
+        "kale",
+        "kale",
+        "kale"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "arugula": {
+      "id": 38,
+      "name": "arugula",
+      "category": "vegetables",
+      "subcategory": "leafy_greens",
+      "searchable_names": [
+        "arugula",
+        "arugula",
+        "arugula"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "chard": {
+      "id": 39,
+      "name": "chard",
+      "category": "vegetables",
+      "subcategory": "leafy_greens",
+      "searchable_names": [
+        "chard",
+        "chard",
+        "chard"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "cabbage": {
+      "id": 40,
+      "name": "cabbage",
+      "category": "vegetables",
+      "subcategory": "leafy_greens",
+      "searchable_names": [
+        "cabbage",
+        "cabbage",
+        "cabbage"
+      ],
+      "unit_type": "head",
+      "count_method": "individual_count"
+    },
+    "carrot": {
+      "id": 41,
+      "name": "carrot",
+      "category": "vegetables",
+      "subcategory": "root_vegetables",
+      "searchable_names": [
+        "carrot",
+        "carrot",
+        "carrot"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "potato": {
+      "id": 42,
+      "name": "potato",
+      "category": "vegetables",
+      "subcategory": "root_vegetables",
+      "searchable_names": [
+        "potato",
+        "potato",
+        "potato"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "sweet_potato": {
+      "id": 43,
+      "name": "sweet_potato",
+      "category": "vegetables",
+      "subcategory": "root_vegetables",
+      "searchable_names": [
+        "sweet_potato",
+        "sweet potato",
+        "sweetpotato"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "beet": {
+      "id": 44,
+      "name": "beet",
+      "category": "vegetables",
+      "subcategory": "root_vegetables",
+      "searchable_names": [
+        "beet",
+        "beet",
+        "beet"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "radish": {
+      "id": 45,
+      "name": "radish",
+      "category": "vegetables",
+      "subcategory": "root_vegetables",
+      "searchable_names": [
+        "radish",
+        "radish",
+        "radish"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "turnip": {
+      "id": 46,
+      "name": "turnip",
+      "category": "vegetables",
+      "subcategory": "root_vegetables",
+      "searchable_names": [
+        "turnip",
+        "turnip",
+        "turnip"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "broccoli": {
+      "id": 47,
+      "name": "broccoli",
+      "category": "vegetables",
+      "subcategory": "cruciferous",
+      "searchable_names": [
+        "broccoli",
+        "broccoli",
+        "broccoli"
+      ],
+      "unit_type": "head",
+      "count_method": "individual_count"
+    },
+    "cauliflower": {
+      "id": 48,
+      "name": "cauliflower",
+      "category": "vegetables",
+      "subcategory": "cruciferous",
+      "searchable_names": [
+        "cauliflower",
+        "cauliflower",
+        "cauliflower"
+      ],
+      "unit_type": "head",
+      "count_method": "individual_count"
+    },
+    "brussels_sprouts": {
+      "id": 49,
+      "name": "brussels_sprouts",
+      "category": "vegetables",
+      "subcategory": "cruciferous",
+      "searchable_names": [
+        "brussels_sprouts",
+        "brussels sprouts",
+        "brusselssprouts"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "bok_choy": {
+      "id": 50,
+      "name": "bok_choy",
+      "category": "vegetables",
+      "subcategory": "cruciferous",
+      "searchable_names": [
+        "bok_choy",
+        "bok choy",
+        "bokchoy"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "bell_pepper": {
+      "id": 51,
+      "name": "bell_pepper",
+      "category": "vegetables",
+      "subcategory": "peppers",
+      "searchable_names": [
+        "bell_pepper",
+        "bell pepper",
+        "bellpepper"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "chili_pepper": {
+      "id": 52,
+      "name": "chili_pepper",
+      "category": "vegetables",
+      "subcategory": "peppers",
+      "searchable_names": [
+        "chili_pepper",
+        "chili pepper",
+        "chilipepper"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "jalapeno": {
+      "id": 53,
+      "name": "jalapeno",
+      "category": "vegetables",
+      "subcategory": "peppers",
+      "searchable_names": [
+        "jalapeno",
+        "jalapeno",
+        "jalapeno"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "habanero": {
+      "id": 54,
+      "name": "habanero",
+      "category": "vegetables",
+      "subcategory": "peppers",
+      "searchable_names": [
+        "habanero",
+        "habanero",
+        "habanero"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "poblano": {
+      "id": 55,
+      "name": "poblano",
+      "category": "vegetables",
+      "subcategory": "peppers",
+      "searchable_names": [
+        "poblano",
+        "poblano",
+        "poblano"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "onion": {
+      "id": 56,
+      "name": "onion",
+      "category": "vegetables",
+      "subcategory": "onion_family",
+      "searchable_names": [
+        "onion",
+        "onion",
+        "onion"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "garlic": {
+      "id": 57,
+      "name": "garlic",
+      "category": "vegetables",
+      "subcategory": "onion_family",
+      "searchable_names": [
+        "garlic",
+        "garlic",
+        "garlic"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "leek": {
+      "id": 58,
+      "name": "leek",
+      "category": "vegetables",
+      "subcategory": "onion_family",
+      "searchable_names": [
+        "leek",
+        "leek",
+        "leek"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "shallot": {
+      "id": 59,
+      "name": "shallot",
+      "category": "vegetables",
+      "subcategory": "onion_family",
+      "searchable_names": [
+        "shallot",
+        "shallot",
+        "shallot"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "scallion": {
+      "id": 60,
+      "name": "scallion",
+      "category": "vegetables",
+      "subcategory": "onion_family",
+      "searchable_names": [
+        "scallion",
+        "scallion",
+        "scallion"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "zucchini": {
+      "id": 61,
+      "name": "zucchini",
+      "category": "vegetables",
+      "subcategory": "squash",
+      "searchable_names": [
+        "zucchini",
+        "zucchini",
+        "zucchini"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "yellow_squash": {
+      "id": 62,
+      "name": "yellow_squash",
+      "category": "vegetables",
+      "subcategory": "squash",
+      "searchable_names": [
+        "yellow_squash",
+        "yellow squash",
+        "yellowsquash"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "butternut_squash": {
+      "id": 63,
+      "name": "butternut_squash",
+      "category": "vegetables",
+      "subcategory": "squash",
+      "searchable_names": [
+        "butternut_squash",
+        "butternut squash",
+        "butternutsquash"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "acorn_squash": {
+      "id": 64,
+      "name": "acorn_squash",
+      "category": "vegetables",
+      "subcategory": "squash",
+      "searchable_names": [
+        "acorn_squash",
+        "acorn squash",
+        "acornsquash"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    "chicken": {
+      "id": 65,
+      "name": "chicken",
+      "category": "proteins",
+      "subcategory": "meats",
+      "searchable_names": [
+        "chicken",
+        "chicken",
+        "chicken"
+      ],
+      "unit_type": "package",
+      "count_method": "package_count"
+    },
+    "beef": {
+      "id": 66,
+      "name": "beef",
+      "category": "proteins",
+      "subcategory": "meats",
+      "searchable_names": [
+        "beef",
+        "beef",
+        "beef"
+      ],
+      "unit_type": "package",
+      "count_method": "package_count"
+    },
+    "pork": {
+      "id": 67,
+      "name": "pork",
+      "category": "proteins",
+      "subcategory": "meats",
+      "searchable_names": [
+        "pork",
+        "pork",
+        "pork"
+      ],
+      "unit_type": "package",
+      "count_method": "package_count"
+    },
+    "lamb": {
+      "id": 68,
+      "name": "lamb",
+      "category": "proteins",
+      "subcategory": "meats",
+      "searchable_names": [
+        "lamb",
+        "lamb",
+        "lamb"
+      ],
+      "unit_type": "package",
+      "count_method": "package_count"
+    },
+    "turkey": {
+      "id": 69,
+      "name": "turkey",
+      "category": "proteins",
+      "subcategory": "meats",
+      "searchable_names": [
+        "turkey",
+        "turkey",
+        "turkey"
+      ],
+      "unit_type": "package",
+      "count_method": "package_count"
+    },
+    "duck": {
+      "id": 70,
+      "name": "duck",
+      "category": "proteins",
+      "subcategory": "meats",
+      "searchable_names": [
+        "duck",
+        "duck",
+        "duck"
+      ],
+      "unit_type": "package",
+      "count_method": "package_count"
+    },
+    "salmon": {
+      "id": 71,
+      "name": "salmon",
+      "category": "proteins",
+      "subcategory": "seafood",
+      "searchable_names": [
+        "salmon",
+        "salmon",
+        "salmon"
+      ],
+      "unit_type": "package",
+      "count_method": "package_count"
+    },
+    "tuna": {
+      "id": 72,
+      "name": "tuna",
+      "category": "proteins",
+      "subcategory": "seafood",
+      "searchable_names": [
+        "tuna",
+        "tuna",
+        "tuna"
+      ],
+      "unit_type": "package",
+      "count_method": "package_count"
+    },
+    "shrimp": {
+      "id": 73,
+      "name": "shrimp",
+      "category": "proteins",
+      "subcategory": "seafood",
+      "searchable_names": [
+        "shrimp",
+        "shrimp",
+        "shrimp"
+      ],
+      "unit_type": "package",
+      "count_method": "package_count"
+    },
+    "crab": {
+      "id": 74,
+      "name": "crab",
+      "category": "proteins",
+      "subcategory": "seafood",
+      "searchable_names": [
+        "crab",
+        "crab",
+        "crab"
+      ],
+      "unit_type": "package",
+      "count_method": "package_count"
+    },
+    "lobster": {
+      "id": 75,
+      "name": "lobster",
+      "category": "proteins",
+      "subcategory": "seafood",
+      "searchable_names": [
+        "lobster",
+        "lobster",
+        "lobster"
+      ],
+      "unit_type": "package",
+      "count_method": "package_count"
+    },
+    "cod": {
+      "id": 76,
+      "name": "cod",
+      "category": "proteins",
+      "subcategory": "seafood",
+      "searchable_names": [
+        "cod",
+        "cod",
+        "cod"
+      ],
+      "unit_type": "package",
+      "count_method": "package_count"
+    },
+    "milk": {
+      "id": 109,
+      "name": "milk",
+      "category": "beverages",
+      "subcategory": "dairy_drinks",
+      "searchable_names": [
+        "milk",
+        "milk",
+        "milk"
+      ],
+      "unit_type": "bottle",
+      "count_method": "container_count"
+    },
+    "cheese": {
+      "id": 78,
+      "name": "cheese",
+      "category": "proteins",
+      "subcategory": "dairy",
+      "searchable_names": [
+        "cheese",
+        "cheese",
+        "cheese"
+      ],
+      "unit_type": "package",
+      "count_method": "package_count"
+    },
+    "yogurt": {
+      "id": 79,
+      "name": "yogurt",
+      "category": "proteins",
+      "subcategory": "dairy",
+      "searchable_names": [
+        "yogurt",
+        "yogurt",
+        "yogurt"
+      ],
+      "unit_type": "package",
+      "count_method": "package_count"
+    },
+    "butter": {
+      "id": 80,
+      "name": "butter",
+      "category": "proteins",
+      "subcategory": "dairy",
+      "searchable_names": [
+        "butter",
+        "butter",
+        "butter"
+      ],
+      "unit_type": "package",
+      "count_method": "package_count"
+    },
+    "cream": {
+      "id": 81,
+      "name": "cream",
+      "category": "proteins",
+      "subcategory": "dairy",
+      "searchable_names": [
+        "cream",
+        "cream",
+        "cream"
+      ],
+      "unit_type": "ml",
+      "count_method": "package_count"
+    },
+    "sour_cream": {
+      "id": 82,
+      "name": "sour_cream",
+      "category": "proteins",
+      "subcategory": "dairy",
+      "searchable_names": [
+        "sour_cream",
+        "sour cream",
+        "sourcream"
+      ],
+      "unit_type": "ml",
+      "count_method": "package_count"
+    },
+    "chicken_egg": {
+      "id": 83,
+      "name": "chicken_egg",
+      "category": "proteins",
+      "subcategory": "eggs",
+      "searchable_names": [
+        "chicken_egg",
+        "chicken egg",
+        "chickenegg"
+      ],
+      "unit_type": "package",
+      "count_method": "package_count"
+    },
+    "duck_egg": {
+      "id": 84,
+      "name": "duck_egg",
+      "category": "proteins",
+      "subcategory": "eggs",
+      "searchable_names": [
+        "duck_egg",
+        "duck egg",
+        "duckegg"
+      ],
+      "unit_type": "package",
+      "count_method": "package_count"
+    },
+    "quail_egg": {
+      "id": 85,
+      "name": "quail_egg",
+      "category": "proteins",
+      "subcategory": "eggs",
+      "searchable_names": [
+        "quail_egg",
+        "quail egg",
+        "quailegg"
+      ],
+      "unit_type": "package",
+      "count_method": "package_count"
+    },
+    "tofu": {
+      "id": 86,
+      "name": "tofu",
+      "category": "proteins",
+      "subcategory": "plant_proteins",
+      "searchable_names": [
+        "tofu",
+        "tofu",
+        "tofu"
+      ],
+      "unit_type": "package",
+      "count_method": "package_count"
+    },
+    "tempeh": {
+      "id": 87,
+      "name": "tempeh",
+      "category": "proteins",
+      "subcategory": "plant_proteins",
+      "searchable_names": [
+        "tempeh",
+        "tempeh",
+        "tempeh"
+      ],
+      "unit_type": "package",
+      "count_method": "package_count"
+    },
+    "beans": {
+      "id": 88,
+      "name": "beans",
+      "category": "proteins",
+      "subcategory": "plant_proteins",
+      "searchable_names": [
+        "beans",
+        "beans",
+        "beans"
+      ],
+      "unit_type": "package",
+      "count_method": "package_count"
+    },
+    "lentils": {
+      "id": 89,
+      "name": "lentils",
+      "category": "proteins",
+      "subcategory": "plant_proteins",
+      "searchable_names": [
+        "lentils",
+        "lentils",
+        "lentils"
+      ],
+      "unit_type": "package",
+      "count_method": "package_count"
+    },
+    "chickpeas": {
+      "id": 90,
+      "name": "chickpeas",
+      "category": "proteins",
+      "subcategory": "plant_proteins",
+      "searchable_names": [
+        "chickpeas",
+        "chickpeas",
+        "chickpeas"
+      ],
+      "unit_type": "package",
+      "count_method": "package_count"
+    },
+    "rice": {
+      "id": 91,
+      "name": "rice",
+      "category": "grains_starches",
+      "subcategory": "grains",
+      "searchable_names": [
+        "rice",
+        "rice",
+        "rice"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "quinoa": {
+      "id": 92,
+      "name": "quinoa",
+      "category": "grains_starches",
+      "subcategory": "grains",
+      "searchable_names": [
+        "quinoa",
+        "quinoa",
+        "quinoa"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "oats": {
+      "id": 93,
+      "name": "oats",
+      "category": "grains_starches",
+      "subcategory": "grains",
+      "searchable_names": [
+        "oats",
+        "oats",
+        "oats"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "barley": {
+      "id": 94,
+      "name": "barley",
+      "category": "grains_starches",
+      "subcategory": "grains",
+      "searchable_names": [
+        "barley",
+        "barley",
+        "barley"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "wheat": {
+      "id": 95,
+      "name": "wheat",
+      "category": "grains_starches",
+      "subcategory": "grains",
+      "searchable_names": [
+        "wheat",
+        "wheat",
+        "wheat"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "bulgur": {
+      "id": 96,
+      "name": "bulgur",
+      "category": "grains_starches",
+      "subcategory": "grains",
+      "searchable_names": [
+        "bulgur",
+        "bulgur",
+        "bulgur"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "spaghetti": {
+      "id": 97,
+      "name": "spaghetti",
+      "category": "grains_starches",
+      "subcategory": "pasta",
+      "searchable_names": [
+        "spaghetti",
+        "spaghetti",
+        "spaghetti"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "penne": {
+      "id": 98,
+      "name": "penne",
+      "category": "grains_starches",
+      "subcategory": "pasta",
+      "searchable_names": [
+        "penne",
+        "penne",
+        "penne"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "macaroni": {
+      "id": 99,
+      "name": "macaroni",
+      "category": "grains_starches",
+      "subcategory": "pasta",
+      "searchable_names": [
+        "macaroni",
+        "macaroni",
+        "macaroni"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "lasagna_sheets": {
+      "id": 100,
+      "name": "lasagna_sheets",
+      "category": "grains_starches",
+      "subcategory": "pasta",
+      "searchable_names": [
+        "lasagna_sheets",
+        "lasagna sheets",
+        "lasagnasheets"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "white_bread": {
+      "id": 101,
+      "name": "white_bread",
+      "category": "grains_starches",
+      "subcategory": "bread",
+      "searchable_names": [
+        "white_bread",
+        "white bread",
+        "whitebread"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "whole_wheat_bread": {
+      "id": 102,
+      "name": "whole_wheat_bread",
+      "category": "grains_starches",
+      "subcategory": "bread",
+      "searchable_names": [
+        "whole_wheat_bread",
+        "whole wheat bread",
+        "wholewheatbread"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "sourdough": {
+      "id": 103,
+      "name": "sourdough",
+      "category": "grains_starches",
+      "subcategory": "bread",
+      "searchable_names": [
+        "sourdough",
+        "sourdough",
+        "sourdough"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "baguette": {
+      "id": 104,
+      "name": "baguette",
+      "category": "grains_starches",
+      "subcategory": "bread",
+      "searchable_names": [
+        "baguette",
+        "baguette",
+        "baguette"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "corn_flakes": {
+      "id": 105,
+      "name": "corn_flakes",
+      "category": "grains_starches",
+      "subcategory": "cereals",
+      "searchable_names": [
+        "corn_flakes",
+        "corn flakes",
+        "cornflakes"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "granola": {
+      "id": 106,
+      "name": "granola",
+      "category": "grains_starches",
+      "subcategory": "cereals",
+      "searchable_names": [
+        "granola",
+        "granola",
+        "granola"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "muesli": {
+      "id": 107,
+      "name": "muesli",
+      "category": "grains_starches",
+      "subcategory": "cereals",
+      "searchable_names": [
+        "muesli",
+        "muesli",
+        "muesli"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "oatmeal": {
+      "id": 152,
+      "name": "oatmeal",
+      "category": "snacks_sweets",
+      "subcategory": "cookies",
+      "searchable_names": [
+        "oatmeal",
+        "oatmeal",
+        "oatmeal"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "almond_milk": {
+      "id": 110,
+      "name": "almond_milk",
+      "category": "beverages",
+      "subcategory": "dairy_drinks",
+      "searchable_names": [
+        "almond_milk",
+        "almond milk",
+        "almondmilk"
+      ],
+      "unit_type": "bottle",
+      "count_method": "container_count"
+    },
+    "oat_milk": {
+      "id": 111,
+      "name": "oat_milk",
+      "category": "beverages",
+      "subcategory": "dairy_drinks",
+      "searchable_names": [
+        "oat_milk",
+        "oat milk",
+        "oatmilk"
+      ],
+      "unit_type": "bottle",
+      "count_method": "container_count"
+    },
+    "soy_milk": {
+      "id": 112,
+      "name": "soy_milk",
+      "category": "beverages",
+      "subcategory": "dairy_drinks",
+      "searchable_names": [
+        "soy_milk",
+        "soy milk",
+        "soymilk"
+      ],
+      "unit_type": "bottle",
+      "count_method": "container_count"
+    },
+    "orange_juice": {
+      "id": 113,
+      "name": "orange_juice",
+      "category": "beverages",
+      "subcategory": "juices",
+      "searchable_names": [
+        "orange_juice",
+        "orange juice",
+        "orangejuice"
+      ],
+      "unit_type": "bottle",
+      "count_method": "container_count"
+    },
+    "apple_juice": {
+      "id": 114,
+      "name": "apple_juice",
+      "category": "beverages",
+      "subcategory": "juices",
+      "searchable_names": [
+        "apple_juice",
+        "apple juice",
+        "applejuice"
+      ],
+      "unit_type": "bottle",
+      "count_method": "container_count"
+    },
+    "grape_juice": {
+      "id": 115,
+      "name": "grape_juice",
+      "category": "beverages",
+      "subcategory": "juices",
+      "searchable_names": [
+        "grape_juice",
+        "grape juice",
+        "grapejuice"
+      ],
+      "unit_type": "bottle",
+      "count_method": "container_count"
+    },
+    "cranberry_juice": {
+      "id": 116,
+      "name": "cranberry_juice",
+      "category": "beverages",
+      "subcategory": "juices",
+      "searchable_names": [
+        "cranberry_juice",
+        "cranberry juice",
+        "cranberryjuice"
+      ],
+      "unit_type": "bottle",
+      "count_method": "container_count"
+    },
+    "bottled_water": {
+      "id": 117,
+      "name": "bottled_water",
+      "category": "beverages",
+      "subcategory": "water",
+      "searchable_names": [
+        "bottled_water",
+        "bottled water",
+        "bottledwater"
+      ],
+      "unit_type": "bottle",
+      "count_method": "container_count"
+    },
+    "sparkling_water": {
+      "id": 118,
+      "name": "sparkling_water",
+      "category": "beverages",
+      "subcategory": "water",
+      "searchable_names": [
+        "sparkling_water",
+        "sparkling water",
+        "sparklingwater"
+      ],
+      "unit_type": "bottle",
+      "count_method": "container_count"
+    },
+    "flavored_water": {
+      "id": 119,
+      "name": "flavored_water",
+      "category": "beverages",
+      "subcategory": "water",
+      "searchable_names": [
+        "flavored_water",
+        "flavored water",
+        "flavoredwater"
+      ],
+      "unit_type": "bottle",
+      "count_method": "container_count"
+    },
+    "cola": {
+      "id": 120,
+      "name": "cola",
+      "category": "beverages",
+      "subcategory": "soft_drinks",
+      "searchable_names": [
+        "cola",
+        "cola",
+        "cola"
+      ],
+      "unit_type": "bottle",
+      "count_method": "container_count"
+    },
+    "lemon_lime_soda": {
+      "id": 121,
+      "name": "lemon_lime_soda",
+      "category": "beverages",
+      "subcategory": "soft_drinks",
+      "searchable_names": [
+        "lemon_lime_soda",
+        "lemon lime soda",
+        "lemonlimesoda"
+      ],
+      "unit_type": "bottle",
+      "count_method": "container_count"
+    },
+    "root_beer": {
+      "id": 122,
+      "name": "root_beer",
+      "category": "beverages",
+      "subcategory": "soft_drinks",
+      "searchable_names": [
+        "root_beer",
+        "root beer",
+        "rootbeer"
+      ],
+      "unit_type": "bottle",
+      "count_method": "container_count"
+    },
+    "ginger_ale": {
+      "id": 123,
+      "name": "ginger_ale",
+      "category": "beverages",
+      "subcategory": "soft_drinks",
+      "searchable_names": [
+        "ginger_ale",
+        "ginger ale",
+        "gingerale"
+      ],
+      "unit_type": "bottle",
+      "count_method": "container_count"
+    },
+    "beer": {
+      "id": 124,
+      "name": "beer",
+      "category": "beverages",
+      "subcategory": "alcoholic",
+      "searchable_names": [
+        "beer",
+        "beer",
+        "beer"
+      ],
+      "unit_type": "bottle",
+      "count_method": "container_count"
+    },
+    "wine": {
+      "id": 125,
+      "name": "wine",
+      "category": "beverages",
+      "subcategory": "alcoholic",
+      "searchable_names": [
+        "wine",
+        "wine",
+        "wine"
+      ],
+      "unit_type": "bottle",
+      "count_method": "container_count"
+    },
+    "champagne": {
+      "id": 126,
+      "name": "champagne",
+      "category": "beverages",
+      "subcategory": "alcoholic",
+      "searchable_names": [
+        "champagne",
+        "champagne",
+        "champagne"
+      ],
+      "unit_type": "bottle",
+      "count_method": "container_count"
+    },
+    "sake": {
+      "id": 127,
+      "name": "sake",
+      "category": "beverages",
+      "subcategory": "alcoholic",
+      "searchable_names": [
+        "sake",
+        "sake",
+        "sake"
+      ],
+      "unit_type": "bottle",
+      "count_method": "container_count"
+    },
+    "ketchup": {
+      "id": 128,
+      "name": "ketchup",
+      "category": "condiments_sauces",
+      "subcategory": "basic_condiments",
+      "searchable_names": [
+        "ketchup",
+        "ketchup",
+        "ketchup"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "mustard": {
+      "id": 129,
+      "name": "mustard",
+      "category": "condiments_sauces",
+      "subcategory": "basic_condiments",
+      "searchable_names": [
+        "mustard",
+        "mustard",
+        "mustard"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "mayonnaise": {
+      "id": 130,
+      "name": "mayonnaise",
+      "category": "condiments_sauces",
+      "subcategory": "basic_condiments",
+      "searchable_names": [
+        "mayonnaise",
+        "mayonnaise",
+        "mayonnaise"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "hot_sauce": {
+      "id": 131,
+      "name": "hot_sauce",
+      "category": "condiments_sauces",
+      "subcategory": "basic_condiments",
+      "searchable_names": [
+        "hot_sauce",
+        "hot sauce",
+        "hotsauce"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "soy_sauce": {
+      "id": 132,
+      "name": "soy_sauce",
+      "category": "condiments_sauces",
+      "subcategory": "asian_sauces",
+      "searchable_names": [
+        "soy_sauce",
+        "soy sauce",
+        "soysauce"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "teriyaki": {
+      "id": 133,
+      "name": "teriyaki",
+      "category": "condiments_sauces",
+      "subcategory": "asian_sauces",
+      "searchable_names": [
+        "teriyaki",
+        "teriyaki",
+        "teriyaki"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "sriracha": {
+      "id": 134,
+      "name": "sriracha",
+      "category": "condiments_sauces",
+      "subcategory": "asian_sauces",
+      "searchable_names": [
+        "sriracha",
+        "sriracha",
+        "sriracha"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "fish_sauce": {
+      "id": 135,
+      "name": "fish_sauce",
+      "category": "condiments_sauces",
+      "subcategory": "asian_sauces",
+      "searchable_names": [
+        "fish_sauce",
+        "fish sauce",
+        "fishsauce"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "olive_oil": {
+      "id": 136,
+      "name": "olive_oil",
+      "category": "condiments_sauces",
+      "subcategory": "cooking_oils",
+      "searchable_names": [
+        "olive_oil",
+        "olive oil",
+        "oliveoil"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "vegetable_oil": {
+      "id": 137,
+      "name": "vegetable_oil",
+      "category": "condiments_sauces",
+      "subcategory": "cooking_oils",
+      "searchable_names": [
+        "vegetable_oil",
+        "vegetable oil",
+        "vegetableoil"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "coconut_oil": {
+      "id": 138,
+      "name": "coconut_oil",
+      "category": "condiments_sauces",
+      "subcategory": "cooking_oils",
+      "searchable_names": [
+        "coconut_oil",
+        "coconut oil",
+        "coconutoil"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "sesame_oil": {
+      "id": 139,
+      "name": "sesame_oil",
+      "category": "condiments_sauces",
+      "subcategory": "cooking_oils",
+      "searchable_names": [
+        "sesame_oil",
+        "sesame oil",
+        "sesameoil"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "white_vinegar": {
+      "id": 140,
+      "name": "white_vinegar",
+      "category": "condiments_sauces",
+      "subcategory": "vinegars",
+      "searchable_names": [
+        "white_vinegar",
+        "white vinegar",
+        "whitevinegar"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "apple_cider_vinegar": {
+      "id": 141,
+      "name": "apple_cider_vinegar",
+      "category": "condiments_sauces",
+      "subcategory": "vinegars",
+      "searchable_names": [
+        "apple_cider_vinegar",
+        "apple cider vinegar",
+        "applecidervinegar"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "balsamic_vinegar": {
+      "id": 142,
+      "name": "balsamic_vinegar",
+      "category": "condiments_sauces",
+      "subcategory": "vinegars",
+      "searchable_names": [
+        "balsamic_vinegar",
+        "balsamic vinegar",
+        "balsamicvinegar"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "potato_chips": {
+      "id": 143,
+      "name": "potato_chips",
+      "category": "snacks_sweets",
+      "subcategory": "chips",
+      "searchable_names": [
+        "potato_chips",
+        "potato chips",
+        "potatochips"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "tortilla_chips": {
+      "id": 144,
+      "name": "tortilla_chips",
+      "category": "snacks_sweets",
+      "subcategory": "chips",
+      "searchable_names": [
+        "tortilla_chips",
+        "tortilla chips",
+        "tortillachips"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "pretzels": {
+      "id": 145,
+      "name": "pretzels",
+      "category": "snacks_sweets",
+      "subcategory": "chips",
+      "searchable_names": [
+        "pretzels",
+        "pretzels",
+        "pretzels"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "crackers": {
+      "id": 146,
+      "name": "crackers",
+      "category": "snacks_sweets",
+      "subcategory": "chips",
+      "searchable_names": [
+        "crackers",
+        "crackers",
+        "crackers"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "chocolate": {
+      "id": 156,
+      "name": "chocolate",
+      "category": "snacks_sweets",
+      "subcategory": "ice_cream",
+      "searchable_names": [
+        "chocolate",
+        "chocolate",
+        "chocolate"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "gummy_bears": {
+      "id": 148,
+      "name": "gummy_bears",
+      "category": "snacks_sweets",
+      "subcategory": "candy",
+      "searchable_names": [
+        "gummy_bears",
+        "gummy bears",
+        "gummybears"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "hard_candy": {
+      "id": 149,
+      "name": "hard_candy",
+      "category": "snacks_sweets",
+      "subcategory": "candy",
+      "searchable_names": [
+        "hard_candy",
+        "hard candy",
+        "hardcandy"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "mints": {
+      "id": 150,
+      "name": "mints",
+      "category": "snacks_sweets",
+      "subcategory": "candy",
+      "searchable_names": [
+        "mints",
+        "mints",
+        "mints"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "chocolate_chip": {
+      "id": 151,
+      "name": "chocolate_chip",
+      "category": "snacks_sweets",
+      "subcategory": "cookies",
+      "searchable_names": [
+        "chocolate_chip",
+        "chocolate chip",
+        "chocolatechip"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "sugar_cookie": {
+      "id": 153,
+      "name": "sugar_cookie",
+      "category": "snacks_sweets",
+      "subcategory": "cookies",
+      "searchable_names": [
+        "sugar_cookie",
+        "sugar cookie",
+        "sugarcookie"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "oreo": {
+      "id": 154,
+      "name": "oreo",
+      "category": "snacks_sweets",
+      "subcategory": "cookies",
+      "searchable_names": [
+        "oreo",
+        "oreo",
+        "oreo"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "vanilla": {
+      "id": 155,
+      "name": "vanilla",
+      "category": "snacks_sweets",
+      "subcategory": "ice_cream",
+      "searchable_names": [
+        "vanilla",
+        "vanilla",
+        "vanilla"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "mint_chip": {
+      "id": 158,
+      "name": "mint_chip",
+      "category": "snacks_sweets",
+      "subcategory": "ice_cream",
+      "searchable_names": [
+        "mint_chip",
+        "mint chip",
+        "mintchip"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "kimchi": {
+      "id": 159,
+      "name": "kimchi",
+      "category": "international_foods",
+      "subcategory": "asian",
+      "searchable_names": [
+        "kimchi",
+        "kimchi",
+        "kimchi"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "miso": {
+      "id": 160,
+      "name": "miso",
+      "category": "international_foods",
+      "subcategory": "asian",
+      "searchable_names": [
+        "miso",
+        "miso",
+        "miso"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "nori": {
+      "id": 161,
+      "name": "nori",
+      "category": "international_foods",
+      "subcategory": "asian",
+      "searchable_names": [
+        "nori",
+        "nori",
+        "nori"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "rice_cakes": {
+      "id": 162,
+      "name": "rice_cakes",
+      "category": "international_foods",
+      "subcategory": "asian",
+      "searchable_names": [
+        "rice_cakes",
+        "rice cakes",
+        "ricecakes"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "dumplings": {
+      "id": 163,
+      "name": "dumplings",
+      "category": "international_foods",
+      "subcategory": "asian",
+      "searchable_names": [
+        "dumplings",
+        "dumplings",
+        "dumplings"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "tortillas": {
+      "id": 164,
+      "name": "tortillas",
+      "category": "international_foods",
+      "subcategory": "mexican",
+      "searchable_names": [
+        "tortillas",
+        "tortillas",
+        "tortillas"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "salsa": {
+      "id": 165,
+      "name": "salsa",
+      "category": "international_foods",
+      "subcategory": "mexican",
+      "searchable_names": [
+        "salsa",
+        "salsa",
+        "salsa"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "guacamole": {
+      "id": 166,
+      "name": "guacamole",
+      "category": "international_foods",
+      "subcategory": "mexican",
+      "searchable_names": [
+        "guacamole",
+        "guacamole",
+        "guacamole"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "jalape\u00f1os": {
+      "id": 167,
+      "name": "jalape\u00f1os",
+      "category": "international_foods",
+      "subcategory": "mexican",
+      "searchable_names": [
+        "jalape\u00f1os",
+        "jalape\u00f1os",
+        "jalape\u00f1os"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "cilantro": {
+      "id": 168,
+      "name": "cilantro",
+      "category": "international_foods",
+      "subcategory": "mexican",
+      "searchable_names": [
+        "cilantro",
+        "cilantro",
+        "cilantro"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "pasta_sauce": {
+      "id": 169,
+      "name": "pasta_sauce",
+      "category": "international_foods",
+      "subcategory": "italian",
+      "searchable_names": [
+        "pasta_sauce",
+        "pasta sauce",
+        "pastasauce"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "parmesan": {
+      "id": 170,
+      "name": "parmesan",
+      "category": "international_foods",
+      "subcategory": "italian",
+      "searchable_names": [
+        "parmesan",
+        "parmesan",
+        "parmesan"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "basil": {
+      "id": 171,
+      "name": "basil",
+      "category": "international_foods",
+      "subcategory": "italian",
+      "searchable_names": [
+        "basil",
+        "basil",
+        "basil"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "oregano": {
+      "id": 172,
+      "name": "oregano",
+      "category": "international_foods",
+      "subcategory": "italian",
+      "searchable_names": [
+        "oregano",
+        "oregano",
+        "oregano"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "mozzarella": {
+      "id": 173,
+      "name": "mozzarella",
+      "category": "international_foods",
+      "subcategory": "italian",
+      "searchable_names": [
+        "mozzarella",
+        "mozzarella",
+        "mozzarella"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "curry_paste": {
+      "id": 174,
+      "name": "curry_paste",
+      "category": "international_foods",
+      "subcategory": "indian",
+      "searchable_names": [
+        "curry_paste",
+        "curry paste",
+        "currypaste"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "turmeric": {
+      "id": 175,
+      "name": "turmeric",
+      "category": "international_foods",
+      "subcategory": "indian",
+      "searchable_names": [
+        "turmeric",
+        "turmeric",
+        "turmeric"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "cumin": {
+      "id": 176,
+      "name": "cumin",
+      "category": "international_foods",
+      "subcategory": "indian",
+      "searchable_names": [
+        "cumin",
+        "cumin",
+        "cumin"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "coriander": {
+      "id": 177,
+      "name": "coriander",
+      "category": "international_foods",
+      "subcategory": "indian",
+      "searchable_names": [
+        "coriander",
+        "coriander",
+        "coriander"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "naan": {
+      "id": 178,
+      "name": "naan",
+      "category": "international_foods",
+      "subcategory": "indian",
+      "searchable_names": [
+        "naan",
+        "naan",
+        "naan"
+      ],
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    "herbs": {
+      "id": 179,
+      "name": "herbs",
+      "category": "unknown",
+      "subcategory": "auto_detected",
+      "searchable_names": [
+        "herbs",
+        "herbs"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count",
+      "auto_added": true,
+      "added_date": "2025-06-20T11:49:22.510432"
+    },
+    "egg_carton": {
+      "id": 180,
+      "name": "egg_carton",
+      "category": "unknown",
+      "subcategory": "auto_detected",
+      "searchable_names": [
+        "egg_carton",
+        "egg carton"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count",
+      "auto_added": true,
+      "added_date": "2025-06-20T11:49:22.540796"
+    },
+    "jar": {
+      "id": 181,
+      "name": "jar",
+      "category": "unknown",
+      "subcategory": "auto_detected",
+      "searchable_names": [
+        "jar",
+        "jar"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count",
+      "auto_added": true,
+      "added_date": "2025-06-20T11:49:22.581401"
+    },
+    "maple_syrup": {
+      "id": 182,
+      "name": "maple_syrup",
+      "category": "unknown",
+      "subcategory": "auto_detected",
+      "searchable_names": [
+        "maple_syrup",
+        "maple syrup"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count",
+      "auto_added": true,
+      "added_date": "2025-06-20T11:49:22.615699"
+    },
+    "leafy_green_vegetable": {
+      "id": 183,
+      "name": "leafy_green_vegetable",
+      "category": "unknown",
+      "subcategory": "auto_detected",
+      "searchable_names": [
+        "leafy_green_vegetable",
+        "leafy green vegetable"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count",
+      "auto_added": true,
+      "added_date": "2025-06-20T11:55:28.193724"
+    },
+    "sunflower_seed": {
+      "id": 184,
+      "name": "sunflower_seed",
+      "category": "unknown",
+      "subcategory": "auto_detected",
+      "searchable_names": [
+        "sunflower_seed",
+        "sunflower seed"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count",
+      "auto_added": true,
+      "added_date": "2025-06-20T11:55:28.201863"
+    },
+    "date": {
+      "id": 185,
+      "name": "date",
+      "category": "unknown",
+      "subcategory": "auto_detected",
+      "searchable_names": [
+        "date",
+        "date"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count",
+      "auto_added": true,
+      "added_date": "2025-06-20T11:55:28.209898"
+    },
+    "unknown_pickled_item": {
+      "id": 186,
+      "name": "unknown_pickled_item",
+      "category": "unknown",
+      "subcategory": "auto_detected",
+      "searchable_names": [
+        "unknown_pickled_item",
+        "unknown pickled item"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count",
+      "auto_added": true,
+      "added_date": "2025-06-20T11:55:28.217893"
+    }
+  }
+}

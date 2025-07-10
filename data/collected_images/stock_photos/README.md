@@ -1,0 +1,14 @@
+# Stock Photos
+
+Professional stock photos
+
+## Guidelines:
+- Add refrigerator/fridge interior images
+- Focus on visible individual food items
+- Good lighting preferred
+- Any image format: .jpg, .jpeg, .png
+- Filename format: stock_photos_001.jpg, stock_photos_002.jpg, etc.
+
+## Target: 20-50 images in this folder
+
+## Added: 2025-06-20

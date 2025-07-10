@@ -1,0 +1,40 @@
+{
+  "original_image": "data\\collected_images\\own_photos\\coco_banana_banana_banana_000000000715.jpg",
+  "training_image": "data\\training_dataset_phase2\\images\\img_0119.jpg",
+  "label_file": "data\\training_dataset_phase2\\labels\\img_0119.txt",
+  "genai_results": {
+    "total_items": 56,
+    "processing_time": "2-3 seconds",
+    "inventory": [
+      {
+        "item_type": "banana_individual",
+        "quantity": 12,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "apple_individual",
+        "quantity": 0,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "bottle_individual",
+        "quantity": 0,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "container_individual",
+        "quantity": 16,
+        "confidence": 0.95
+      }
+    ],
+    "summary": {
+      "fruits": 40,
+      "containers": 16,
+      "total_detected": 56
+    },
+    "analysis_method": "GPT-4 Vision",
+    "timestamp": "2025-07-07T23:06:56.723917",
+    "image_processed": "data\\collected_images\\own_photos\\coco_banana_banana_banana_000000000715.jpg"
+  },
+  "conversion_date": "2025-07-07T23:06:56.732722"
+}

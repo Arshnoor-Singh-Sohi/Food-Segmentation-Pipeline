@@ -1,0 +1,25 @@
+{
+  "original_image": "data\\collected_images\\own_photos\\coco_bottle_bowl_bowl_000000464622.jpg",
+  "training_image": "data\\training_dataset_phase2\\images\\img_0203.jpg",
+  "label_file": "data\\training_dataset_phase2\\labels\\img_0203.txt",
+  "genai_results": {
+    "total_items": 9,
+    "processing_time": "2-3 seconds",
+    "inventory": [
+      {
+        "item_type": "container_individual",
+        "quantity": 9,
+        "confidence": 0.95
+      }
+    ],
+    "summary": {
+      "fruits": 0,
+      "containers": 9,
+      "total_detected": 9
+    },
+    "analysis_method": "GPT-4 Vision",
+    "timestamp": "2025-07-07T23:11:01.510649",
+    "image_processed": "data\\collected_images\\own_photos\\coco_bottle_bowl_bowl_000000464622.jpg"
+  },
+  "conversion_date": "2025-07-07T23:11:01.516507"
+}

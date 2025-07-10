@@ -1,0 +1,547 @@
+{
+  "total_items": 34,
+  "processing_time": "2-3 seconds",
+  "inventory": [
+    {
+      "item_type": "banana",
+      "quantity": 5,
+      "confidence": 0.95,
+      "description": "bunch of bananas",
+      "database_match": true,
+      "category": "fruits",
+      "subcategory": "common",
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    {
+      "item_type": "pear",
+      "quantity": 3,
+      "confidence": 0.9,
+      "description": "green pears",
+      "database_match": true,
+      "category": "fruits",
+      "subcategory": "common",
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    {
+      "item_type": "apple",
+      "quantity": 3,
+      "confidence": 0.9,
+      "description": "red apples",
+      "database_match": true,
+      "category": "fruits",
+      "subcategory": "common",
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    {
+      "item_type": "egg_carton",
+      "quantity": 2,
+      "confidence": 0.9,
+      "description": "cartons of eggs",
+      "database_match": true,
+      "category": "unknown",
+      "subcategory": "auto_detected",
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    {
+      "item_type": "jar",
+      "quantity": 5,
+      "confidence": 0.85,
+      "description": "jars with various contents",
+      "database_match": true,
+      "category": "unknown",
+      "subcategory": "auto_detected",
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    {
+      "item_type": "bottle",
+      "quantity": 4,
+      "confidence": 0.9,
+      "description": "bottles of condiments",
+      "database_match": true,
+      "category": "beverages",
+      "subcategory": "water",
+      "unit_type": "bottle",
+      "count_method": "container_count"
+    },
+    {
+      "item_type": "lettuce",
+      "quantity": 1,
+      "confidence": 0.9,
+      "description": "bag of leafy greens",
+      "database_match": true,
+      "category": "vegetables",
+      "subcategory": "leafy_greens",
+      "unit_type": "head",
+      "count_method": "individual_count"
+    },
+    {
+      "item_type": "cilantro",
+      "quantity": 1,
+      "confidence": 0.9,
+      "description": "bunch of cilantro",
+      "database_match": true,
+      "category": "international_foods",
+      "subcategory": "mexican",
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    {
+      "item_type": "mint",
+      "quantity": 1,
+      "confidence": 0.9,
+      "description": "bunch of mint",
+      "database_match": true,
+      "category": "snacks_sweets",
+      "subcategory": "candy",
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    {
+      "item_type": "orange",
+      "quantity": 2,
+      "confidence": 0.9,
+      "description": "oranges in a bag",
+      "database_match": true,
+      "category": "fruits",
+      "subcategory": "citrus",
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    {
+      "item_type": "lemon",
+      "quantity": 1,
+      "confidence": 0.9,
+      "description": "lemon in a bag",
+      "database_match": true,
+      "category": "fruits",
+      "subcategory": "citrus",
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    {
+      "item_type": "lime",
+      "quantity": 1,
+      "confidence": 0.9,
+      "description": "lime in a bag",
+      "database_match": true,
+      "category": "fruits",
+      "subcategory": "citrus",
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    {
+      "item_type": "bell_pepper",
+      "quantity": 3,
+      "confidence": 0.9,
+      "description": "red, yellow, and green bell peppers",
+      "database_match": true,
+      "category": "vegetables",
+      "subcategory": "peppers",
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    {
+      "item_type": "carrot",
+      "quantity": 2,
+      "confidence": 0.9,
+      "description": "bunch of carrots",
+      "database_match": true,
+      "category": "vegetables",
+      "subcategory": "root_vegetables",
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    {
+      "item_type": "cabbage",
+      "quantity": 1,
+      "confidence": 0.9,
+      "description": "half of a purple cabbage",
+      "database_match": true,
+      "category": "vegetables",
+      "subcategory": "leafy_greens",
+      "unit_type": "head",
+      "count_method": "individual_count"
+    },
+    {
+      "item_type": "cheese",
+      "quantity": 2,
+      "confidence": 0.9,
+      "description": "blocks of cheese",
+      "database_match": true,
+      "category": "proteins",
+      "subcategory": "dairy",
+      "unit_type": "package",
+      "count_method": "package_count"
+    }
+  ],
+  "analysis_method": "GPT-4 Vision Comprehensive",
+  "timestamp": "2025-06-20T12:49:05.346470",
+  "database_info": {
+    "total_foods_in_db": 183,
+    "matched_foods": 16,
+    "unknown_foods": [],
+    "database_coverage": 100.0
+  },
+  "bounding_boxes": [
+    {
+      "food_name": "banana",
+      "category": "fruits",
+      "quantity": 5,
+      "confidence": 0.95,
+      "bounding_boxes": [
+        {
+          "x_center": 0.31709667442813594,
+          "y_center": 0.13832659340185688,
+          "width": 0.08125550670153385,
+          "height": 0.07749135058900941
+        },
+        {
+          "x_center": 0.6926734202804802,
+          "y_center": 0.1823863525705947,
+          "width": 0.07844978659555313,
+          "height": 0.032472993008686404
+        },
+        {
+          "x_center": 0.39628645260490414,
+          "y_center": 0.20877290476813226,
+          "width": 0.1015034461386187,
+          "height": 0.06189320330484256
+        },
+        {
+          "x_center": 0.9434317606528352,
+          "y_center": 0.49358863188480695,
+          "width": 0.11313647869432966,
+          "height": 0.077985491340806
+        },
+        {
+          "x_center": 0.9757850227325148,
+          "y_center": 0.3853974273814235,
+          "width": 0.04842995453497043,
+          "height": 0.06644915586383517
+        }
+      ]
+    },
+    {
+      "food_name": "jar",
+      "category": "unknown",
+      "quantity": 5,
+      "confidence": 0.85,
+      "bounding_boxes": [
+        {
+          "x_center": 0.802892241183394,
+          "y_center": 0.4350653655038306,
+          "width": 0.03613699320473939,
+          "height": 0.11868517109003543
+        },
+        {
+          "x_center": 0.5412786048031979,
+          "y_center": 0.4665263193609086,
+          "width": 0.05300628824142519,
+          "height": 0.1435506193634671
+        },
+        {
+          "x_center": 0.7739370015803031,
+          "y_center": 0.4129560594745794,
+          "width": 0.03461184941421064,
+          "height": 0.10959323937723899
+        },
+        {
+          "x_center": 0.9844376340257783,
+          "y_center": 0.7105867086900223,
+          "width": 0.031124731948443417,
+          "height": 0.1523614729161824
+        },
+        {
+          "x_center": 0.8758881414659259,
+          "y_center": 0.6045098089835348,
+          "width": 0.036583753836532236,
+          "height": 0.14794644868546036
+        }
+      ]
+    },
+    {
+      "food_name": "bottle",
+      "category": "beverages",
+      "quantity": 4,
+      "confidence": 0.9,
+      "bounding_boxes": [
+        {
+          "x_center": 0.1382092044153335,
+          "y_center": 0.6141346243086961,
+          "width": 0.03627742758598625,
+          "height": 0.3254604187754106
+        },
+        {
+          "x_center": 0.21689945249004539,
+          "y_center": 0.7076002120193119,
+          "width": 0.03588015979899987,
+          "height": 0.20081377465343825
+        },
+        {
+          "x_center": 0.8765263140715217,
+          "y_center": 0.7281324623111183,
+          "width": 0.046947371856956646,
+          "height": 0.2879621529711844
+        },
+        {
+          "x_center": 0.976376497213244,
+          "y_center": 0.30673469449098306,
+          "width": 0.04724700557351188,
+          "height": 0.21663595584909387
+        }
+      ]
+    },
+    {
+      "food_name": "pear",
+      "category": "fruits",
+      "quantity": 3,
+      "confidence": 0.9,
+      "bounding_boxes": [
+        {
+          "x_center": 0.8961211566987302,
+          "y_center": 0.21779661569407519,
+          "width": 0.04029946172336695,
+          "height": 0.10995804066674583
+        },
+        {
+          "x_center": 0.9604897172749634,
+          "y_center": 0.1919339751830843,
+          "width": 0.07902056545007338,
+          "height": 0.07997051548412772
+        },
+        {
+          "x_center": 0.97238870924457,
+          "y_center": 0.28226174966146333,
+          "width": 0.05522258151085993,
+          "height": 0.05615371396321246
+        }
+      ]
+    },
+    {
+      "food_name": "apple",
+      "category": "fruits",
+      "quantity": 3,
+      "confidence": 0.9,
+      "bounding_boxes": [
+        {
+          "x_center": 0.7904084404831702,
+          "y_center": 0.6477241673872849,
+          "width": 0.0568116915413175,
+          "height": 0.0568116915413175
+        },
+        {
+          "x_center": 0.9716734784263183,
+          "y_center": 0.6438372222794705,
+          "width": 0.056653043147363386,
+          "height": 0.056653043147363386
+        },
+        {
+          "x_center": 0.978461431823096,
+          "y_center": 0.5667633586362473,
+          "width": 0.043077136353808054,
+          "height": 0.043077136353808054
+        }
+      ]
+    },
+    {
+      "food_name": "bell_pepper",
+      "category": "vegetables",
+      "quantity": 3,
+      "confidence": 0.9,
+      "bounding_boxes": [
+        {
+          "x_center": 0.15686404501349135,
+          "y_center": 0.8462849255739956,
+          "width": 0.027240179226199597,
+          "height": 0.15798587569616593
+        },
+        {
+          "x_center": 0.786222360971095,
+          "y_center": 0.9159635054529379,
+          "width": 0.07758012395897558,
+          "height": 0.1680729890941241
+        },
+        {
+          "x_center": 0.8824247678408537,
+          "y_center": 0.8550630568299451,
+          "width": 0.03968419240510056,
+          "height": 0.16487930704179646
+        }
+      ]
+    },
+    {
+      "food_name": "egg_carton",
+      "category": "unknown",
+      "quantity": 2,
+      "confidence": 0.9,
+      "bounding_boxes": [
+        {
+          "x_center": 0.45305158423308756,
+          "y_center": 0.1862436429167399,
+          "width": 0.08094558403557087,
+          "height": 0.10899796154076125
+        },
+        {
+          "x_center": 0.7920527334850452,
+          "y_center": 0.18049634425041522,
+          "width": 0.08106431513156107,
+          "height": 0.11981744684933307
+        }
+      ]
+    },
+    {
+      "food_name": "orange",
+      "category": "fruits",
+      "quantity": 2,
+      "confidence": 0.9,
+      "bounding_boxes": [
+        {
+          "x_center": 0.15054354752247873,
+          "y_center": 0.17982425391812382,
+          "width": 0.06518496913641261,
+          "height": 0.06518496913641261
+        },
+        {
+          "x_center": 0.6720685307743733,
+          "y_center": 0.1651101379402759,
+          "width": 0.07470438067528713,
+          "height": 0.07470438067528713
+        }
+      ]
+    },
+    {
+      "food_name": "carrot",
+      "category": "vegetables",
+      "quantity": 2,
+      "confidence": 0.9,
+      "bounding_boxes": [
+        {
+          "x_center": 0.3708329615862552,
+          "y_center": 0.11949092006968547,
+          "width": 0.2082330880997328,
+          "height": 0.12204163149201215
+        },
+        {
+          "x_center": 0.6671606939687595,
+          "y_center": 0.2419607278135119,
+          "width": 0.19613824143061653,
+          "height": 0.05064000531670843
+        }
+      ]
+    },
+    {
+      "food_name": "cheese",
+      "category": "proteins",
+      "quantity": 2,
+      "confidence": 0.9,
+      "bounding_boxes": [
+        {
+          "x_center": 0.5949982532465231,
+          "y_center": 0.1759408553766047,
+          "width": 0.1451388474805656,
+          "height": 0.05565648695504421
+        },
+        {
+          "x_center": 0.8435904196916365,
+          "y_center": 0.15836218067645874,
+          "width": 0.05708547893311131,
+          "height": 0.08637907295068298
+        }
+      ]
+    },
+    {
+      "food_name": "lettuce",
+      "category": "vegetables",
+      "quantity": 1,
+      "confidence": 0.9,
+      "bounding_boxes": [
+        {
+          "x_center": 0.6921300003860249,
+          "y_center": 0.11072391087533444,
+          "width": 0.04710512342379141,
+          "height": 0.17607166086664552
+        }
+      ]
+    },
+    {
+      "food_name": "cilantro",
+      "category": "international_foods",
+      "quantity": 1,
+      "confidence": 0.9,
+      "bounding_boxes": [
+        {
+          "x_center": 0.833511245377219,
+          "y_center": 0.12236944872295955,
+          "width": 0.09206999883677142,
+          "height": 0.0809681803288945
+        }
+      ]
+    },
+    {
+      "food_name": "mint",
+      "category": "snacks_sweets",
+      "quantity": 1,
+      "confidence": 0.9,
+      "bounding_boxes": [
+        {
+          "x_center": 0.6792005811677214,
+          "y_center": 0.26385244396077046,
+          "width": 0.08620124279920269,
+          "height": 0.06429812553245169
+        }
+      ]
+    },
+    {
+      "food_name": "lemon",
+      "category": "fruits",
+      "quantity": 1,
+      "confidence": 0.9,
+      "bounding_boxes": [
+        {
+          "x_center": 0.8501625234068909,
+          "y_center": 0.207195250853445,
+          "width": 0.07314763090627954,
+          "height": 0.07314763090627954
+        }
+      ]
+    },
+    {
+      "food_name": "lime",
+      "category": "fruits",
+      "quantity": 1,
+      "confidence": 0.9,
+      "bounding_boxes": [
+        {
+          "x_center": 0.10840490396571661,
+          "y_center": 0.14182473143374869,
+          "width": 0.050640971966779365,
+          "height": 0.050640971966779365
+        }
+      ]
+    },
+    {
+      "food_name": "cabbage",
+      "category": "vegetables",
+      "quantity": 1,
+      "confidence": 0.9,
+      "bounding_boxes": [
+        {
+          "x_center": 0.5649597196475276,
+          "y_center": 0.1427574250412522,
+          "width": 0.09770257035759213,
+          "height": 0.14587011867958963
+        }
+      ]
+    }
+  ],
+  "image_dimensions": {
+    "width": 1200,
+    "height": 800
+  },
+  "total_bounding_boxes": 37
+}

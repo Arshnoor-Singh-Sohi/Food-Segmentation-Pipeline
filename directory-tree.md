@@ -982,9 +982,13 @@
                     - 04a00c206b_results.json
                     - 04a00c206b_visualization.png
         - genai_results/
+            - comprehensive_analysis_20250718_084620.json
+            - comprehensive_analysis_20250718_103511.json
+            - refrigerator_genai_20250718_084909.json
             - comprehensive_analysis_20250620_114922.json
             - refrigerator_genai_20250620_090736.json
             - refrigerator_genai_20250707_233614.json
+            - refrigerator_genai_20250718_103432.json
             - refrigerator_genai_20250620_090840.json
         - models/
             - custom_food_detection.pt
@@ -1014,1079 +1018,273 @@
                 - train_batch1801.jpg
                 - val_batch2_pred.jpg
                 - val_batch0_pred.jpg
+            - genai_trained_local_model3/
+                - args.yaml
+            - genai_trained_local_model4/
+                - results.png
+                - PR_curve.png
+                - val_batch0_labels.jpg
+                - train_batch402.jpg
+                - F1_curve.png
+                - val_batch1_pred.jpg
+                - confusion_matrix.png
+                - val_batch1_labels.jpg
+                - results.csv
+                - train_batch1.jpg
+                - train_batch400.jpg
+                - P_curve.png
+                - train_batch0.jpg
+                - args.yaml
+                - train_batch2.jpg
+                - R_curve.png
+                - train_batch401.jpg
+                - val_batch2_labels.jpg
+                - labels_correlogram.jpg
+                - labels.jpg
+                - confusion_matrix_normalized.png
+                - val_batch2_pred.jpg
+                - val_batch0_pred.jpg
+            - improved_model_yolov8s_100epochs/
+                - results.csv
+                - train_batch1.jpg
+                - train_batch0.jpg
+                - args.yaml
+                - train_batch2.jpg
+                - labels_correlogram.jpg
+                - labels.jpg
             - genai_trained_local_model/
                 - args.yaml
         - training_dataset_phase2/
             - labels.cache
             - dataset.yaml
             - images/
-                - img_0263.jpg
-                - img_0163.jpg
-                - img_0279.jpg
-                - img_0168.jpg
-                - img_0269.jpg
-                - img_0335.jpg
-                - img_0256.jpg
-                - img_0115.jpg
-                - img_0251.jpg
-                - img_0310.jpg
                 - img_0024.jpg
                 - img_0065.jpg
-                - img_0333.jpg
                 - img_0061.jpg
-                - img_0130.jpg
-                - img_0152.jpg
                 - img_0021.jpg
-                - img_0312.jpg
-                - img_0212.jpg
-                - img_0329.jpg
                 - img_0038.jpg
                 - img_0070.jpg
-                - img_0197.jpg
-                - img_0204.jpg
-                - img_0320.jpg
-                - img_0326.jpg
-                - img_0201.jpg
                 - img_0069.jpg
-                - img_0139.jpg
-                - img_0229.jpg
-                - img_0301.jpg
-                - img_0270.jpg
-                - img_0138.jpg
-                - img_0134.jpg
                 - img_0064.jpg
-                - img_0300.jpg
                 - img_0047.jpg
-                - img_0175.jpg
-                - img_0156.jpg
                 - img_0008.jpg
-                - img_0239.jpg
-                - img_0285.jpg
-                - img_0161.jpg
-                - img_0222.jpg
-                - img_0336.jpg
-                - img_0349.jpg
-                - img_0225.jpg
-                - img_0265.jpg
-                - img_0217.jpg
                 - img_0050.jpg
-                - img_0257.jpg
-                - img_0275.jpg
-                - img_0093.jpg
-                - img_0353.jpg
-                - img_0095.jpg
-                - img_0296.jpg
-                - img_0135.jpg
                 - img_0056.jpg
                 - img_0016.jpg
-                - img_0253.jpg
-                - img_0193.jpg
-                - img_0079.jpg
                 - img_0059.jpg
                 - img_0057.jpg
-                - img_0337.jpg
-                - img_0274.jpg
-                - img_0190.jpg
-                - img_0286.jpg
-                - img_0096.jpg
                 - img_0031.jpg
                 - img_0074.jpg
                 - img_0019.jpg
-                - img_0280.jpg
-                - img_0180.jpg
                 - img_0027.jpg
-                - img_0084.jpg
-                - img_0331.jpg
-                - img_0282.jpg
                 - img_0015.jpg
-                - img_0209.jpg
-                - img_0252.jpg
                 - img_0010.jpg
                 - img_0052.jpg
-                - img_0322.jpg
-                - img_0246.jpg
                 - img_0054.jpg
-                - img_0238.jpg
-                - img_0100.jpg
-                - img_0187.jpg
-                - img_0271.jpg
-                - img_0281.jpg
-                - img_0235.jpg
-                - img_0151.jpg
-                - img_0220.jpg
                 - img_0013.jpg
-                - img_0146.jpg
-                - img_0277.jpg
                 - img_0004.jpg
-                - img_0294.jpg
-                - img_0162.jpg
-                - img_0123.jpg
-                - img_0318.jpg
-                - img_0154.jpg
                 - img_0012.jpg
                 - img_0039.jpg
-                - img_0218.jpg
                 - img_0072.jpg
-                - img_0076.jpg
-                - img_0319.jpg
-                - img_0272.jpg
-                - img_0110.jpg
                 - img_0009.jpg
                 - img_0037.jpg
-                - img_0315.jpg
-                - img_0165.jpg
-                - img_0340.jpg
-                - img_0325.jpg
-                - img_0348.jpg
-                - img_0126.jpg
-                - img_0203.jpg
-                - img_0292.jpg
-                - img_0276.jpg
-                - img_0316.jpg
-                - img_0164.jpg
                 - img_0036.jpg
-                - img_0101.jpg
                 - img_0000.jpg
-                - img_0077.jpg
-                - img_0233.jpg
                 - img_0002.jpg
-                - img_0264.jpg
-                - img_0160.jpg
                 - img_0035.jpg
-                - img_0309.jpg
                 - img_0003.jpg
-                - img_0132.jpg
-                - img_0314.jpg
-                - img_0223.jpg
-                - img_0236.jpg
                 - img_0049.jpg
-                - img_0208.jpg
-                - img_0344.jpg
                 - img_0026.jpg
-                - img_0248.jpg
-                - img_0228.jpg
-                - img_0308.jpg
-                - img_0215.jpg
-                - img_0081.jpg
                 - img_0001.jpg
-                - img_0174.jpg
-                - img_0140.jpg
-                - img_0224.jpg
                 - img_0006.jpg
-                - img_0249.jpg
-                - img_0221.jpg
-                - img_0179.jpg
-                - img_0090.jpg
-                - img_0121.jpg
                 - img_0073.jpg
-                - img_0128.jpg
-                - img_0137.jpg
-                - img_0075.jpg
-                - img_0299.jpg
                 - img_0060.jpg
-                - img_0261.jpg
-                - img_0118.jpg
-                - img_0216.jpg
                 - img_0030.jpg
                 - img_0034.jpg
-                - img_0302.jpg
-                - img_0144.jpg
-                - img_0290.jpg
-                - img_0106.jpg
-                - img_0109.jpg
-                - img_0214.jpg
-                - img_0313.jpg
                 - img_0011.jpg
-                - img_0347.jpg
                 - img_0005.jpg
-                - img_0177.jpg
-                - img_0107.jpg
                 - img_0025.jpg
                 - img_0044.jpg
                 - img_0053.jpg
-                - img_0343.jpg
                 - img_0046.jpg
-                - img_0219.jpg
                 - img_0029.jpg
-                - img_0108.jpg
-                - img_0283.jpg
-                - img_0321.jpg
-                - img_0324.jpg
                 - img_0040.jpg
-                - img_0351.jpg
-                - img_0113.jpg
-                - img_0231.jpg
-                - img_0287.jpg
-                - img_0127.jpg
-                - img_0307.jpg
-                - img_0082.jpg
-                - img_0328.jpg
-                - img_0350.jpg
-                - img_0332.jpg
-                - img_0338.jpg
-                - img_0189.jpg
-                - img_0192.jpg
-                - img_0182.jpg
-                - img_0206.jpg
                 - img_0023.jpg
-                - img_0352.jpg
-                - img_0172.jpg
-                - img_0202.jpg
                 - img_0032.jpg
-                - img_0119.jpg
-                - img_0266.jpg
-                - img_0242.jpg
-                - img_0088.jpg
-                - img_0273.jpg
                 - img_0043.jpg
-                - img_0211.jpg
                 - img_0007.jpg
-                - img_0240.jpg
                 - img_0051.jpg
-                - img_0247.jpg
                 - img_0017.jpg
-                - img_0311.jpg
-                - img_0097.jpg
-                - img_0262.jpg
-                - img_0116.jpg
-                - img_0103.jpg
-                - img_0291.jpg
-                - img_0142.jpg
-                - img_0244.jpg
                 - img_0045.jpg
-                - img_0112.jpg
-                - img_0145.jpg
-                - img_0305.jpg
-                - img_0289.jpg
-                - img_0258.jpg
-                - img_0186.jpg
-                - img_0148.jpg
                 - img_0071.jpg
-                - img_0334.jpg
-                - img_0114.jpg
-                - img_0089.jpg
-                - img_0091.jpg
-                - img_0323.jpg
-                - img_0129.jpg
                 - img_0066.jpg
-                - img_0213.jpg
-                - img_0342.jpg
                 - img_0020.jpg
-                - img_0260.jpg
-                - img_0171.jpg
-                - img_0188.jpg
-                - img_0303.jpg
-                - img_0196.jpg
-                - img_0085.jpg
-                - img_0198.jpg
-                - img_0327.jpg
                 - img_0062.jpg
-                - img_0226.jpg
-                - img_0102.jpg
                 - img_0033.jpg
                 - img_0018.jpg
-                - img_0241.jpg
-                - img_0166.jpg
-                - img_0200.jpg
                 - img_0028.jpg
-                - img_0205.jpg
-                - img_0147.jpg
-                - img_0099.jpg
-                - img_0150.jpg
-                - img_0245.jpg
-                - img_0098.jpg
-                - img_0136.jpg
-                - img_0298.jpg
-                - img_0158.jpg
-                - img_0234.jpg
-                - img_0120.jpg
-                - img_0317.jpg
-                - img_0094.jpg
-                - img_0250.jpg
                 - img_0067.jpg
-                - img_0230.jpg
-                - img_0170.jpg
-                - img_0111.jpg
-                - img_0086.jpg
-                - img_0083.jpg
-                - img_0125.jpg
-                - img_0255.jpg
-                - img_0157.jpg
-                - img_0149.jpg
                 - img_0048.jpg
-                - img_0131.jpg
-                - img_0141.jpg
-                - img_0254.jpg
-                - img_0173.jpg
-                - img_0104.jpg
-                - img_0297.jpg
                 - img_0068.jpg
-                - img_0293.jpg
-                - img_0194.jpg
-                - img_0237.jpg
-                - img_0181.jpg
                 - img_0063.jpg
-                - img_0178.jpg
-                - img_0330.jpg
-                - img_0346.jpg
-                - img_0184.jpg
-                - img_0284.jpg
-                - img_0169.jpg
-                - img_0267.jpg
-                - img_0153.jpg
                 - img_0041.jpg
-                - img_0345.jpg
-                - img_0092.jpg
-                - img_0288.jpg
-                - img_0195.jpg
-                - img_0227.jpg
-                - img_0183.jpg
                 - img_0058.jpg
                 - img_0014.jpg
-                - img_0087.jpg
-                - img_0078.jpg
-                - img_0167.jpg
                 - img_0055.jpg
-                - img_0278.jpg
-                - img_0122.jpg
-                - img_0341.jpg
-                - img_0268.jpg
-                - img_0354.jpg
-                - img_0191.jpg
-                - img_0143.jpg
-                - img_0155.jpg
-                - img_0176.jpg
-                - img_0199.jpg
-                - img_0243.jpg
-                - img_0133.jpg
-                - img_0339.jpg
                 - img_0022.jpg
-                - img_0210.jpg
-                - img_0124.jpg
-                - img_0117.jpg
-                - img_0259.jpg
-                - img_0080.jpg
-                - img_0159.jpg
-                - img_0295.jpg
-                - img_0306.jpg
-                - img_0304.jpg
-                - img_0105.jpg
-                - img_0207.jpg
                 - img_0042.jpg
-                - img_0232.jpg
-                - img_0185.jpg
             - metadata/
                 - img_0021.jpg.json
                 - img_0030.jpg.json
                 - img_0058.jpg.json
-                - img_0188.jpg.json
                 - img_0062.jpg.json
-                - img_0085.jpg.json
-                - img_0289.jpg.json
                 - img_0035.jpg.json
-                - img_0298.jpg.json
-                - img_0095.jpg.json
-                - img_0300.jpg.json
-                - img_0099.jpg.json
-                - img_0097.jpg.json
-                - img_0187.jpg.json
                 - img_0007.jpg.json
-                - img_0143.jpg.json
-                - img_0142.jpg.json
-                - img_0290.jpg.json
-                - img_0207.jpg.json
-                - img_0150.jpg.json
-                - img_0083.jpg.json
-                - img_0253.jpg.json
-                - img_0338.jpg.json
-                - img_0296.jpg.json
-                - img_0153.jpg.json
-                - img_0137.jpg.json
-                - img_0149.jpg.json
-                - img_0310.jpg.json
-                - img_0341.jpg.json
-                - img_0330.jpg.json
-                - img_0305.jpg.json
                 - img_0063.jpg.json
                 - img_0029.jpg.json
                 - img_0016.jpg.json
-                - img_0158.jpg.json
-                - img_0306.jpg.json
-                - img_0244.jpg.json
-                - img_0171.jpg.json
                 - img_0032.jpg.json
                 - img_0070.jpg.json
-                - img_0080.jpg.json
-                - img_0322.jpg.json
-                - img_0090.jpg.json
-                - img_0270.jpg.json
-                - img_0239.jpg.json
-                - img_0128.jpg.json
                 - img_0049.jpg.json
-                - img_0082.jpg.json
-                - img_0190.jpg.json
-                - img_0141.jpg.json
-                - img_0075.jpg.json
                 - img_0019.jpg.json
                 - img_0015.jpg.json
                 - img_0055.jpg.json
                 - img_0042.jpg.json
                 - img_0041.jpg.json
-                - img_0079.jpg.json
                 - img_0071.jpg.json
-                - img_0347.jpg.json
-                - img_0191.jpg.json
-                - img_0283.jpg.json
-                - img_0273.jpg.json
-                - img_0337.jpg.json
-                - img_0184.jpg.json
-                - img_0351.jpg.json
                 - img_0009.jpg.json
-                - img_0145.jpg.json
                 - img_0046.jpg.json
-                - img_0265.jpg.json
-                - img_0327.jpg.json
-                - img_0186.jpg.json
-                - img_0238.jpg.json
-                - img_0219.jpg.json
-                - img_0147.jpg.json
-                - img_0279.jpg.json
-                - img_0349.jpg.json
-                - img_0257.jpg.json
-                - img_0197.jpg.json
-                - img_0094.jpg.json
-                - img_0316.jpg.json
-                - img_0116.jpg.json
-                - img_0218.jpg.json
-                - img_0183.jpg.json
-                - img_0091.jpg.json
-                - img_0164.jpg.json
-                - img_0234.jpg.json
-                - img_0275.jpg.json
-                - img_0325.jpg.json
                 - img_0074.jpg.json
-                - img_0100.jpg.json
-                - img_0098.jpg.json
-                - img_0196.jpg.json
-                - img_0333.jpg.json
-                - img_0346.jpg.json
-                - img_0185.jpg.json
-                - img_0313.jpg.json
                 - img_0023.jpg.json
                 - img_0044.jpg.json
                 - img_0020.jpg.json
-                - img_0352.jpg.json
                 - img_0010.jpg.json
-                - img_0233.jpg.json
-                - img_0180.jpg.json
-                - img_0129.jpg.json
-                - img_0342.jpg.json
                 - img_0072.jpg.json
                 - img_0054.jpg.json
-                - img_0332.jpg.json
-                - img_0324.jpg.json
                 - img_0061.jpg.json
                 - img_0037.jpg.json
                 - img_0060.jpg.json
-                - img_0262.jpg.json
-                - img_0263.jpg.json
-                - img_0331.jpg.json
-                - img_0101.jpg.json
-                - img_0127.jpg.json
-                - img_0159.jpg.json
                 - img_0047.jpg.json
-                - img_0121.jpg.json
-                - img_0154.jpg.json
                 - img_0005.jpg.json
-                - img_0139.jpg.json
-                - img_0224.jpg.json
-                - img_0271.jpg.json
-                - img_0247.jpg.json
-                - img_0315.jpg.json
-                - img_0178.jpg.json
-                - img_0248.jpg.json
-                - img_0348.jpg.json
                 - img_0066.jpg.json
-                - img_0111.jpg.json
-                - img_0345.jpg.json
-                - img_0354.jpg.json
-                - img_0277.jpg.json
-                - img_0087.jpg.json
-                - img_0132.jpg.json
                 - img_0033.jpg.json
-                - img_0162.jpg.json
-                - img_0093.jpg.json
-                - img_0130.jpg.json
-                - img_0301.jpg.json
-                - img_0240.jpg.json
-                - img_0210.jpg.json
-                - img_0295.jpg.json
-                - img_0155.jpg.json
-                - img_0249.jpg.json
-                - img_0175.jpg.json
-                - img_0320.jpg.json
-                - img_0173.jpg.json
-                - img_0201.jpg.json
-                - img_0260.jpg.json
-                - img_0151.jpg.json
-                - img_0211.jpg.json
-                - img_0227.jpg.json
-                - img_0134.jpg.json
-                - img_0259.jpg.json
                 - img_0043.jpg.json
                 - img_0068.jpg.json
                 - img_0040.jpg.json
-                - img_0222.jpg.json
-                - img_0309.jpg.json
-                - img_0170.jpg.json
-                - img_0243.jpg.json
                 - img_0073.jpg.json
-                - img_0148.jpg.json
-                - img_0319.jpg.json
-                - img_0105.jpg.json
-                - img_0166.jpg.json
-                - img_0161.jpg.json
-                - img_0255.jpg.json
-                - img_0181.jpg.json
-                - img_0112.jpg.json
                 - img_0027.jpg.json
-                - img_0272.jpg.json
-                - img_0108.jpg.json
-                - img_0292.jpg.json
                 - img_0026.jpg.json
-                - img_0287.jpg.json
                 - img_0067.jpg.json
                 - img_0001.jpg.json
-                - img_0268.jpg.json
-                - img_0163.jpg.json
                 - img_0013.jpg.json
-                - img_0212.jpg.json
-                - img_0123.jpg.json
-                - img_0311.jpg.json
-                - img_0089.jpg.json
-                - img_0209.jpg.json
-                - img_0106.jpg.json
-                - img_0343.jpg.json
                 - img_0006.jpg.json
-                - img_0304.jpg.json
-                - img_0329.jpg.json
-                - img_0223.jpg.json
-                - img_0144.jpg.json
                 - img_0056.jpg.json
-                - img_0267.jpg.json
-                - img_0168.jpg.json
-                - img_0156.jpg.json
-                - img_0081.jpg.json
-                - img_0078.jpg.json
-                - img_0252.jpg.json
-                - img_0303.jpg.json
                 - img_0008.jpg.json
-                - img_0167.jpg.json
-                - img_0226.jpg.json
-                - img_0280.jpg.json
-                - img_0194.jpg.json
                 - img_0003.jpg.json
-                - img_0195.jpg.json
-                - img_0293.jpg.json
-                - img_0119.jpg.json
-                - img_0245.jpg.json
-                - img_0221.jpg.json
-                - img_0217.jpg.json
-                - img_0220.jpg.json
-                - img_0084.jpg.json
-                - img_0131.jpg.json
-                - img_0323.jpg.json
-                - img_0235.jpg.json
-                - img_0276.jpg.json
-                - img_0230.jpg.json
                 - img_0034.jpg.json
-                - img_0334.jpg.json
-                - img_0169.jpg.json
-                - img_0202.jpg.json
-                - img_0152.jpg.json
-                - img_0251.jpg.json
-                - img_0109.jpg.json
-                - img_0232.jpg.json
-                - img_0297.jpg.json
-                - img_0274.jpg.json
-                - img_0177.jpg.json
                 - img_0048.jpg.json
-                - img_0110.jpg.json
                 - img_0024.jpg.json
-                - img_0291.jpg.json
-                - img_0204.jpg.json
                 - img_0028.jpg.json
-                - img_0246.jpg.json
-                - img_0103.jpg.json
                 - img_0064.jpg.json
-                - img_0285.jpg.json
-                - img_0172.jpg.json
-                - img_0284.jpg.json
-                - img_0114.jpg.json
-                - img_0213.jpg.json
-                - img_0107.jpg.json
-                - img_0335.jpg.json
-                - img_0328.jpg.json
-                - img_0299.jpg.json
-                - img_0344.jpg.json
-                - img_0269.jpg.json
-                - img_0206.jpg.json
-                - img_0264.jpg.json
-                - img_0182.jpg.json
-                - img_0308.jpg.json
                 - img_0014.jpg.json
-                - img_0135.jpg.json
-                - img_0307.jpg.json
-                - img_0208.jpg.json
-                - img_0086.jpg.json
-                - img_0179.jpg.json
-                - img_0125.jpg.json
                 - img_0051.jpg.json
                 - img_0022.jpg.json
-                - img_0200.jpg.json
-                - img_0258.jpg.json
-                - img_0157.jpg.json
-                - img_0115.jpg.json
-                - img_0160.jpg.json
                 - img_0052.jpg.json
-                - img_0203.jpg.json
-                - img_0198.jpg.json
-                - img_0117.jpg.json
-                - img_0321.jpg.json
-                - img_0133.jpg.json
-                - img_0237.jpg.json
-                - img_0165.jpg.json
-                - img_0104.jpg.json
-                - img_0088.jpg.json
-                - img_0288.jpg.json
-                - img_0096.jpg.json
-                - img_0294.jpg.json
-                - img_0174.jpg.json
-                - img_0214.jpg.json
-                - img_0282.jpg.json
-                - img_0120.jpg.json
-                - img_0077.jpg.json
-                - img_0312.jpg.json
                 - img_0059.jpg.json
-                - img_0318.jpg.json
-                - img_0339.jpg.json
-                - img_0278.jpg.json
-                - img_0225.jpg.json
-                - img_0340.jpg.json
                 - img_0004.jpg.json
-                - img_0124.jpg.json
-                - img_0261.jpg.json
-                - img_0250.jpg.json
-                - img_0314.jpg.json
-                - img_0256.jpg.json
                 - img_0039.jpg.json
                 - img_0050.jpg.json
                 - img_0002.jpg.json
-                - img_0336.jpg.json
                 - img_0018.jpg.json
-                - img_0286.jpg.json
-                - img_0254.jpg.json
-                - img_0193.jpg.json
-                - img_0205.jpg.json
-                - img_0216.jpg.json
-                - img_0189.jpg.json
-                - img_0228.jpg.json
-                - img_0317.jpg.json
-                - img_0215.jpg.json
                 - img_0017.jpg.json
                 - img_0000.jpg.json
-                - img_0136.jpg.json
-                - img_0146.jpg.json
-                - img_0229.jpg.json
-                - img_0102.jpg.json
                 - img_0011.jpg.json
-                - img_0302.jpg.json
-                - img_0326.jpg.json
                 - img_0069.jpg.json
                 - img_0012.jpg.json
-                - img_0241.jpg.json
                 - img_0053.jpg.json
-                - img_0113.jpg.json
-                - img_0199.jpg.json
                 - img_0025.jpg.json
-                - img_0236.jpg.json
                 - img_0065.jpg.json
-                - img_0231.jpg.json
-                - img_0353.jpg.json
-                - img_0122.jpg.json
-                - img_0281.jpg.json
-                - img_0192.jpg.json
-                - img_0140.jpg.json
-                - img_0138.jpg.json
-                - img_0076.jpg.json
                 - img_0057.jpg.json
-                - img_0242.jpg.json
                 - img_0038.jpg.json
                 - img_0031.jpg.json
-                - img_0266.jpg.json
-                - img_0092.jpg.json
-                - img_0126.jpg.json
-                - img_0118.jpg.json
                 - img_0045.jpg.json
-                - img_0350.jpg.json
-                - img_0176.jpg.json
                 - img_0036.jpg.json
             - labels/
-                - img_0258.txt
-                - img_0353.txt
-                - img_0322.txt
                 - img_0019.txt
-                - img_0145.txt
-                - img_0241.txt
                 - img_0054.txt
                 - img_0055.txt
-                - img_0129.txt
-                - img_0246.txt
-                - img_0075.txt
                 - img_0062.txt
-                - img_0151.txt
-                - img_0343.txt
-                - img_0251.txt
-                - img_0342.txt
-                - img_0143.txt
-                - img_0202.txt
                 - img_0015.txt
-                - img_0334.txt
-                - img_0295.txt
-                - img_0105.txt
                 - img_0036.txt
-                - img_0103.txt
-                - img_0144.txt
-                - img_0273.txt
-                - img_0287.txt
-                - img_0238.txt
-                - img_0087.txt
-                - img_0234.txt
-                - img_0120.txt
-                - img_0125.txt
-                - img_0198.txt
-                - img_0260.txt
                 - img_0014.txt
-                - img_0224.txt
-                - img_0249.txt
-                - img_0192.txt
-                - img_0290.txt
-                - img_0338.txt
-                - img_0133.txt
-                - img_0223.txt
-                - img_0141.txt
-                - img_0124.txt
                 - img_0065.txt
-                - img_0226.txt
                 - img_0073.txt
-                - img_0148.txt
-                - img_0231.txt
                 - img_0007.txt
-                - img_0336.txt
-                - img_0277.txt
                 - img_0057.txt
-                - img_0330.txt
-                - img_0349.txt
-                - img_0245.txt
-                - img_0196.txt
-                - img_0182.txt
-                - img_0302.txt
                 - img_0041.txt
-                - img_0257.txt
-                - img_0090.txt
-                - img_0083.txt
-                - img_0279.txt
-                - img_0085.txt
-                - img_0154.txt
-                - img_0175.txt
                 - img_0051.txt
-                - img_0315.txt
-                - img_0201.txt
-                - img_0239.txt
-                - img_0222.txt
-                - img_0335.txt
-                - img_0296.txt
-                - img_0086.txt
-                - img_0207.txt
-                - img_0158.txt
-                - img_0263.txt
-                - img_0298.txt
-                - img_0321.txt
-                - img_0203.txt
                 - img_0003.txt
                 - img_0026.txt
-                - img_0132.txt
                 - img_0030.txt
-                - img_0212.txt
-                - img_0079.txt
                 - img_0044.txt
-                - img_0142.txt
-                - img_0179.txt
-                - img_0093.txt
-                - img_0168.txt
                 - img_0059.txt
-                - img_0187.txt
-                - img_0227.txt
-                - img_0134.txt
-                - img_0101.txt
-                - img_0161.txt
                 - img_0060.txt
-                - img_0100.txt
                 - img_0039.txt
-                - img_0116.txt
-                - img_0255.txt
-                - img_0189.txt
-                - img_0242.txt
-                - img_0209.txt
-                - img_0243.txt
                 - img_0050.txt
-                - img_0288.txt
                 - img_0020.txt
                 - img_0000.txt
-                - img_0191.txt
-                - img_0118.txt
                 - img_0058.txt
-                - img_0292.txt
-                - img_0197.txt
-                - img_0299.txt
                 - img_0033.txt
                 - img_0005.txt
-                - img_0177.txt
                 - img_0024.txt
                 - img_0021.txt
-                - img_0211.txt
-                - img_0319.txt
-                - img_0218.txt
                 - img_0016.txt
-                - img_0122.txt
                 - img_0031.txt
-                - img_0324.txt
-                - img_0333.txt
                 - img_0048.txt
-                - img_0214.txt
-                - img_0077.txt
-                - img_0253.txt
-                - img_0307.txt
-                - img_0171.txt
-                - img_0256.txt
-                - img_0126.txt
                 - img_0008.txt
-                - img_0270.txt
-                - img_0131.txt
-                - img_0351.txt
-                - img_0106.txt
-                - img_0210.txt
-                - img_0159.txt
-                - img_0113.txt
-                - img_0099.txt
-                - img_0152.txt
-                - img_0178.txt
-                - img_0180.txt
-                - img_0272.txt
-                - img_0337.txt
-                - img_0135.txt
-                - img_0147.txt
-                - img_0216.txt
                 - img_0032.txt
-                - img_0095.txt
                 - img_0047.txt
-                - img_0208.txt
-                - img_0320.txt
-                - img_0328.txt
-                - img_0271.txt
-                - img_0318.txt
-                - img_0137.txt
-                - img_0294.txt
-                - img_0110.txt
-                - img_0308.txt
                 - img_0018.txt
-                - img_0261.txt
-                - img_0219.txt
-                - img_0293.txt
-                - img_0138.txt
                 - img_0009.txt
                 - img_0012.txt
-                - img_0225.txt
                 - img_0061.txt
-                - img_0352.txt
-                - img_0303.txt
-                - img_0301.txt
                 - img_0038.txt
-                - img_0323.txt
-                - img_0199.txt
-                - img_0169.txt
-                - img_0267.txt
-                - img_0215.txt
-                - img_0146.txt
-                - img_0156.txt
-                - img_0332.txt
-                - img_0327.txt
-                - img_0275.txt
-                - img_0130.txt
-                - img_0102.txt
-                - img_0240.txt
-                - img_0345.txt
-                - img_0081.txt
-                - img_0341.txt
                 - img_0034.txt
-                - img_0109.txt
-                - img_0286.txt
-                - img_0291.txt
-                - img_0097.txt
-                - img_0347.txt
-                - img_0309.txt
-                - img_0166.txt
-                - img_0213.txt
-                - img_0096.txt
-                - img_0089.txt
                 - img_0053.txt
-                - img_0107.txt
-                - img_0098.txt
-                - img_0274.txt
-                - img_0236.txt
                 - img_0064.txt
-                - img_0121.txt
                 - img_0029.txt
                 - img_0013.txt
-                - img_0265.txt
-                - img_0237.txt
-                - img_0339.txt
-                - img_0190.txt
-                - img_0300.txt
-                - img_0092.txt
-                - img_0173.txt
-                - img_0221.txt
-                - img_0150.txt
                 - img_0063.txt
-                - img_0247.txt
-                - img_0348.txt
-                - img_0312.txt
-                - img_0325.txt
-                - img_0206.txt
-                - img_0305.txt
                 - img_0011.txt
-                - img_0228.txt
                 - img_0037.txt
-                - img_0310.txt
-                - img_0127.txt
                 - img_0049.txt
                 - img_0028.txt
-                - img_0076.txt
-                - img_0268.txt
                 - img_0067.txt
                 - img_0025.txt
-                - img_0117.txt
-                - img_0354.txt
-                - img_0340.txt
-                - img_0193.txt
-                - img_0174.txt
-                - img_0266.txt
-                - img_0094.txt
-                - img_0170.txt
-                - img_0262.txt
-                - img_0195.txt
-                - img_0181.txt
-                - img_0157.txt
-                - img_0104.txt
-                - img_0119.txt
                 - img_0017.txt
-                - img_0283.txt
-                - img_0252.txt
-                - img_0078.txt
-                - img_0316.txt
-                - img_0114.txt
                 - img_0045.txt
                 - img_0070.txt
-                - img_0276.txt
                 - img_0023.txt
-                - img_0278.txt
-                - img_0088.txt
-                - img_0123.txt
-                - img_0165.txt
                 - img_0006.txt
-                - img_0163.txt
-                - img_0080.txt
                 - img_0072.txt
-                - img_0220.txt
-                - img_0233.txt
-                - img_0164.txt
-                - img_0244.txt
-                - img_0289.txt
-                - img_0326.txt
-                - img_0205.txt
-                - img_0229.txt
-                - img_0155.txt
-                - img_0297.txt
                 - img_0042.txt
-                - img_0091.txt
-                - img_0136.txt
-                - img_0185.txt
                 - img_0066.txt
                 - img_0001.txt
-                - img_0344.txt
-                - img_0115.txt
-                - img_0112.txt
                 - img_0010.txt
-                - img_0269.txt
-                - img_0248.txt
                 - img_0052.txt
-                - img_0250.txt
-                - img_0153.txt
-                - img_0313.txt
-                - img_0082.txt
-                - img_0235.txt
-                - img_0111.txt
-                - img_0314.txt
-                - img_0149.txt
-                - img_0172.txt
                 - img_0069.txt
-                - img_0285.txt
-                - img_0183.txt
-                - img_0230.txt
-                - img_0139.txt
-                - img_0331.txt
-                - img_0284.txt
-                - img_0306.txt
-                - img_0311.txt
-                - img_0200.txt
-                - img_0108.txt
-                - img_0329.txt
-                - img_0259.txt
-                - img_0350.txt
                 - img_0027.txt
-                - img_0217.txt
-                - img_0254.txt
                 - img_0068.txt
-                - img_0281.txt
-                - img_0264.txt
                 - img_0046.txt
-                - img_0128.txt
                 - img_0056.txt
-                - img_0140.txt
                 - img_0071.txt
-                - img_0186.txt
-                - img_0160.txt
                 - img_0002.txt
-                - img_0188.txt
-                - img_0232.txt
                 - img_0004.txt
                 - img_0022.txt
-                - img_0304.txt
-                - img_0194.txt
-                - img_0162.txt
-                - img_0280.txt
                 - img_0074.txt
-                - img_0346.txt
                 - img_0040.txt
                 - img_0043.txt
-                - img_0176.txt
-                - img_0084.txt
-                - img_0184.txt
-                - img_0204.txt
-                - img_0282.txt
-                - img_0317.txt
                 - img_0035.txt
-                - img_0167.txt
         - training/
             - food_training/
                 - existing_images_dataset.yaml
@@ -2923,9 +2121,18 @@
         - model_test_results/
             - full_analysis_20250709_183640.json
             - basic_test_20250709_183356.json
+            - basic_test_20250718_090135.json
+            - comparison_20250718_090222.json
+            - comparison_20250718_102550.json
+            - basic_test_20250718_090330.json
+            - comparison_20250718_090343.json
+            - basic_test_20250718_090149.json
+            - basic_test_20250718_102459.json
+            - full_analysis_20250718_090343.json
             - comparison_20250709_183409.json
             - comparison_20250709_183639.json
             - basic_test_20250709_183628.json
+            - basic_test_20250718_102529.json
             - basic_test_20250709_183141.json
             - visual_conf_0.25/
                 - refrigerator.jpg
@@ -2937,13 +2144,91 @@
             - misc_sources/
                 - README.md
             - online_sources/
+                - 2.jpg
+                - 24.jpg
+                - 13.jpg
+                - 14.jpg
+                - 23.jpg
                 - README.md
+                - 5.jpg
+                - 4.jpg
+                - 9.jpg
+                - 10.jpg
+                - 7.jpg
+                - 11.jpg
+                - 25.jpg
+                - 19.jpg
+                - 8.jpg
+                - 15.jpg
+                - 21.jpg
+                - 17.jpg
+                - 3.jpg
+                - 22.jpg
+                - 6.jpg
+                - 20.jpg
+                - 18.jpg
+                - 12.jpg
+                - 16.jpg
             - friends_family/
                 - README.md
             - own_refrigerator/
                 - README.md
             - stock_photos/
+                - premium_photo-1736295088078-4049d86115ba.avif
+                - premium_photo-1736630238197-6b1bcd760ab8.avif
+                - premium_photo-1736295087940-c20437e5955b.avif
+                - premium_photo-1736295087885-3558b6194fe9.avif
+                - premium_photo-1736630238217-de5bccdc98c8.avif
+                - premium_photo-1733779488499-5e73b4be8591.avif
+                - premium_photo-1736630238164-5dfb30035ae7.avif
+                - premium_photo-1736630238584-2dd18ceb24d2.avif
+                - premium_photo-1736630238547-166c5fae444e.avif
                 - README.md
+                - premium_photo-1736357961528-ffabfd60058c.avif
+                - premium_photo-1736630238221-9c8e22eb85f1.avif
+                - premium_photo-1736630238155-e7f5559deb03.avif
+                - premium_photo-1736630238174-c89ae9074256.avif
+                - premium_photo-1733779488519-120c3c31b25e.avif
+                - premium_photo-1736295088080-854606157a9c.avif
+                - premium_photo-1736630238537-1b5b158b7b79.avif
+                - premium_photo-1736295088120-6bac6001463a.avif
+                - premium_photo-1733779499061-e3f54348d7fd.avif
+                - premium_photo-1736489868025-2d5fcf1b151b.avif
+                - photo-1606859191214-25806e8e2423.avif
+                - premium_photo-1736295088057-dc18feb401b8.avif
+                - photo-1737363625082-8bbbb821286e.avif
+                - photo-1584947114305-e432f66838f9.avif
+                - premium_photo-1734646975755-a7c538503f6c.avif
+                - premium_photo-1736630238167-57a2fa4869d5.avif
+                - premium_photo-1733779499047-119d8167830f.avif
+                - premium_photo-1733779499074-3f2828dd8303.avif
+                - premium_photo-1733870973450-7fee867affe6.avif
+                - premium_photo-1736489868050-a370862c6b7d.avif
+                - premium_photo-1733779457518-72a2f34bfd7e.avif
+                - premium_photo-1734646975674-64764e7dc70d.avif
+                - premium_photo-1736295087994-bb5292334b77.avif
+                - premium_photo-1733870973452-4ac5988c1124.avif
+                - premium_photo-1736295088142-4f30279d5ac4.avif
+                - photo-1562919479-b0c98b0d7f8e.avif
+                - premium_photo-1736978232291-ec86936e0834.avif
+                - premium_photo-1733870973458-1c9341932a80.avif
+                - premium_photo-1736242834259-31a2865c8477.avif
+                - premium_photo-1733870973456-823b8f91e784.avif
+                - photo-1643494847705-74808059bf07.avif
+                - premium_photo-1736630238152-46e22160cf93.avif
+                - premium_photo-1734203623842-3069b3ca50e5.avif
+                - premium_photo-1733779447917-13f750c1d8f4.avif
+                - premium_photo-1736276091635-e2298aed41ac.avif
+                - premium_photo-1736630238241-583e825d2464.avif
+                - premium_photo-1736489868024-d72bfeea35d6.avif
+                - premium_photo-1734522772869-7994c630291f.avif
+                - premium_photo-1736295088100-9c6a8fe67fcd (1).avif
+                - premium_photo-1736295087884-d74ce0e0dc1d.avif
+                - premium_photo-1736489868029-4ac123279175.avif
+                - premium_photo-1736295087976-9e33d8063659.avif
+                - premium_photo-1736630238225-817cd6cbced6.avif
+                - premium_photo-1736630238169-c8485082fedc.avif
+                - premium_photo-1736295088100-9c6a8fe67fcd.avif
             - own_photos/
                 - 41.jpg
                 - 33.jpg

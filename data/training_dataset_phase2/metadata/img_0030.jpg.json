@@ -1,40 +1,65 @@
 {
-  "original_image": "data\\collected_images\\own_photos\\coco_apple_bottle_bottle_000000427464.jpg",
+  "original_image": "data\\collected_images\\own_photos\\15.jpg",
   "training_image": "data\\training_dataset_phase2\\images\\img_0030.jpg",
   "label_file": "data\\training_dataset_phase2\\labels\\img_0030.txt",
   "genai_results": {
-    "total_items": 8,
-    "processing_time": "2.3 seconds",
+    "total_items": 23,
+    "processing_time": "2-3 seconds",
     "inventory": [
       {
-        "item_type": "banana_individual",
+        "item_type": "lettuce_individual",
+        "quantity": 2,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "cucumber_individual",
+        "quantity": 6,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "radish_container",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "water_bottle",
         "quantity": 3,
         "confidence": 0.95
       },
       {
-        "item_type": "apple_individual",
-        "quantity": 2,
-        "confidence": 0.92
-      },
-      {
-        "item_type": "bottle_individual",
-        "quantity": 2,
-        "confidence": 0.89
-      },
-      {
-        "item_type": "container_individual",
+        "item_type": "milk_bottle",
         "quantity": 1,
-        "confidence": 0.87
+        "confidence": 0.95
+      },
+      {
+        "item_type": "cheese_block",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "egg_individual",
+        "quantity": 10,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "pepper_individual",
+        "quantity": 2,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "onion_individual",
+        "quantity": 1,
+        "confidence": 0.95
       }
     ],
     "summary": {
-      "fruits": 5,
-      "containers": 3,
-      "total_detected": 8
+      "fruits": 0,
+      "containers": 1,
+      "total_detected": 23
     },
-    "analysis_method": "Demo Mode",
-    "timestamp": "2025-07-07T23:04:22.151120",
-    "demo_mode": true
+    "analysis_method": "GPT-4 Vision",
+    "timestamp": "2025-07-18T09:35:40.665096",
+    "image_processed": "data\\collected_images\\own_photos\\15.jpg"
   },
-  "conversion_date": "2025-07-07T23:04:22.156555"
+  "conversion_date": "2025-07-18T09:35:40.667385"
 }

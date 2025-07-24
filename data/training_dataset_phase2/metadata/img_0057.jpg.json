@@ -1,40 +1,80 @@
 {
-  "original_image": "data\\collected_images\\own_photos\\coco_banana_banana_banana_000000539449.jpg",
+  "original_image": "data\\collected_images\\own_photos\\4.jpg",
   "training_image": "data\\training_dataset_phase2\\images\\img_0057.jpg",
   "label_file": "data\\training_dataset_phase2\\labels\\img_0057.txt",
   "genai_results": {
-    "total_items": 8,
-    "processing_time": "2.3 seconds",
+    "total_items": 27,
+    "processing_time": "2-3 seconds",
     "inventory": [
       {
-        "item_type": "banana_individual",
+        "item_type": "cheese_individual",
         "quantity": 3,
         "confidence": 0.95
       },
       {
-        "item_type": "apple_individual",
-        "quantity": 2,
-        "confidence": 0.92
+        "item_type": "sausage_individual",
+        "quantity": 3,
+        "confidence": 0.95
       },
       {
-        "item_type": "bottle_individual",
-        "quantity": 2,
-        "confidence": 0.89
-      },
-      {
-        "item_type": "container_individual",
+        "item_type": "lettuce_individual",
         "quantity": 1,
-        "confidence": 0.87
+        "confidence": 0.95
+      },
+      {
+        "item_type": "carrot_individual",
+        "quantity": 2,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "pepper_individual",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "tomato_individual",
+        "quantity": 6,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "broccoli_individual",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "eggplant_individual",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "yogurt_individual",
+        "quantity": 4,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "sausage_package",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "strawberry_container",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "water_bottle",
+        "quantity": 2,
+        "confidence": 0.95
       }
     ],
     "summary": {
-      "fruits": 5,
+      "fruits": 1,
       "containers": 3,
-      "total_detected": 8
+      "total_detected": 27
     },
-    "analysis_method": "Demo Mode",
-    "timestamp": "2025-07-07T23:04:26.651793",
-    "demo_mode": true
+    "analysis_method": "GPT-4 Vision",
+    "timestamp": "2025-07-18T09:40:44.805466",
+    "image_processed": "data\\collected_images\\own_photos\\4.jpg"
   },
-  "conversion_date": "2025-07-07T23:04:26.659667"
+  "conversion_date": "2025-07-18T09:40:44.812948"
 }

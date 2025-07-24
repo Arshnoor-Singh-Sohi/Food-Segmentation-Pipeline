@@ -1,40 +1,90 @@
 {
-  "original_image": "data\\collected_images\\own_photos\\coco_apple_apple_apple_000000103380.jpg",
+  "original_image": "data\\collected_images\\online_sources\\10.jpg",
   "training_image": "data\\training_dataset_phase2\\images\\img_0000.jpg",
   "label_file": "data\\training_dataset_phase2\\labels\\img_0000.txt",
   "genai_results": {
-    "total_items": 8,
-    "processing_time": "2.3 seconds",
+    "total_items": 25,
+    "processing_time": "2-3 seconds",
     "inventory": [
       {
-        "item_type": "banana_individual",
+        "item_type": "orange_individual",
+        "quantity": 2,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "lemon_individual",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "lime_individual",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "spinach_container",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "berry_container",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "water_bottle",
         "quantity": 3,
         "confidence": 0.95
       },
       {
-        "item_type": "apple_individual",
-        "quantity": 2,
-        "confidence": 0.92
-      },
-      {
-        "item_type": "bottle_individual",
-        "quantity": 2,
-        "confidence": 0.89
-      },
-      {
-        "item_type": "container_individual",
+        "item_type": "juice_bottle",
         "quantity": 1,
-        "confidence": 0.87
+        "confidence": 0.95
+      },
+      {
+        "item_type": "pineapple_individual",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "potato_individual",
+        "quantity": 8,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "pepper_container",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "egg_container",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "almond_milk_carton",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "ground_turkey_package",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "chicken_thighs_package",
+        "quantity": 1,
+        "confidence": 0.95
       }
     ],
     "summary": {
       "fruits": 5,
-      "containers": 3,
-      "total_detected": 8
+      "containers": 5,
+      "total_detected": 25
     },
-    "analysis_method": "Demo Mode",
-    "timestamp": "2025-07-06T15:30:44.158505",
-    "demo_mode": true
+    "analysis_method": "GPT-4 Vision",
+    "timestamp": "2025-07-18T09:27:47.862592",
+    "image_processed": "data\\collected_images\\online_sources\\10.jpg"
   },
-  "conversion_date": "2025-07-06T15:30:44.197472"
+  "conversion_date": "2025-07-18T09:27:47.877035"
 }

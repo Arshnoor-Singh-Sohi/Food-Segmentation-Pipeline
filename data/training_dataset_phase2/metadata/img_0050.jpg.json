@@ -1,40 +1,45 @@
 {
-  "original_image": "data\\collected_images\\own_photos\\coco_banana_banana_banana_000000338670.jpg",
+  "original_image": "data\\collected_images\\own_photos\\33.jpg",
   "training_image": "data\\training_dataset_phase2\\images\\img_0050.jpg",
   "label_file": "data\\training_dataset_phase2\\labels\\img_0050.txt",
   "genai_results": {
-    "total_items": 8,
-    "processing_time": "2.3 seconds",
+    "total_items": 23,
+    "processing_time": "2-3 seconds",
     "inventory": [
       {
-        "item_type": "banana_individual",
-        "quantity": 3,
+        "item_type": "orange_individual",
+        "quantity": 2,
         "confidence": 0.95
       },
       {
-        "item_type": "apple_individual",
-        "quantity": 2,
-        "confidence": 0.92
+        "item_type": "egg_individual",
+        "quantity": 6,
+        "confidence": 0.95
       },
       {
         "item_type": "bottle_individual",
-        "quantity": 2,
-        "confidence": 0.89
+        "quantity": 8,
+        "confidence": 0.95
       },
       {
-        "item_type": "container_individual",
-        "quantity": 1,
-        "confidence": 0.87
+        "item_type": "jar_individual",
+        "quantity": 5,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "carrot_individual",
+        "quantity": 2,
+        "confidence": 0.95
       }
     ],
     "summary": {
-      "fruits": 5,
-      "containers": 3,
-      "total_detected": 8
+      "fruits": 2,
+      "containers": 13,
+      "total_detected": 23
     },
-    "analysis_method": "Demo Mode",
-    "timestamp": "2025-07-07T23:04:25.412425",
-    "demo_mode": true
+    "analysis_method": "GPT-4 Vision",
+    "timestamp": "2025-07-18T09:39:30.452504",
+    "image_processed": "data\\collected_images\\own_photos\\33.jpg"
   },
-  "conversion_date": "2025-07-07T23:04:25.418829"
+  "conversion_date": "2025-07-18T09:39:30.455881"
 }

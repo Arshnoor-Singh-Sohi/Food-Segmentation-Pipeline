@@ -1,0 +1,64 @@
+{
+  "total_items": 30,
+  "processing_time": "2-3 seconds",
+  "inventory": [
+    {
+      "item_type": "banana_individual",
+      "quantity": 4,
+      "confidence": 0.95
+    },
+    {
+      "item_type": "pear_individual",
+      "quantity": 3,
+      "confidence": 0.95
+    },
+    {
+      "item_type": "apple_individual",
+      "quantity": 3,
+      "confidence": 0.95
+    },
+    {
+      "item_type": "egg_carton",
+      "quantity": 2,
+      "confidence": 0.95
+    },
+    {
+      "item_type": "lettuce_bag",
+      "quantity": 2,
+      "confidence": 0.95
+    },
+    {
+      "item_type": "carrot_individual",
+      "quantity": 2,
+      "confidence": 0.95
+    },
+    {
+      "item_type": "pepper_individual",
+      "quantity": 3,
+      "confidence": 0.95
+    },
+    {
+      "item_type": "condiment_bottle",
+      "quantity": 5,
+      "confidence": 0.95
+    },
+    {
+      "item_type": "jar",
+      "quantity": 4,
+      "confidence": 0.95
+    },
+    {
+      "item_type": "container_with_food",
+      "quantity": 2,
+      "confidence": 0.95
+    }
+  ],
+  "summary": {
+    "fruits": 10,
+    "containers": 8,
+    "total_detected": 30
+  },
+  "analysis_method": "GPT-4 Vision",
+  "timestamp": "2025-07-18T08:49:09.213602",
+  "image_processed": "data/input/refrigerator.jpg"
+}

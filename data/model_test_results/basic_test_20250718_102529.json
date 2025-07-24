@@ -1,0 +1,10 @@
+{
+  "test_type": "basic_detection",
+  "timestamp": "2025-07-18T10:25:29.163557",
+  "image_path": "data/input/refrigerator.jpg",
+  "model_path": "data/models/genai_trained_local_model4/weights/best.pt",
+  "processing_time": 7.0463175773620605,
+  "total_detections": 0,
+  "detections": [],
+  "class_summary": {}
+}

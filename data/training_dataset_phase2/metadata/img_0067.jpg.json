@@ -1,40 +1,90 @@
 {
-  "original_image": "data\\collected_images\\own_photos\\coco_bottle_apple_bottle_000000485342.jpg",
+  "original_image": "data\\collected_images\\own_photos\\49.jpg",
   "training_image": "data\\training_dataset_phase2\\images\\img_0067.jpg",
   "label_file": "data\\training_dataset_phase2\\labels\\img_0067.txt",
   "genai_results": {
-    "total_items": 8,
-    "processing_time": "2.3 seconds",
+    "total_items": 20,
+    "processing_time": "2-3 seconds",
     "inventory": [
       {
-        "item_type": "banana_individual",
+        "item_type": "orange_individual",
         "quantity": 3,
         "confidence": 0.95
       },
       {
-        "item_type": "apple_individual",
-        "quantity": 2,
-        "confidence": 0.92
-      },
-      {
-        "item_type": "bottle_individual",
-        "quantity": 2,
-        "confidence": 0.89
-      },
-      {
-        "item_type": "container_individual",
+        "item_type": "milk_carton",
         "quantity": 1,
-        "confidence": 0.87
+        "confidence": 0.95
+      },
+      {
+        "item_type": "yogurt_container",
+        "quantity": 2,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "juice_bottle",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "soda_can",
+        "quantity": 2,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "lettuce_head",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "grape_bowl",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "butter_container",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "egg_carton",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "leftover_container",
+        "quantity": 2,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "cheese_block",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "water_bottle",
+        "quantity": 2,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "lemon_individual",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "tomato_individual",
+        "quantity": 1,
+        "confidence": 0.95
       }
     ],
     "summary": {
-      "fruits": 5,
+      "fruits": 6,
       "containers": 3,
-      "total_detected": 8
+      "total_detected": 20
     },
-    "analysis_method": "Demo Mode",
-    "timestamp": "2025-07-07T23:04:28.231000",
-    "demo_mode": true
+    "analysis_method": "GPT-4 Vision",
+    "timestamp": "2025-07-18T09:42:48.792024",
+    "image_processed": "data\\collected_images\\own_photos\\49.jpg"
   },
-  "conversion_date": "2025-07-07T23:04:28.237536"
+  "conversion_date": "2025-07-18T09:42:48.795200"
 }

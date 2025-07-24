@@ -1,40 +1,50 @@
 {
-  "original_image": "data\\collected_images\\own_photos\\coco_apple_apple_apple_000000205724.jpg",
+  "original_image": "data\\collected_images\\online_sources\\13.jpg",
   "training_image": "data\\training_dataset_phase2\\images\\img_0003.jpg",
   "label_file": "data\\training_dataset_phase2\\labels\\img_0003.txt",
   "genai_results": {
-    "total_items": 8,
-    "processing_time": "2.3 seconds",
+    "total_items": 25,
+    "processing_time": "2-3 seconds",
     "inventory": [
       {
-        "item_type": "banana_individual",
+        "item_type": "orange_individual",
+        "quantity": 6,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "lemon_individual",
+        "quantity": 6,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "asparagus_bunch",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "bottle_individual",
+        "quantity": 5,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "container_individual",
         "quantity": 3,
         "confidence": 0.95
       },
       {
-        "item_type": "apple_individual",
-        "quantity": 2,
-        "confidence": 0.92
-      },
-      {
-        "item_type": "bottle_individual",
-        "quantity": 2,
-        "confidence": 0.89
-      },
-      {
-        "item_type": "container_individual",
-        "quantity": 1,
-        "confidence": 0.87
+        "item_type": "meat_package",
+        "quantity": 4,
+        "confidence": 0.95
       }
     ],
     "summary": {
-      "fruits": 5,
+      "fruits": 12,
       "containers": 3,
-      "total_detected": 8
+      "total_detected": 25
     },
-    "analysis_method": "Demo Mode",
-    "timestamp": "2025-07-06T15:30:53.353605",
-    "demo_mode": true
+    "analysis_method": "GPT-4 Vision",
+    "timestamp": "2025-07-18T09:28:20.151430",
+    "image_processed": "data\\collected_images\\online_sources\\13.jpg"
   },
-  "conversion_date": "2025-07-06T15:30:53.367065"
+  "conversion_date": "2025-07-18T09:28:20.160893"
 }

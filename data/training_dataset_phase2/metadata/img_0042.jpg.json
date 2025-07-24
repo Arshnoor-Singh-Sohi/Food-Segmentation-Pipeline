@@ -1,40 +1,95 @@
 {
-  "original_image": "data\\collected_images\\own_photos\\coco_banana_banana_banana_000000242246.jpg",
+  "original_image": "data\\collected_images\\own_photos\\26.jpg",
   "training_image": "data\\training_dataset_phase2\\images\\img_0042.jpg",
   "label_file": "data\\training_dataset_phase2\\labels\\img_0042.txt",
   "genai_results": {
-    "total_items": 8,
-    "processing_time": "2.3 seconds",
+    "total_items": 30,
+    "processing_time": "2-3 seconds",
     "inventory": [
+      {
+        "item_type": "apple_individual",
+        "quantity": 4,
+        "confidence": 0.95
+      },
       {
         "item_type": "banana_individual",
         "quantity": 3,
         "confidence": 0.95
       },
       {
-        "item_type": "apple_individual",
-        "quantity": 2,
-        "confidence": 0.92
+        "item_type": "grape_individual",
+        "quantity": 1,
+        "confidence": 0.95
       },
       {
-        "item_type": "bottle_individual",
+        "item_type": "lettuce_individual",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "carrot_individual",
+        "quantity": 5,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "tomato_individual",
+        "quantity": 3,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "milk_individual",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "yogurt_individual",
         "quantity": 2,
-        "confidence": 0.89
+        "confidence": 0.95
+      },
+      {
+        "item_type": "cheese_individual",
+        "quantity": 2,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "egg_individual",
+        "quantity": 6,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "juice_individual",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "soda_individual",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "ketchup_individual",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "mustard_individual",
+        "quantity": 1,
+        "confidence": 0.95
       },
       {
         "item_type": "container_individual",
-        "quantity": 1,
-        "confidence": 0.87
+        "quantity": 2,
+        "confidence": 0.95
       }
     ],
     "summary": {
-      "fruits": 5,
-      "containers": 3,
-      "total_detected": 8
+      "fruits": 8,
+      "containers": 2,
+      "total_detected": 30
     },
-    "analysis_method": "Demo Mode",
-    "timestamp": "2025-07-07T23:04:24.068357",
-    "demo_mode": true
+    "analysis_method": "GPT-4 Vision",
+    "timestamp": "2025-07-18T09:38:05.589018",
+    "image_processed": "data\\collected_images\\own_photos\\26.jpg"
   },
-  "conversion_date": "2025-07-07T23:04:24.073228"
+  "conversion_date": "2025-07-18T09:38:05.591308"
 }

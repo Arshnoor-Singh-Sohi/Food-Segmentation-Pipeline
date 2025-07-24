@@ -1,31 +1,31 @@
 {
   "image_name": "refrigerator.jpg",
-  "manual_count_date": "2025-06-20T10:46:05.127318",
-  "counted_by": "Manual verification - Arshnoor",
+  "manual_count_date": "2025-07-18T08:52:17.654547",
+  "counted_by": "Manual verification - Your Name",
   "instructions": "Look at data/input/refrigerator.jpg and count each item type manually",
   "ground_truth_inventory": {
     "banana_individual": {
       "quantity": 5,
       "notes": "Count each banana separately - look carefully at clusters",
-      "location": "Second shelf in the middle"
+      "location": "second in the middle right side"
     },
     "apple_individual": {
-      "quantity": 3,
+      "quantity": 4,
       "notes": "Count each apple separately - red and green",
-      "location": "Second shelf in the middle"
+      "location": "2nd in the middle"
     },
     "bottle_individual": {
-      "quantity": 6,
+      "quantity": 8,
       "notes": "Count all bottles - milk, juice, water, etc.",
-      "location": "Second and third shelves in the left"
+      "location": "bottom left , botttom right , top left"
     },
     "container_individual": {
-      "quantity":  18,
+      "quantity": 5,
       "notes": "Count plastic containers, jars, packages",
       "location": "Which shelf/area are they on?"
     }
   },
-  "total_items_manual": 32,
+  "total_items_manual": 22,
   "verification_notes": "Add any observations about difficult items to count",
   "lighting_quality": "Good/Fair/Poor",
   "image_clarity": "Clear/Slightly blurry/Very blurry"

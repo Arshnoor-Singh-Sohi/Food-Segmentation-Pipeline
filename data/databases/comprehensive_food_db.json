@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created_date": "2025-06-20T11:48:21.678304",
-  "total_foods": 183,
+  "total_foods": 185,
   "categories": [
     "fruits",
     "vegetables",
@@ -2399,6 +2399,34 @@
       "count_method": "individual_count",
       "auto_added": true,
       "added_date": "2025-06-20T11:55:28.217893"
+    },
+    "tortilla_pack": {
+      "id": 187,
+      "name": "tortilla_pack",
+      "category": "unknown",
+      "subcategory": "auto_detected",
+      "searchable_names": [
+        "tortilla_pack",
+        "tortilla pack"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count",
+      "auto_added": true,
+      "added_date": "2025-07-18T08:46:20.935484"
+    },
+    "mixed_peppers": {
+      "id": 188,
+      "name": "mixed_peppers",
+      "category": "unknown",
+      "subcategory": "auto_detected",
+      "searchable_names": [
+        "mixed_peppers",
+        "mixed peppers"
+      ],
+      "unit_type": "individual",
+      "count_method": "individual_count",
+      "auto_added": true,
+      "added_date": "2025-07-18T08:46:20.944156"
     }
   }
 }

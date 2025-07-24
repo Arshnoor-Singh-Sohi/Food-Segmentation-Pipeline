@@ -1,40 +1,90 @@
 {
-  "original_image": "data\\collected_images\\own_photos\\coco_banana_banana_banana_000000329533.jpg",
+  "original_image": "data\\collected_images\\own_photos\\32.jpg",
   "training_image": "data\\training_dataset_phase2\\images\\img_0049.jpg",
   "label_file": "data\\training_dataset_phase2\\labels\\img_0049.txt",
   "genai_results": {
-    "total_items": 8,
-    "processing_time": "2.3 seconds",
+    "total_items": 23,
+    "processing_time": "2-3 seconds",
     "inventory": [
       {
         "item_type": "banana_individual",
-        "quantity": 3,
+        "quantity": 2,
         "confidence": 0.95
       },
       {
         "item_type": "apple_individual",
         "quantity": 2,
-        "confidence": 0.92
+        "confidence": 0.95
       },
       {
-        "item_type": "bottle_individual",
-        "quantity": 2,
-        "confidence": 0.89
-      },
-      {
-        "item_type": "container_individual",
+        "item_type": "grape_cluster",
         "quantity": 1,
-        "confidence": 0.87
+        "confidence": 0.95
+      },
+      {
+        "item_type": "pineapple_individual",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "cheese_block",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "sausage_individual",
+        "quantity": 3,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "carrot_individual",
+        "quantity": 2,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "pepper_individual",
+        "quantity": 2,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "broccoli_individual",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "tomato_individual",
+        "quantity": 3,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "egg_container",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "lettuce_individual",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "orange_individual",
+        "quantity": 2,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "celery_individual",
+        "quantity": 1,
+        "confidence": 0.95
       }
     ],
     "summary": {
-      "fruits": 5,
-      "containers": 3,
-      "total_detected": 8
+      "fruits": 8,
+      "containers": 1,
+      "total_detected": 23
     },
-    "analysis_method": "Demo Mode",
-    "timestamp": "2025-07-07T23:04:25.232805",
-    "demo_mode": true
+    "analysis_method": "GPT-4 Vision",
+    "timestamp": "2025-07-18T09:39:24.967831",
+    "image_processed": "data\\collected_images\\own_photos\\32.jpg"
   },
-  "conversion_date": "2025-07-07T23:04:25.238284"
+  "conversion_date": "2025-07-18T09:39:24.970898"
 }

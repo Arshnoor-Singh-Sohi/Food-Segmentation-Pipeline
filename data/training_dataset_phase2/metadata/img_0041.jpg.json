@@ -1,5 +1,5 @@
 {
-  "original_image": "data\\collected_images\\own_photos\\coco_banana_banana_banana_000000202326.jpg",
+  "original_image": "data\\collected_images\\own_photos\\25.jpg",
   "training_image": "data\\training_dataset_phase2\\images\\img_0041.jpg",
   "label_file": "data\\training_dataset_phase2\\labels\\img_0041.txt",
   "genai_results": {
@@ -33,8 +33,8 @@
       "total_detected": 8
     },
     "analysis_method": "Demo Mode",
-    "timestamp": "2025-07-07T23:04:23.915385",
+    "timestamp": "2025-07-18T09:37:51.564581",
     "demo_mode": true
   },
-  "conversion_date": "2025-07-07T23:04:23.919290"
+  "conversion_date": "2025-07-18T09:37:51.567612"
 }

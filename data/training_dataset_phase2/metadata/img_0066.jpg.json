@@ -1,40 +1,75 @@
 {
-  "original_image": "data\\collected_images\\own_photos\\coco_banana_orange_orange_000000424174.jpg",
+  "original_image": "data\\collected_images\\own_photos\\48.jpg",
   "training_image": "data\\training_dataset_phase2\\images\\img_0066.jpg",
   "label_file": "data\\training_dataset_phase2\\labels\\img_0066.txt",
   "genai_results": {
-    "total_items": 8,
-    "processing_time": "2.3 seconds",
+    "total_items": 16,
+    "processing_time": "2-3 seconds",
     "inventory": [
       {
-        "item_type": "banana_individual",
+        "item_type": "apple_individual",
         "quantity": 3,
         "confidence": 0.95
       },
       {
-        "item_type": "apple_individual",
+        "item_type": "orange_individual",
         "quantity": 2,
-        "confidence": 0.92
+        "confidence": 0.95
       },
       {
-        "item_type": "bottle_individual",
-        "quantity": 2,
-        "confidence": 0.89
-      },
-      {
-        "item_type": "container_individual",
+        "item_type": "grape_individual",
         "quantity": 1,
-        "confidence": 0.87
+        "confidence": 0.95
+      },
+      {
+        "item_type": "lettuce_container",
+        "quantity": 3,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "strawberry_container",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "carrot_container",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "green_bean_container",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "pepper_individual",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "cilantro_container",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "asparagus_container",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "tomato_container",
+        "quantity": 1,
+        "confidence": 0.95
       }
     ],
     "summary": {
-      "fruits": 5,
-      "containers": 3,
-      "total_detected": 8
+      "fruits": 6,
+      "containers": 10,
+      "total_detected": 16
     },
-    "analysis_method": "Demo Mode",
-    "timestamp": "2025-07-07T23:04:28.039410",
-    "demo_mode": true
+    "analysis_method": "GPT-4 Vision",
+    "timestamp": "2025-07-18T09:42:29.869192",
+    "image_processed": "data\\collected_images\\own_photos\\48.jpg"
   },
-  "conversion_date": "2025-07-07T23:04:28.043315"
+  "conversion_date": "2025-07-18T09:42:29.872721"
 }

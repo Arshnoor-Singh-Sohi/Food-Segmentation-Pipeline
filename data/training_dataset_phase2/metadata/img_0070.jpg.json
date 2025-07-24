@@ -1,40 +1,65 @@
 {
-  "original_image": "data\\collected_images\\own_photos\\coco_bottle_bottle_bottle_000000010784.jpg",
+  "original_image": "data\\collected_images\\own_photos\\6.jpg",
   "training_image": "data\\training_dataset_phase2\\images\\img_0070.jpg",
   "label_file": "data\\training_dataset_phase2\\labels\\img_0070.txt",
   "genai_results": {
-    "total_items": 8,
-    "processing_time": "2.3 seconds",
+    "total_items": 22,
+    "processing_time": "2-3 seconds",
     "inventory": [
+      {
+        "item_type": "peach_individual",
+        "quantity": 2,
+        "confidence": 0.95
+      },
       {
         "item_type": "banana_individual",
         "quantity": 3,
         "confidence": 0.95
       },
       {
-        "item_type": "apple_individual",
-        "quantity": 2,
-        "confidence": 0.92
+        "item_type": "grape_individual",
+        "quantity": 20,
+        "confidence": 0.95
       },
       {
-        "item_type": "bottle_individual",
-        "quantity": 2,
-        "confidence": 0.89
-      },
-      {
-        "item_type": "container_individual",
+        "item_type": "mango_container",
         "quantity": 1,
-        "confidence": 0.87
+        "confidence": 0.95
+      },
+      {
+        "item_type": "blueberry_container",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "bell_pepper_individual",
+        "quantity": 2,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "wrapped_meat_container",
+        "quantity": 2,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "yogurt_container",
+        "quantity": 2,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "juice_bottle",
+        "quantity": 3,
+        "confidence": 0.95
       }
     ],
     "summary": {
-      "fruits": 5,
-      "containers": 3,
-      "total_detected": 8
+      "fruits": 26,
+      "containers": 6,
+      "total_detected": 22
     },
-    "analysis_method": "Demo Mode",
-    "timestamp": "2025-07-07T23:04:28.661333",
-    "demo_mode": true
+    "analysis_method": "GPT-4 Vision",
+    "timestamp": "2025-07-18T09:43:36.492683",
+    "image_processed": "data\\collected_images\\own_photos\\6.jpg"
   },
-  "conversion_date": "2025-07-07T23:04:28.666213"
+  "conversion_date": "2025-07-18T09:43:36.501863"
 }

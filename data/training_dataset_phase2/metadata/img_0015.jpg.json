@@ -1,40 +1,110 @@
 {
-  "original_image": "data\\collected_images\\own_photos\\coco_apple_apple_banana_000000168417.jpg",
+  "original_image": "data\\collected_images\\online_sources\\24.jpg",
   "training_image": "data\\training_dataset_phase2\\images\\img_0015.jpg",
   "label_file": "data\\training_dataset_phase2\\labels\\img_0015.txt",
   "genai_results": {
-    "total_items": 8,
-    "processing_time": "2.3 seconds",
+    "total_items": 35,
+    "processing_time": "2-3 seconds",
     "inventory": [
       {
-        "item_type": "banana_individual",
+        "item_type": "orange_juice",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "yogurt_individual",
+        "quantity": 6,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "lettuce",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "grape_container",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "strawberry_container",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "blueberry_container",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "cucumber",
+        "quantity": 2,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "carrot_bag",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "mushroom_container",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "tomato",
         "quantity": 3,
         "confidence": 0.95
       },
       {
-        "item_type": "apple_individual",
-        "quantity": 2,
-        "confidence": 0.92
+        "item_type": "milk_carton",
+        "quantity": 4,
+        "confidence": 0.95
       },
       {
-        "item_type": "bottle_individual",
-        "quantity": 2,
-        "confidence": 0.89
+        "item_type": "coconut_milk_carton",
+        "quantity": 3,
+        "confidence": 0.95
       },
       {
-        "item_type": "container_individual",
+        "item_type": "ketchup_bottle",
         "quantity": 1,
-        "confidence": 0.87
+        "confidence": 0.95
+      },
+      {
+        "item_type": "mustard_jar",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "butter_container",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "cheese_package",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "ham_package",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "prepared_meal_container",
+        "quantity": 1,
+        "confidence": 0.95
       }
     ],
     "summary": {
-      "fruits": 5,
-      "containers": 3,
-      "total_detected": 8
+      "fruits": 3,
+      "containers": 5,
+      "total_detected": 35
     },
-    "analysis_method": "Demo Mode",
-    "timestamp": "2025-07-07T12:42:57.764609",
-    "demo_mode": true
+    "analysis_method": "GPT-4 Vision",
+    "timestamp": "2025-07-18T09:31:51.681393",
+    "image_processed": "data\\collected_images\\online_sources\\24.jpg"
   },
-  "conversion_date": "2025-07-07T12:42:57.779018"
+  "conversion_date": "2025-07-18T09:31:51.703688"
 }

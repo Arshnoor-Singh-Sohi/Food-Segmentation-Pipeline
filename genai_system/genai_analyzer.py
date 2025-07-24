@@ -50,15 +50,21 @@ class GenAIAnalyzer:
             base64_image = base64.b64encode(image_file.read()).decode('utf-8')
         
         # Simple, clear prompt for CEO demo
-        prompt = """
-        You are an expert food inventory analyst. Analyze this refrigerator image and count each individual item.
-        
-        INSTRUCTIONS:
-        - Count each banana separately (banana_individual)
-        - Count each apple separately (apple_individual) 
-        - Count each bottle separately (bottle_individual)
-        - Count each container separately (container_individual)
-        - Be precise with quantities
+        prompt = """Analyze this refrigerator image and detect ALL individual food items. Include:
+
+        FRUITS: banana, apple, orange, grape, berry, pear, lime, lemon, kiwi, mango, etc.
+        VEGETABLES: lettuce, carrot, tomato, pepper, onion, celery, broccoli, cucumber, etc.  
+        DAIRY: milk, yogurt, cheese, butter, cream, etc.
+        PROTEINS: eggs, meat, fish, chicken, tofu, etc.
+        BEVERAGES: juice, soda, water, wine, beer, etc.
+        CONDIMENTS: ketchup, mustard, mayo, sauce, dressing, etc.
+        LEFTOVERS: pizza slices, containers with food, prepared meals, etc.
+        PANTRY: bread, rice, pasta, cereal, snacks, etc.
+
+        Count each item individually. If you see 4 bananas, count them as 4 separate banana items.
+        If you see 3 bottles of water, count them as 3 separate bottle items.
+
+        Return detailed JSON with each food item, quantity, and location.
         
         Return ONLY this JSON format:
         {

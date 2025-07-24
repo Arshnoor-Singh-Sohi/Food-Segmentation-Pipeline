@@ -1,40 +1,105 @@
 {
-  "original_image": "data\\collected_images\\own_photos\\coco_apple_apple_apple_000000306099.jpg",
+  "original_image": "data\\collected_images\\online_sources\\18.jpg",
   "training_image": "data\\training_dataset_phase2\\images\\img_0008.jpg",
   "label_file": "data\\training_dataset_phase2\\labels\\img_0008.txt",
   "genai_results": {
-    "total_items": 8,
-    "processing_time": "2.3 seconds",
+    "total_items": 30,
+    "processing_time": "2-3 seconds",
     "inventory": [
       {
-        "item_type": "banana_individual",
-        "quantity": 3,
+        "item_type": "lettuce_container",
+        "quantity": 1,
         "confidence": 0.95
       },
       {
-        "item_type": "apple_individual",
-        "quantity": 2,
-        "confidence": 0.92
-      },
-      {
-        "item_type": "bottle_individual",
-        "quantity": 2,
-        "confidence": 0.89
-      },
-      {
-        "item_type": "container_individual",
+        "item_type": "carrot_container",
         "quantity": 1,
-        "confidence": 0.87
+        "confidence": 0.95
+      },
+      {
+        "item_type": "tomato_container",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "pepper_container",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "grape_container",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "berry_container",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "milk_bottle",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "yogurt_container",
+        "quantity": 4,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "juice_bottle",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "water_bottle",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "soda_bottle",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "pizza_box",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "prepared_meal_container",
+        "quantity": 5,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "bread_loaf",
+        "quantity": 1,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "cereal_box",
+        "quantity": 2,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "snack_box",
+        "quantity": 2,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "egg_carton",
+        "quantity": 1,
+        "confidence": 0.95
       }
     ],
     "summary": {
-      "fruits": 5,
-      "containers": 3,
-      "total_detected": 8
+      "fruits": 2,
+      "containers": 10,
+      "total_detected": 30
     },
-    "analysis_method": "Demo Mode",
-    "timestamp": "2025-07-07T12:42:44.339242",
-    "demo_mode": true
+    "analysis_method": "GPT-4 Vision",
+    "timestamp": "2025-07-18T09:29:41.339196",
+    "image_processed": "data\\collected_images\\online_sources\\18.jpg"
   },
-  "conversion_date": "2025-07-07T12:42:44.351581"
+  "conversion_date": "2025-07-18T09:29:41.345220"
 }

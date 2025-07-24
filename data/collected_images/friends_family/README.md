@@ -1,14 +1,11 @@
-# Friends Family
+# Friends Family Images
 
-Photos from friends and family
+Add refrigerator images to this folder.
 
-## Guidelines:
-- Add refrigerator/fridge interior images
-- Focus on visible individual food items
-- Good lighting preferred
-- Any image format: .jpg, .jpeg, .png
+Guidelines:
+- Individual items clearly visible
+- Good lighting
+- Multiple angles acceptable
 - Filename format: friends_family_001.jpg, friends_family_002.jpg, etc.
 
-## Target: 20-50 images in this folder
-
-## Added: 2025-06-20
+Target: 20-50 images in this folder

@@ -1,40 +1,75 @@
 {
-  "original_image": "data\\collected_images\\own_photos\\coco_apple_apple_apple_000000103380.jpg",
+  "original_image": "data\\collected_images\\online_sources\\14.jpg",
   "training_image": "data\\training_dataset_phase2\\images\\img_0004.jpg",
   "label_file": "data\\training_dataset_phase2\\labels\\img_0004.txt",
   "genai_results": {
-    "total_items": 8,
-    "processing_time": "2.3 seconds",
+    "total_items": 45,
+    "processing_time": "2-3 seconds",
     "inventory": [
+      {
+        "item_type": "lettuce_individual",
+        "quantity": 3,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "carrot_individual",
+        "quantity": 5,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "tomato_individual",
+        "quantity": 8,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "pepper_individual",
+        "quantity": 4,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "broccoli_individual",
+        "quantity": 2,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "orange_individual",
+        "quantity": 6,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "lemon_individual",
+        "quantity": 3,
+        "confidence": 0.95
+      },
+      {
+        "item_type": "apple_individual",
+        "quantity": 4,
+        "confidence": 0.95
+      },
       {
         "item_type": "banana_individual",
         "quantity": 3,
         "confidence": 0.95
       },
       {
-        "item_type": "apple_individual",
+        "item_type": "cucumber_individual",
         "quantity": 2,
-        "confidence": 0.92
+        "confidence": 0.95
       },
       {
         "item_type": "bottle_individual",
-        "quantity": 2,
-        "confidence": 0.89
-      },
-      {
-        "item_type": "container_individual",
-        "quantity": 1,
-        "confidence": 0.87
+        "quantity": 5,
+        "confidence": 0.95
       }
     ],
     "summary": {
-      "fruits": 5,
-      "containers": 3,
-      "total_detected": 8
+      "fruits": 16,
+      "containers": 0,
+      "total_detected": 45
     },
-    "analysis_method": "Demo Mode",
-    "timestamp": "2025-07-07T12:42:33.069717",
-    "demo_mode": true
+    "analysis_method": "GPT-4 Vision",
+    "timestamp": "2025-07-18T09:28:34.989494",
+    "image_processed": "data\\collected_images\\online_sources\\14.jpg"
   },
-  "conversion_date": "2025-07-07T12:42:33.120927"
+  "conversion_date": "2025-07-18T09:28:35.003722"
 }

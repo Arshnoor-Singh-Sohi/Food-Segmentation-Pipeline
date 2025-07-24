@@ -1,0 +1,228 @@
+{
+  "total_items": 34,
+  "processing_time": "2-3 seconds",
+  "inventory": [
+    {
+      "item_type": "red_apple",
+      "quantity": 3,
+      "confidence": 0.9,
+      "description": "red apples in a bowl",
+      "database_match": true,
+      "category": "fruits",
+      "subcategory": "common",
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    {
+      "item_type": "pear",
+      "quantity": 3,
+      "confidence": 0.9,
+      "description": "pears in a bowl",
+      "database_match": true,
+      "category": "fruits",
+      "subcategory": "common",
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    {
+      "item_type": "banana",
+      "quantity": 4,
+      "confidence": 0.9,
+      "description": "bunch of bananas",
+      "database_match": true,
+      "category": "fruits",
+      "subcategory": "common",
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    {
+      "item_type": "egg_carton",
+      "quantity": 2,
+      "confidence": 0.9,
+      "description": "cartons of eggs",
+      "database_match": true,
+      "category": "unknown",
+      "subcategory": "auto_detected",
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    {
+      "item_type": "jar_with_red_contents",
+      "quantity": 1,
+      "confidence": 0.8,
+      "description": "jar with red pickled items",
+      "database_match": true,
+      "category": "unknown",
+      "subcategory": "auto_detected",
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    {
+      "item_type": "jar_with_brown_contents",
+      "quantity": 1,
+      "confidence": 0.8,
+      "description": "jar with brown pickled items",
+      "database_match": true,
+      "category": "unknown",
+      "subcategory": "auto_detected",
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    {
+      "item_type": "jar_with_grains",
+      "quantity": 1,
+      "confidence": 0.9,
+      "description": "jar with grains",
+      "database_match": true,
+      "category": "unknown",
+      "subcategory": "auto_detected",
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    {
+      "item_type": "jar_with_nuts",
+      "quantity": 1,
+      "confidence": 0.9,
+      "description": "jar with almonds",
+      "database_match": true,
+      "category": "unknown",
+      "subcategory": "auto_detected",
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    {
+      "item_type": "jar_with_dates",
+      "quantity": 1,
+      "confidence": 0.9,
+      "description": "jar with dates",
+      "database_match": true,
+      "category": "unknown",
+      "subcategory": "auto_detected",
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    {
+      "item_type": "mayonnaise",
+      "quantity": 1,
+      "confidence": 0.9,
+      "description": "jar of mayonnaise",
+      "database_match": true,
+      "category": "condiments_sauces",
+      "subcategory": "basic_condiments",
+      "unit_type": "individual",
+      "count_method": "package_count"
+    },
+    {
+      "item_type": "tortilla_pack",
+      "quantity": 1,
+      "confidence": 0.9,
+      "description": "pack of tortillas",
+      "database_match": false,
+      "category": "unknown",
+      "subcategory": "unclassified",
+      "unit_type": "individual",
+      "count_method": "individual_count",
+      "needs_classification": true
+    },
+    {
+      "item_type": "leafy_green_vegetable",
+      "quantity": 2,
+      "confidence": 0.9,
+      "description": "bags of leafy greens",
+      "database_match": true,
+      "category": "unknown",
+      "subcategory": "auto_detected",
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    {
+      "item_type": "mixed_peppers",
+      "quantity": 5,
+      "confidence": 0.9,
+      "description": "bag with mixed peppers",
+      "database_match": false,
+      "category": "unknown",
+      "subcategory": "unclassified",
+      "unit_type": "individual",
+      "count_method": "individual_count",
+      "needs_classification": true
+    },
+    {
+      "item_type": "arugula",
+      "quantity": 1,
+      "confidence": 0.9,
+      "description": "box of arugula",
+      "database_match": true,
+      "category": "vegetables",
+      "subcategory": "leafy_greens",
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    {
+      "item_type": "carrot",
+      "quantity": 3,
+      "confidence": 0.9,
+      "description": "loose carrots",
+      "database_match": true,
+      "category": "vegetables",
+      "subcategory": "root_vegetables",
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    {
+      "item_type": "yellow_bell_pepper",
+      "quantity": 1,
+      "confidence": 0.9,
+      "description": "yellow bell pepper",
+      "database_match": true,
+      "category": "vegetables",
+      "subcategory": "peppers",
+      "unit_type": "individual",
+      "count_method": "individual_count"
+    },
+    {
+      "item_type": "red_cabbage",
+      "quantity": 1,
+      "confidence": 0.9,
+      "description": "half red cabbage",
+      "database_match": true,
+      "category": "vegetables",
+      "subcategory": "leafy_greens",
+      "unit_type": "head",
+      "count_method": "individual_count"
+    },
+    {
+      "item_type": "cheese_block",
+      "quantity": 1,
+      "confidence": 0.9,
+      "description": "block of cheese",
+      "database_match": true,
+      "category": "proteins",
+      "subcategory": "dairy",
+      "unit_type": "package",
+      "count_method": "package_count"
+    },
+    {
+      "item_type": "shredded_cheese",
+      "quantity": 1,
+      "confidence": 0.9,
+      "description": "container of shredded cheese",
+      "database_match": true,
+      "category": "proteins",
+      "subcategory": "dairy",
+      "unit_type": "package",
+      "count_method": "package_count"
+    }
+  ],
+  "analysis_method": "GPT-4 Vision Comprehensive",
+  "timestamp": "2025-07-18T08:46:20.934376",
+  "database_info": {
+    "total_foods_in_db": 185,
+    "matched_foods": 17,
+    "unknown_foods": [
+      "tortilla_pack",
+      "mixed_peppers"
+    ],
+    "database_coverage": 89.47368421052632
+  }
+}

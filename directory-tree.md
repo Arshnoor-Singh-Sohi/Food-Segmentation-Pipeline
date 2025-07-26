@@ -12,6 +12,7 @@
     - test_single_image_enhanced.py
     - hybrid_food_detection.py
     - fix_training_issues.py
+    - master_food_demo.py
     - hybrid_genai_yolo.py
     - yolov8m.pt
     - test_yolo_setup.py
@@ -24,6 +25,7 @@
     - improved_hybrid_detection.py
     - requirements.txt
     - train_segmentation_fixed.py
+    - windows_demo.py
     - yolov8s.pt
     - requirements_metadata.txt
     - test_batch_enhanced.py
@@ -47,6 +49,7 @@
     - test_single_image_all_models.py
     - Report3.md
     - .gitattributes
+    - Report7.md
     - run_stage.py
     - run_with_logging.py
     - run_genai.py
@@ -56,10 +59,12 @@
     - fix_training_issues_windows.py
     - test_all_models.py
     - Report1.docx
+    - presentation_navigator.py
     - encoding_utils.py
     - fix_batch_size_issue.py
     - view_results.py
     - create_achievement_demo.py
+    - simple_demo_runner.py
     - .gitignore
     - yolov8s-seg.pt
     - train_segmentation_direct.py
@@ -247,6 +252,26 @@
             - __init__.py
             - fastapi_server.py
             - metadata_api.py
+    - PRESENTATION_DEMO_20250726_003029/
+        - demo_images/
+            - pizza.jpg
+            - refrigerator.jpg
+            - image1.jpg
+        - 5_training_achievements/
+            - training_documentation.json
+        - 2_custom_model_results/
+            - custom_model_achievement.json
+        - 6_executive_summary/
+            - executive_summary.json
+            - business_metrics.json
+        - presentation_materials/
+            - MASTER_PRESENTATION.html
+        - 1_genai_results/
+            - genai_achievement_summary.json
+        - 4_metadata_analysis/
+            - metadata_capabilities.json
+        - 3_model_comparisons/
+            - model_comparison_summary.json
     - .github/
         - workflows/
             - generate-tree.yml
@@ -358,6 +383,26 @@
         - yolov5s.pt
         - yolov5su.pt
         - yolov8n-oiv7.pt
+    - PRESENTATION_DEMO_20250726_001551/
+        - demo_images/
+            - pizza.jpg
+            - refrigerator.jpg
+            - image1.jpg
+        - 5_training_achievements/
+            - training_documentation.json
+        - 2_custom_model_results/
+            - custom_model_achievement.json
+        - 6_executive_summary/
+            - executive_summary.json
+            - business_metrics.json
+        - presentation_materials/
+            - MASTER_PRESENTATION.html
+        - 1_genai_results/
+            - genai_achievement_summary.json
+        - 4_metadata_analysis/
+            - metadata_capabilities.json
+        - 3_model_comparisons/
+            - model_comparison_summary.json
     - stages/
         - progress.json
         - stage1a_fixed/
@@ -468,6 +513,9 @@
         - build_all_databases.py
         - quick_ingredient_demo.py
         - test_portion_segmentation_enhanced.py
+    - DEMO_RESULTS_20250726_002454/
+        - demo_summary.json
+        - PRESENTATION.html
     - data/
         - nutrition_database.json
         - output/
@@ -984,6 +1032,7 @@
         - genai_results/
             - comprehensive_analysis_20250718_084620.json
             - comprehensive_analysis_20250718_103511.json
+            - refrigerator_genai_20250726_003331.json
             - refrigerator_genai_20250718_084909.json
             - comprehensive_analysis_20250620_114922.json
             - refrigerator_genai_20250620_090736.json

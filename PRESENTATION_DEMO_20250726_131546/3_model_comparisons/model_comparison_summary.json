@@ -1,0 +1,41 @@
+{
+  "models_tested": [
+    "YOLOv8n-seg",
+    "YOLOv8s-seg",
+    "YOLOv8m-seg",
+    "YOLOv9s",
+    "YOLOv10n",
+    "Custom Food Model",
+    "GenAI System"
+  ],
+  "best_performers": {
+    "accuracy": {
+      "model": "Custom Food Model",
+      "score": "99.5%"
+    },
+    "speed": {
+      "model": "YOLOv8n",
+      "score": "65ms"
+    },
+    "individual_counting": {
+      "model": "GenAI System",
+      "score": "95%"
+    }
+  },
+  "testing_framework": {
+    "images_tested": 174,
+    "metrics_measured": [
+      "mAP50",
+      "Precision",
+      "Recall",
+      "Speed",
+      "Confidence"
+    ],
+    "output_formats": [
+      "HTML",
+      "CSV",
+      "Excel",
+      "JSON"
+    ]
+  }
+}

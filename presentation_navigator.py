@@ -88,28 +88,38 @@ class PresentationNavigator:
         print("0. Exit")
 
     def show_competitive_analysis(self):
-        """Show competitive analysis"""
-        print("\n🎯 COMPETITIVE ANALYSIS")
+        """Show competitive analysis with honest assessment"""
+        print("\n🎯 COMPETITIVE ANALYSIS: HONEST ASSESSMENT")
         print("="*50)
         
         comparison = {
             "Our GenAI System": {
-                "Individual Items": "✅ 27-30 items detected",
-                "Accuracy": "95%+ with individual counting",
+                "Individual Items": "✅ 28+ food types detected",
+                "Validated Accuracy": "76.4% (ground truth verified)",
                 "Cost": "$0.02 per image",
-                "Unique Feature": "Individual counting: '4 bananas, 3 apples'"
+                "Unique Feature": "Individual counting: '4 bananas, 3 apples'",
+                "Limitation": "API dependency, ±3 items consistency variation"
             },
             "Google Vision API": {
                 "Individual Items": "❌ Generic categories only",
-                "Accuracy": "70-80% generic detection",
+                "Validated Accuracy": "70-80% estimated (no individual counting)",
                 "Cost": "$0.15 per image",
-                "Unique Feature": "None - standard food detection"
+                "Unique Feature": "None - standard food detection",
+                "Limitation": "Cannot count individual items"
             },
             "AWS Rekognition": {
                 "Individual Items": "❌ Generic categories only", 
-                "Accuracy": "65-75% generic detection",
+                "Validated Accuracy": "65-75% estimated (no individual counting)",
                 "Cost": "$0.12 per image",
-                "Unique Feature": "None - standard food detection"
+                "Unique Feature": "None - standard food detection",
+                "Limitation": "Cannot count individual items"
+            },
+            "Our Local Model Attempt": {
+                "Individual Items": "⚠️ 6 basic types only",
+                "Validated Accuracy": "0% real-world (despite 98% training metrics)",
+                "Cost": "$0 (if it worked)",
+                "Unique Feature": "Would eliminate API dependency",
+                "Limitation": "Spatial data generation impossible from text"
             }
         }
         
@@ -118,11 +128,12 @@ class PresentationNavigator:
             for metric, value in metrics.items():
                 print(f"  {metric}: {value}")
         
-        print("\n💡 KEY SELLING POINTS:")
-        print("• Only solution with individual item counting")
-        print("• 25-30% higher accuracy than competitors")
-        print("• 85% cost reduction vs commercial APIs")
-        print("• Unique capability: '4 bananas, 3 apples, 6 bottles'")
+        print("\n💡 KEY INSIGHTS:")
+        print("• Only working solution with individual item counting capability")
+        print("• 76.4% validated accuracy vs estimated commercial performance")
+        print("• 85% cost reduction vs commercial APIs despite API dependency")
+        print("• Unique capability validated through ground truth testing")
+        print("• Local training challenges revealed complexity of computer vision")
 
     def show_executive_summary(self):
         """Show executive summary"""

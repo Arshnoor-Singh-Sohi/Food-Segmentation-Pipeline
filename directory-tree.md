@@ -5,7 +5,9 @@
     - test_simple.py
     - yolov9s.pt
     - fix_unicode.py
+    - Report5.pdf
     - setup_training.py
+    - Report6.pdf
     - setup_stages.py
     - yolov8n.pt
     - enhanced_batch_tester.py
@@ -25,6 +27,7 @@
     - improved_hybrid_detection.py
     - requirements.txt
     - train_segmentation_fixed.py
+    - Report3.pdf
     - windows_demo.py
     - yolov8s.pt
     - requirements_metadata.txt
@@ -37,6 +40,7 @@
     - fix_imports.py
     - test_imports.py
     - test_sam2.py
+    - FinalReport.md
     - train_detection_working.py
     - print_directory_tree.py
     - fix_segmentation_dataset.py
@@ -44,6 +48,7 @@
     - fix_device_issue.py
     - yolov10n.pt
     - Report6.md
+    - FinalReport.pdf
     - Report2.md
     - fast_test.py
     - test_single_image_all_models.py
@@ -53,6 +58,8 @@
     - run_stage.py
     - run_with_logging.py
     - run_genai.py
+    - Report2.pdf
+    - Report4.pdf
     - train_segmentation_minimal.py
     - Report4.md
     - yolov8n-cls.pt
@@ -67,6 +74,7 @@
     - simple_demo_runner.py
     - .gitignore
     - yolov8s-seg.pt
+    - Report7.pdf
     - train_segmentation_direct.py
     - directory-tree.md
     - Report5.md
@@ -252,6 +260,26 @@
             - __init__.py
             - fastapi_server.py
             - metadata_api.py
+    - PRESENTATION_DEMO_20250726_130617/
+        - demo_images/
+            - pizza.jpg
+            - refrigerator.jpg
+            - image1.jpg
+        - 5_training_achievements/
+            - training_documentation.json
+        - 2_custom_model_results/
+            - custom_model_achievement.json
+        - 6_executive_summary/
+            - executive_summary.json
+            - business_metrics.json
+        - presentation_materials/
+            - MASTER_PRESENTATION.html
+        - 1_genai_results/
+            - genai_achievement_summary.json
+        - 4_metadata_analysis/
+            - metadata_capabilities.json
+        - 3_model_comparisons/
+            - model_comparison_summary.json
     - PRESENTATION_DEMO_20250726_003029/
         - demo_images/
             - pizza.jpg
@@ -482,6 +510,26 @@
             - 04a00da0d1_custom_detection.jpg
             - 04a00f3a25_custom_detection.jpg
             - 04a01946b4_custom_detection.jpg
+    - PRESENTATION_DEMO_20250726_131546/
+        - demo_images/
+            - pizza.jpg
+            - refrigerator.jpg
+            - image1.jpg
+        - 5_training_achievements/
+            - training_documentation.json
+        - 2_custom_model_results/
+            - custom_model_achievement.json
+        - 6_executive_summary/
+            - executive_summary.json
+            - business_metrics.json
+        - presentation_materials/
+            - MASTER_PRESENTATION.html
+        - 1_genai_results/
+            - genai_achievement_summary.json
+        - 4_metadata_analysis/
+            - metadata_capabilities.json
+        - 3_model_comparisons/
+            - model_comparison_summary.json
     - runpod/
         - requirements_gpu.txt
         - start_server.sh

@@ -1,0 +1,22 @@
+{
+  "intelligence_layer": {
+    "food_classification": "Food-101 model integration",
+    "cuisine_identification": "8 major cuisines",
+    "nutrition_analysis": "44+ food items database",
+    "portion_estimation": "Area-based with density factors",
+    "allergen_detection": "Comprehensive allergen identification",
+    "dietary_tags": "Vegan, vegetarian, gluten-free detection"
+  },
+  "databases": {
+    "nutrition_items": 44,
+    "basic_foods": 28,
+    "prepared_dishes": 16,
+    "cuisines_mapped": 8,
+    "measurement_units": 25
+  },
+  "portion_aware_system": {
+    "complete_dishes": "Single portion (pizza, burger, salad)",
+    "individual_items": "Separate counting (bananas, bottles, apples)",
+    "intelligent_context": "Automatic dish vs individual classification"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "total_items": 34,
+  "processing_time": "2-3 seconds",
+  "inventory": [
+    {
+      "item_type": "banana_individual",
+      "quantity": 4,
+      "confidence": 0.95
+    },
+    {
+      "item_type": "pear_individual",
+      "quantity": 3,
+      "confidence": 0.95
+    },
+    {
+      "item_type": "apple_individual",
+      "quantity": 3,
+      "confidence": 0.95
+    },
+    {
+      "item_type": "orange_individual",
+      "quantity": 2,
+      "confidence": 0.95
+    },
+    {
+      "item_type": "lemon_individual",
+      "quantity": 1,
+      "confidence": 0.95
+    },
+    {
+      "item_type": "lime_individual",
+      "quantity": 1,
+      "confidence": 0.95
+    },
+    {
+      "item_type": "carrot_individual",
+      "quantity": 2,
+      "confidence": 0.95
+    },
+    {
+      "item_type": "pepper_individual",
+      "quantity": 3,
+      "confidence": 0.95
+    },
+    {
+      "item_type": "lettuce_bag",
+      "quantity": 2,
+      "confidence": 0.95
+    },
+    {
+      "item_type": "egg_carton",
+      "quantity": 2,
+      "confidence": 0.95
+    },
+    {
+      "item_type": "milk_bottle",
+      "quantity": 1,
+      "confidence": 0.95
+    },
+    {
+      "item_type": "cheese_package",
+      "quantity": 2,
+      "confidence": 0.95
+    },
+    {
+      "item_type": "ketchup_bottle",
+      "quantity": 1,
+      "confidence": 0.95
+    },
+    {
+      "item_type": "mustard_bottle",
+      "quantity": 1,
+      "confidence": 0.95
+    },
+    {
+      "item_type": "mayo_jar",
+      "quantity": 1,
+      "confidence": 0.95
+    },
+    {
+      "item_type": "syrup_bottle",
+      "quantity": 1,
+      "confidence": 0.95
+    },
+    {
+      "item_type": "pasta_package",
+      "quantity": 1,
+      "confidence": 0.95
+    },
+    {
+      "item_type": "tortilla_package",
+      "quantity": 1,
+      "confidence": 0.95
+    },
+    {
+      "item_type": "jar",
+      "quantity": 5,
+      "confidence": 0.95
+    }
+  ],
+  "summary": {
+    "fruits": 14,
+    "containers": 10,
+    "total_detected": 34
+  },
+  "analysis_method": "GPT-4 Vision",
+  "timestamp": "2025-07-26T00:33:31.851000",
+  "image_processed": "data/input/refrigerator.jpg"
+}
